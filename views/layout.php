@@ -30,7 +30,7 @@
 
     <?php
     $section = (isset($section)) ? $section : 'home';
-    require_once $section;
+    require_once $section.".php";
     ?>
 
     <footer>
