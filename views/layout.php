@@ -35,52 +35,20 @@
     ?>
 
 
+    <br><br>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-info">
+            <p class="col-md-4 mb-0 text-info title">&copy; 2023 Only Sports</p>
 
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top border-secondary" style="background-color: #adb5bd; margin-top:20%; margin-bottom:0%;">
-        <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 text-decoration-none">
-            <img src="" alt="" width: 250px;>
-            </a>
-            <p class="text-muted">&copy; Only Sports 2023</p>
-        </div>
-
-        <div class="col mb-3">
-
-        </div>
-
-        <div class="col mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            <ul class="nav col-md-4 justify-content-end title">
+                <li class="nav-item"><a href="index.php" class="nav-link px-2 link-info">INICIO</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 link-info">FEATURS</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 link-info">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 link-info">ABOUT</a></li>
             </ul>
-        </div>
+        </footer>
+    </div>
 
-        <div class="col mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-        </div>
-
-        <div class="col mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-        </div>
-    </footer>
 </body>
 
 </html>
