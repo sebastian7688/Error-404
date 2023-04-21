@@ -9,15 +9,14 @@
             <?php
                 session_start();
                 if (isset($_SESSION['usuario'])) {
+                    if($_SESSION['usuario']['rol'] == 2){
                 ?>
-
-                    
 
                         <li class="nav-item link">
                             <a class="nav-link link-info title" href="#">USUARIOS</a>
                         </li>
 
-                    
+                <?php } ?>
 
                     <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                         <ul class="navbar-nav">
