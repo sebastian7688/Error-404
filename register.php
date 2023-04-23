@@ -5,7 +5,7 @@ $status = 0;
 if ($_POST) {
     $usu = $_POST['usu'];
     $correo = $_POST['correo'];
-    $sql2 = "SELECT * FROM usuarios WHERE user_name = '" . $usu . "' OR email = '" . $correo . "'";
+    $sql2 = "SELECT * FROM usuarios WHERE Usuarios.user_name = '" . $usu . "' OR Usuarios.email = '" . $correo . "'";
     $res2 = mysqli_query($conn, $sql2);
     if (!$res2) {
         $status = 1;
@@ -14,7 +14,7 @@ if ($_POST) {
     if ($reg == 0) {
         $pass = md5($_POST['pass']);
         $sql = "INSERT INTO usuarios 
-    VALUES(null ,  '" . $_POST['usu'] . "' , '" . $pass . "' , '" . $_POST['correo'] . "')";
+    VALUES(null ,  '" . $_POST['usu'] . "' , '" . $pass . "' , '" . $_POST['correo'] . "','1')";
         $res = mysqli_query($conn, $sql);
         if (!$res) {
             $status = 1;
@@ -23,7 +23,7 @@ if ($_POST) {
             header("Location: login.php");
         }
     } else {
-        $status = 1;
+        $status = 0;
     }
 }
 
