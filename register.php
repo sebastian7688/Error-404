@@ -23,7 +23,7 @@ if ($_POST) {
             header("Location: login.php");
         }
     } else {
-        $status = 0;
+        $status = 1;
     }
 }
 
