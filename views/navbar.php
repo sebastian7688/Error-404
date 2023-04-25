@@ -77,7 +77,7 @@
                         <div class="navbar-nav mr-auto py-0">
                             <a href="index.php" class="nav-item nav-link text-white">Home</a>
                             <a href="" class="nav-item nav-link text-white">Shop</a>
-                            
+                            <a href="" class="nav-item nav-link text-white">News</a>
                             <a href="" class="nav-item nav-link text-white">About</a>
                         </div>
                         
