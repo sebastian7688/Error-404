@@ -1,5 +1,6 @@
 <?php
 require_once "includes/config.php";
+require_once "views/navbar.php";
 
 $stats = 0;
 if (isset($_POST['usu']) && isset($_POST['pass'])) {
@@ -12,14 +13,14 @@ if (isset($_POST['usu']) && isset($_POST['pass'])) {
     }
     $filas = mysqli_num_rows($res);
     if ($filas == 1) {
-        session_start();
+        
         $_SESSION['usuario'] = mysqli_fetch_assoc($res);
-        header('Location: index.php');
+        
         }else{
             $stats= 1;
         }
         
     }
-
-$section = "views/login";
-require_once "views/layout.php";
+require_once "views/login.php";
+echo "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
+require_once "views/footer.php";

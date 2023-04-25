@@ -1,4 +1,7 @@
-<link rel="stylesheet" href="css/register.css">
+
+<body>
+    
+
 <br><br>
 <div class="container text-center">
         <form class="form-control" method="post">
@@ -13,23 +16,21 @@
             <br>
         <?php } ?>
 
-            <div class="form-floating">
-                <input type="text" class="form-control" placeholder="Nombre" name="usu">
-                <label for="floatingInput">Nombre de Usuario</label>
-            </div>
+            
+            <input type="text" name="usu">
+            <label>NOmbre de usu</label>
+
 
             <br>
                
-            <div class="form-floating">
-                <input type="email" class="form-control" placeholder="Nombre" name="correo">
-                <label for="floatingInput">Correo Electronico</label>
-            </div>
+            
+            <input type="text" name="correo">
+            <label>correi eketronico</label>
 
             <br>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pass">
-                <label for="floatingPassword">Contraseña</label>
-            </div>
+           
+            <input type="password" name="pass">
+            <label>NOmbre de usu</label>
                 <br>
             <div class="checkbox mb-3">
                 <label>
@@ -42,3 +43,4 @@
         </form>
     </main>
 </div>
+</body>
