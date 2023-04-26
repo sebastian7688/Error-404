@@ -78,7 +78,7 @@
                             <a href="index.php" class="nav-item nav-link text-white">Home</a>
                             <a href="" class="nav-item nav-link text-white">Shop</a>
                             <a href="" class="nav-item nav-link text-white">News</a>
-                            <a href="" class="nav-item nav-link text-white">About</a>
+                            <a href="about_us.php" class="nav-item nav-link text-white">About</a>
                         </div>
                         
                     </div>
