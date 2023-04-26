@@ -26,6 +26,7 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
 
+                                    <li><a class="dropdown-item link-info title" href="about_us.php">about us</a></li>
                                     <li><a class="dropdown-item link-info title" href="my_perfil.php">Perfil</a></li>
                                     <li><a class="dropdown-item link-info title" href="logout.php">Cerrar Sesion</a></li>
 
@@ -40,6 +41,9 @@
                     </li>
                     <li class="nav-item link">
                         <a class="nav-link link-info title" href="login.php">INICIAR SESION</a>
+                    </li>
+                    <li class="nav-item link">
+                        <a class="nav-link link-info title" href="about_us.php">ABOUT US</a>
                     </li>
                 <?php } ?>
 
