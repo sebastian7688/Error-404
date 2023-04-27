@@ -91,6 +91,7 @@
                         <a href="#" class="nav-link dropdown-toggle "style="color:rgb(3 158 207);" data-toggle="dropdown"><i class="user"></i> <?php echo $_SESSION['usuario']['user_name']; ?> </a>
                     <div class="dropdown-menu  rounded-10 border-0 m-10" style="background-color:rgb(3 158 207);">
                         <a href="my_perfil.php" class="dropdown-item" >Mi perfil</a>
+                        <a href="lista_usu.php" class="dropdown-item" >Usuario</a>
                         <a href="logout.php" class="dropdown-item">Cerrar Seccion </a>
                     </div>
                     </div>
@@ -101,6 +102,7 @@
                         <a href="#" class="nav-link dropdown-toggle "style="color:rgb(3 158 207);" data-toggle="dropdown">Mi cuenta <i class="fa fa-angle-down mt-1"></i></a>
                         <div class="dropdown-menu  rounded-10 border-0 m-10" style="background-color:rgb(3 158 207);">
                             <a href="login.php" class="dropdown-item" >Login</a>
+                            <a href="lista_usu.php" class="dropdown-item" >Usuarios</a>
                             <a href="register.php" class="dropdown-item">Sign in</a>
                         </div>
                         
