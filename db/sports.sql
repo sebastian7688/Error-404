@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-04-2023 a las 04:58:32
--- Versión del servidor: 10.4.25-MariaDB
--- Versión de PHP: 8.0.23
+-- Tiempo de generación: 28-04-2023 a las 00:19:50
+-- Versión del servidor: 10.4.27-MariaDB
+-- Versión de PHP: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,8 +18,39 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `sports`
+-- Base de datos: `colegio`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `categorías`
+--
+
+CREATE TABLE `categorías` (
+  `id_categoria` int(255) NOT NULL,
+  `categoria` varchar(255) NOT NULL,
+  `deporte` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `deportes`
+--
+
+CREATE TABLE `deportes` (
+  `id_deporte` int(255) NOT NULL,
+  `deporte` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `deportes`
+--
+
+INSERT INTO `deportes` (`id_deporte`, `deporte`) VALUES
+(1, 'Atletismo'),
+(3, 'Bádminton');
 
 -- --------------------------------------------------------
 
@@ -31,7 +62,7 @@ CREATE TABLE `noticias` (
   `gf` varchar(100) NOT NULL,
   `as` varchar(100) NOT NULL,
   `ds` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -42,7 +73,7 @@ CREATE TABLE `noticias` (
 CREATE TABLE `product` (
   `id` int(11) NOT NULL,
   `product` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `product`
@@ -60,7 +91,7 @@ INSERT INTO `product` (`id`, `product`) VALUES
 CREATE TABLE `roles` (
   `id` int(11) UNSIGNED NOT NULL,
   `rol` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `roles`
@@ -82,7 +113,7 @@ CREATE TABLE `usuarios` (
   `contra` varchar(100) NOT NULL,
   `email` varchar(50) NOT NULL,
   `rol` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `usuarios`
@@ -100,6 +131,12 @@ INSERT INTO `usuarios` (`id`, `user_name`, `contra`, `email`, `rol`) VALUES
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `deportes`
+--
+ALTER TABLE `deportes`
+  ADD PRIMARY KEY (`id_deporte`);
 
 --
 -- Indices de la tabla `product`
@@ -122,6 +159,12 @@ ALTER TABLE `usuarios`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `deportes`
+--
+ALTER TABLE `deportes`
+  MODIFY `id_deporte` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `product`
