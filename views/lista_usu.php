@@ -34,8 +34,8 @@
                         <th><?php echo $usser['email']; ?></th>
                         <th><?php echo $usser['rol']; ?></th>   
                         <td>
-                <a class="btn btn-danger" href=""><i class="far fa-trash-alt"></i></a>
-                <a class="btn btn-success" href=""><i class="fas fa-edit"></i></a>
+                <a class="btn btn-danger <?php echo $usser['rol'] == "administrador" ? 'disabled' : '' ?>" href=""><i class="far fa-trash-alt"></i></a>
+                <a class="btn btn-success <?php echo $usser['rol'] == "administrador" ? 'disabled' : ''?>" href=""><i class="fas fa-edit"></i></a>
             </td>    
         <?php } } ?>
             </tr>
