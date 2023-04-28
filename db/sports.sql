@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-04-2023 a las 00:19:50
--- Versión del servidor: 10.4.27-MariaDB
--- Versión de PHP: 8.1.12
+-- Tiempo de generación: 28-04-2023 a las 04:21:24
+-- Versión del servidor: 10.4.22-MariaDB
+-- Versión de PHP: 8.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,7 +31,7 @@ CREATE TABLE `categorías` (
   `id_categoria` int(255) NOT NULL,
   `categoria` varchar(255) NOT NULL,
   `deporte` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -42,7 +42,7 @@ CREATE TABLE `categorías` (
 CREATE TABLE `deportes` (
   `id_deporte` int(255) NOT NULL,
   `deporte` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `deportes`
@@ -58,6 +58,14 @@ INSERT INTO `deportes` (`id_deporte`, `deporte`) VALUES
 -- Estructura de tabla para la tabla `noticias`
 --
 
+CREATE TABLE `noticias` (
+  `id` int(15) UNSIGNED NOT NULL,
+  `titulo` varchar(250) NOT NULL,
+  `descripcion` varchar(500) NOT NULL,
+  `texto` text NOT NULL,
+  `fecha alta` date NOT NULL,
+  `imagen` mediumblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -68,7 +76,7 @@ INSERT INTO `deportes` (`id_deporte`, `deporte`) VALUES
 CREATE TABLE `product` (
   `id` int(11) NOT NULL,
   `product` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `product`
@@ -84,15 +92,15 @@ INSERT INTO `product` (`id`, `product`) VALUES
 --
 
 CREATE TABLE `roles` (
-  `id` int(11) UNSIGNED NOT NULL,
+  `id_rol` int(11) UNSIGNED NOT NULL,
   `rol` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `roles`
 --
 
-INSERT INTO `roles` (`id`, `rol`) VALUES
+INSERT INTO `roles` (`id_rol`, `rol`) VALUES
 (1, 'usuario'),
 (2, 'administrador');
 
@@ -108,7 +116,7 @@ CREATE TABLE `usuarios` (
   `contra` varchar(100) NOT NULL,
   `email` varchar(50) NOT NULL,
   `rol` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `usuarios`
@@ -121,7 +129,8 @@ INSERT INTO `usuarios` (`id`, `user_name`, `contra`, `email`, `rol`) VALUES
 (10, 'pardo', '76d80224611fc919a5d54f0ff9fba446', 'qwe@gmail.com', 1),
 (11, 'weqe', '76d80224611fc919a5d54f0ff9fba446', 'er@gmail.com', 1),
 (12, '', 'd41d8cd98f00b204e9800998ecf8427e', '', 1),
-(13, 'asd', '7815696ecbf1c96e6894b779456d330e', 'asd@gmail.com', 1);
+(13, 'asd', '7815696ecbf1c96e6894b779456d330e', 'asd@gmail.com', 1),
+(14, 'Juan23', 'a94652aa97c7211ba8954dd15a3cf838', 'Juan23@gmail.com', 1);
 
 --
 -- Índices para tablas volcadas
@@ -134,6 +143,12 @@ ALTER TABLE `deportes`
   ADD PRIMARY KEY (`id_deporte`);
 
 --
+-- Indices de la tabla `noticias`
+--
+ALTER TABLE `noticias`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `product`
 --
 ALTER TABLE `product`
@@ -143,7 +158,7 @@ ALTER TABLE `product`
 -- Indices de la tabla `roles`
 --
 ALTER TABLE `roles`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_rol`);
 
 --
 -- Indices de la tabla `usuarios`
@@ -162,6 +177,12 @@ ALTER TABLE `deportes`
   MODIFY `id_deporte` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT de la tabla `noticias`
+--
+ALTER TABLE `noticias`
+  MODIFY `id` int(15) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `product`
 --
 ALTER TABLE `product`
@@ -171,13 +192,13 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT de la tabla `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_rol` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

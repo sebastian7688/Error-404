@@ -21,6 +21,5 @@ if (isset($_POST['usu']) && isset($_POST['pass'])) {
         }
         
     }
-require_once "views/login.php";
-echo "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
-require_once "views/footer.php";
+$section= "views/login";
+require_once "views/layout.php";

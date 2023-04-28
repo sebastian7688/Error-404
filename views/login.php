@@ -27,7 +27,7 @@
                 <input type="checkbox" value="remember-me"> Remember me
             </label>
         </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarse</button><br>
+        <button href="index.php" class="w-100 btn btn-lg btn-primary" type="submit" >Registrarse</button><br>
         <a href="index.php" class="mt-5 mb-3 text-muted text-decoration-none">Volver al inicio / </a>
         <a href="register.php" class="mt-5 mb-3 text-muted text-decoration-none">Registrarse</a>
     </form>

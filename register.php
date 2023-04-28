@@ -20,12 +20,10 @@ if ($_POST) {
         if (!$res) {
             $status = 1;
         }
-        
     } else {
         $status = 1;
     }
 }
 
-require_once "views/register.php";
-echo "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
- require_once "views/footer.php";
+$section = "views/register";
+require_once "views/layout.php";
