@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),url(../img/fondos/futbol.jpg); 
+    background: #fff; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -7,7 +7,7 @@ body {
 }
 
 .container-title {
-    color: #0dcaf0;
+    color: #0382aa;
     text-align: center;
     font-size: 75px;
 }
@@ -36,9 +36,11 @@ p {
     margin-right: 150px;
     overflow: hidden;
     padding: 25px ;
-    color: #039ecf;  
+    color: #fff;  
     animation: mover-der 2s;
     text-justify: auto;
+    background: #0382aa;
+    border-radius: 15px;
 }
 
 .us-paragrahp_2 {
@@ -60,7 +62,7 @@ p {
 
 .h2_about_1 {
     text-align: right;
-    color: #039ecf;
+    color: #fff;
 }
 
 .h2_about_2 {
@@ -96,7 +98,8 @@ p {
     box-shadow: 2px 2px 5px black;
     border: solid #8000b200 2px;
     border-radius: 10px;
-    background-color: #343a40;
+    background-color: #fff;
+
 }
 
 .card_name img {
@@ -110,16 +113,16 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    color: #0dcaf0;
+    color: #039ecf;
 }
 
 hr{
     width: 100%;
     height: 4px;
-    background: #7f00b2;
+    background: #343a40;
     margin: 20px 5px;
 }
 
 .card_name h2 {
-    color: white;
+    color: #039ecf;
 }
