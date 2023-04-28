@@ -1,6 +1,5 @@
 <?php
 require_once "includes/config.php";
-require_once "views/navbar.php";
 
 $status = 0;
 if ($_POST) {
@@ -19,6 +18,9 @@ if ($_POST) {
         $res = mysqli_query($conn, $sql);
         if (!$res) {
             $status = 1;
+        }
+        if($res){
+            header('Location: login.php');
         }
     } else {
         $status = 1;

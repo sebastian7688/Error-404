@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +21,7 @@
 <div class="container-fluid">
     <div class="row  py-3 px-xl-5 d-none d-lg-flex">
         <div class="col-lg-4">
-            <a href="" class="text-decoration-none">
+            <a href="index.php" class="text-decoration-none">
                 <span class="h1   bg-dark px-2" style="color:rgb(3, 130, 170);">ALWAYS</span>
                 <span class="h1  text-dark  px-2 ml-n1" style="background-color:rgb(3, 130, 170);">SPORTING</span>
             </a>

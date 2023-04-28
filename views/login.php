@@ -13,7 +13,7 @@
 
     
         <input type="text" name="usu">
-        <label>NOmbre de Usuario</label>
+        <label>Nombre de Usuario</label>
 
         <br>
 

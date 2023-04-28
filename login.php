@@ -1,6 +1,5 @@
 <?php
 require_once "includes/config.php";
-require_once "views/navbar.php";
 
 $stats = 0;
 if (isset($_POST['usu']) && isset($_POST['pass'])) {
@@ -15,7 +14,7 @@ if (isset($_POST['usu']) && isset($_POST['pass'])) {
     if ($filas == 1) {
         
         $_SESSION['usuario'] = mysqli_fetch_assoc($res);
-        
+        header('location: index.php');
         }else{
             $stats= 1;
         }

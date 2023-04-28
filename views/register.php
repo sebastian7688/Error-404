@@ -18,19 +18,19 @@
 
             
             <input type="text" name="usu">
-            <label>NOmbre de usu</label>
+            <label>Nombre Usuario</label>
 
 
             <br>
                
             
             <input type="text" name="correo">
-            <label>correi eketronico</label>
+            <label>Correo eletronico</label>
 
             <br>
            
             <input type="password" name="pass">
-            <label>NOmbre de usu</label>
+            <label>Contraseña</label>
                 <br>
             <div class="checkbox mb-3">
                 <label>

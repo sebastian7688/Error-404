@@ -11,4 +11,4 @@ if(!$conn){
         . mysqli_connect_error());
 }
 
- 
+ session_start();
