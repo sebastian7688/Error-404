@@ -10,7 +10,11 @@
             <p class="paragrahp-text">Entre las noticias, informaciones y chismes de la violenta embestida digital, lo que las audiencias online más valorizan puede ser sorprendente: materias largas, cobertura profundizada e investigación periodística que ofrezca nuevas perspectivas. Esa la conclusión de un reciente estudio que evaluó un conjunto pionero de análisis de la media usado por el  Instituto de Prensa Americano [American Press Institute-API] para rastrear el envolvimiento de los lectores.</p>
         </div>
         <div class="us-paragrahp_2">
-            <h2 class="h2_about_2">¿Que hace la pagina?</h2>
+            <h2 class="h2_about_2">¿Que hacemos?</h2>
+            <p class="paragrahp-text">Entre las noticias, informaciones y chismes de la violenta embestida digital, lo que las audiencias online más valorizan puede ser sorprendente: materias largas, cobertura profundizada e investigación periodística que ofrezca nuevas perspectivas. Esa la conclusión de un reciente estudio que evaluó un conjunto pionero de análisis de la media usado por el  Instituto de Prensa Americano [American Press Institute-API] para rastrear el envolvimiento de los lectores.</p>
+        </div>
+        <div class="us-paragrahp_1">
+            <h2 class="h2_about_1">¿Por qué lo hacemos?</h2>
             <p class="paragrahp-text">Entre las noticias, informaciones y chismes de la violenta embestida digital, lo que las audiencias online más valorizan puede ser sorprendente: materias largas, cobertura profundizada e investigación periodística que ofrezca nuevas perspectivas. Esa la conclusión de un reciente estudio que evaluó un conjunto pionero de análisis de la media usado por el  Instituto de Prensa Americano [American Press Institute-API] para rastrear el envolvimiento de los lectores.</p>
         </div>
     </div>
