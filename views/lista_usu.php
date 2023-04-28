@@ -25,17 +25,19 @@
             <th>Opciones</th>
         </tr>
         <tbody>
-        <?php foreach ($list_usser as $usser) { ?>
+        <?php foreach ($list_usser as $usser) { 
+            if($_SESSION['usuario']['rol'] == 2){
+            ?>
             <tr>
                         <th><?php echo $usser['id']; ?></th>
                         <th><?php echo $usser['user_name']; ?></th>
                         <th><?php echo $usser['email']; ?></th>
                         <th><?php echo $usser['rol']; ?></th>   
                         <td>
-                <a class="btn btn-danger  " href=""><i class="far fa-trash-alt"></i></a>
-                <a class="btn btn-success " href=""><i class="fas fa-edit"></i></a>
+                <a class="btn btn-danger" href=""><i class="far fa-trash-alt"></i></a>
+                <a class="btn btn-success" href=""><i class="fas fa-edit"></i></a>
             </td>    
-        <?php } ?>
+        <?php } } ?>
             </tr>
         </tbody>
     </table>
