@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `colegio`
+-- Base de datos: `sports`
 --
 
 -- --------------------------------------------------------
@@ -58,11 +58,6 @@ INSERT INTO `deportes` (`id_deporte`, `deporte`) VALUES
 -- Estructura de tabla para la tabla `noticias`
 --
 
-CREATE TABLE `noticias` (
-  `gf` varchar(100) NOT NULL,
-  `as` varchar(100) NOT NULL,
-  `ds` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
