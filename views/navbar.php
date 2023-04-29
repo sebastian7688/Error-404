@@ -91,7 +91,7 @@
                         <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);" data-toggle="dropdown"><i class="user"></i> <?php echo $_SESSION['usuario']['user_name']; ?> </a>
                         <div class="dropdown-menu  rounded-10 border-0 m-10" style="background-color:rgb(3 158 207);">
                             <a href="my_perfil.php" class="dropdown-item">Mi perfil</a>
-                            <?php if($_SESSION['usuario']['rol'] == 2){ ?>
+                            <?php if($_SESSION['usuario']['rol'] > 1){ ?>
                                 <a href="lista_usu.php" class="dropdown-item">Usuario</a>
                             <?php }?>
                             <a href="logout.php" class="dropdown-item">Cerrar Seccion </a>
