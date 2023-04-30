@@ -1,11 +1,13 @@
-
+<link rel="stylesheet" href="css/register.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 <body>
     
-
-<br><br>
-<div class="container text-center">
-        <form class="form-control" method="post">
-            <h1 class="h3 mb-3 fw-normal border-bottom">Registrate</h1>
+<form class="register" method="post">
+    <div class="contenedor">
+            <h1>Registrate</h1>
+            
+            <br>
 
             <?php if ($status == 1) { ?>
             <br>
@@ -16,31 +18,28 @@
             <br>
         <?php } ?>
 
+            <div class="input-contenedor">
+            <input type="text" name="usu" class="input" placeholder="Nombre de usuario">
+            </div>
             
-            <input type="text" name="usu">
-            <label>Nombre Usuario</label>
+            <div class="input-contenedor">
+            <input type="text" name="correo" class="input" placeholder="Correo eletronico">           
+            </div>
+                
+            <div class="input-contenedor">
+            <input type="password" name="pass" class="input"  placeholder="Contraseña">
+            </div>
 
-
-            <br>
-               
-            
-            <input type="text" name="correo">
-            <label>Correo eletronico</label>
-
-            <br>
-           
-            <input type="password" name="pass">
-            <label>Contraseña</label>
-                <br>
-            <div class="checkbox mb-3">
+            <div class="checkbox">
                 <label>
                     <input type="checkbox" value="remember-me"> Remember me
                 </label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarse</button><br>
-            <a href="index.php" class="mt-5 mb-3 text-muted text-decoration-none">Volver al inicio / </a>
-            <a href="login.php" class="mt-5 mb-3 text-muted text-decoration-none">Iniciar Sesion</a>
+            <button class="btn-register" type="submit">Registrarse</button><br><br>
+            <p>Al registrarte aceptas nuestras condiciones de uso y politica de privacidad</p>
+            <a href="login.php" class="btn-secondary">¿Ya tienes una cuenta?</a>
+            </div>
         </form>
-    </main>
-</div>
+    </main>      
+
 </body>

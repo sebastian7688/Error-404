@@ -1,10 +1,84 @@
 
-body{
+/* body{
     background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),url(../img/fondos/fon_register.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
+} */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.register {
+    text-align: center;
+    background: #0382aa;
+    margin-top: 100px;
+    padding: 3px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 10px;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 15px;
+    
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.input {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor {
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-secondary{
+   color: white;
+   background:#0382aa;
+} 
+
+.btn-secondary:hover {
+    color: white;   
+    background:#0382aa;
+    text-decoration: none;
+}
+
+.btn-register {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    background: #343a40;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p {
+  color: white;  
+}
+
+.checkbox {
+    color: white;
+}
 
