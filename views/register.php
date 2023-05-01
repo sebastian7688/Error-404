@@ -35,6 +35,7 @@
             </div>
             <button class="btn-register" type="submit">Registrarse</button><br><br>
             <p>Al registrarte aceptas nuestras condiciones de uso y politica de privacidad</p>
+            <p algin="center">Cuestion aceptas darnos tus datos y doxearte :)</p>
             <a href="login.php" class="btn-secondary">¿Ya tienes una cuenta?</a>
             </div>
         </form>
