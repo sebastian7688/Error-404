@@ -48,7 +48,7 @@ Al igual que la sección Mapa donde podrán encontrar lugares en los que podrán
         </div>
         <hr>
         <div class="card_desc">
-            <p>Descripcion</p>
+        <div class="box-1">Descripcion </div>  
         </div>
         <hr>
     </div>
@@ -60,7 +60,7 @@ Al igual que la sección Mapa donde podrán encontrar lugares en los que podrán
         </div>
         <hr>
         <div class="card_desc">
-            <p>Descripcion</p>
+        <div class="box-1">Descripcion </div>
         </div>
         <hr>
     </div>
@@ -72,7 +72,7 @@ Al igual que la sección Mapa donde podrán encontrar lugares en los que podrán
         </div>
         <hr>
         <div class="card_desc">
-            <p>Descripcion</p>
+        <div class="box-1">Descripcion </div>
         </div>
         <hr>
     </div>
@@ -86,7 +86,7 @@ Al igual que la sección Mapa donde podrán encontrar lugares en los que podrán
         </div>
         <hr>
         <div class="card_desc">
-            <p>Descripcion</p>
+        <div class="box-1">Descripcion </div>
         </div>
         <hr>
     </div>
@@ -98,7 +98,7 @@ Al igual que la sección Mapa donde podrán encontrar lugares en los que podrán
         </div>
         <hr>
         <div class="card_desc">
-            <p>Descripcion</p>
+        <div class="box-1">Descripcion </div>
         </div>
         <hr>
     </div>
@@ -110,7 +110,7 @@ Al igual que la sección Mapa donde podrán encontrar lugares en los que podrán
         </div>
         <hr>
         <div class="card_desc">
-            <p>Descripcion</p>
+        <div class="box-1">Descripcion </div>
         </div>
         <hr>
     </div>

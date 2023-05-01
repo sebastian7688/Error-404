@@ -77,6 +77,18 @@ p {
     box-sizing: border-box;
 }
 
+.box-1{
+    margin: 10px ;
+    height: 60px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    display: grid;
+    place-content: center;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.5);
+ }
+
 .card_desc {
     text-align: center;
     padding: 5px 25px;
