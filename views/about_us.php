@@ -40,65 +40,34 @@ Al igual que la sección Mapa donde podrán encontrar lugares en los que podrán
 </div>
 <br><br>
 <section class="container-card">
-    <div class="card_p">
+<div class="card_p">
         <div class="card_name">
             <img src="img/fondos/per.png" alt="">
-            <h2>Sebastian</h2>
-            <p>Project Manager</p>
+            <h2>Sebastían</h2>
+            <p>Proyect Manager</p>
         </div>
         <hr>
         <div class="card_desc">
-        <div class="box-1">Descripcion </div>  
+        <button class="box-1" type="button"  data-toggle="modal" data-target="#io">  Descripcion</button> 
+        <div class="modal fade" id="io" tabindex="-1" role="dialog" aria-labelledby="io" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Basado</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
         </div>
-        <hr>
-    </div>
-    <div class="card_p">
-        <div class="card_name">
-            <img src="img/fondos/per.png" alt="">
-            <h2>Lucio</h2>
-            <p>Programador</p>
         </div>
-        <hr>
-        <div class="card_desc">
-        <div class="box-1">Descripcion </div>
-        </div>
-        <hr>
-    </div>
-    <div class="card_p">
-        <div class="card_name">
-            <img src="img/fondos/per.png" alt="">
-            <h2>Matias</h2>
-            <p>Programador</p>
-        </div>
-        <hr>
-        <div class="card_desc">
-        <div class="box-1">Descripcion </div>
-        </div>
-        <hr>
-    </div>
-</section>
-<section class="container-card">
-    <div class="card_p">
-        <div class="card_name">
-            <img src="img/fondos/per.png" alt="">
-            <h2>Joaquin</h2>
-            <p>Analista de sistemas</p>
-        </div>
-        <hr>
-        <div class="card_desc">
-        <div class="box-1">Descripcion </div>
-        </div>
-        <hr>
-    </div>
-    <div class="card_p">
-        <div class="card_name">
-            <img src="img/fondos/per.png" alt="">
-            <h2>Leandro</h2>
-            <p>Diseñador</p>
-        </div>
-        <hr>
-        <div class="card_desc">
-        <div class="box-1">Descripcion </div>
         </div>
         <hr>
     </div>
@@ -110,7 +79,152 @@ Al igual que la sección Mapa donde podrán encontrar lugares en los que podrán
         </div>
         <hr>
         <div class="card_desc">
-        <div class="box-1">Descripcion </div>
+        <button class="box-1" type="button"  data-toggle="modal" data-target="#eve">  Descripcion</button> 
+        <div class="modal fade" id="eve" tabindex="-2" role="dialog" aria-labelledby="eve" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Amiga</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <hr>
+    </div>
+    <div class="card_p">
+        <div class="card_name">
+            <img src="img/fondos/per.png" alt="">
+            <h2>Lucio</h2>
+            <p>Programador</p>
+        </div>
+        <hr>
+        <div class="card_desc">
+        <button class="box-1" type="button"  data-toggle="modal" data-target="#lucho">  Descripcion</button> 
+        <div class="modal fade" id="lucho" tabindex="-3" role="dialog" aria-labelledby="lucho" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <hr>
+    </div>
+</section>
+<section class="container-card">
+    <div class="card_p">
+        <div class="card_name">
+            <img src="img/fondos/per.png" alt="">
+            <h2>Leandro</h2>
+            <p>Diseñador</p>
+        </div>
+        <hr>
+        <div class="card_desc">
+        <button class="box-1" type="button"  data-toggle="modal" data-target="#lea">  Descripcion</button> 
+        <div class="modal fade" id="lea" tabindex="-4" role="dialog" aria-labelledby="lea" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">cocinero</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <hr>
+    </div>
+    <div class="card_p">
+        <div class="card_name">
+            <img src="img/fondos/per.png" alt="">
+            <h2>Joaquin</h2>
+            <p>Analista de sistemas</p>
+        </div>
+        <hr>
+        <div class="card_desc">
+        <button class="box-1" type="button"  data-toggle="modal" data-target="#mike">  Descripcion</button> 
+        <div class="modal fade" id="mike" tabindex="-5" role="dialog" aria-labelledby="mike" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <hr>
+    </div>
+    <div class="card_p">
+        <div class="card_name">
+            <img src="img/fondos/per.png" alt="">
+            <h2>Matias</h2>
+            <p>Programador</p>
+        </div>
+        <hr>
+        <div class="card_desc">
+        <button class="box-1" type="button"  data-toggle="modal" data-target="#ota">  Descripcion</button> 
+        <div class="modal fade" id="ota" tabindex="-6" role="dialog" aria-labelledby="ota" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">lol</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+        </div>
         </div>
         <hr>
     </div>
