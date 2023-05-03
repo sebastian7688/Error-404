@@ -54,7 +54,13 @@ Al igual que la sección Mapa donde podrán encontrar lugares en los que podrán
         <div class="modal fade" id="io" tabindex="-1" role="dialog" aria-labelledby="io" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg "role="document">
             <div class="modal-content" style="background-color:rgb(3 158 207);">
-            <h1 align="center" style="user-select:none;">ㅤ</h1>
+            <div class="modal-header">
+       
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+            
 
             <div class="row">
     <div class="col-lg-4">
@@ -157,7 +163,12 @@ Al igual que la sección Mapa donde podrán encontrar lugares en los que podrán
         <div class="modal fade" id="eve" tabindex="-2" role="dialog" aria-labelledby="eve" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg "role="document">
             <div class="modal-content" style="background-color:rgb(3 158 207);">
-            <h1 align="center" style="user-select:none;">ㅤ</h1>
+            <div class="modal-header">
+       
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
 
             <div class="row">
     <div class="col-lg-4">
@@ -260,8 +271,12 @@ siestitas cuando &nbsp;&nbsp;&nbsp;llueve y los juegos de fantasia.</p></p>
         <div class="modal fade" id="lu" tabindex="-3" role="dialog" aria-labelledby="lu" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg "role="document">
             <div class="modal-content" style="background-color:rgb(3 158 207);">
-            <h1 align="center" style="user-select:none;">ㅤ</h1>
-
+            <div class="modal-header">
+       
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
             <div class="row">
     <div class="col-lg-4">
         <div class="card mb-4" style="border: 1px  solid 223,223,223 ;">
@@ -364,8 +379,12 @@ ideas &nbsp;&nbsp;&nbsp;y le gusta mucho ayudar cuando conversamos entre todos.<
         <div class="modal fade" id="le" tabindex="-4" role="dialog" aria-labelledby="le" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg "role="document">
             <div class="modal-content" style="background-color:rgb(3 158 207);">
-            <h1 align="center" style="user-select:none;">ㅤ</h1>
-
+            <div class="modal-header">
+       
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
             <div class="row">
     <div class="col-lg-4">
         <div class="card mb-4" style="border: 1px  solid 223,223,223 ;">
@@ -467,8 +486,12 @@ Le gusta la materia Análisis de &nbsp;&nbsp;&nbsp;sistemas y cocinar.</p></p>
         <div class="modal fade" id="me" tabindex="-5" role="dialog" aria-labelledby="me" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg "role="document">
             <div class="modal-content" style="background-color:rgb(3 158 207);">
-            <h1 align="center" style="user-select:none;">ㅤ</h1>
-
+            <div class="modal-header">
+       
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
             <div class="row">
     <div class="col-lg-4">
         <div class="card mb-4" style="border: 1px  solid 223,223,223 ;">
@@ -570,8 +593,12 @@ Su deporte &nbsp;&nbsp;&nbsp;favorito es el boxeo.</p></p>
         <div class="modal fade" id="ota" tabindex="-6" role="dialog" aria-labelledby="ota" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg "role="document">
             <div class="modal-content" style="background-color:rgb(3 158 207);">
-            <h1 align="center" style="user-select:none;">ㅤ</h1>
-
+            <div class="modal-header">
+       
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
             <div class="row">
     <div class="col-lg-4">
         <div class="card mb-4" style="border: 1px  solid 223,223,223 ;">
