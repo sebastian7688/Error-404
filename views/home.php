@@ -56,7 +56,7 @@
                 <div class="offer-text">
                     <h6 class="text-white text-uppercase">Save 20%</h6>
                     <h3 class="text-white mb-3">Special Offer</h3>
-                    <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
+                    <a href="read_more.php" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
                 </div>
             </div>
         </div>

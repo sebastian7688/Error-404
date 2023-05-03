@@ -8,6 +8,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
+
     <link href="img/favicon.ico" rel="icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,14 +22,18 @@
 <!-- Topbar Start -->
 <div class="container-fluid">
     <div class="row  py-3 px-xl-5 d-none d-lg-flex">
-        <div class="col-lg-4">
+        <div class="col-lg-10">
             <a href="index.php" class="text-decoration-none">
-                <span class="h1   bg-dark px-2" style="color:rgb(3, 130, 170);">ALWAYS</span>
+                <span class="h1   bg-dark px-2" style="color:rgb(3, 130, 170);">Alvays</span>
                 <span class="h1  text-dark  px-2 ml-n1" style="background-color:rgb(3, 130, 170);">SPORTING</span>
             </a>
         </div>
-        <div class="col-lg-4  text-left">
-            <form action="">
+        <br>
+        
+    </div>
+</div>
+<div class="col-lg-4  text-left" >
+            <form action=""style='text-align:right'>
                 <div class="input-group">
                     <input type="text" algin="text-left" class="form-control" placeholder="Buscar Productos">
                     <div class="input-group-append">
@@ -39,8 +44,7 @@
                 </div>
             </form>
         </div>
-    </div>
-</div>
+        <br>
 <!-- Topbar End -->
 
 
