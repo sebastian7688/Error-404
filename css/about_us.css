@@ -5,6 +5,8 @@ body {
     background-attachment: fixed;
     height: 100%;
 }
+.modal-lg { max-width: 80% !important; }
+
 
 .container-title {
     color: #0382aa;
