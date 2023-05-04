@@ -24,11 +24,11 @@
 <div class="container">
     <table class="table table-dark table-striped">
         <tr>
-            <th>ID</th>
-            <th><i class="fa-solid fa-user"></i> Usuario</th>
-            <th><i class="fa-solid fa-envelope"></i> Correo</th>
-            <th><i class="fa-solid fa-ranking-star"></i> Rango</th>
-            <th><i class="fa-solid fa-screwdriver-wrench" ></i> Opciones</th>
+            <th> ID </th>
+            <th><i class="fa-solid fa-user"></i> Usuario </th>
+            <th><i class="fa-solid fa-envelope"></i> Correo </th>
+            <th><i class="fa-solid fa-ranking-star"></i> Rango </th>
+            <th><i class="fa-solid fa-screwdriver-wrench" ></i> Opciones </th>
         </tr>
         <tbody>
             <?php foreach ($list_usser as $usser) {

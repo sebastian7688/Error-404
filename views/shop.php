@@ -50,8 +50,8 @@
                                 <b class="caret"></b>
                             </button>
                             <ul class="multiselect-container year-select dropdown-menu">
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="mas nuevo">Mas nuevo</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="mas viejo">Mas viejo</label></a></li>
+                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="mas nuevo"> Mas nuevo. </label></a></li>
+                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="mas viejo"> Mas viejo. </label></a></li>
                             </ul>
                         </div>
                     </span>
@@ -60,15 +60,15 @@
                                 <span class="multiselect-selected-text"><b>Precio:</b> Todos</span> <b class="caret"></b>
                             </button>
                             <ul class="multiselect-container dropdown-menu">
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="mayor precio">Mayor precio</label></a>
+                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="mayor precio"> Mayor precio. </label></a>
                                 </li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="menor precio">Menor precio</label></a>
+                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="menor precio"> Menor precio. </label></a>
                                 </li>
                             </ul>
                         </div>
                     </span>
                     <button type="submit" class="btn btn-sm btn-info">
-                        <span class="fa fa-filter" aria-hidden="true"></span> Filtrar
+                        <span class="fa fa-filter" aria-hidden="true"></span> Filtrar.
                     </button>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -83,7 +83,7 @@
 </div>
 <!-- Products Start -->
 <div class="container-fluid pt-5 pb-3">
-    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Productos en Racha</span></h2>
+    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3"> Productos en racha. </span></h2>
     <div class="row px-xl-5">
         <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
             <div class="product-item bg-light mb-4">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">Nombre de producto</a>
+                    <a class="h6 text-decoration-none text-truncate" href=""> Nombre de producto. </a>
                     <div class="d-flex align-items-center justify-content-center mt-2">
                         <h5>Precio</h5>
                         </h6>
@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">Nombre de producto</a>
+                    <a class="h6 text-decoration-none text-truncate" href=""> Nombre de producto. </a>
                     <div class="d-flex align-items-center justify-content-center mt-2">
                         <h5>Precio</h5>
                         </h6>
@@ -131,7 +131,7 @@
                     </div>
                 </div>
                 <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">Nombre de producto</a>
+                    <a class="h6 text-decoration-none text-truncate" href=""> Nombre de producto.</a>
                     <div class="d-flex align-items-center justify-content-center mt-2">
                         <h5>Precio</h5>
                         </h6>

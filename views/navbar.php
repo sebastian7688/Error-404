@@ -24,7 +24,7 @@
     <div class="row  py-3 px-xl-5 d-none d-lg-flex">
         <div class="col-lg-10">
             <a href="index.php" class="text-decoration-none">
-                <span class="h1   bg-dark px-2" style="color:rgb(3, 130, 170);">Alvays</span>
+                <span class="h1   bg-dark px-2" style="color:rgb(3, 130, 170);">Always</span>
                 <span class="h1  text-dark  px-2 ml-n1" style="background-color:rgb(3, 130, 170);">SPORTING</span>
             </a>
         </div>
@@ -80,10 +80,10 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="index.php" class="nav-item nav-link text-white">Home</a>
-                        <a href="shop.php" class="nav-item nav-link text-white">Shop</a>
-                        <a href="add_notices.php" class="nav-item nav-link text-white">News</a>
-                        <a href="about_us.php" class="nav-item nav-link text-white">About</a>
+                        <a href="index.php" class="nav-item nav-link text-white">Casa</a>
+                        <a href="shop.php" class="nav-item nav-link text-white">Tienda</a>
+                        <a href="add_notices.php" class="nav-item nav-link text-white">Noticias</a>
+                        <a href="about_us.php" class="nav-item nav-link text-white">Otros</a>
                     </div>
 
                 </div>
@@ -99,7 +99,7 @@
                             <?php if($_SESSION['usuario']['rol'] > 1){ ?>
                                 <a href="lista_usu.php" class="dropdown-item">Usuario</a>
                             <?php }?>
-                            <a href="logout.php" class="dropdown-item">Cerrar Seccion </a>
+                            <a href="logout.php" class="dropdown-item">Cerrar Sección </a>
                         </div>
                     </div>
                     <!-- Esta Iniciado-->
@@ -108,8 +108,8 @@
                     <div class="nav-item dropdown col-lg-2">
                         <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);" data-toggle="dropdown">Mi cuenta <i class="fa fa-angle-down mt-1"></i></a>
                         <div class="dropdown-menu  rounded-10 border-0 m-10" style="background-color:rgb(3 158 207);">
-                            <a href="login.php" class="dropdown-item">Login</a>
-                            <a href="register.php" class="dropdown-item">Sign in</a>
+                            <a href="login.php" class="dropdown-item">Ininicar sesión</a>
+                            <a href="register.php" class="dropdown-item">Registrarse</a>
                         </div>
 
                     </div>

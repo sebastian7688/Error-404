@@ -13,12 +13,12 @@
     <div class="user-body">
         <div class="user-desc">
             <h3 class="titulo"><?php echo $_SESSION['usuario']['user_name']; ?></h3>
-            <p>descripcion</p>
+            <p>Descripción </p>
         </div>
         <div class="user-info">
           <div class="user-datos">
             <p>Nombre de usuario: <?php echo $_SESSION['usuario']['user_name']; ?></p>
-            <p>Mail: <?php echo $_SESSION['usuario']['email']; ?></p>
+            <p>EMail: <?php echo $_SESSION['usuario']['email']; ?></p>
             <button type="botton" class="boton-editar">Editar</button>
           </div>
         </div>

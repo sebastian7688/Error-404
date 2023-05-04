@@ -13,9 +13,9 @@
                         <img class="position-absolute w-100 h-100" src="img/home/caru-1.jpg" style="object-fit: cover;">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Men Fashion</h1>
-                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
-                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Shop Now</a>
+                                <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown"> Para hombres. </h1>
+                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn"> Contenido recomendado para el público masculino. </p>
+                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#"> Ver más. </a>
                             </div>
                         </div>
                     </div>
@@ -23,9 +23,9 @@
                         <img class="position-absolute w-100 h-100" src="img/home/caru-2.jpg" style="object-fit: cover;">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Women Fashion</h1>
-                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
-                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Shop Now</a>
+                                <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown"> Para mujeres. </h1>
+                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Contenido recomendado para el público femenino.</p>
+                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Mostrar más</a>
                             </div>
                         </div>
                     </div>
@@ -33,9 +33,9 @@
                         <img class="position-absolute w-100 h-100" src="img/home/caru-3.png" style="object-fit: cover;">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Kids Fashion</h1>
-                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
-                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Shop Now</a>
+                                <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown"> Para niños, niñas y adolecentes.</h1>
+                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn"> Contenido recomendado para menores de edad. </p>
+                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#"> Ver más. </a>
                             </div>
                         </div>
                     </div>
@@ -46,17 +46,17 @@
             <div class="product-offer mb-30" style="height: 200px;">
                 <img class="img-fluid" src="img/home/sopo-1.jpg" alt="">
                 <div class="offer-text">
-                    <h6 class="text-white text-uppercase">Save 20%</h6>
-                    <h3 class="text-white mb-3">Special Offer</h3>
-                    <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
+                    <h6 class="text-white text-uppercase"> Oferta -20%. </h6>
+                    <h3 class="text-white mb-3"> Oferta especial. </h3>
+                    <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);"> Comprar. </a>
                 </div>
             </div>
             <div class="product-offer mb-30" style="height: 200px;">
                 <img class="img-fluid" src="img/home/sopo-2.jpg" alt="">
                 <div class="offer-text">
-                    <h6 class="text-white text-uppercase">Save 20%</h6>
-                    <h3 class="text-white mb-3">Special Offer</h3>
-                    <a href="read_more.php" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
+                    <h6 class="text-white text-uppercase"> Oferta -40%. </h6>
+                    <h3 class="text-white mb-3"> Oferta especial. </h3>
+                    <a href="read_more.php" class="btn text-dark" style="background-color:rgb(3 158 207);"> Comprar. </a>
                 </div>
             </div>
         </div>
@@ -74,8 +74,8 @@
                         <img class="img-fluid" src="img/home/depo-1.jpg" alt="">
                     </div>
                     <div class="flex-fill pl-3">
-                        <h6>Category Name</h6>
-                        <small class="text-body">100 Products</small>
+                        <h6> Rellenar </h6>
+                        <small class="text-body"> Más de 100 productos. </small>
                     </div>
                 </div>
             </a>
@@ -87,7 +87,7 @@
                         <img class="img-fluid" src="img/home/depo-2.jpg" alt="">
                     </div>
                     <div class="flex-fill pl-3">
-                        <h6>Category Name</h6>
+                        <h6> Rellenar </h6>
                         <small class="text-body">100 Products</small>
                     </div>
                 </div>

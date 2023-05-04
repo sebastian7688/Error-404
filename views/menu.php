@@ -26,9 +26,9 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
 
-                                    <li><a class="dropdown-item link-info title" href="about_us.php">about us</a></li>
+                                    <li><a class="dropdown-item link-info title" href="about_us.php">Acerca de nosotros </a></li>
                                     <li><a class="dropdown-item link-info title" href="my_perfil.php">Perfil</a></li>
-                                    <li><a class="dropdown-item link-info title" href="logout.php">Cerrar Sesion</a></li>
+                                    <li><a class="dropdown-item link-info title" href="logout.php">Cerrar Sesión</a></li>
 
                                 </ul>
                             </li>
@@ -40,10 +40,10 @@
                         <a class="nav-link link-info title" href="register.php">REGISTRARSE</a>
                     </li>
                     <li class="nav-item link">
-                        <a class="nav-link link-info title" href="login.php">INICIAR SESION</a>
+                        <a class="nav-link link-info title" href="login.php">INICIAR SESIÓN</a>
                     </li>
                     <li class="nav-item link">
-                        <a class="nav-link link-info title" href="about_us.php">ABOUT US</a>
+                        <a class="nav-link link-info title" href="about_us.php">ACERCA DE NOSOTROS</a>
                     </li>
                 <?php } ?>
 
