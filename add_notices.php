@@ -12,7 +12,7 @@ if ($_POST) {
     }
   
     $noticias = mysqli_insert_id($conn);
-    if ($_FILES['principal_img']['type'] == 'image/jpeg' && $_FILES['principal_img']['error'] == 0) {
+    if ($_FILES['principal_img']['type'] == 'image/jpeg/png' || $_FILES['principal_img']['type'] == 'image/png' && $_FILES['principal_img']['error'] == 0) {
         if (!is_dir('img/noticias/' . $noticias)) {
             mkdir('img/noticias/' . $noticias);
         }
