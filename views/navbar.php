@@ -80,10 +80,10 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="index.php" class="nav-item nav-link text-white">Casa</a>
+                        <a href="index.php" class="nav-item nav-link text-white">Inicio</a>
                         <a href="shop.php" class="nav-item nav-link text-white">Tienda</a>
                         <a href="add_notices.php" class="nav-item nav-link text-white">Noticias</a>
-                        <a href="about_us.php" class="nav-item nav-link text-white">Otros</a>
+                        <a href="about_us.php" class="nav-item nav-link text-white">Acerca de Nosotros</a>
                     </div>
 
                 </div>
@@ -108,7 +108,7 @@
                     <div class="nav-item dropdown col-lg-2">
                         <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);" data-toggle="dropdown">Mi cuenta <i class="fa fa-angle-down mt-1"></i></a>
                         <div class="dropdown-menu  rounded-10 border-0 m-10" style="background-color:rgb(3 158 207);">
-                            <a href="login.php" class="dropdown-item">Ininicar sesión</a>
+                            <a href="login.php" class="dropdown-item">Iniciar sesión</a>
                             <a href="register.php" class="dropdown-item">Registrarse</a>
                         </div>
 

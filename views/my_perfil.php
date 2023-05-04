@@ -18,7 +18,7 @@
         <div class="user-info">
           <div class="user-datos">
             <p>Nombre de usuario: <?php echo $_SESSION['usuario']['user_name']; ?></p>
-            <p>EMail: <?php echo $_SESSION['usuario']['email']; ?></p>
+            <p>Email: <?php echo $_SESSION['usuario']['email']; ?></p>
             <button type="botton" class="boton-editar">Editar</button>
           </div>
         </div>
