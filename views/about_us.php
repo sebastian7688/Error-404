@@ -115,13 +115,16 @@
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
                                                 <div class="row">
-                                                <div>
-                                                    <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tareas Hechas:
-                                                    </p>
+                                                    <div>
+                                                        <p class="mb-0">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
+                                                            Electronico:</p>
+                                                    </div>
+
+                                                    <p class="text-muted mb-0">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;sebastianpardo583@gmail.com </p>
+
                                                 </div>
-
-                                                <p class="text-muted mb-0">&nbsp;&nbsp; 6 </p>
-
                                             </div>
 
                                             <div class="row">
