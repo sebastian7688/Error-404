@@ -66,7 +66,7 @@
     <div class="card_p">
         <div class="card_name">
             <img alt="">
-            <img class="rounded-circle" src="img/group/io.jpg" alt=""
+            <img class="rounded-circle" src="img/group/seba.jpg" alt=""
                 style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
 
             <h2>Sebastían</h2>
@@ -87,7 +87,7 @@
                                     <div class="card-body text-center">
                                         <img id="demo" class="rounded-circle border border-2 border-dark team-item"
                                             type="button" data-bs-toggle="modal" data-bs-target="#img"
-                                            src="img/group/io.jpg" id="foto"
+                                            src="img/group/seba.jpg" id="foto"
                                             style="width: 200px; height: 200px; object-fit:cover; background-color:white;"
                                             data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
                                         <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img"
@@ -98,7 +98,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                     <img align="center" type="button" data-bs-toggle="modal"
-                                                        data-bs-target="#img" src="foto" id="foto"
+                                                        data-bs-target="#img" src="img/group/seba.jpg" id="foto"
                                                         style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
                                                     <br><a style="color:black;">Archivo: NOmbre de foto </a>
                                                     <div class="modal-body">
