@@ -90,6 +90,7 @@
                                             src="img/group/seba.jpg" id="foto"
                                             style="width: 200px; height: 200px; object-fit:cover; background-color:white;"
                                             data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
+
                                         <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img"
                                             data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                                             aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -100,7 +101,7 @@
                                                     <img align="center" type="button" data-bs-toggle="modal"
                                                         data-bs-target="#img" src="img/group/seba.jpg" id="foto"
                                                         style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
-                                                    <br><a style="color:black;">Archivo: NOmbre de foto </a>
+                                                    <br><a style="color:black;">Archivo: Nombre de foto </a>
                                                     <div class="modal-body">
                                                         <br>
                                                     </div>
@@ -124,19 +125,16 @@
                                             <div class="row">
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
-                                                <div class="row">
+                                                
+                                            </div>
+                                            <div class="row">
                                                    <div>
-                                                        <p class="mb-0">
-                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
-                                                            Electronico:</p>
+                                                        <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo Electronico:</p>
                                                     </div>
 
-                                                    <p class="text-muted mb-0">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;sebastianpardo583@gmail.com </p>
+                                                    <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;sebastianpardo583@gmail.com </p>
 
                                                 </div>
-                                            </div>
-
                                             <div class="row">
                                                 <div>
                                                     <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tareas Hechas:
@@ -165,11 +163,11 @@
                                             <div class="row">
 
                                                 <p class="mb-0">&nbsp;&nbsp;&nbsp;Descripción:
-                                                <p class="text-muted mb-0" align="left" id="descripcion_txt">
-                                                    &nbsp;&nbsp;&nbsp;Es el líder del equipo,
+                                                <p class="text-muted mb-0" align="center" id="descripcion_txt">
+                                                    Es el líder del equipo,
                                                     trabaja como Scrum Master cumpliendo obligaciones.
-                                                    &nbsp;&nbsp;&nbsp;Le gusta el anime, leer mangas, los juegos de
-                                                    fantasia, la musica y jugar &nbsp;&nbsp;&nbsp;varios tipos de
+                                                    Le gusta el anime, leer mangas, los juegos de
+                                                    fantasia, la musica y jugar varios tipos de
                                                     deportes.</p>
                                                 </p>
 
@@ -248,10 +246,12 @@
                                             <div class="row">
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
-                                                <div class="row">
+                                                
+                                            </div>
+                                            <div class="row">
                                                     <div>
                                                         <p class="mb-0">
-                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
                                                             Electronico:</p>
                                                     </div>
 
@@ -259,8 +259,6 @@
                                                         &nbsp;&nbsp;&nbsp;&nbsp;evelyn2night3@gmail.com </p>
 
                                                 </div>
-                                            </div>
-
                                             <div class="row">
                                                 <div>
                                                     <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tareas Hechas:
@@ -289,12 +287,12 @@
                                             <div class="row">
 
                                                 <p class="mb-0">&nbsp;&nbsp;&nbsp;Descripción:
-                                                <p class="text-muted mb-0" align="left" id="descripcion_txt">
-                                                    &nbsp;&nbsp;&nbsp;Integrante del equipo bastante creativa y con
+                                                <p class="text-muted mb-0" align="center" id="descripcion_txt">
+                                                    Integrante del equipo bastante creativa y con
                                                     mucha motivación.
-                                                    Le gusta &nbsp;&nbsp;&nbsp;mirar anime, leer manwhas, los animales,
+                                                    Le gusta; mirar anime, leer manwhas, los animales,
                                                     la música, tomar
-                                                    siestitas cuando &nbsp;&nbsp;&nbsp;llueve y los juegos de fantasia.
+                                                    siestitas cuando llueve y los juegos de fantasia.
                                                 </p>
                                                 </p>
 
@@ -372,10 +370,12 @@
                                             <div class="row">
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
-                                                <div class="row">
+                                                
+                                            </div>
+                                            <div class="row">
                                                     <div>
                                                         <p class="mb-0">
-                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
                                                             Electronico:</p>
                                                     </div>
 
@@ -383,8 +383,6 @@
                                                         &nbsp;&nbsp;&nbsp;&nbsp;luchito14567@gmail.com </p>
 
                                                 </div>
-                                            </div>
-
                                             <div class="row">
                                                 <div>
                                                     <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tareas Hechas:
@@ -413,10 +411,10 @@
                                             <div class="row">
 
                                                 <p class="mb-0">&nbsp;&nbsp;&nbsp;Descripción:
-                                                <p class="text-muted mb-0" align="left" id="descripcion_txt">
-                                                    &nbsp;&nbsp;&nbsp;Miembro del equipo muy bueno haciendo su trabajo,
+                                                <p class="text-muted mb-0" align="center" id="descripcion_txt">
+                                                    Miembro del equipo muy bueno haciendo su trabajo,
                                                     le gusta proponer
-                                                    ideas &nbsp;&nbsp;&nbsp;y le gusta mucho ayudar cuando conversamos
+                                                    ideas y le gusta mucho ayudar cuando conversamos
                                                     entre todos.</p>
                                                 </p>
 
@@ -496,10 +494,12 @@
                                             <div class="row">
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
-                                                <div class="row">
+                                                
+                                            </div>
+                                            <div class="row">
                                                     <div>
                                                         <p class="mb-0">
-                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo     
                                                             Electronico:</p>
                                                     </div>
 
@@ -507,8 +507,6 @@
                                                         &nbsp;&nbsp;&nbsp;&nbsp;matigom13@gmail.com </p>
 
                                                 </div>
-                                            </div>
-
                                             <div class="row">
                                                 <div>
                                                     <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tareas Hechas:
@@ -518,6 +516,7 @@
                                                 <p class="text-muted mb-0">&nbsp;&nbsp; 4 </p>
 
                                             </div>
+                                            
 
                                             <div class="row">
                                                 <div>
@@ -537,12 +536,12 @@
                                             <div class="row">
 
                                                 <p class="mb-0">&nbsp;&nbsp;&nbsp;Descripción:
-                                                <p class="text-muted mb-0" align="left" id="descripcion_txt">
-                                                    &nbsp;&nbsp;&nbsp;Miembro de la empresa bastante trabajador ya que
+                                                <p class="text-muted mb-0" align="center" id="descripcion_txt">
+                                                    Miembro de la empresa bastante trabajador ya que
                                                     entrega tareas
-                                                    prolijas, &nbsp;&nbsp;&nbsp;suele aportar cuando hablamos sobre
+                                                    prolijas, suele aportar cuando hablamos sobre
                                                     idea.
-                                                    Le gusta la materia Análisis de &nbsp;&nbsp;&nbsp;sistemas y
+                                                    Le gusta la materia Análisis de sistemas y
                                                     cocinar.</p>
                                                 </p>
 
@@ -620,10 +619,12 @@
                                             <div class="row">
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
-                                                <div class="row">
+                                                
+                                            </div>
+                                            <div class="row">
                                                     <div>
                                                         <p class="mb-0">
-                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
                                                             Electronico:</p>
                                                     </div>
 
@@ -631,7 +632,6 @@
                                                         &nbsp;&nbsp;&nbsp;&nbsp;mikemoble2905@gmail.com </p>
 
                                                 </div>
-                                            </div>
 
                                             <div class="row">
                                                 <div>
@@ -661,12 +661,12 @@
                                             <div class="row">
 
                                                 <p class="mb-0">&nbsp;&nbsp;&nbsp;Descripción:
-                                                <p class="text-muted mb-0" align="left" id="descripcion_txt">
-                                                    &nbsp;&nbsp;&nbsp;Miembro de la empresa bastante trabajador, suele
+                                                <p class="text-muted mb-0" align="center" id="descripcion_txt">
+                                                    Miembro de la empresa bastante trabajador, suele
                                                     aportar ideas para
-                                                    &nbsp;&nbsp;&nbsp;mejorar el proyecto o para planificarlo y es
+                                                    mejorar el proyecto o para planificarlo y es
                                                     bastante organizado.
-                                                    Su deporte &nbsp;&nbsp;&nbsp;favorito es el boxeo.</p>
+                                                    Su deporte favorito es el boxeo.</p>
                                                 </p>
 
 
@@ -743,10 +743,12 @@
                                             <div class="row">
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
-                                                <div class="row">
+                                                
+                                            </div>
+                                            <div class="row">
                                                     <div>
                                                         <p class="mb-0">
-                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
+                                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
                                                             Electronico:</p>
                                                     </div>
 
@@ -754,7 +756,6 @@
                                                         &nbsp;&nbsp;&nbsp;&nbsp;matiasotamendi26@gmail.com </p>
 
                                                 </div>
-                                            </div>
 
                                             <div class="row">
                                                 <div>
@@ -784,11 +785,11 @@
                                             <div class="row">
 
                                                 <p class="mb-0">&nbsp;&nbsp;&nbsp;Descripción:
-                                                <p class="text-muted mb-0" align="left" id="descripcion_txt">
-                                                    &nbsp;&nbsp;&nbsp;Miembro del equipo con buena voluntad de aportar
+                                                <p class="text-muted mb-0" align="center" id="descripcion_txt">
+                                                    Miembro del equipo con buena voluntad de aportar
                                                     ideas con fin de que
-                                                    el &nbsp;&nbsp;&nbsp;proyecto vaya por buen camino.
-                                                    Le gusta los libros, conocer y saber muchas &nbsp;&nbsp;&nbsp;cosas
+                                                    el proyecto vaya por buen camino.
+                                                    Le gusta los libros, conocer y saber muchas cosas
                                                     interesantes, los juegos
                                                     y crear juegos con C#.</p>
                                                 </p>

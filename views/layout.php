@@ -1,7 +1,14 @@
-<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+<html>
+  <head>
+  <link rel="icon" href="img/icon.ico">
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/9817c2b4db.js" crossorigin="anonymous"></script>
-<header>
-    <?php require_once "navbar.php"; ?>
+  </head>
+  <body>
+  <header>
+  
+  <?php require_once "navbar.php"; ?>
 </header>
 
 <?php
@@ -10,5 +17,8 @@ require_once $section.'.php';
 ?>
 
 <footer style="margin-top: 20%">
-    <?php require_once "footer.php"; ?>
+  <?php require_once "footer.php"; ?>
 </footer>
+
+  </body>
+</html>
