@@ -1,5 +1,15 @@
+<nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="shop.php" class="link-info" style="text-decoration: none;">Tienda</a></li>
+            <li class="breadcrumb-item"><a href="add_notices.php" class="link-info" style="text-decoration: none;">Noticias</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a class="link-dark" style="text-decoration: none;">Sobre Nosotros</a></li>
+            
+        </ol>
+    </nav>
 <link rel="stylesheet" href="css/about_us.css">
 <br><br>
+
 <div>
     <h1 class="container-title">Sobre nosotros</h1>
 </div>
