@@ -1,0 +1,121 @@
+.perfil-user .user-body,
+.perfil-user {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.perfil-user .user-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+
+.perfil-user .user-portada {
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 17rem;
+    background: #0382aa;
+    border-radius: 20px;
+}
+
+
+.perfil-user .user-avatar {
+   display: flex;
+   width: 180px;
+   height: 180px;
+   align-items: center;
+   justify-content: center;
+   border: 3px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    position: absolute;
+    bottom: -40px;
+    left: calc(50% - 90px);
+    z-index: 1;
+}
+
+
+.perfil-user .user-avatar img {
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+}
+
+
+.perfil-user .user-avatar .boton-avatar {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    border: 0;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+
+.perfil-user .user-body{
+    width: 90%;
+}
+
+
+.perfil-user .user-info,
+.perfil-user .user-desc {
+    display: block;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.perfil-user .user-desc {
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+
+.perfil-user .user-desc h3{
+    font-size: 50px;
+}
+
+
+.perfil-user .user-desc p{
+    font-size: 20px;
+}
+
+
+.perfil-user .user-datos {
+    width: 100%;
+}
+
+
+.perfil-user .user-datos p {
+    padding: 5px 0;
+    font-size: 25px;
+}
+
+
+.perfil-user .user-datos .boton-editar {
+    border: none;
+    width: 15%;
+    color: white;
+    font-size: 18px;
+    background: #343a40;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

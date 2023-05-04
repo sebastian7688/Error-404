@@ -5,7 +5,12 @@ body {
     background-attachment: fixed;
     height: 100%;
 }
-.modal-lg { max-width: 80% !important; }
+
+.modal-lg { 
+    max-width: 80% !important; 
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 .container-title {

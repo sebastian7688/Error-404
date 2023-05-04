@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-04-2023 a las 23:09:09
+-- Tiempo de generación: 03-05-2023 a las 21:58:28
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -63,9 +63,23 @@ CREATE TABLE `noticias` (
   `titulo` varchar(250) NOT NULL,
   `descripcion` varchar(500) NOT NULL,
   `texto` text NOT NULL,
-  `fecha alta` date NOT NULL,
+  `fecha_alta` datetime NOT NULL,
   `imagen` mediumblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `noticias`
+--
+
+INSERT INTO `noticias` (`id`, `titulo`, `descripcion`, `texto`, `fecha_alta`, `imagen`) VALUES
+(3, 'adawdawdawdawd', 'wwadwadadwawdawdawdawdaw', 'dawdawdwadadwawawdawwdawdaw', '2023-05-03 00:00:00', 0x4172726179),
+(4, 'awdhahdiwhaidhiwahdiajidjalwd', 'adkuawhduhawildhliawjdiljawkdja', 'aduawhkudkhdkuhawudhawukhdkuawd', '2023-05-03 00:00:00', 0x4172726179),
+(5, 'GHISTAIDNAHIWDJAWD', 'SOY MUY CAPOOOOOOOOOO', 'WAZA INSANOS ATACAN BERMUDA CON EL FIN DE CONQUISTAR CHAKALITAS FF', '2023-05-03 00:00:00', 0x4172726179),
+(6, 'RICARDO MARTINEZ', 'SOY BIPOLAR', 'NOSE PORQUE HAGO ESTO SI LA PAGA ES MALA', '2023-05-03 00:00:00', 0x4172726179),
+(7, 'prueba 1', 'es solo una prueba ', 'nada mas no joda', '2023-05-03 09:39:06', 0x4172726179),
+(8, 'prueba 2', 'ni modo segunda prueba', 'aahsauauwildwhawhiqd', '2023-05-03 09:39:44', 0x4172726179),
+(9, 'tercera prueba', 'porfavor matenme', 'no puedo creer que esto sea un huevo de pascua', '2023-05-03 09:40:30', 0x4172726179),
+(10, 'ESTO DEBE APARECER AL PRINCIPIO', 'nada', 'nada mas que decir', '2023-05-03 09:47:37', 0x4172726179);
 
 -- --------------------------------------------------------
 
@@ -124,11 +138,11 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `user_name`, `contra`, `email`, `rol`) VALUES
-(6, 'Anitaxx', '276b6c4692e78d4799c12ada515bc3e4', 'peluka1709@gmail.com', 3),
+(6, 'Anitaxx', '276b6c4692e78d4799c12ada515bc3e4', 'peluka1709@gmail.com', 1),
 (7, 'MikeNoble2905', 'e8494a1c9c7197508e5990872e417a0a', 'Mikemoble2905@gmail.com', 2),
-(9, 'laydo', '76d80224611fc919a5d54f0ff9fba446', 'parditop404@gmail.com', 1),
+(9, 'laydo', '76d80224611fc919a5d54f0ff9fba446', 'parditop404@gmail.com', 2),
 (10, 'pardo', '76d80224611fc919a5d54f0ff9fba446', 'qwe@gmail.com', 2),
-(11, 'weqe', '76d80224611fc919a5d54f0ff9fba446', 'er@gmail.com', 3);
+(11, 'weqe', '76d80224611fc919a5d54f0ff9fba446', 'er@gmail.com', 1);
 
 --
 -- Índices para tablas volcadas
@@ -178,7 +192,7 @@ ALTER TABLE `deportes`
 -- AUTO_INCREMENT de la tabla `noticias`
 --
 ALTER TABLE `noticias`
-  MODIFY `id` int(15) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(15) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `product`
