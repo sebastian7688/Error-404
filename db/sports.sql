@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-05-2023 a las 21:58:28
+-- Tiempo de generación: 05-05-2023 a las 02:42:58
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -84,20 +84,34 @@ INSERT INTO `noticias` (`id`, `titulo`, `descripcion`, `texto`, `fecha_alta`, `i
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `product`
+-- Estructura de tabla para la tabla `productos`
 --
 
-CREATE TABLE `product` (
-  `id` int(11) NOT NULL,
-  `product` varchar(100) NOT NULL
+CREATE TABLE `productos` (
+  `id` int(100) UNSIGNED NOT NULL,
+  `nombre_prod` varchar(150) NOT NULL,
+  `descripcion` varchar(250) NOT NULL,
+  `texto` text NOT NULL,
+  `id_deporte` int(100) NOT NULL,
+  `precio` int(100) NOT NULL,
+  `fecha_alta` datetime NOT NULL,
+  `id_usuario` int(100) NOT NULL,
+  `imagen` mediumblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `product`
+-- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `product` (`id`, `product`) VALUES
-(1, 'Fuchibol');
+INSERT INTO `productos` (`id`, `nombre_prod`, `descripcion`, `texto`, `id_deporte`, `precio`, `fecha_alta`, `id_usuario`, `imagen`) VALUES
+(11, 'Guantes de Boxeo', 'Guantes EverLast muy duraderos, nuevos y perfectos para hacer sparring', 'Guantes color blanco y negro, de la marca Everlast, son de 16 onzas perfectos para hacer sparring e incluye un bucal adicional', 1, 14000, '2023-05-05 01:50:56', 7, 0x4172726179),
+(12, 'Pelota de Voley', 'Pelota de voley', 'no hay mucho para decir', 2, 9000, '2023-05-05 01:52:23', 7, 0x4172726179),
+(13, 'Pelota de Spider Mar PRO', 'adawdwa', 'adwawdwad', 3, 4000, '2023-05-05 02:35:14', 7, 0x4172726179),
+(14, 'red de voley', 'waddawd', 'addwaadw', 2, 1200, '2023-05-05 02:36:20', 7, 0x4172726179),
+(15, 'Vendas Everlast', 'adwadawd', 'awdadwada', 1, 1200, '2023-05-05 02:37:15', 7, 0x4172726179),
+(16, 'Guantes Sporting', 'awddwa', 'awdadw', 3, 15000, '2023-05-05 02:38:53', 7, 0x4172726179),
+(17, 'Gafas de natacion PREMIUM ULTIMATUM', 'adwdad', 'adadwawd', 4, 16200, '2023-05-05 02:40:35', 7, 0x4172726179),
+(18, 'Botines de Hombre Araña muy PROS', 'adwadaw', 'awdawdwd', 3, 25600, '2023-05-05 02:42:27', 7, 0x4172726179);
 
 -- --------------------------------------------------------
 
@@ -161,9 +175,9 @@ ALTER TABLE `noticias`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `product`
+-- Indices de la tabla `productos`
 --
-ALTER TABLE `product`
+ALTER TABLE `productos`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -195,10 +209,10 @@ ALTER TABLE `noticias`
   MODIFY `id` int(15) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT de la tabla `product`
+-- AUTO_INCREMENT de la tabla `productos`
 --
-ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `productos`
+  MODIFY `id` int(100) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`

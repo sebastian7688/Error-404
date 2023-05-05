@@ -9,7 +9,7 @@
 <br>
 <div class="Body">
     <div class="Container">
-        <div align="center">
+        <div align="baseline">
             <h1>TIENDA</h1>
         </div>
         <main class="Main" style=" margin: 50px">
@@ -70,12 +70,15 @@
                     <button type="submit" class="btn btn-sm btn-info">
                         <span class="fa fa-filter" aria-hidden="true"></span> Filtrar.
                     </button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="misproductos"style="margin-left:100px margin-above:100px" class="btn btn-info"></i> Mis productos</a>&nbsp;&nbsp;
-                    <a href="micarrito"style="margin-left:100px margin-above:100px" class="btn btn-info"></i> Mi carrito</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="misproductos" style="margin-left:100px margin-above:100px" class="btn btn-info"></i> Mis productos</a>&nbsp;&nbsp;
+                        <a href="micarrito" style="margin-left:100px margin-above:100px" class="btn btn-info"></i> Mi carrito</a>&nbsp;&nbsp;
+                        <?php
+                        if (isset($_SESSION['usuario'])){
+                        ?>
+                            <a href="add_product_shop.php" style="margin-left:100px margin-above:100px" class="btn btn-info"></i> Añadir Producto</a>
+                        <?php }?>
+                    
                 </div>
             </form>
         </main>
@@ -85,151 +88,31 @@
 <div class="container-fluid pt-5 pb-3">
     <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3"> Productos en racha. </span></h2>
     <div class="row px-xl-5">
+        <?php foreach($productos_nuevos as $nuevos){ ?>
         <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
             <div class="product-item bg-light mb-4">
                 <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-1.jpg" alt="">
+
+                <?php
+                        if (file_exists('img/productos/' . $nuevos['id'] . '/principal.jpg')) { ?>
+                            <img class="card-img-top" height="200rem" src="img/productos/<?php echo $nuevos['id']; ?>/principal.jpg">
+                        <?php
+                        } ?>
+
                     <div class="product-action">
                         <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
                     </div>
                 </div>
                 <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href=""> Nombre de producto. </a>
+                    <a class="h6 text-decoration-none text-truncate" href=""> <?php echo $nuevos['nombre_prod']?> </a>
                     <div class="d-flex align-items-center justify-content-center mt-2">
-                        <h5>Precio</h5>
+                        <h5>$<?php echo $nuevos['precio']?></h5>
                         </h6>
-                    </div>
-
+                        </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-2.jpg" alt="">
-                    <div class="product-action">
-
-                        <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href=""> Nombre de producto. </a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <h5>Precio</h5>
-                        </h6>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-3.jpg" alt="">
-                    <div class="product-action">
-                        <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href=""> Nombre de producto.</a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <h5>Precio</h5>
-                        </h6>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-4.jpg" alt="">
-                    <div class="product-action">
-                        <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">Nombre de producto</a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <h5>Precio</h5>
-                        </h6>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-11.jpg" alt="">
-                    <div class="product-action">
-                        <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">Nombre de producto</a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <h5>Precio</h5>
-                        </h6>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
-                    <div class="product-action">
-                        <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">Nombre de producto</a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <h5>Precio</h5>
-                        </h6>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-7.jpg" alt="">
-                    <div class="product-action">
-                        <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">Nombre de producto</a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <h5>Precio</h5>
-                        </h6>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
-                    <div class="product-action">
-                        <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">Nombre de producto</a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <h5>Precio</h5>
-                        </h6>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+        <?php }?>
     </div>
 </div>
 <!-- Products End -->
@@ -238,11 +121,11 @@
 
 <!-- Offer Start -->
 <div class="container-fluid pt-5 pb-3">
-<div align="center">    
-<h1>OFERTAS</h1>
-</div>
-<br>
-<br>
+    <div align="center">
+        <h1>OFERTAS</h1>
+    </div>
+    <br>
+    <br>
     <div class="row px-xl-5">
         <div class="col-md-6">
             <div class="product-offer mb-30" style="height: 200px;">
