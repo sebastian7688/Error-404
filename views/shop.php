@@ -7,15 +7,27 @@
     </nav>
 </div>
 <br>
+<br>
 <div class="Body">
-    <div class="Container">
-        <div align="baseline">
-            <h1>TIENDA</h1>
+        <div class="rov">    <div align="baseline">
+            <h1 align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TIENDA</h1>
         </div>
         <main class="Main" style=" margin: 50px">
             <form action="/browse" method="get" style=" margin: 60px">
                 <div class="filters" style="margin-bottom: 20px;">
                     <span class="multiselect-native-select">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
                         <div class="btn-group">
                             <button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default" data-toggle="dropdown" title="None selected">
                                 <span class="multiselect-selected-text">
@@ -24,19 +36,19 @@
                                 <b class="caret"></b>
                             </button>
                             <ul class="multiselect-container genres-select dropdown-menu">
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="voley">Voley</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="artes-marciales">Artes Marciales</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="tenis">Tenis</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="ciclismo">Ciclismo</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="futbol">Futbol</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="basket">Basket</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="rugby">Rugby</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="boxeo">Boxeo</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="golf">Golf</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="natacion">Natacion</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="surf">Surf</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="pink ponk">Pink Ponk</label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="handbal">Handbal</label></a></li>
+                                <li> &nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="voley"> &nbsp;Voley</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="artes-marciales"> &nbsp;Artes Marciales</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="tenis">&nbsp;Tenis</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="ciclismo">&nbsp;Ciclismo</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="futbol">&nbsp;Futbol</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="basket">&nbsp;Basket</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="rugby">&nbsp;Rugby</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="boxeo">&nbsp;Boxeo</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="golf">&nbsp;Golf</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="natacion">&nbsp;Natacion</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="surf">&nbsp;Surf</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="pink ponk">&nbsp;Pink Ponk</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="handbal">&nbsp;Handbal</label></a></li>
 
                             </ul>
                         </div>
@@ -50,8 +62,8 @@
                                 <b class="caret"></b>
                             </button>
                             <ul class="multiselect-container year-select dropdown-menu">
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="mas nuevo"> Mas nuevo. </label></a></li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="mas viejo"> Mas viejo. </label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="mas nuevo"> Mas nuevo. </label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="mas viejo"> Mas viejo. </label></a></li>
                             </ul>
                         </div>
                     </span>
@@ -60,9 +72,9 @@
                                 <span class="multiselect-selected-text"><b>Precio:</b> Todos</span> <b class="caret"></b>
                             </button>
                             <ul class="multiselect-container dropdown-menu">
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="mayor precio"> Mayor precio. </label></a>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="mayor precio"> Mayor precio. </label></a>
                                 </li>
-                                <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="menor precio"> Menor precio. </label></a>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="menor precio"> Menor precio. </label></a>
                                 </li>
                             </ul>
                         </div>
