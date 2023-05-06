@@ -83,12 +83,12 @@
                         <span class="fa fa-filter" aria-hidden="true"></span> Filtrar.
                     </button>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="misproductos" style="margin-left:100px margin-above:100px" class="btn btn-info"></i> Mis productos</a>&nbsp;&nbsp;
-                        <a href="micarrito" style="margin-left:100px margin-above:100px" class="btn btn-info"></i> Mi carrito</a>&nbsp;&nbsp;
+                        <a href="misproductos" style="margin-left:100px margin-above:100px" class="btn btn-info"></i> Mis productos <i class="fa-solid fa-basket-shopping"></i></a>&nbsp;&nbsp;
+                        <a href="micarrito" style="margin-left:100px margin-above:100px" class="btn btn-info"></i> Mi carrito <i class="fa-solid fa-cart-shopping"></i></a>&nbsp;&nbsp;
                         <?php
                         if (isset($_SESSION['usuario'])){
                         ?>
-                            <a href="add_product_shop.php" style="margin-left:100px margin-above:100px" class="btn btn-info"></i> Añadir Producto</a>
+                            <a href="add_product_shop.php" style="margin-left:100px margin-above:100px" class="btn btn-info"></i> Añadir Producto <i class="fa-solid fa-plus"></i></a>
                         <?php }?>
                     
                 </div>

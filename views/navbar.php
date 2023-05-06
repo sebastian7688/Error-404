@@ -57,15 +57,15 @@
             </a>
             <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
                 <div class="navbar-nav w-100">
-                    <a href="" class="nav-item nav-link">Futbol</a>
-                    <a href="" class="nav-item nav-link">Voley</a>
-                    <a href="" class="nav-item nav-link">Basquet</a>
-                    <a href="" class="nav-item nav-link">Rugby</a>
-                    <a href="" class="nav-item nav-link">Boxeo</a>
-                    <a href="" class="nav-item nav-link">Golf</a>
-                    <a href="" class="nav-item nav-link">Natacion</a>
-                    <a href="" class="nav-item nav-link">Tenis</a>
-                    <a href="" class="nav-item nav-link">Surf</a>
+                    <a href="" class="nav-item nav-link">Futbol <i class="fa-solid fa-futbol"></i></a>
+                    <a href="" class="nav-item nav-link">Voley <i class="fa-solid fa-volleyball"></i></a>
+                    <a href="" class="nav-item nav-link">Basquet <i class="fa-solid fa-basketball"></i></a>
+                    <a href="" class="nav-item nav-link">Rugby <i class="fa-solid fa-football"></i></a>
+                    <a href="" class="nav-item nav-link">Boxeo <img src="img/home/boxing-glove.png" alt=""></a>
+                    <a href="" class="nav-item nav-link">Golf <i class="fa-solid fa-golf-ball-tee"></i></a>
+                    <a href="" class="nav-item nav-link">Natacion <i class="fa-solid fa-person-swimming"></i></a>
+                    <a href="" class="nav-item nav-link">Tenis <img src="img/home/tennis-ball.png" alt=""></a>
+                    <a href="" class="nav-item nav-link">Surf <img src="img/home/surf-board.png" alt=""></a>
                 </div>
             </nav>
         </div>
@@ -79,10 +79,10 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="index.php" class="nav-item nav-link text-white">Inicio</a>
-                        <a href="shop.php" class="nav-item nav-link text-white">Tienda</a>
-                        <a href="add_notices.php" class="nav-item nav-link text-white">Noticias</a>
-                        <a href="about_us.php" class="nav-item nav-link text-white">Acerca de Nosotros</a>
+                        <a href="index.php" class="nav-item nav-link text-white">Inicio <i class="fa-solid fa-house"></i></a>
+                        <a href="shop.php" class="nav-item nav-link text-white">Tienda <i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="add_notices.php" class="nav-item nav-link text-white">Noticias <i class="fa-solid fa-newspaper"></i></a>
+                        <a href="about_us.php" class="nav-item nav-link text-white">Acerca de Nosotros <i class="fa-solid fa-users"></i></a>
                     </div>
 
                 </div>
@@ -92,13 +92,13 @@
                 ?>
                     <!-- Esta Iniciado-->
                     <div class="nav-item dropdown col-lg-2">
-                        <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);" data-toggle="dropdown"><i class="user"></i> <?php echo $_SESSION['usuario']['user_name']; ?> </a>
+                        <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);" data-toggle="dropdown"><i class="user"></i> <?php echo $_SESSION['usuario']['user_name']; ?> <i class="fa-regular fa-circle-user"></i></a>
                         <div class="dropdown-menu  rounded-10 border-0 m-10" style="background-color:rgb(3 158 207);">
-                            <a href="my_perfil.php" class="dropdown-item">Mi perfil</a>
+                            <a href="my_perfil.php" class="dropdown-item"><i class="fa-solid fa-user-gear"></i> Mi perfil</a>
                             <?php if($_SESSION['usuario']['rol'] > 1){ ?>
-                                <a href="lista_usu.php" class="dropdown-item">Usuario</a>
+                                <a href="lista_usu.php" class="dropdown-item"><i class="fa-regular fa-address-book"></i> Usuarios</a>
                             <?php }?>
-                            <a href="logout.php" class="dropdown-item">Cerrar Sección </a>
+                            <a href="logout.php" class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i> Cerrar Sección </a>
                         </div>
                     </div>
                     <!-- Esta Iniciado-->
@@ -107,8 +107,8 @@
                     <div class="nav-item dropdown col-lg-2">
                         <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);" data-toggle="dropdown">Mi cuenta <i class="fa fa-angle-down mt-1"></i></a>
                         <div class="dropdown-menu  rounded-10 border-0 m-10" style="background-color:rgb(3 158 207);">
-                            <a href="login.php" class="dropdown-item">Iniciar sesión</a>
-                            <a href="register.php" class="dropdown-item">Registrarse</a>
+                            <a href="login.php" class="dropdown-item"><i class="fa-solid fa-user"></i> Iniciar sesión</a>
+                            <a href="register.php" class="dropdown-item"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
                         </div>
 
                     </div>
