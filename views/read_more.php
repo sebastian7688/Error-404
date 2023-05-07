@@ -1,5 +1,6 @@
-<head>
-
+<?php
+                if (isset($_SESSION)) {
+                ?>
 
 
 
@@ -20,41 +21,9 @@
 
 
 
-    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-        WebFont.load({
-            google: {
-                families: ["Open Sans:300,400,500,600,700,800", "Open Sans:300,400,500,600,700,800", "Open Sans:300,400,500,600,700,800"]
-            }
-        });
-    </script>
+   
 
-    <style>
-        body {
-            font-family: 'Open Sans' !important;
-        }
-
-        .page-header,
-        h2 {
-            font-family: 'Open Sans' !important;
-        }
-
-
-
-        p,
-        .caption h4,
-        label,
-        table,
-        .panel,
-        #contactpage>h2.success,
-        #contactpage h2.error {
-            font-size: 14px !important;
-        }
-
-        h2 {
-            font-size: 30px !important;
-        }
-    </style>
+    
 
 
 
@@ -69,18 +38,7 @@
 
 
 
-</head>
-
-<body>
-    <!--[if lt IE 8]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Navigation -->
-
-
-    <!-- Page Content -->
-
+ 
 
 
 
@@ -304,11 +262,7 @@
 
 
                 </form>
-                <script>
-                    $('#product-sharing a').click(function () {
-                        return !window.open(this.href, 'Share', 'width=640,height=300');
-                    });
-                </script>
+               
 
 
             </div>
@@ -333,113 +287,7 @@
     </script>
 
 
-    <script>
-        var callbackFunction = function (event, productInfo) {
-            // if productInfo is not emtpy or null
-            if (!$.isEmptyObject(productInfo)) {
-
-                if (productInfo.image != '') {
-                    $('.carousel-inner .active img').attr('src', productInfo.image).attr('srcset', productInfo.image);
-                }
-
-
-
-                //update stock
-                if ((productInfo.stock == 0 && productInfo.stock_unlimited == false) || productInfo.status == 'not-available') {
-
-                    $('.product-out-stock').removeClass('hidden');
-                    $('.product-available').addClass('hidden');
-                    $('.product-unavailable').addClass('hidden');
-                    $('#stock').html('');
-                    $('#stock').hide();
-                }
-                else {
-                    $('.product-available').removeClass('hidden');
-                    $('.product-out-stock').addClass('hidden');
-                    $('.product-unavailable').addClass('hidden');
-
-                    if (productInfo.stock_unlimited == false && productInfo.stock > 0) {
-                        $('#stock').html(' <label class="col-sm-3 col-md-3 form-control-label">Stock:</label><div class="col-sm-8 col-md-9"><span class="product-form-stock">' + productInfo.stock + '</span></div>');
-                        $('#stock').show();
-                        // if there is no discount
-                    }
-                    else {
-                        $('#stock').html('');
-                        $('#stock').hide();
-                    }
-                }
-
-                if (productInfo.discount == 0) {
-                    // update price
-                    $('#product-form-price').text(productInfo.price_formatted);
-                }
-                else {
-                    // update price with discount
-                    $('#product-form-price').text(productInfo.price_discount_formatted);
-
-                    // update price
-                    $('#product-form-discount').text('(' + productInfo.price_formatted + ')');
-                }
-
-
-            }
-        };
-
-        $(document).ready(function () {
-            Jumpseller.productVariantListener(".qty-select select", { product: '[{"variant":{"id":2478881,"product_id":224300,"position":0,"price":100000.0,"sku":"","barcode":null,"weight":1.0,"stock":0,"stock_unlimited":true,"image_id":14896546,"store_id":15996},"image":"https://cdnx.jumpseller.com/bootstrap/image/14896546/grey-bamboo.jpg?1614272621","image_id":14896546,"price":100000.0,"price_formatted":"$100.000","status":"available","price_discount_formatted":"$100.000","discount":0.0,"attachments":[],"custom_fields":{"89747":{"id":89747}},"values":[{"value":{"id":687718,"name":"Grey","option":206919}}]},{"variant":{"id":2478882,"product_id":224300,"position":0,"price":105015.0,"sku":"","barcode":null,"weight":1.0,"stock":100,"stock_unlimited":true,"image_id":429444,"store_id":15996},"image":"https://cdnx.jumpseller.com/bootstrap/image/429444/Wacom_Bamboo2.JPG?1614272621","image_id":429444,"price":105015.0,"price_formatted":"$105.015","status":"available","price_discount_formatted":"$105.015","discount":0.0,"attachments":[],"custom_fields":{"89747":{"id":89747}},"values":[{"value":{"id":687719,"name":"Black","option":206919}}]}]', callback: callbackFunction });
-            selectInitialStock();
-            checkUploads();
-        });
-
-        function checkUploads() {
-            var file_inputs = Array.from(document.getElementsByClassName("product_option_value_file_upload"));
-            var total_size = 0;
-            var inputs_sizes;
-            (inputs_sizes = []).length = file_inputs.length;
-            inputs_sizes.fill(0);
-            for (let file of file_inputs) {
-                file.onchange = function () {
-                    var index = file_inputs.indexOf(file);
-                    inputs_sizes[index] = this.files[0].size;
-                    total_size = inputs_sizes.reduce((a, b) => a + b, 0)
-                    var input_filename = document.getElementById(this.id + "_filename");
-                    if (total_size > 10485760) {
-                        alert("The sum of the size of the selected files must be lower than 10MB.");
-                        inputs_sizes[index] = 0;
-                        this.value = "";
-                        input_filename.value = "";
-                    } else {
-                        input_filename.value = this.files[0].name;
-                    }
-                }
-            }
-        }
-
-
-        function selectInitialStock() {
-            var productInfo = [{ "variant": { "id": 2478881, "product_id": 224300, "position": 0, "price": 100000.0, "sku": "", "barcode": null, "weight": 1.0, "stock": 0, "stock_unlimited": true, "image_id": 14896546, "store_id": 15996 }, "image": "https://cdnx.jumpseller.com/bootstrap/image/14896546/grey-bamboo.jpg?1614272621", "image_id": 14896546, "price": 100000.0, "price_formatted": "$100.000", "status": "available", "price_discount_formatted": "$100.000", "discount": 0.0, "attachments": [], "custom_fields": { "89747": { "id": 89747 } }, "values": [{ "value": { "id": 687718, "name": "Grey", "option": 206919 } }] }, { "variant": { "id": 2478882, "product_id": 224300, "position": 0, "price": 105015.0, "sku": "", "barcode": null, "weight": 1.0, "stock": 100, "stock_unlimited": true, "image_id": 429444, "store_id": 15996 }, "image": "https://cdnx.jumpseller.com/bootstrap/image/429444/Wacom_Bamboo2.JPG?1614272621", "image_id": 429444, "price": 105015.0, "price_formatted": "$105.015", "status": "available", "price_discount_formatted": "$105.015", "discount": 0.0, "attachments": [], "custom_fields": { "89747": { "id": 89747 } }, "values": [{ "value": { "id": 687719, "name": "Black", "option": 206919 } }] }];
-            for (let item of productInfo) {
-                let variant = item.variant;
-                let options = item.values;
-                let stockFound = false;
-                if (variant.stock != 0 || variant.stock_unlimited) {
-                    for (let option of options) {
-                        let flag = false;
-
-                        if ($('.variables select option[data-variant-id="' + variant.id + '"').length > 0) {
-                            $('.variables select option[data-variant-id="' + variant.id + '"').prop('selected', true).trigger('change');
-
-                            flag = true;
-                            stockFound = true;
-                        }
-                        if (flag) { continue; }
-                    }
-                    if (stockFound) { return; }
-                }
-            }
-        }
-    </script>
-
+   
 
 
 
@@ -465,35 +313,4 @@
 
     </div>
 
-    <!-- /.container -->
-
-    <!-- Css -->
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate Tooltips -->
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-            $('.carousel').carousel()
-        })
-    </script>
-
-    <script src="//cdn.jsdelivr.net/bootstrap.filestyle/1.1.0/js/bootstrap-filestyle.min.js"></script>
-    <script src="https://assets.jumpseller.com/store/bootstrap/themes/382017/main.js?1619113824"></script>
-
-
-
-
-
-
-
-
-</body>
-
-</html>
+    <?php }?>

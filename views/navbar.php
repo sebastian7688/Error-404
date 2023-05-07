@@ -83,6 +83,7 @@
                         <a href="shop.php" class="nav-item nav-link text-white">Tienda <i class="fa-solid fa-cart-shopping"></i></a>
                         <a href="add_notices.php" class="nav-item nav-link text-white">Noticias <i class="fa-solid fa-newspaper"></i></a>
                         <a href="about_us.php" class="nav-item nav-link text-white">Acerca de Nosotros <i class="fa-solid fa-users"></i></a>
+
                     </div>
 
                 </div>
