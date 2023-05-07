@@ -1,6 +1,4 @@
-<?php 
-require_once "views/navbar.php";
-require_once "views/read_more.php";
-require_once "views/footer.php";
-
+<?php
+$section = "views/read_more";
+require_once "views/layout.php";
 ?>

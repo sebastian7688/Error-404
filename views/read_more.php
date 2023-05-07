@@ -1,25 +1,24 @@
 <head>
-    
 
 
 
 
-    
 
 
 
 
-  
+
+
+
 
     <script src="//assets.jumpseller.com/public/jquery-3.3.1.min.js"></script>
 
-    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  
 
 
 
 
-    
+
+
 
     <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
@@ -40,7 +39,7 @@
             font-family: 'Open Sans' !important;
         }
 
-        
+
 
         p,
         .caption h4,
@@ -55,14 +54,10 @@
         h2 {
             font-size: 30px !important;
         }
-
-       
-
-        
     </style>
 
 
-    
+
 
 
 
@@ -82,11 +77,11 @@
     <![endif]-->
 
     <!-- Navigation -->
-    
+
 
     <!-- Page Content -->
 
-    
+
 
 
     <div class="container">
@@ -208,17 +203,17 @@
 
 
 
-                   
+
                     <div class="form-group product-stock product-available row visible">
                         <label class="col-sm-3 col-md-3 form-control-label"></label>
                         <div class="col-sm-8 col-sm-offset-3 col-md-9 col-md-offset-3">
 
 
-                            <input type="submit" class="adc btn btn-primary" value="Añadir al carro de la compra" />
+                            <input type="submit" class="btn text-dark" style="background-color:rgb(3 158 207);"value="Añadir al carro de la compra" />
 
 
 
-                  
+
                         </div>
                     </div>
 
@@ -457,10 +452,11 @@
                 <div class="col-12 col-md-6 order-2 order-md-1">
                     <p class="powered-by">&copy; 2023 Proyecto 2, derechos reservados para Pardito. <a
                             href='https://jumpseller.cl/?utm_medium=store&utm_campaign=powered_by&utm_source=bootstrap'
-                            title='Create Online Store' target='_blank' rel='nofollow'>Desarrollado por Parditos, tenemos las mas ricos alfajores</a>.</p>
+                            title='Create Online Store' target='_blank' rel='nofollow'>Desarrollado por Parditos,
+                            tenemos las mas ricos alfajores</a>.</p>
                 </div>
                 <div class="col-12 col-md-6 order-1 order-md-2">
-                    
+
 
                 </div>
 

@@ -1,13 +1,12 @@
 body {
-    background: #fff; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100%;
+    
 }
 
 .modal-lg { 
-    max-width: 80% !important; 
+    max-width: 100% !important; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -16,18 +15,13 @@ body {
 .container-title {
     color: #0382aa;
     text-align: center;
-    font-size: 75px;
 }
 
 h1 {
     animation: mover-izq 2s;
 }
 
-@keyframes mover-izq{
-    from{
-        transform: translateX(-1000px);
-    }
-}
+
 
 h2 {
     font-size: 50px;
@@ -43,7 +37,6 @@ p {
     margin-right: 150px;
     overflow: hidden;
     padding: 25px ;
-    color: #fff;  
     animation: mover-der 2s;
     text-justify: auto;
     background: #0382aa;
@@ -67,9 +60,7 @@ p {
     }
 }
 
-.h2_about_1 {
-    color: #fff;
-}
+
 
 .h2_about_2 {
     text-align: right;
@@ -78,11 +69,7 @@ p {
 
 /* seccion tarjetas */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .box-1{
     margin: 10px ;

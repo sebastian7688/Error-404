@@ -1,8 +1,7 @@
 <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a></li>
-            <li class="breadcrumb-item"><a href="shop.php" class="link-info" style="text-decoration: none;">Tienda</a></li>
-            <li class="breadcrumb-item"><a href="add_notices.php" class="link-info" style="text-decoration: none;">Noticias</a></li>
+
             <li class="breadcrumb-item active" aria-current="page"><a class="link-dark" style="text-decoration: none;">Sobre Nosotros</a></li>
             
         </ol>
@@ -16,12 +15,12 @@
 <section class="container-section">
     <div class="us">
         <div class="us-paragrahp_1">
-            <h2 class="h2_about_1">¿Quienes somos?</h2>
-            <p class="paragrahp-text">Somos un grupo de jóvenes con una meta, lograr una buena página web sobre deportes
+            <h2 class="h2_about_1" style="color:rgb(255 255 255);">¿Quienes somos?</h2>
+            <p class="paragrahp-text"style="color:rgb(255 255 255);"> Somos un grupo de jóvenes con una meta, lograr una buena página web sobre deportes
                 y lo que esta incluye, con algunas cosas extra que nosotros creemos que les va a gustar.</p>
         </div>
         <div class="us-paragrahp_2">
-            <h2 class="h2_about_2">¿Que hacemos?</h2>
+            <h2 class="h2_about_2" >¿Que hacemos?</h2>
             <p class="paragrahp-text">En esta página web de deportes los servicios que ofrecemos son:<br>
             <ol>- Sitios/Puntos que tengan que ver con los deportes, ¿A que nos referimos con esto? pues a que ofrecemos
                 un mapa de las zonas <br>más importantes o mas buscadas sobre deportes, esta contiene:</ol>
@@ -44,8 +43,8 @@
             </ol>
         </div>
         <div class="us-paragrahp_1">
-            <h2 class="h2_about_1">¿Por qué lo hacemos?</h2>
-            <p class="paragrahp-text">Lo hacemos para aumentar el conocimiento sobre los deportes. Nos parece una linda
+            <h2 class="h2_about_1"style="color:rgb(255 255 255);">¿Por qué lo hacemos?</h2>
+            <p class="paragrahp-text"style="color:rgb(255 255 255);">Lo hacemos para aumentar el conocimiento sobre los deportes. Nos parece una linda
                 idea que los jóvenes de hoy se culturicen con el deporte o se fascinen con ella, y esperamos que gracias
                 a la información que brindamos se inspiren para poder hacer o practicar el deporte que desean y también
                 que puedan realizar salidas recreativas con amigos o familiares.
@@ -813,3 +812,4 @@
         <hr>
     </div>
 </section>
+
