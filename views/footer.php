@@ -4,19 +4,20 @@
             <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
                 <h5 class="text-secondary text-uppercase mb-4"> Ponerse en contacto. </h5>
                 <p class="mb-4"> Ayudenos a mejorar su experiencia en el sitio web </p>
-                <p class="mb-2"><i class="fa fa-map-marker-alt mr-3"></i> Av. Jujuy 255, C1083 CABA. </p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt mr-3"></i> Las Achiras, Villa Celina, Provincia de Buenos Aires</p>
                 <p class="mb-2"><i class="fa fa-envelope  mr-3"></i> sebastianpardo583@example.com </p>
                 <p class="mb-0"><i class="fa fa-phone-alt  mr-3"></i> +54 11 39341477 </p>
             </div>
             <div class="col-lg-8 col-md-12">
                 <div class="row">
                     
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-secondary text-uppercase mb-4"> Mi cuenta </h5>
+                    <div class="col-md-4 mb-4">
+                    <a href="my_perfil.php"  class="text-secondary text-uppercase mb-4" >Mi perfil</a><br>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="index.php"><i class="fa fa-angle-right mr-2"></i> Casa. </a>
-                            <a class="text-secondary mb-2" href="shop.php"><i class="fa fa-angle-right mr-2"></i> Tienda. </a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Noticias. </a>
+                            <br>
+                            <a class="text-secondary mb-2" href="index.php"><i class="fa fa-angle-right mr-2"></i> Inicio </a>
+                            <a class="text-secondary mb-2" href="shop.php"><i class="fa fa-angle-right mr-2"></i> Tienda </a>
+                            <a class="text-secondary mb-2" href="shop.php"><i class="fa fa-angle-right mr-2"></i> Noticias </a>
                         
                             <a class="text-secondary" href="mailto:sebastianpardo583@gmail.com"><i class="fa fa-angle-right mr-2"></i>Contactenos</a>
                           
@@ -30,8 +31,11 @@
                             <div class="input-group">
                                 
                                 <div class="input-group-append">
-                                    <button class="btn text-dark" style="background-color:rgb(127, 0, 178);"><a href="register.php" class="text-dark">Sign Up</a></button>
-                                </div>
+                                <?php
+                if (!isset($_SESSION)) {
+                ?>
+                                   <button class="btn text-dark" style="background-color:rgb(127, 0, 178);"><a href="register.php" class="text-dark">Sign Up</a></button>
+                               <?php } ?> </div>
                             </div>
                         </form>
                         <h6 class="text-secondary text-uppercase mt-4 mb-3">Siganos</h6>
