@@ -140,7 +140,7 @@
                                                     </p>
                                                 </div>
 
-                                                <p class="text-muted mb-0">&nbsp;&nbsp; 6 </p>
+                                                <p class="text-muted mb-0">&nbsp;&nbsp; 10 </p>
 
                                             </div>
 
@@ -150,7 +150,7 @@
                                                         Trabajado:</p>
                                                 </div>
 
-                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;15 horas </p>
+                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;26 horas </p>
 
                                             </div>
                                         </div>
@@ -264,7 +264,7 @@
                                                     </p>
                                                 </div>
 
-                                                <p class="text-muted mb-0">&nbsp;&nbsp; 5 </p>
+                                                <p class="text-muted mb-0">&nbsp;&nbsp; 6 </p>
 
                                             </div>
 
@@ -274,7 +274,7 @@
                                                         Trabajado:</p>
                                                 </div>
 
-                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;9 horas </p>
+                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;15 horas </p>
 
                                             </div>
                                         </div>
@@ -388,7 +388,7 @@
                                                     </p>
                                                 </div>
 
-                                                <p class="text-muted mb-0">&nbsp;&nbsp; 1 </p>
+                                                <p class="text-muted mb-0">&nbsp;&nbsp; 2 </p>
 
                                             </div>
 
@@ -398,7 +398,7 @@
                                                         Trabajado:</p>
                                                 </div>
 
-                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;1 horas </p>
+                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;3 horas </p>
 
                                             </div>
                                         </div>
@@ -512,7 +512,7 @@
                                                     </p>
                                                 </div>
 
-                                                <p class="text-muted mb-0">&nbsp;&nbsp; 4 </p>
+                                                <p class="text-muted mb-0">&nbsp;&nbsp; 7 </p>
 
                                             </div>
                                             
@@ -523,7 +523,7 @@
                                                         Trabajado:</p>
                                                 </div>
 
-                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;4 horas y media </p>
+                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;10 </p>
 
                                             </div>
                                         </div>
@@ -638,7 +638,7 @@
                                                     </p>
                                                 </div>
 
-                                                <p class="text-muted mb-0">&nbsp;&nbsp; 8 </p>
+                                                <p class="text-muted mb-0">&nbsp;&nbsp; 12</p>
 
                                             </div>
 
@@ -648,7 +648,7 @@
                                                         Trabajado:</p>
                                                 </div>
 
-                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;7 horas </p>
+                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;12 horas </p>
 
                                             </div>
                                         </div>
@@ -762,7 +762,7 @@
                                                     </p>
                                                 </div>
 
-                                                <p class="text-muted mb-0">&nbsp;&nbsp; 3 </p>
+                                                <p class="text-muted mb-0">&nbsp;&nbsp; 4</p>
 
                                             </div>
 
@@ -772,7 +772,7 @@
                                                         Trabajado:</p>
                                                 </div>
 
-                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;2 horas </p>
+                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;4 horas </p>
 
                                             </div>
                                         </div>
