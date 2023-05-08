@@ -32,16 +32,19 @@
     </div>
 </div>
 <div class="col-lg-4  text-left" >
-            <form action=""style='text-align:right'>
+            <!--<form Method =POST action="seeker.php"style='text-align:right'>
                 <div class="input-group">
-                    <input type="text" algin="text-left" class="form-control" placeholder="Buscar Productos">
+                    <input type="text" algin="text-left" class="form-control" name="busqueda"placeholder="Buscar Productos">
                     <div class="input-group-append">
                         <span class="input-group-text bg-transparent text-primary">
                             <i class="fa fa-search" style="color:rgb(3, 130, 170);"></i>
                         </span>
                     </div>
                 </div>
-            </form>
+            </form>-->
+            <FORM METHOD=POST ACTION="wewi_wawo.php">
+  Buscar: <INPUT TYPE="text" NAME="busqueda">
+</FORM>
         </div>
         <br>
 <!-- Topbar End -->
@@ -57,15 +60,15 @@
             </a>
             <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
                 <div class="navbar-nav w-100">
-                    <a href="" class="nav-item nav-link">Futbol <i class="fa-solid fa-futbol"></i></a>
-                    <a href="" class="nav-item nav-link">Voley <i class="fa-solid fa-volleyball"></i></a>
-                    <a href="" class="nav-item nav-link">Basquet <i class="fa-solid fa-basketball"></i></a>
-                    <a href="" class="nav-item nav-link">Rugby <i class="fa-solid fa-football"></i></a>
-                    <a href="" class="nav-item nav-link">Boxeo <img src="img/home/boxing-glove.png" alt=""></a>
-                    <a href="" class="nav-item nav-link">Golf <i class="fa-solid fa-golf-ball-tee"></i></a>
-                    <a href="" class="nav-item nav-link">Natacion <i class="fa-solid fa-person-swimming"></i></a>
-                    <a href="" class="nav-item nav-link">Tenis <img src="img/home/tennis-ball.png" alt=""></a>
-                    <a href="" class="nav-item nav-link">Surf <img src="img/home/surf-board.png" alt=""></a>
+                    <a href="" class="nav-item nav-link"><i class="fa-solid fa-futbol"></i> Futbol </a>
+                    <a href="" class="nav-item nav-link"><i class="fa-solid fa-volleyball"></i> Voley </a>
+                    <a href="" class="nav-item nav-link"><i class="fa-solid fa-basketball"></i> Basquet </a>
+                    <a href="" class="nav-item nav-link"><i class="fa-solid fa-football"></i> Rugby </a>
+                    <a href="" class="nav-item nav-link"><img src="img/home/boxing-glove.png" alt=""> Boxeo </a>
+                    <a href="" class="nav-item nav-link"><i class="fa-solid fa-golf-ball-tee"></i> Golf </a>
+                    <a href="" class="nav-item nav-link"><i class="fa-solid fa-person-swimming"></i> Natacion </a>
+                    <a href="" class="nav-item nav-link"><img src="img/home/tennis-ball.png" alt=""> Tenis </a>
+                    <a href="" class="nav-item nav-link"><img src="img/home/surf-board.png" alt=""> Surf </a>
                 </div>
             </nav>
         </div>
@@ -79,10 +82,10 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="index.php" class="nav-item nav-link text-white">Inicio <i class="fa-solid fa-house"></i></a>
-                        <a href="shop.php" class="nav-item nav-link text-white">Tienda <i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href="add_notices.php" class="nav-item nav-link text-white">Noticias <i class="fa-solid fa-newspaper"></i></a>
-                        <a href="about_us.php" class="nav-item nav-link text-white">Acerca de Nosotros <i class="fa-solid fa-users"></i></a>
+                        <a href="index.php" class="nav-item nav-link text-white"><i class="fa-solid fa-house"></i> Inicio </a>
+                        <a href="shop.php" class="nav-item nav-link text-white"><i class="fa-solid fa-cart-shopping"></i> Tienda </a>
+                        <a href="add_notices.php" class="nav-item nav-link text-white"><i class="fa-solid fa-newspaper"></i> Noticias </a>
+                        <a href="about_us.php" class="nav-item nav-link text-white"><i class="fa-solid fa-users"></i> Acerca de Nosotros </a>
 
                     </div>
 
@@ -93,7 +96,7 @@
                 ?>
                     <!-- Esta Iniciado-->
                     <div class="nav-item dropdown col-lg-2">
-                        <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);" data-toggle="dropdown"><i class="user"></i> <?php echo $_SESSION['usuario']['user_name']; ?> <i class="fa-regular fa-circle-user"></i></a>
+                        <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);" data-toggle="dropdown"><i class="user"></i> <i class="fa-regular fa-circle-user"></i> <?php echo $_SESSION['usuario']['user_name']; ?> </a>
                         <div class="dropdown-menu  rounded-10 border-0 m-10" style="background-color:rgb(3 158 207);">
                             <a href="my_perfil.php" class="dropdown-item"><i class="fa-solid fa-user-gear"></i> Mi perfil</a>
                             <?php if($_SESSION['usuario']['rol'] > 1){ ?>
