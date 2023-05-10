@@ -28,13 +28,13 @@
             </a>
         </div>
         <br>
-        
+
     </div>
 </div>
-<div class="col-lg-4  text-left" >
-            <!--<form Method =POST action="seeker.php"style='text-align:right'>
+<div class="col-lg-4  text-left">
+    <!--<form Method =POST action="seeker.php"style='text-align:right'>
                 <div class="input-group">
-                    <input type="text" algin="text-left" class="form-control" name="busqueda"placeholder="Buscar Productos">
+                    <input type="text" algin="text-left"  algin="text-left" name="busqueda"placeholder="Buscar Productos">
                     <div class="input-group-append">
                         <span class="input-group-text bg-transparent text-primary">
                             <i class="fa fa-search" style="color:rgb(3, 130, 170);"></i>
@@ -42,11 +42,18 @@
                     </div>
                 </div>
             </form>-->
-            <FORM METHOD=POST ACTION="wewi_wawo.php">
-  Buscar: <INPUT TYPE="text" NAME="busqueda">
-</FORM>
+    <FORM METHOD=POST ACTION="wewi_wawo.php"  placeholder="Buscar Productos" style='text-align:right'>
+        <div class="input-group">
+            <INPUT TYPE="text" NAME="busqueda"placeholder="Buscar Productos"size="30">
+            <div class="input-group-append">
+                <span class="input-group-text bg-transparent text-primary">
+                    <i class="fa fa-search" style="color:rgb(3, 130, 170);"></i>
+                </span>
+            </div>
         </div>
-        <br>
+    </FORM>
+</div>
+<br>
 <!-- Topbar End -->
 
 
@@ -54,11 +61,14 @@
 <div class="container-fluid bg-dark mb-30 ">
     <div class="row xl-2">
         <div class="col-lg-3 ">
-            <a class="btn d-flex  justify-content-between  " style="background-color:rgb(3, 130, 170);" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; padding: 0 30px; " style="background-color:rgb(3, 130, 170);">
+            <a class="btn d-flex  justify-content-between  " style="background-color:rgb(3, 130, 170);"
+                data-toggle="collapse" href="#navbar-vertical" style="height: 65px; padding: 0 30px; "
+                style="background-color:rgb(3, 130, 170);">
                 <h6 class="text-dark md-10"><i class="fa fa-bars mr-2"></i>Categories</h6>
                 <i class="fa fa-angle-down text-dark"></i>
             </a>
-            <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
+            <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light"
+                id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
                 <div class="navbar-nav w-100">
                     <a href="" class="nav-item nav-link"><i class="fa-solid fa-futbol"></i> Futbol </a>
                     <a href="" class="nav-item nav-link"><i class="fa-solid fa-volleyball"></i> Voley </a>
@@ -82,10 +92,14 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="index.php" class="nav-item nav-link text-white"><i class="fa-solid fa-house"></i> Inicio </a>
-                        <a href="shop.php" class="nav-item nav-link text-white"><i class="fa-solid fa-cart-shopping"></i> Tienda </a>
-                        <a href="add_notices.php" class="nav-item nav-link text-white"><i class="fa-solid fa-newspaper"></i> Noticias </a>
-                        <a href="about_us.php" class="nav-item nav-link text-white"><i class="fa-solid fa-users"></i> Acerca de Nosotros </a>
+                        <a href="index.php" class="nav-item nav-link text-white"><i class="fa-solid fa-house"></i>
+                            Inicio </a>
+                        <a href="shop.php" class="nav-item nav-link text-white"><i
+                                class="fa-solid fa-cart-shopping"></i> Tienda </a>
+                        <a href="add_notices.php" class="nav-item nav-link text-white"><i
+                                class="fa-solid fa-newspaper"></i> Noticias </a>
+                        <a href="about_us.php" class="nav-item nav-link text-white"><i class="fa-solid fa-users"></i>
+                            Acerca de Nosotros </a>
 
                     </div>
 
@@ -93,26 +107,34 @@
 
                 <?php
                 if (isset($_SESSION['usuario'])) {
-                ?>
+                    ?>
                     <!-- Esta Iniciado-->
                     <div class="nav-item dropdown col-lg-2">
-                        <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);" data-toggle="dropdown"><i class="user"></i> <i class="fa-regular fa-circle-user"></i> <?php echo $_SESSION['usuario']['user_name']; ?> </a>
+                        <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);"
+                            data-toggle="dropdown"><i class="user"></i> <i class="fa-regular fa-circle-user"></i>
+                            <?php echo $_SESSION['usuario']['user_name']; ?>
+                        </a>
                         <div class="dropdown-menu  rounded-10 border-0 m-10" style="background-color:rgb(3 158 207);">
-                            <a href="my_perfil.php" class="dropdown-item"><i class="fa-solid fa-user-gear"></i> Mi perfil</a>
-                            <?php if($_SESSION['usuario']['rol'] > 1){ ?>
-                                <a href="lista_usu.php" class="dropdown-item"><i class="fa-regular fa-address-book"></i> Usuarios</a>
-                            <?php }?>
-                            <a href="logout.php" class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i> Cerrar Sección </a>
+                            <a href="my_perfil.php" class="dropdown-item"><i class="fa-solid fa-user-gear"></i> Mi
+                                perfil</a>
+                            <?php if ($_SESSION['usuario']['rol'] > 1) { ?>
+                                <a href="lista_usu.php" class="dropdown-item"><i class="fa-regular fa-address-book"></i>
+                                    Usuarios</a>
+                            <?php } ?>
+                            <a href="logout.php" class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i> Cerrar
+                                Sección </a>
                         </div>
                     </div>
                     <!-- Esta Iniciado-->
                     <!-- No esta Iniciado-->
                 <?php } else { ?>
                     <div class="nav-item dropdown col-lg-2">
-                        <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);" data-toggle="dropdown">Mi cuenta <i class="fa fa-angle-down mt-1"></i></a>
+                        <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);"
+                            data-toggle="dropdown">Mi cuenta <i class="fa fa-angle-down mt-1"></i></a>
                         <div class="dropdown-menu  rounded-10 border-0 m-10" style="background-color:rgb(3 158 207);">
                             <a href="login.php" class="dropdown-item"><i class="fa-solid fa-user"></i> Iniciar sesión</a>
-                            <a href="register.php" class="dropdown-item"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
+                            <a href="register.php" class="dropdown-item"><i class="fa-solid fa-user-plus"></i>
+                                Registrarse</a>
                         </div>
 
                     </div>
