@@ -31,7 +31,7 @@
 
     </div>
 </div>
-<div class="col-lg-4  text-left">
+<div style="margin: -15px; float:right; margin-right: 3%;" class="col-lg-4  text-left">
     <!--<form Method =POST action="seeker.php"style='text-align:right'>
                 <div class="input-group">
                     <input type="text" algin="text-left"  algin="text-left" name="busqueda"placeholder="Buscar Productos">
