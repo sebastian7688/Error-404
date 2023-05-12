@@ -24,7 +24,7 @@
           <div class="user-datos">
             <p>Nombre de usuario: <?php echo $_SESSION['usuario']['user_name']; ?></p>
             <p>Email: <?php echo $_SESSION['usuario']['email']; ?></p>
-            <button type="botton" class="boton-editar">Editar <i class="fa-solid fa-pen-to-square"></i></button>
+            <button type="botton" class="boton-editar"><i class="fa-solid fa-pen-to-square"></i> Editar</button>
           </div>
         </div>
     </div>
