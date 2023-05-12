@@ -1,13 +1,15 @@
-<nav aria-label="breadcrumb">
+<div class="container">
+    <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a></li>
-
-            <li class="breadcrumb-item active" aria-current="page"><a class="link-dark" style="text-decoration: none;">Sobre Nosotros</a></li>
-            
+            <li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page"><a class="link-dark" style="text-decoration: none;">Sobre Nosotros</a>
+            </li>
         </ol>
     </nav>
+</div>
 <link rel="stylesheet" href="css/about_us.css">
-<br><br>
+<br>
 
 <div>
     <h1 class="container-title">Sobre nosotros</h1>
@@ -16,11 +18,11 @@
     <div class="us">
         <div class="us-paragrahp_1">
             <h2 class="h2_about_1" style="color:rgb(255 255 255);">¿Quienes somos?</h2>
-            <p class="paragrahp-text"style="color:rgb(255 255 255);"> Somos un grupo de jóvenes con una meta, lograr una buena página web sobre deportes
+            <p class="paragrahp-text" style="color:rgb(255 255 255);"> Somos un grupo de jóvenes con una meta, lograr una buena página web sobre deportes
                 y lo que esta incluye, con algunas cosas extra que nosotros creemos que les va a gustar.</p>
         </div>
         <div class="us-paragrahp_2">
-            <h2 class="h2_about_2" >¿Que hacemos?</h2>
+            <h2 class="h2_about_2">¿Que hacemos?</h2>
             <p class="paragrahp-text">En esta página web de deportes los servicios que ofrecemos son:<br>
             <ol>- Sitios/Puntos que tengan que ver con los deportes, ¿A que nos referimos con esto? pues a que ofrecemos
                 un mapa de las zonas <br>más importantes o mas buscadas sobre deportes, esta contiene:</ol>
@@ -43,8 +45,8 @@
             </ol>
         </div>
         <div class="us-paragrahp_1">
-            <h2 class="h2_about_1"style="color:rgb(255 255 255);">¿Por qué lo hacemos?</h2>
-            <p class="paragrahp-text"style="color:rgb(255 255 255);">Lo hacemos para aumentar el conocimiento sobre los deportes. Nos parece una linda
+            <h2 class="h2_about_1" style="color:rgb(255 255 255);">¿Por qué lo hacemos?</h2>
+            <p class="paragrahp-text" style="color:rgb(255 255 255);">Lo hacemos para aumentar el conocimiento sobre los deportes. Nos parece una linda
                 idea que los jóvenes de hoy se culturicen con el deporte o se fascinen con ella, y esperamos que gracias
                 a la información que brindamos se inspiren para poder hacer o practicar el deporte que desean y también
                 que puedan realizar salidas recreativas con amigos o familiares.
@@ -65,8 +67,7 @@
     <div class="card_p">
         <div class="card_name">
             <img alt="">
-            <img class="rounded-circle" src="img/group/seba.jpg" alt=""
-                style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
+            <img class="rounded-circle" src="img/group/seba.jpg" alt="" style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
 
             <h2>Sebastían</h2>
             <p>Proyect Manager</p>
@@ -84,22 +85,13 @@
                             <div class="col-lg-4">
                                 <div class="card mb-4" style="border: 1px  solid 223,223,223 ;">
                                     <div class="card-body text-center">
-                                        <img id="demo" class="rounded-circle border border-2 border-dark team-item"
-                                            type="button" data-bs-toggle="modal" data-bs-target="#img"
-                                            src="img/group/seba.jpg" id="foto"
-                                            style="width: 200px; height: 200px; object-fit:cover; background-color:white;"
-                                            data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
+                                        <img id="demo" class="rounded-circle border border-2 border-dark team-item" type="button" data-bs-toggle="modal" data-bs-target="#img" src="img/group/seba.jpg" id="foto" style="width: 200px; height: 200px; object-fit:cover; background-color:white;" data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
 
-                                        <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img"
-                                            data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                                 <div class="modal-content team-item border-2 border-primary">
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                    <img align="center" type="button" data-bs-toggle="modal"
-                                                        data-bs-target="#img" src="img/group/seba.jpg" id="foto"
-                                                        style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <img align="center" type="button" data-bs-toggle="modal" data-bs-target="#img" src="img/group/seba.jpg" id="foto" style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
                                                     <br><a style="color:black;">Archivo: Nombre de foto </a>
                                                     <div class="modal-body">
                                                         <br>
@@ -124,16 +116,16 @@
                                             <div class="row">
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
-                                                
+
                                             </div>
                                             <div class="row">
-                                                   <div>
-                                                        <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo Electronico:</p>
-                                                    </div>
-
-                                                    <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;sebastianpardo583@gmail.com </p>
-
+                                                <div>
+                                                    <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo Electronico:</p>
                                                 </div>
+
+                                                <p class="text-muted mb-0">&nbsp;&nbsp;&nbsp;&nbsp;sebastianpardo583@gmail.com </p>
+
+                                            </div>
                                             <div class="row">
                                                 <div>
                                                     <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tareas Hechas:
@@ -188,8 +180,7 @@
     <div class="card_p">
         <div class="card_name">
             <img alt="">
-            <img class="rounded-circle" src="img/group/eve.jpg" alt=""
-                style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
+            <img class="rounded-circle" src="img/group/eve.jpg" alt="" style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
 
             <h2>Evelyn</h2>
             <p>Diseñadora</p>
@@ -206,21 +197,12 @@
                             <div class="col-lg-4">
                                 <div class="card mb-4" style="border: 1px  solid 223,223,223 ;">
                                     <div class="card-body text-center">
-                                        <img id="demo" class="rounded-circle border border-2 border-dark team-item"
-                                            type="button" data-bs-toggle="modal" data-bs-target="#img"
-                                            src="img/group/eve.jpg" id="foto"
-                                            style="width: 200px; height: 200px; object-fit:cover; background-color:white;"
-                                            data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
-                                        <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img"
-                                            data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <img id="demo" class="rounded-circle border border-2 border-dark team-item" type="button" data-bs-toggle="modal" data-bs-target="#img" src="img/group/eve.jpg" id="foto" style="width: 200px; height: 200px; object-fit:cover; background-color:white;" data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
+                                        <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                                 <div class="modal-content team-item border-2 border-primary">
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                    <img align="center" type="button" data-bs-toggle="modal"
-                                                        data-bs-target="#img" src="foto" id="foto"
-                                                        style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <img align="center" type="button" data-bs-toggle="modal" data-bs-target="#img" src="foto" id="foto" style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
                                                     <br><a style="color:black;">Archivo: NOmbre de foto </a>
                                                     <div class="modal-body">
                                                         <br>
@@ -245,19 +227,19 @@
                                             <div class="row">
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
-                                                
+
                                             </div>
                                             <div class="row">
-                                                    <div>
-                                                        <p class="mb-0">
-                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
-                                                            Electronico:</p>
-                                                    </div>
-
-                                                    <p class="text-muted mb-0">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;evelyn2night3@gmail.com </p>
-
+                                                <div>
+                                                    <p class="mb-0">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
+                                                        Electronico:</p>
                                                 </div>
+
+                                                <p class="text-muted mb-0">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;evelyn2night3@gmail.com </p>
+
+                                            </div>
                                             <div class="row">
                                                 <div>
                                                     <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tareas Hechas:
@@ -313,8 +295,7 @@
     <div class="card_p">
         <div class="card_name">
             <img alt="">
-            <img class="rounded-circle" src="img/group/lu.jpg" alt=""
-                style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
+            <img class="rounded-circle" src="img/group/lu.jpg" alt="" style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
 
             <h2>Lucio</h2>
             <p>Programador</p>
@@ -330,21 +311,12 @@
                             <div class="col-lg-4">
                                 <div class="card mb-4" style="border: 1px  solid 223,223,223 ;">
                                     <div class="card-body text-center">
-                                        <img id="demo" class="rounded-circle border border-2 border-dark team-item"
-                                            type="button" data-bs-toggle="modal" data-bs-target="#img"
-                                            src="img/group/lu.jpg" id="foto"
-                                            style="width: 200px; height: 200px; object-fit:cover; background-color:white;"
-                                            data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
-                                        <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img"
-                                            data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <img id="demo" class="rounded-circle border border-2 border-dark team-item" type="button" data-bs-toggle="modal" data-bs-target="#img" src="img/group/lu.jpg" id="foto" style="width: 200px; height: 200px; object-fit:cover; background-color:white;" data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
+                                        <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                                 <div class="modal-content team-item border-2 border-primary">
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                    <img align="center" type="button" data-bs-toggle="modal"
-                                                        data-bs-target="#img" src="foto" id="foto"
-                                                        style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <img align="center" type="button" data-bs-toggle="modal" data-bs-target="#img" src="foto" id="foto" style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
                                                     <br><a style="color:black;">Archivo: NOmbre de foto </a>
                                                     <div class="modal-body">
                                                         <br>
@@ -369,19 +341,19 @@
                                             <div class="row">
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
-                                                
+
                                             </div>
                                             <div class="row">
-                                                    <div>
-                                                        <p class="mb-0">
-                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
-                                                            Electronico:</p>
-                                                    </div>
-
-                                                    <p class="text-muted mb-0">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;luchito14567@gmail.com </p>
-
+                                                <div>
+                                                    <p class="mb-0">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
+                                                        Electronico:</p>
                                                 </div>
+
+                                                <p class="text-muted mb-0">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;luchito14567@gmail.com </p>
+
+                                            </div>
                                             <div class="row">
                                                 <div>
                                                     <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tareas Hechas:
@@ -437,8 +409,7 @@
     <div class="card_p">
         <div class="card_name">
             <img alt="">
-            <img class="rounded-circle" src="img/group/ima.jpg" alt=""
-                style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
+            <img class="rounded-circle" src="img/group/ima.jpg" alt="" style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
 
             <h2>Leandro</h2>
             <p>Diseñador</p>
@@ -454,21 +425,12 @@
                             <div class="col-lg-4">
                                 <div class="card mb-4" style="border: 1px  solid 223,223,223 ;">
                                     <div class="card-body text-center">
-                                        <img id="demo" class="rounded-circle border border-2 border-dark team-item"
-                                            type="button" data-bs-toggle="modal" data-bs-target="#img"
-                                            src="img/group/ima.jpg" id="foto"
-                                            style="width: 200px; height: 200px; object-fit:cover; background-color:white;"
-                                            data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
-                                        <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img"
-                                            data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <img id="demo" class="rounded-circle border border-2 border-dark team-item" type="button" data-bs-toggle="modal" data-bs-target="#img" src="img/group/ima.jpg" id="foto" style="width: 200px; height: 200px; object-fit:cover; background-color:white;" data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
+                                        <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                                 <div class="modal-content team-item border-2 border-primary">
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                    <img align="center" type="button" data-bs-toggle="modal"
-                                                        data-bs-target="#img" src="foto" id="foto"
-                                                        style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <img align="center" type="button" data-bs-toggle="modal" data-bs-target="#img" src="foto" id="foto" style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
                                                     <br><a style="color:black;">Archivo: NOmbre de foto </a>
                                                     <div class="modal-body">
                                                         <br>
@@ -493,19 +455,19 @@
                                             <div class="row">
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
-                                                
+
                                             </div>
                                             <div class="row">
-                                                    <div>
-                                                        <p class="mb-0">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo     
-                                                            Electronico:</p>
-                                                    </div>
-
-                                                    <p class="text-muted mb-0">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;matigom13@gmail.com </p>
-
+                                                <div>
+                                                    <p class="mb-0">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
+                                                        Electronico:</p>
                                                 </div>
+
+                                                <p class="text-muted mb-0">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;matigom13@gmail.com </p>
+
+                                            </div>
                                             <div class="row">
                                                 <div>
                                                     <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tareas Hechas:
@@ -515,7 +477,7 @@
                                                 <p class="text-muted mb-0">&nbsp;&nbsp; 7 </p>
 
                                             </div>
-                                            
+
 
                                             <div class="row">
                                                 <div>
@@ -562,8 +524,7 @@
     <div class="card_p">
         <div class="card_name">
             <img alt="">
-            <img class="rounded-circle" src="img/group/mike.jpg" alt=""
-                style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
+            <img class="rounded-circle" src="img/group/mike.jpg" alt="" style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
 
             <h2>Joaquin</h2>
             <p>Analista de Sistemas</p>
@@ -579,21 +540,12 @@
                             <div class="col-lg-4">
                                 <div class="card mb-4" style="border: 1px  solid 223,223,223 ;">
                                     <div class="card-body text-center">
-                                        <img id="demo" class="rounded-circle border border-2 border-dark team-item"
-                                            type="button" data-bs-toggle="modal" data-bs-target="#img"
-                                            src="img/group/mike.jpg" id="foto"
-                                            style="width: 200px; height: 200px; object-fit:cover; background-color:white;"
-                                            data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
-                                        <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img"
-                                            data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <img id="demo" class="rounded-circle border border-2 border-dark team-item" type="button" data-bs-toggle="modal" data-bs-target="#img" src="img/group/mike.jpg" id="foto" style="width: 200px; height: 200px; object-fit:cover; background-color:white;" data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
+                                        <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                                 <div class="modal-content team-item border-2 border-primary">
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                    <img align="center" type="button" data-bs-toggle="modal"
-                                                        data-bs-target="#img" src="foto" id="foto"
-                                                        style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <img align="center" type="button" data-bs-toggle="modal" data-bs-target="#img" src="foto" id="foto" style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
                                                     <br><a style="color:black;">Archivo: NOmbre de foto </a>
                                                     <div class="modal-body">
                                                         <br>
@@ -618,19 +570,19 @@
                                             <div class="row">
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
-                                                
+
                                             </div>
                                             <div class="row">
-                                                    <div>
-                                                        <p class="mb-0">
-                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
-                                                            Electronico:</p>
-                                                    </div>
-
-                                                    <p class="text-muted mb-0">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;mikemoble2905@gmail.com </p>
-
+                                                <div>
+                                                    <p class="mb-0">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
+                                                        Electronico:</p>
                                                 </div>
+
+                                                <p class="text-muted mb-0">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;mikemoble2905@gmail.com </p>
+
+                                            </div>
 
                                             <div class="row">
                                                 <div>
@@ -686,8 +638,7 @@
     <div class="card_p">
         <div class="card_name">
             <img alt="">
-            <img class="rounded-circle" src="img/group/mat.png" alt=""
-                style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
+            <img class="rounded-circle" src="img/group/mat.png" alt="" style="width: 200px; height: 200px; object-fit:cover; background-color:white;" align="center">
 
             <h2>Matias</h2>
             <p>Programador</p>
@@ -695,29 +646,19 @@
         <hr>
         <div class="card_desc">
             <button class="box-1" type="button" data-toggle="modal" data-target="#ota"> Descripcion</button>
-            <div class="modal fade margin-left" id="ota" tabindex="-6" role="dialog" aria-labelledby="ota"
-                aria-hidden="true">
+            <div class="modal fade margin-left" id="ota" tabindex="-6" role="dialog" aria-labelledby="ota" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg margin-left" role="document">
                     <div class="modal-content margin-left p-5  border" style="background-color:rgb(3 158 207);">
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="card mb-4" style="border: 1px  solid 223,223,223 ;">
                                     <div class="card-body text-center">
-                                        <img id="demo" class="rounded-circle border border-2 border-dark team-item"
-                                            type="button" data-bs-toggle="modal" data-bs-target="#img"
-                                            src="img/group/mat.png" id="foto"
-                                            style="width: 200px; height: 200px; object-fit:cover; background-color:white;"
-                                            data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
-                                        <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img"
-                                            data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <img id="demo" class="rounded-circle border border-2 border-dark team-item" type="button" data-bs-toggle="modal" data-bs-target="#img" src="img/group/mat.png" id="foto" style="width: 200px; height: 200px; object-fit:cover; background-color:white;" data-bs-toggle="tooltip" data-placement="bottom" title="Ver imagen">
+                                        <div class="modal fade fadeInUp" data-wow-delay="0.01s" id="img" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                                 <div class="modal-content team-item border-2 border-primary">
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                    <img align="center" type="button" data-bs-toggle="modal"
-                                                        data-bs-target="#img" src="foto" id="foto"
-                                                        style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <img align="center" type="button" data-bs-toggle="modal" data-bs-target="#img" src="foto" id="foto" style="object-fit:cover; background-color:white; margin-left:25px;margin-right:25px;">
                                                     <br><a style="color:black;">Archivo: NOmbre de foto </a>
                                                     <div class="modal-body">
                                                         <br>
@@ -742,19 +683,19 @@
                                             <div class="row">
                                                 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informacion del Integrante:<br></h4>
                                                 <br><br>
-                                                
+
                                             </div>
                                             <div class="row">
-                                                    <div>
-                                                        <p class="mb-0">
-                                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
-                                                            Electronico:</p>
-                                                    </div>
-
-                                                    <p class="text-muted mb-0">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;matiasotamendi26@gmail.com </p>
-
+                                                <div>
+                                                    <p class="mb-0">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo
+                                                        Electronico:</p>
                                                 </div>
+
+                                                <p class="text-muted mb-0">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;matiasotamendi26@gmail.com </p>
+
+                                            </div>
 
                                             <div class="row">
                                                 <div>
@@ -803,13 +744,12 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
             </div>
         </div>
         <hr>
     </div>
 </section>
-
