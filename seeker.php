@@ -44,7 +44,7 @@ if ($busqueda <> '') {
                     <h4>ㅤResultados de la busqueda "
                         <?php echo $busqueda; ?>"
                     </h4>
-                    <h2><span><a href="index.php" data-toggle="tooltip" data-placement="top" title="Eliminar búsqueda"> <i
+                    <h2><span><a href="shop.php" data-toggle="tooltip" data-placement="top" title="Eliminar búsqueda"> <i
                                     class="fa-solid fa-circle-xmark" style="color:maroon; margin-top:0.5%;"></i></a></span>
                     </h2>
                 </div>

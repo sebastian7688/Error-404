@@ -9,7 +9,8 @@
            
         </ol>
     </nav>
-   
+</div>
+<div class="container">   
     <form class="add" action="" method="post" enctype="multipart/form-data">
         <h1 class="titulo_1">Agregar noticia</h1>
         <div class="input-container">
