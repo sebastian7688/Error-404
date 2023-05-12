@@ -119,3 +119,23 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media(max-width: 400px){
+
+    .perfil-user .user-desc h3{
+        font-size: 40px;
+    }
+    .perfil-user .user-desc p {
+        font-size: 18px;
+    }
+    .perfil-user .user-datos p{
+        font-size: 18px;
+    }
+    .perfil-user .user-datos .boton-editar{
+        width: 45%;
+        font-size: 15px;
+        padding: 15px 20px;
+    } 
+
+}
+
