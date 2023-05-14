@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="utf-8">
     <title>Always Sporting</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -9,8 +10,10 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
+    <link href="css/seeker.css" rel="stylesheet">
 
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="lib/animates/SuperTux.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="css/naruto.css" rel="stylesheet">
@@ -92,12 +95,15 @@
                         </div>
                     </div>
                 </div>
+
                 <?php
                 if (isset($_SESSION['usuario'])) {
                     ?>
                     <!-- Esta Iniciado-->
                     <div class="nav-item dropdown col-lg-2">
-                        <a href="#" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='gray'"class="nav-link text-dark dropdown-toggle" data-toggle="dropdown"><i class="fa-regular fa-circle-user"></i>
+                        <a href="#" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='gray'"
+                            class="nav-link text-dark dropdown-toggle" data-toggle="dropdown"><i
+                                class="fa-regular fa-circle-user"></i>
                             <?php echo $_SESSION['usuario']['user_name']; ?>
                         </a>
                         <div class="dropdown-menu rounded-0 m-0">
@@ -120,4 +126,3 @@
             </div>
         </nav>
     </div>
-          

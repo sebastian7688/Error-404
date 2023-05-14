@@ -8,24 +8,30 @@
 
 $busqueda = $_POST['busqueda'];
 // DEBO PREPARAR LOS TEXTOS QUE VOY A BUSCAR si la cadena existe
-if ($busqueda <> '') {
+if ($busqueda <> '  ') {
     //CUENTA EL NUMERO DE PALABRAS
     $trozos = explode(" ", $busqueda);
     $numero = count($trozos);
     if ($numero == 1) {
         //SI SOLO HAY UNA PALABRA DE BUSQUEDA SE ESTABLECE UNA INSTRUCION CON LIKE
         $cadbusca = "SELECT id, nombre_prod, imagen, precio FROM productos WHERE nombre_prod LIKE '$busqueda%' ";
-    }    else{
+    } else if ($busqueda == '') {
         $cadbusca = "SELECT id,nombre_prod,imagen,precio FROM `productos` WHERE 1;";
 
+    } else if ($busqueda == ' ') {
+        $cadbusca = "SELECT id,nombre_prod,imagen,precio FROM `productos` WHERE 1;";
     }
 
     $result = mysqli_query($conn, $cadbusca);
     $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
     ?>
+
+    <link href="css/style.css" rel="stylesheet">
+
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="breadcrumb-item"><a href="index.php" class="link-info"
+                    style="text-decoration: none;">Inicio</a>
             </li>
             <li class="breadcrumb-item active" href="shop.php" aria-current="page"><a class="link-dark"
                     style="text-decoration: none;">Tienda</a></li>
@@ -51,14 +57,23 @@ if ($busqueda <> '') {
             </div>
         </div>
         <br>
-                        
+
         <div class="row px-xl-5">
+            <?php $x = 0;
+            foreach ($row as $rowss) {
+                $x++;
+            }
+            echo "<h2>Productos Encontrados:", $x, " </h2><br>"; ?>
+
+            
+            </div>
+            <br>
+            <div class="row px-xl-5">
             <?php foreach ($row as $rows) { ?>
-        
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-                        
+
                             <?php
                             $i = $rows['id'];
                             if (file_exists('img/productos/' . $i . '/principal.jpg')) { ?>
