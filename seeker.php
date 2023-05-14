@@ -27,6 +27,7 @@ if ($busqueda <> '  ') {
     ?>
 
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/shop.css">
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -45,9 +46,9 @@ if ($busqueda <> '  ') {
             <h1 align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TIENDA</h1><br>
         </div>
         <div class="col-lg-8">
-            <div class="modal-content" style="border:2px solid darkgrey; border-radius: 25px; height:65px;">
+            <div class="modal-content" style="border:2px solid darkgrey; border-radius: 100px; height:75px;">
                 <div class="modal-header border-0">
-                    <h4>ㅤResultados de la busqueda "
+                    <h4>Resultados de la busqueda: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
                         <?php echo $busqueda; ?>"
                     </h4>
                     <h2><span><a href="shop.php" data-toggle="tooltip" data-placement="top" title="Eliminar búsqueda"> <i
@@ -63,48 +64,75 @@ if ($busqueda <> '  ') {
             foreach ($row as $rowss) {
                 $x++;
             }
-            echo "<h2>Productos Encontrados:", $x, " </h2><br>"; ?>
+            echo "<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Productos Encontrados:", $x, " </h2><br>"; ?>
 
             
             </div>
             <br>
             <div class="row px-xl-5">
-            <?php foreach ($row as $rows) { ?>
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                    <div class="product-item bg-light mb-4">
-                        <div class="product-img position-relative overflow-hidden">
+        <?php foreach ($row as $nuevos) { ?>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-5">
+                <div class="product-item bg-light mb-4">
+                    <div class="product-img position-relative overflow-hidden">
 
+                        <?php
+                        if (file_exists('img/productos/' . $nuevos['id'] . '/principal.jpg')) { ?>
+                            <img class="card-img-top" style="width:90%; height:60%;"
+                                src="img/productos/<?php echo $nuevos['id']; ?>/principal.jpg">
                             <?php
-                            $i = $rows['id'];
-                            if (file_exists('img/productos/' . $i . '/principal.jpg')) { ?>
-                                <img class="card-img-top" height="200rem"
-                                    src="img/productos/<?php echo $rows['id']; ?>/principal.jpg">
-                                <?php
-                            } ?>
+                        } ?>
 
-                            <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);"
-                                    style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="">
-                                <?php echo $rows['nombre_prod'] ?>
-                            </a>
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h5>$
-                                    <?php echo $rows['precio'] ?>
-                                </h5>
-                                </h6>
-                            </div>
+                        <div class="product-action">
+                            <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);"
+                                style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
+
+                    <div class="text-center py-4">
+                        <a class="h6 text-decoration-none text-truncate" href="">
+                            <?php echo $nuevos['nombre_prod'] ?>
+
+                            <div align="center" &nbsp;&nbsp;>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>
+                                    <i class="fa-solid fa-heart" style="color:red;"></i> </a></div>
+                        </a>
+
+                        <div class="d-flex align-items-center justify-content-center mt-2">
+                            <h5>$
+                                <?php echo $nuevos['precio'] ?>
+                            </h5>
+                            </h6>
+                        </div>
+                        <div align="center">
+                            <FONT COLOR="#15b83b">20% Descuento</FONT>
+                        </div>
+                    </div>
+                    <div align="center">
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5"><!--
+    --><label for="radio1">★</label><!--
+    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+    --><label for="radio2">★</label><!--
+    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+    --><label for="radio3">★</label><!--
+    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+    --><label for="radio4">★</label><!--
+    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+    --><label for="radio5">★</label>
+                            </p>
+                        </form>
+                    </div>
+
                 </div>
-
-
-
-            <?php }
-}
+            </div>
+        <?php } ?>
+    </div>
+<?php }
 
 ?>
     </div>

@@ -1,12 +1,14 @@
 <link rel="stylesheet" href="css/my_perfil.css">
 <link href="css/style.css" rel="stylesheet">
-
+<script src="js/cargar.js"></script>
 <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a class="link-dark" style="text-decoration: none;">Perfil</a></li>
-            </ol>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page"><a class="link-dark"
+                    style="text-decoration: none;">Perfil</a></li>
+        </ol>
     </nav>
 </div>
 
@@ -17,19 +19,35 @@
                 <img src="img/group/user.png" alt="imagen portada">
                 <button type="button" class="boton-avatar"><i class="fa-solid fa-image"></i></button>
             </div>
-        </div>    
+        </div>
     </div>
     <div class="user-body">
         <div class="user-desc">
-            <h3 class="titulo"><?php echo $_SESSION['usuario']['user_name']; ?></h3>
+            <h3 class="titulo">
+                <?php echo $_SESSION['usuario']['user_name']; ?>
+            </h3>
             <p>Descripción </p>
         </div>
         <div class="user-info">
-          <div class="user-datos">
-            <p>Nombre de usuario: <?php echo $_SESSION['usuario']['user_name']; ?></p>
-            <p>Email: <?php echo $_SESSION['usuario']['email']; ?></p>
-            <button type="botton" class="boton-editar"><i class="fa-solid fa-pen-to-square"></i> Editar</button>
-          </div>
+            <div class="user-datos">
+                <p>Nombre de usuario:
+                    <?php echo $_SESSION['usuario']['user_name']; ?>
+                </p>
+                <p>Email:
+                    <?php echo $_SESSION['usuario']['email']; ?>
+                </p>
+                <button type="botton" class="boton-editar"><i class="fa-solid fa-pen-to-square"></i> Editar</button>
+            </div>
         </div>
     </div>
 </section>
+<div class="container">
+    <div class="row" style="margin-bottom:30px;">
+        <div class="col-2"><button onclick="env_c('usuarios')" class="btn btn-success"
+                style="width:94%; margin-left:3%;">Usuarios</button>
+        </div>
+        <div class="col-2"><button onclick="env_c('noticias')" class="btn btn-success"
+                style="width:94%; margin-left:3%;">Noticias</button>
+        </div>
+    </div>
+</div>

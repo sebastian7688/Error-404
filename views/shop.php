@@ -1,11 +1,11 @@
-
 <link href="css/style.css" rel="stylesheet">
 <div class="container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page"><a class="link-dark" style="text-decoration: none;">Tienda</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a class="link-dark"
+                    style="text-decoration: none;">Tienda</a></li>
         </ol>
     </nav>
     <link rel="stylesheet" href="css/shop.css">
@@ -16,7 +16,9 @@
 <div class="Body">
     <div class="rov">
         <div align="baseline">
-            <h1 align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TIENDA</h1>
+            <h1 align="left">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TIENDA
+            </h1>
         </div>
         <main class="Main" style=" margin: 50px">
             <form action="/browse" method="get" style=" margin: 60px">
@@ -28,7 +30,8 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                         <div class="btn-group">
-                            <button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default" data-toggle="dropdown" title="None selected">
+                            <button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default"
+                                data-toggle="dropdown" title="None selected">
                                 <span class="multiselect-selected-text">
                                     <b>Deportes:</b> Todos
                                 </span>
@@ -37,44 +40,64 @@
                             <ul class="multiselect-container genres-select dropdown-menu">
                                 <li> &nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="voley">
                                             &nbsp;Voley</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="artes-marciales"> &nbsp;Artes Marciales</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="tenis">&nbsp;Tenis</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="ciclismo">&nbsp;Ciclismo</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="futbol">&nbsp;Futbol</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="basket">&nbsp;Basket</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="rugby">&nbsp;Rugby</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="boxeo">&nbsp;Boxeo</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="golf">&nbsp;Golf</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="natacion">&nbsp;Natacion</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="surf">&nbsp;Surf</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="pink ponk">&nbsp;Pink Ponk</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="handbal">&nbsp;Handbal</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="artes-marciales"> &nbsp;Artes Marciales</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="tenis">&nbsp;Tenis</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="ciclismo">&nbsp;Ciclismo</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="futbol">&nbsp;Futbol</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="basket">&nbsp;Basket</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="rugby">&nbsp;Rugby</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="boxeo">&nbsp;Boxeo</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="golf">&nbsp;Golf</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="natacion">&nbsp;Natacion</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="surf">&nbsp;Surf</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="pink ponk">&nbsp;Pink Ponk</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="handbal">&nbsp;Handbal</label></a></li>
 
                             </ul>
                         </div>
                     </span>
                     <span class="multiselect-native-select">
                         <div class="btn-group">
-                            <button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default" data-toggle="dropdown" title="None selected">
+                            <button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default"
+                                data-toggle="dropdown" title="None selected">
                                 <span class="multiselect-selected-text">
                                     <b>Año:</b> Todos
                                 </span>
                                 <b class="caret"></b>
                             </button>
                             <ul class="multiselect-container year-select dropdown-menu">
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" name="xd" value="mas nuevo"> Nuevo a viejo </label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" name="xd" value="mas viejo"> Viejo a nuevo </label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" name="xd"
+                                                value="mas nuevo"> Nuevo a viejo </label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" name="xd"
+                                                value="mas viejo"> Viejo a nuevo </label></a></li>
                             </ul>
                         </div>
                     </span>
                     <span class="multiselect-native-select">
-                        <div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default" data-toggle="dropdown" title="None selected">
-                                <span class="multiselect-selected-text"><b>Precio:</b> Todos</span> <b class="caret"></b>
+                        <div class="btn-group"><button type="button"
+                                class="multiselect dropdown-toggle btn btn-sm btn-default" data-toggle="dropdown"
+                                title="None selected">
+                                <span class="multiselect-selected-text"><b>Precio:</b> Todos</span> <b
+                                    class="caret"></b>
                             </button>
                             <ul class="multiselect-container dropdown-menu">
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="mayor precio"> Mayor a menor </label></a>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="mayor precio"> Mayor a menor </label></a>
                                 </li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox" value="menor precio"> Menor a mayor </label></a>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"><input type="checkbox"
+                                                value="menor precio"> Menor a mayor </label></a>
                                 </li>
                             </ul>
                         </div>
@@ -83,12 +106,15 @@
                         <span class="fa fa-filter" aria-hidden="true"></span> Filtrar.
                     </button>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="misproductos" style="margin-left:100px margin-above=100px" class="btn btn-info"></i><i class="fa-solid fa-basket-shopping"></i> Mis productos </a>&nbsp;&nbsp;
-                    <a href="micarrito" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> <i class="fa-solid fa-cart-shopping"></i> Mi carrito </a>&nbsp;&nbsp;
+                    <a href="misproductos" style="margin-left:100px margin-above=100px" class="btn btn-info"></i><i
+                            class="fa-solid fa-basket-shopping"></i> Mis productos </a>&nbsp;&nbsp;
+                    <a href="micarrito" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> <i
+                            class="fa-solid fa-cart-shopping"></i> Mi carrito </a>&nbsp;&nbsp;
                     <?php
                     if (isset($_SESSION['usuario'])) {
-                    ?>
-                        <a href="add_product_shop.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> Añadir Producto <i class="fa-solid fa-plus"></i></a>
+                        ?>
+                        <a href="add_product_shop.php" style="margin-left:100px margin-above=100px"
+                            class="btn btn-info"></i> Añadir Producto <i class="fa-solid fa-plus"></i></a>
                     <?php } ?>
 
                 </div>
@@ -99,64 +125,69 @@
 <form action="wewi_wawo.php" method="post">
     <div class="container">
         <style>
-body,html{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: White !important;
-    }
-    .searchbar{
-    margin-bottom: auto;
-    margin-top: auto;
-    height: 60px;
-    background-color: #353b48;
-    border-radius: 30px;
-    padding: 10px;
-    }
-    .search_input{
-    color: white;
-    border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    caret-color:transparent;
-    line-height: 40px;
-    transition: width 0.4s linear;
-    }
-    .searchbar:hover > .search_input{
-        bottom: -20px;
-    padding: 0 10px;
-    /*height: 100;*/
-    width: 450px;
-    caret-color:Deepskyblue;
-    transition: width 0.4s linear;
-    }
-    .searchbar:hover > .search_icon{
-    background: white;
-    color: Deepskyblue;
-    }
-    .search_icon{
-    height: 40px;
-    width: 40px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color:white;
-    text-decoration:none;
-    }
-    
-</style>
-      <div class="d-flex justify-content-center">
-        <div class="searchbar">
-          <input class="search_input" type="text" name="busqueda" placeholder="Search...">
-          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+            body,
+            html {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                background: White !important;
+            }
+
+            .searchbar {
+                margin-bottom: auto;
+                margin-top: auto;
+                height: 60px;
+                background-color: #353b48;
+                border-radius: 30px;
+                padding: 10px;
+            }
+
+            .search_input {
+                color: white;
+                border: 0;
+                outline: 0;
+                background: none;
+                width: 0;
+                caret-color: transparent;
+                line-height: 40px;
+                transition: width 0.4s linear;
+            }
+
+            .searchbar:hover>.search_input {
+                bottom: -20px;
+                padding: 0 10px;
+                /*height: 100;*/
+                width: 450px;
+                caret-color: Deepskyblue;
+                transition: width 0.4s linear;
+            }
+
+            .searchbar:hover>.search_icon {
+                background: white;
+                color: Deepskyblue;
+            }
+
+            .search_icon {
+                height: 40px;
+                width: 40px;
+                float: right;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                color: white;
+                text-decoration: none;
+            }
+        </style>
+        <div class="d-flex justify-content-center">
+            <div class="searchbar">
+                <input class="search_input" type="text" name="busqueda" placeholder="Search...">
+                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+            </div>
         </div>
-      </div>
     </div>
-    </form>
+</form>
 <!-- Products Start -->
 <div class="container-fluid pt-5 pb-3">
     <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3"> Productos
@@ -169,40 +200,44 @@ body,html{
 
                         <?php
                         if (file_exists('img/productos/' . $nuevos['id'] . '/principal.jpg')) { ?>
-                            <img class="card-img-top" style="width:90%; height:60%;" src="img/productos/<?php echo $nuevos['id']; ?>/principal.jpg">
-                        <?php
+                            <img class="card-img-top" style="width:90%; height:60%;"
+                                src="img/productos/<?php echo $nuevos['id']; ?>/principal.jpg">
+                            <?php
                         } ?>
 
                         <div class="product-action">
-                            <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
+                            <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);"
+                                style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="text-center py-4">
                         <a class="h6 text-decoration-none text-truncate" href="">
                             <?php echo $nuevos['nombre_prod'] ?>
-                        
-                       <div align="center"&nbsp;&nbsp; >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>
-                        <i class="fa-solid fa-heart" style="color:red;"></i> </a></div>
+
+                            <div align="center" &nbsp;&nbsp;>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>
+                                    <i class="fa-solid fa-heart" style="color:red;"></i> </a></div>
                         </a>
-                        
+
                         <div class="d-flex align-items-center justify-content-center mt-2">
                             <h5>$
                                 <?php echo $nuevos['precio'] ?>
                             </h5>
                             </h6>
                         </div>
-                       <div align="center"><FONT COLOR="#15b83b">20% Descuento</FONT>
-                       </div>
+                        <div align="center">
+                            <FONT COLOR="#15b83b">20% Descuento</FONT>
+                        </div>
                     </div>
-                    <div  align="center">
-                    <form>
-  <p class="clasificacion">
-    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                    <div align="center">
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5"><!--
     --><label for="radio1">★</label><!--
     --><input id="radio2" type="radio" name="estrellas" value="4"><!--
     --><label for="radio2">★</label><!--
@@ -212,8 +247,9 @@ body,html{
     --><label for="radio4">★</label><!--
     --><input id="radio5" type="radio" name="estrellas" value="1"><!--
     --><label for="radio5">★</label>
-  </p>
-</form></div>
+                            </p>
+                        </form>
+                    </div>
 
                 </div>
             </div>
