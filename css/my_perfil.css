@@ -111,12 +111,12 @@
 
 .perfil-user .user-datos .boton-editar {
     border: none;
-    width: 15%;
+    width: 100px;
     color: white;
     font-size: 18px;
     background: #343a40;
     padding: 15px 20px;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
 }
 

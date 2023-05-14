@@ -37,17 +37,23 @@
                     <?php echo $_SESSION['usuario']['email']; ?>
                 </p>
                 <button type="botton" class="boton-editar"><i class="fa-solid fa-pen-to-square"></i> Editar</button>
+                <div class="btn-group" role="group">
+                    <button type="botton" class="btn btn-secondary btn-lg"style="background-color:rgb(59 79 87);"onMouseover="this.style.color='White'" onMouseout="this.style.color='Deepskyblue'">Opciones de Admin</button>
+                    <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" style="background-color:rgb(59 79 87);"onMouseover="this.style.color='White'" onMouseout="this.style.color='Deepskyblue'"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>    
+                    
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item text-dark" onclick="env_c('usuarios')">Caegar Usuarios</a>
+                        <a class="dropdown-item text-dark" onclick="env_c('noticias')">Cargar Noticias</a>
+                        <a class="dropdown-item text-dark" href="in_progress.php">Cargar Productos</a>
+
+                    </div>
+                </div>
             </div>
+
+            
         </div>
+    </div>
     </div>
 </section>
-<div class="container">
-    <div class="row" style="margin-bottom:30px;">
-        <div class="col-2"><button onclick="env_c('usuarios')" class="btn btn-success"
-                style="width:94%; margin-left:3%;">Usuarios</button>
-        </div>
-        <div class="col-2"><button onclick="env_c('noticias')" class="btn btn-success"
-                style="width:94%; margin-left:3%;">Noticias</button>
-        </div>
-    </div>
-</div>
