@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="css/register.css">
+<link rel="stylesheet" href="css/register.css"><link href="css/style.css" rel="stylesheet">
+
 <body>
     
 <form class="register" method="post">

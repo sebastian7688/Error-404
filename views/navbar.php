@@ -8,147 +8,116 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
+    <!-- Favicon -->
+
+
+    <link href="lib/animates/SuperTux.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="css/naruto.css" rel="stylesheet">
     <link href="img/favicon.ico" rel="icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
+    <link href="css/xd.css" rel="stylesheet">
+    <link href="img/favicon.ico" rel="icon">
+
 </head>
 
+<body>
 
-<!-- Topbar Start -->
-<div class="container-fluid">
-    <div class="row  py-3 px-xl-5 d-none d-lg-flex">
-        <div class="col-lg-10">
-            <a href="index.php" class="text-decoration-none">
-                <span class="h1   bg-dark px-2" style="color:rgb(3, 130, 170);">Always</span>
-                <span class="h1  text-dark  px-2 ml-n1" style="background-color:rgb(3, 130, 170);">SPORTING</span>
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 " color="Deepskyblue"><span class="text-dark">Always</span>
+                    <font color="00BFFF">Sporting</font>
+                </h1>
             </a>
-        </div>
-        <br>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
 
-    </div>
-</div>
-<div style="margin: -15px; float:right; margin-right: 3%;" class="col-lg-4  text-left">
-    <!--<form Method =POST action="seeker.php"style='text-align:right'>
-                <div class="input-group">
-                    <input type="text" algin="text-left"  algin="text-left" name="busqueda"placeholder="Buscar Productos">
-                    <div class="input-group-append">
-                        <span class="input-group-text bg-transparent text-primary">
-                            <i class="fa fa-search" style="color:rgb(3, 130, 170);"></i>
-                        </span>
+                    <a href="index.php" onMouseover="this.style.color='Deepskyblue'"
+                        onMouseout="this.style.color='Dimgray'" class="nav-link "><i class="fa-solid fa-house"></i>
+                        Inicio</a>
+                    <a href="shop.php" onMouseover="this.style.color='Deepskyblue'"
+                        onMouseout="this.style.color='Dimgray'" class=" nav-link "><i
+                            class="fa-solid fa-cart-shopping"></i> Tienda</a>
+                    <a href="add_notices.php" onMouseover="this.style.color='Deepskyblue'"
+                        onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-newspaper"></i>
+                        Noticias</a>
+                    <a href="about_us.php" onMouseover="this.style.color='Deepskyblue'"
+                        onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-users"></i>
+                        Sobre Nosotros</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='gray'"
+                            class="nav-link  dropdown-toggle" data-toggle="dropdown">Categorias <i
+                                class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <style>
+                            #miBoton {
+                                background: light-gray;
+                                color: black;
+                            }
+
+                            #miBoton:hover {
+                                background: Deepskyblue;
+                                color: white;
+                            }
+
+                            #miBoton:active {
+                                background: gray;
+                                color: white;
+                            }
+                        </style>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-futbol"></i> Futbol </a>
+                            <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-volleyball"></i> Voley
+                            </a>
+                            <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-basketball"></i> Basquet
+                            </a>
+                            <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-football"></i> Rugby </a>
+                            <a href="" id=miBoton class="dropdown-item"><img src="img/home/boxing-glove.png" alt="">
+                                Boxeo </a>
+                            <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-golf-ball-tee"></i> Golf
+                            </a>
+                            <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-person-swimming"></i>
+                                Natacion</a>
+                            <a href="" id=miBoton class="dropdown-item"><img src="img/home/tennis-ball.png" alt="">
+                                Tenis </a>
+                            <a href="" id=miBoton class="dropdown-item"><img src="img/home/surf-board.png" alt=""> Surf
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </form>-->
-    <FORM METHOD=POST ACTION="wewi_wawo.php"  placeholder="Buscar Productos" style='text-align:right'>
-        <div class="input-group">
-            <INPUT TYPE="text" NAME="busqueda"placeholder="Buscar Productos"size="30">
-            <div class="input-group-append">
-                <span class="input-group-text bg-transparent text-primary">
-                    <i class="fa fa-search" style="color:rgb(3, 130, 170);"></i>
-                </span>
-            </div>
-        </div>
-    </FORM>
-</div>
-<br>
-<!-- Topbar End -->
-
-
-<!-- Navbar Start -->
-<div class="container-fluid bg-dark mb-30 ">
-    <div class="row xl-2">
-        <div class="col-lg-3 ">
-            <a class="btn d-flex  justify-content-between  " style="background-color:rgb(3, 130, 170);"
-                data-toggle="collapse" href="#navbar-vertical" style="height: 65px; padding: 0 30px; "
-                style="background-color:rgb(3, 130, 170);">
-                <h6 class="text-dark md-10"><i class="fa fa-bars mr-2"></i>Categories</h6>
-                <i class="fa fa-angle-down text-dark"></i>
-            </a>
-            <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light"
-                id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
-                <div class="navbar-nav w-100">
-                    <a href="" class="nav-item nav-link"><i class="fa-solid fa-futbol"></i> Futbol </a>
-                    <a href="" class="nav-item nav-link"><i class="fa-solid fa-volleyball"></i> Voley </a>
-                    <a href="" class="nav-item nav-link"><i class="fa-solid fa-basketball"></i> Basquet </a>
-                    <a href="" class="nav-item nav-link"><i class="fa-solid fa-football"></i> Rugby </a>
-                    <a href="" class="nav-item nav-link"><img src="img/home/boxing-glove.png" alt=""> Boxeo </a>
-                    <a href="" class="nav-item nav-link"><i class="fa-solid fa-golf-ball-tee"></i> Golf </a>
-                    <a href="" class="nav-item nav-link"><i class="fa-solid fa-person-swimming"></i> Natacion </a>
-                    <a href="" class="nav-item nav-link"><img src="img/home/tennis-ball.png" alt=""> Tenis </a>
-                    <a href="" class="nav-item nav-link"><img src="img/home/surf-board.png" alt=""> Surf </a>
-                </div>
-            </nav>
-        </div>
-        <div class="col-lg-9">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
-                <a href="" class="text-decoration-none d-block d-lg-none">
-                    <span class="h1   bg-dark px-2" style="color:rgb(3, 130, 170);">ALWAYS</span>
-                    <span class="h1  text-dark  px-2 ml-n1" style="background-color:rgb(3, 130, 170);">SPORTING</span>
-
-                </a>
-
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav mr-auto py-0">
-                        <a href="index.php" class="nav-item nav-link text-white"><i class="fa-solid fa-house"></i>
-                            Inicio </a>
-                        <a href="shop.php" class="nav-item nav-link text-white"><i
-                                class="fa-solid fa-cart-shopping"></i> Tienda </a>
-                        <a href="add_notices.php" class="nav-item nav-link text-white"><i
-                                class="fa-solid fa-newspaper"></i> Noticias </a>
-                        <a href="about_us.php" class="nav-item nav-link text-white"><i class="fa-solid fa-users"></i>
-                            Acerca de Nosotros </a>
-
-                    </div>
-
-                </div>
-
                 <?php
                 if (isset($_SESSION['usuario'])) {
                     ?>
                     <!-- Esta Iniciado-->
                     <div class="nav-item dropdown col-lg-2">
-                        <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);"
-                            data-toggle="dropdown"><i class="user"></i> <i class="fa-regular fa-circle-user"></i>
+                        <a href="#" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='gray'"class="nav-link text-dark dropdown-toggle" data-toggle="dropdown"><i class="fa-regular fa-circle-user"></i>
                             <?php echo $_SESSION['usuario']['user_name']; ?>
                         </a>
-                        <div class="dropdown-menu  rounded-10 border-0 m-10" style="background-color:rgb(3 158 207);">
-                            <a href="my_perfil.php" class="dropdown-item"><i class="fa-solid fa-user-gear"></i> Mi
-                                perfil</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a id=miBoton href="my_perfil.php" class="dropdown-item">Mi Perfil</a>
                             <?php if ($_SESSION['usuario']['rol'] > 1) { ?>
-                                <a href="lista_usu.php" class="dropdown-item"><i class="fa-regular fa-address-book"></i>
-                                    Usuarios</a>
+                                <a id=miBoton href="lista_usu.php" class="dropdown-item">Listado de Usuarios</a>
                             <?php } ?>
-                            <a href="logout.php" class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i> Cerrar
-                                Sección </a>
+                            <a id=miBoton href="logout.php" class="dropdown-item">Cerrar Secion</a>
+
                         </div>
                     </div>
-                    <!-- Esta Iniciado-->
-                    <!-- No esta Iniciado-->
+
                 <?php } else { ?>
-                    <div class="nav-item dropdown col-lg-2">
-                        <a href="#" class="nav-link dropdown-toggle " style="color:rgb(3 158 207);"
-                            data-toggle="dropdown">Mi cuenta <i class="fa fa-angle-down mt-1"></i></a>
-                        <div class="dropdown-menu  rounded-10 border-0 m-10" style="background-color:rgb(3 158 207);">
-                            <a href="login.php" class="dropdown-item"><i class="fa-solid fa-user"></i> Iniciar sesión</a>
-                            <a href="register.php" class="dropdown-item"><i class="fa-solid fa-user-plus"></i>
-                                Registrarse</a>
-                        </div>
+                    <a href="login.php" class="btn  " style="background-color:rgb(0 192 255);"
+                        onMouseover="this.style.color='black'" onMouseout="this.style.color='Dimgray'">Iniciar Secion</a>
+                    <a href="register.php" class="btn  " style="background-color:rgb(0 192 255);"
+                        onMouseover="this.style.color='black'" onMouseout="this.style.color='Dimgray'">Crear Cuenta</a>
 
-                    </div>
                 <?php } ?>
-                <!-- No esta Iniciado-->
-
-
-
-
-
-
-                <!---->
-            </nav>
-        </div>
+            </div>
+        </nav>
     </div>
-</div>
-<!-- Navbar End -->
+          

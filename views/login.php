@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/register.css">
+<link href="css/style.css" rel="stylesheet">
 
 <form class="register" method="post">
     <div class="contenedor">

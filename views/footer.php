@@ -1,66 +1,63 @@
    <!-- Footer Start -->
-   <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
-        <div class="row px-xl-5 pt-5">
-            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
-                <h5 class="text-secondary text-uppercase mb-4"> Ponerse en contacto. </h5>
-                <p class="mb-4"> Ayudenos a mejorar su experiencia en el sitio web </p>
-                <p class="mb-2"><i class="fa fa-map-marker-alt mr-3"></i> Las Achiras, Villa Celina, Provincia de Buenos Aires</p>
-                <p class="mb-2"><i class="fa fa-envelope  mr-3"></i> sebastianpardo583@example.com </p>
-                <p class="mb-0"><i class="fa fa-phone-alt  mr-3"></i> +54 11 39341477 </p>
-            </div>
-            <div class="col-lg-8 col-md-12">
-                <div class="row">
-                    
-                    <div class="col-md-4 mb-4">
-                    <a href="my_perfil.php"  class="text-secondary text-uppercase mb-4" >Mi perfil</a><br>
-                        <div class="d-flex flex-column justify-content-start">
-                            <br>
-                            <a class="text-secondary mb-2" href="index.php"><i class="fa fa-angle-right mr-2"></i> Inicio </a>
-                            <a class="text-secondary mb-2" href="shop.php"><i class="fa fa-angle-right mr-2"></i> Tienda </a>
-                            <a class="text-secondary mb-2" href="shop.php"><i class="fa fa-angle-right mr-2"></i> Noticias </a>
-                        
-                            <a class="text-secondary" href="mailto:sebastianpardo583@gmail.com"><i class="fa fa-angle-right mr-2"></i>Contactenos</a>
-                          
-            
-                        </div>
+   <div class="footer container-fluid position-relative bg-dark py-5" style="margin-top: 90px;">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6 pr-lg-5 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mb-3 text-white"><span class="text-primary">ALWAYS</span> SPORTING</h1>
+                    </a>
+                    <p>Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor sea ipsum diam  sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.</p>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Las Achiras, Villa Celina, Provincia de Buenos Aires</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+011 39341477</p>
+                    <p><i class="fa fa-envelope mr-2"></i>sebastianpardo583@gmail.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
                     </div>
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-secondary text-uppercase mb-4"> Para Informarse. </h5>
-                        <p> Siempre deportivo. </p>
-                        <form action="">
-                            <div class="input-group">
-                                
-                                <div class="input-group-append">
-                                <?php
-                if (!isset($_SESSION)) {
-                ?>
-                                   <button class="btn text-dark" style="background-color:rgb(127, 0, 178);"><a href="register.php" class="text-dark">Sign Up</a></button>
-                               <?php } ?> </div>
+                </div>
+                <div class="col-lg-6 pl-lg-5">
+                    <div class="row">
+                        <div class="col-sm-6 mb-5">
+                            <h5 class="text-white text-uppercase mb-4">Enlaces Rapidos</h5>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-white-50 mb-2" href="index.php"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                                <a class="text-white-50 mb-2" href="shop.php"><i class="fa fa-angle-right mr-2"></i>Tienda</a>
+                                <a class="text-white-50 mb-2" href="add_notice.php"><i class="fa fa-angle-right mr-2"></i>Noticias</a>
+                                <a class="text-white-50 mb-2" href="about_us.php"><i class="fa fa-angle-right mr-2"></i>Sobre Nosotros</a>
+                                <a class="text-white-50" href="mailto:sebastianpardo583@gmail.com"><i class="fa fa-angle-right mr-2"></i>Contactenos</a>
                             </div>
-                        </form>
-                        <h6 class="text-secondary text-uppercase mt-4 mb-3">Siganos</h6>
+                        </div>
                         
+                        <div class="col-sm-12 mb-5">
+                            <h5 class="text-white text-uppercase mb-4">Boletin Informativos</h5>
+                            <div class="w-100">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Tu email">
+                                    <div class="input-group-append">
+                                        <button href="register.php"class="btn btn-primary px-4">Crear Cuenta</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
-            <div class="col-md-6 px-xl-0">
-                
-            </div>
-            <div class="col-md-6 px-xl-0 text-center text-md-right">
-                <img class="img-fluid" src="img/payments.png" alt="">
+    </div>
+    <div class="container-fluid bg-dark text-light border-top py-4" style="border-color: rgba(256, 256, 256, .15) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0 text-white">&copy; <a href="#">Only Sport</a>. Drechos Reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0 text-white">Diseñado por <a href="https://htmlcodex.com"> "Los diseñadores" XD</a></p>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn back-to-top" style="background-color:rgb(127, 0, 178);"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <a href="#" class="btn  back-to-top" style="background-color:rgb(127, 0, 178);"><i class="fa fa-angle-double-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

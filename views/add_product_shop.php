@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="css/register.css">
+<link href="css/style.css" rel="stylesheet">
+
 <div class="container">
 
     <form class="register" action="" method="post" enctype="multipart/form-data">

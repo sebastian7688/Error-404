@@ -1,3 +1,5 @@
+
+<link href="css/style.css" rel="stylesheet">
 <div class="container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -100,7 +102,7 @@
             en racha. </span></h2>
     <div class="row px-xl-5">
         <?php foreach ($productos_nuevos as $nuevos) { ?>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-5">
                 <div class="product-item bg-light mb-4">
                     <div class="product-img position-relative overflow-hidden">
 

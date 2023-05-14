@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="css/my_perfil.css">
+<link href="css/style.css" rel="stylesheet">
+
 <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
