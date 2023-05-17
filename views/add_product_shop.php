@@ -1,29 +1,31 @@
-<link rel="stylesheet" href="css/register.css">
+<link rel="stylesheet" href="css/add.css">
 <link href="css/style.css" rel="stylesheet">
 
 <div class="container">
-
-    <form class="register" action="" method="post" enctype="multipart/form-data">
-    <u style="color: white"><h1>Agregar Producto</h1></u>
-        <label for="inputEmail4" class="form-control bg-dark text-light text-center">Nombre del Producto</label>
-        <input type="text" class="form-control border-dark" name="name_prod">
-        <br>
-        <label for="inputEmail4" class="form-control bg-dark text-light text-center">Añadir una descripcion</label>
-        <textarea type="text" class="form-control border-dark" maxlength="500" name="desc"></textarea>
-        <br>
-        <label for="inputEmail4" class="form-control bg-dark text-light text-center">Agrega informacion del producto</label>
-        <textarea class="form-control border-dark" name="info"></textarea>
-        <br>
-        <label for="inputEmail4" class="form-control bg-dark text-light text-center">Categoria</label>
-        <input type="text" class="form-control border-dark" name="sport">
-        <br>
-        <label for="inputEmail4" class="form-control bg-dark text-light text-center">Precio</label>
-        <input type="text" class="form-control border-dark" name="precio">
-        <br>
-        <label for="inputEmail4" class="form-control bg-dark text-light text-center">Adjuntar foto</label>
-        <div class="input-group mb-3">
+    <form class="add" action="" method="post" enctype="multipart/form-data">
+        <h1 class="titulo_1">Agregar Producto</h1>
+        <div class="input-container">
+            <label for="inputEmail4" class="titulo_2">Nombre del Producto</label>
+            <input type="text" class="input" name="name_prod">
+            <br>
+            <label for="inputEmail4" class="titulo_2">Añadir una descripcion</label>
+            <textarea type="text" class="input" maxlength="500" name="desc"></textarea>
+            <br>
+            <label for="inputEmail4" class="titulo_2">Agrega informacion del producto</label>
+            <textarea class="input" name="info"></textarea>
+            <br>
+            <label for="inputEmail4" class="titulo_2">Categoria</label>
+            <input type="text" class="input" name="sport">
+            <br>
+            <label for="inputEmail4" class="titulo_2">Precio</label>
+            <input type="text" class="input" name="precio">
+            <br>
+            <label for="inputEmail4" class="titulo_2">Adjuntar foto</label>
+            <div class="input-group mb-3">
             <input type="file" class="form-control border-dark" id="inputGroupFile01" name="principal_img" id="principal_img">
+            </div>
         </div>
+        <br>
         <button type="submit" class="btn btn-success">
             Enviar
         </button>
