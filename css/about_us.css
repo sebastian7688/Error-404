@@ -60,11 +60,26 @@ p {
     }
 }
 
-
-
 .h2_about_2 {
     text-align: right;
     color: #039ecf;
+}
+
+@media(max-width: 400px){
+
+    .us-paragrahp_1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .us-paragrahp_2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .container-title {
+        font-size: 38px;
+    }
 }
 
 /* seccion tarjetas */

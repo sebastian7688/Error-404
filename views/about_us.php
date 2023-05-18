@@ -1,4 +1,5 @@
 <link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/about_us.css">
 
 <div class="container">
     <nav aria-label="breadcrumb">
@@ -10,9 +11,7 @@
         </ol>
     </nav>
 </div>
-<link rel="stylesheet" href="css/about_us.css">
 <br>
-
 <div>
     <h1 class="container-title">Sobre nosotros</h1>
 </div>
@@ -60,7 +59,7 @@
         </div>
     </div>
 </section>
-<br><br>
+<br><br><br>
 <div>
     <h1 class="container-title">Equipo de trabajo</h1>
 </div>
