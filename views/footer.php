@@ -34,10 +34,11 @@
                             <h5 class="text-white text-uppercase mb-4">Boletin Informativos</h5>
                             <div class="w-100">
                                 <div class="input-group">
-                                    <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Tu email">
-                                    <div class="input-group-append">
-                                        <button href="register.php"class="btn btn-primary px-4">Crear Cuenta</button>
-                                    </div>
+                                <?php
+                if (isset($_SESSION['usuario'])) {
+                }else{?>
+                                <a href="register.php" class="btn" style="background-color:rgb(0 192 255);" onMouseover="this.style.color='black'" onMouseout="this.style.color='White'">Crear Cuenta</a>
+                                    <?php }?></div>
                                 </div>
                             </div>
                         </div>
