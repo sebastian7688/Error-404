@@ -77,7 +77,7 @@ if ($busqueda <> '  ') {
 
                         <?php
                         if (file_exists('img/productos/' . $nuevos['id'] . '/principal.jpg')) { ?>
-                            <img class="card-img-top" style="width:90%; height:60%;"
+                            <img class="img-fluid" style="width: 400px; height:300px"
                                 src="img/productos/<?php echo $nuevos['id']; ?>/principal.jpg">
                             <?php
                         } ?>
