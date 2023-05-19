@@ -19,9 +19,10 @@
                         <div id="product-carousel" class="carousel slide">
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
+                                    <br>
                                     <?php
                                     if (file_exists('img/productos/' . $producto['id'] . '/principal.jpg')) { ?>
-                                        <img id="first-image" alt="" class="img-fluid" src="img/productos/<?php echo $producto['id']; ?>/principal.jpg">
+                                        <img id="first-image" alt="" class="img-fluid" style="width:90%; height:60%;"src="img/productos/<?php echo $producto['id']; ?>/principal.jpg">
                                     <?php
                                     } ?>
                                 </div>
@@ -38,7 +39,7 @@
                     </div>
                 </div>
                 <!-- Thumb Images -->
-                <div class="col-sm-12 product-page-thumbs space mt-3">
+                <!--<div class="col-sm-12 product-page-thumbs space mt-3">
 
                     <a class="thumbs" data-image="1" href="#"><img src="https://cdnx.jumpseller.com/bootstrap/image/429444/thumb/120/150?1614272621" alt="Wacom Bamboo Tablet" /></a>
 
@@ -46,7 +47,7 @@
 
                     <a class="thumbs" data-image="3" href="#"><img src="https://cdnx.jumpseller.com/bootstrap/image/14896546/thumb/120/150?1614272621" alt="Wacom Bamboo Tablet" /></a>
 
-                </div>
+                </div>-->
 
             </div>
 

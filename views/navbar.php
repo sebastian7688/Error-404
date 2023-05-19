@@ -12,56 +12,51 @@
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
 
-                    <a href="index.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class="nav-link "><i class="fa-solid fa-house"></i>
-                        Inicio</a>
-                    <a href="shop.php" onMouseover="this.style.color='Deepskyblue'"
-                        onMouseout="this.style.color='Dimgray'" class=" nav-link "><i
-                            class="fa-solid fa-cart-shopping"></i> Tienda</a>
-                    <a href="noticias.php" onMouseover="this.style.color='Deepskyblue'"
-                        onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-newspaper"></i>
-
+                    <a href="index.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class="nav-link "><i class="fa-solid fa-house"></i>Inicio</a>
                     <a href="shop.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-cart-shopping"></i> Tienda</a>
-                    <a href="add_notices.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-newspaper"></i> Noticias</a>
-                    <a href="about_us.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-users"></i>
-                        Sobre Nosotros</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='gray'" class="nav-link  dropdown-toggle" data-toggle="dropdown">Categorias <i class="fa fa-angle-down text-dark"></i>
-                        </a>
-                        <style>
-                            #miBoton {
-                                background: light-gray;
-                                color: black;
-                            }
+                    <a href="noticias.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-newspaper"></i> Mis noticias</a>
 
-                            #miBoton:hover {
-                                background: Deepskyblue;
-                                color: white;
-                            }
+                        <a href="add_notices.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-newspaper"></i> Noticias</a>
+                        <a href="about_us.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-users"></i>
+                            Sobre Nosotros</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='gray'" class="nav-link  dropdown-toggle" data-toggle="dropdown">Categorias <i class="fa fa-angle-down text-dark"></i>
+                            </a>
+                            <style>
+                                #miBoton {
+                                    background: light-gray;
+                                    color: black;
+                                }
 
-                            #miBoton:active {
-                                background: gray;
-                                color: white;
-                            }
-                        </style>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-futbol"></i> Futbol </a>
-                            <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-volleyball"></i> Voley
-                            </a>
-                            <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-basketball"></i> Basquet
-                            </a>
-                            <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-football"></i> Rugby </a>
-                            <a href="" id=miBoton class="dropdown-item"><img src="img/home/boxing-glove.png" alt="">
-                                Boxeo </a>
-                            <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-golf-ball-tee"></i> Golf
-                            </a>
-                            <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-person-swimming"></i>
-                                Natacion</a>
-                            <a href="" id=miBoton class="dropdown-item"><img src="img/home/tennis-ball.png" alt="">
-                                Tenis </a>
-                            <a href="" id=miBoton class="dropdown-item"><img src="img/home/surf-board.png" alt=""> Surf
-                            </a>
+                                #miBoton:hover {
+                                    background: Deepskyblue;
+                                    color: white;
+                                }
+
+                                #miBoton:active {
+                                    background: gray;
+                                    color: white;
+                                }
+                            </style>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-futbol"></i> Futbol </a>
+                                <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-volleyball"></i> Voley
+                                </a>
+                                <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-basketball"></i> Basquet
+                                </a>
+                                <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-football"></i> Rugby </a>
+                                <a href="" id=miBoton class="dropdown-item"><img src="img/home/boxing-glove.png" alt="">
+                                    Boxeo </a>
+                                <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-golf-ball-tee"></i> Golf
+                                </a>
+                                <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-person-swimming"></i>
+                                    Natacion</a>
+                                <a href="" id=miBoton class="dropdown-item"><img src="img/home/tennis-ball.png" alt="">
+                                    Tenis </a>
+                                <a href="" id=miBoton class="dropdown-item"><img src="img/home/surf-board.png" alt=""> Surf
+                                </a>
+                            </div>
                         </div>
-                    </div>
                 </div>
 
                 <?php

@@ -1,3 +1,4 @@
+<link href="css/style.css" rel="stylesheet">
 
 <div class="container">
     <nav aria-label="breadcrumb">
