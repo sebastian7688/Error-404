@@ -1,3 +1,12 @@
+
+    <rb>
+    <a href="">
+        <rb>
+        <a href="">
+            <rbr></rbr>
+        </a>
+    </a>
+</a></b>
 <link href="css/style.css" rel="stylesheet">
 <script src="//assets.jumpseller.com/public/jquery-3.3.1.min.js"></script>
 <?php foreach ($productos as $producto) { ?>

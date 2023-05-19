@@ -19,6 +19,7 @@ if ($_POST) {
     if ($reg == 0) {
         //descripcion
         if (isset($_POST['descrip'])) {
+            
             $sql = "UPDATE `usuarios` SET descrip = '" . $_POST['descrip'] . "' WHERE id = " . $_SESSION['usuario']['id'];
             $res = mysqli_query($conn, $sql);
             if (!$res) {

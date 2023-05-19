@@ -24,7 +24,7 @@
                             <div class="d-flex flex-column justify-content-start">
                                 <a class="text-white-50 mb-2" href="index.php"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
                                 <a class="text-white-50 mb-2" href="shop.php"><i class="fa fa-angle-right mr-2"></i>Tienda</a>
-                                <a class="text-white-50 mb-2" href="add_notice.php"><i class="fa fa-angle-right mr-2"></i>Noticias</a>
+                                <a class="text-white-50 mb-2" href="noticias.php"><i class="fa fa-angle-right mr-2"></i>Noticias</a>
                                 <a class="text-white-50 mb-2" href="about_us.php"><i class="fa fa-angle-right mr-2"></i>Sobre Nosotros</a>
                                 <a class="text-white-50" href="mailto:sebastianpardo583@gmail.com"><i class="fa fa-angle-right mr-2"></i>Contactenos</a>
                             </div>
