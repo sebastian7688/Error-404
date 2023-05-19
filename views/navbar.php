@@ -48,7 +48,7 @@
                     <a href="shop.php" onMouseover="this.style.color='Deepskyblue'"
                         onMouseout="this.style.color='Dimgray'" class=" nav-link "><i
                             class="fa-solid fa-cart-shopping"></i> Tienda</a>
-                    <a href="add_notices.php" onMouseover="this.style.color='Deepskyblue'"
+                    <a href="noticias.php" onMouseover="this.style.color='Deepskyblue'"
                         onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-newspaper"></i>
                         Noticias</a>
                     <a href="about_us.php" onMouseover="this.style.color='Deepskyblue'"
