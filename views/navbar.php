@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    
-    <meta charset="utf-8">
-    <title>Always Sporting</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-
-    <!-- Favicon -->
-    <link href="css/seeker.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="lib/animates/SuperTux.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <link href="css/naruto.css" rel="stylesheet">
-    <link href="img/favicon.ico" rel="icon">
-    <link href="css/styles.min.css" rel="stylesheet">
-    <link href="css/xd.css" rel="stylesheet">
-    <link href="img/favicon.ico" rel="icon">
-
-</head>
-
-<body>
-
-
-
     <!-- Navbar Start -->
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand ml-lg-3">
+            <a href="index.php" class="navbar-brand ml-lg-3">
                 <h1 class="m-0 " color="Deepskyblue"><span class="text-dark">Always</span>
                     <font color="00BFFF">Sporting</font>
                 </h1>
@@ -42,22 +12,20 @@
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
 
-                    <a href="index.php" onMouseover="this.style.color='Deepskyblue'"
-                        onMouseout="this.style.color='Dimgray'" class="nav-link "><i class="fa-solid fa-house"></i>
+                    <a href="index.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class="nav-link "><i class="fa-solid fa-house"></i>
                         Inicio</a>
                     <a href="shop.php" onMouseover="this.style.color='Deepskyblue'"
                         onMouseout="this.style.color='Dimgray'" class=" nav-link "><i
                             class="fa-solid fa-cart-shopping"></i> Tienda</a>
                     <a href="noticias.php" onMouseover="this.style.color='Deepskyblue'"
                         onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-newspaper"></i>
-                        Noticias</a>
-                    <a href="about_us.php" onMouseover="this.style.color='Deepskyblue'"
-                        onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-users"></i>
+
+                    <a href="shop.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-cart-shopping"></i> Tienda</a>
+                    <a href="add_notices.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-newspaper"></i> Noticias</a>
+                    <a href="about_us.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-users"></i>
                         Sobre Nosotros</a>
                     <div class="nav-item dropdown">
-                        <a href="#" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='gray'"
-                            class="nav-link  dropdown-toggle" data-toggle="dropdown">Categorias <i
-                                class="fa fa-angle-down text-dark"></i>
+                        <a href="#" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='gray'" class="nav-link  dropdown-toggle" data-toggle="dropdown">Categorias <i class="fa fa-angle-down text-dark"></i>
                         </a>
                         <style>
                             #miBoton {
@@ -98,12 +66,10 @@
 
                 <?php
                 if (isset($_SESSION['usuario'])) {
-                    ?>
+                ?>
                     <!-- Esta Iniciado-->
                     <div class="nav-item dropdown col-lg-2">
-                        <a href="#" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='gray'"
-                            class="nav-link text-dark dropdown-toggle" data-toggle="dropdown"><i
-                                class="fa-regular fa-circle-user"></i>
+                        <a href="#" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='gray'" class="nav-link text-dark dropdown-toggle" data-toggle="dropdown"><i class="fa-regular fa-circle-user"></i>
                             <?php echo $_SESSION['usuario']['user_name']; ?>
                         </a>
                         <div class="dropdown-menu rounded-0 m-0">
@@ -117,10 +83,8 @@
                     </div>
 
                 <?php } else { ?>
-                    <a href="login.php" class="btn  " style="background-color:rgb(0 192 255);"
-                        onMouseover="this.style.color='black'" onMouseout="this.style.color='Dimgray'">Iniciar Secion</a>
-                    <a href="register.php" class="btn  " style="background-color:rgb(0 192 255);"
-                        onMouseover="this.style.color='black'" onMouseout="this.style.color='Dimgray'">Crear Cuenta</a>
+                    <a href="login.php" class="btn  " style="background-color:rgb(0 192 255);" onMouseover="this.style.color='black'" onMouseout="this.style.color='Dimgray'">Iniciar Secion</a>
+                    <a href="register.php" class="btn  " style="background-color:rgb(0 192 255);" onMouseover="this.style.color='black'" onMouseout="this.style.color='Dimgray'">Crear Cuenta</a>
 
                 <?php } ?>
             </div>
