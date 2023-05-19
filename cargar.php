@@ -1145,7 +1145,7 @@ if (isset($_POST['tabla'])) {
             $encabezados[] = $encabezado;
         }
         if (isset($contenidos) && isset($titulos) && isset($encabezados)) {
-            $query = "INSERT INTO informes(titulo,texto,descripcion,fecha_alta) VALUES";
+            $query = "INSERT INTO Noticias(titulo,texto,descripcion,fecha_alta) VALUES";
             $siono = false;
             for ($i = 0; $i < $limit; $i++) {
                 $tr = rand(0, 9);
@@ -1160,8 +1160,8 @@ if (isset($_POST['tabla'])) {
                 $siono = true;
             }
             if ($siono == true) {
-                consulta($query, $link, 4);
-                header("Location: my_profile.php");
+                consulta($query, $conn, 4);
+                header("Location: my_perfil.php");
             }
         }
     } else if ($tabla == "usuarios") {
