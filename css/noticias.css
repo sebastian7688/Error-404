@@ -1,19 +1,18 @@
-/*body {
+body {
     align-items: center;
     background: #E3E3E3;
     height: 100vh;
     justify-content: center;
 }
 
-@media white-gradient {
-    background: {
-        linear-gradient:(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+ white-gradient {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
-}
+
 @animationSpeed: 40s;
 
-/*Animation*/
-/*@keyframes scroll {
+/*Animation
+@keyframes scroll {
     0% {
         transform: translateX(0);
     }
@@ -24,8 +23,8 @@
 }
 
 
-/* Styling*/
-/*.slider {
+/* Styling
+.slider {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
     height: 100px;
@@ -34,7 +33,7 @@
     position: relative;
     width: 960px;
 
-    ::before {}
+    ::before{} 
 
     ::after {
         @include white-gradient;
@@ -67,3 +66,5 @@
         width: 250px;
     }
 }
+
+/*
