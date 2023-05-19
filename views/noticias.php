@@ -12,15 +12,19 @@
 </div>
 <br>
 
-<h1 align="center">Tus Noticias </h1>
+<h1 align="center">Noticias </h1>
 <br>
-
+<?php
+                if (isset($_SESSION['usuario'])) {
+                    if ($_SESSION['usuario']['rol'] > 1) {
+                ?>
 <div align="center">
     <button class="btn btn-primary me-md-2" type="button"><a href="add_notices.php" a>Agrega tus noticas</button>
     <button class="btn btn-primary" type="button"><a href="noticias.php" a>Mira tus noticias</button>
 </div>
 <br>
 <br>
+<?php }}?>
 <!-- Carousel Start -->
 
 <div class="container-fluid p-0 mb-1 pb-5">
