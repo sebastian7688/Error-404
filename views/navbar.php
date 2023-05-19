@@ -14,9 +14,8 @@
 
                     <a href="index.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class="nav-link "><i class="fa-solid fa-house"></i>Inicio</a>
                     <a href="shop.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-cart-shopping"></i> Tienda</a>
-                    <a href="noticias.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-newspaper"></i> Mis noticias</a>
+                    <a href="noticias.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-newspaper"></i> Noticias</a>
 
-                        <a href="add_notices.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-newspaper"></i> Noticias</a>
                         <a href="about_us.php" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='Dimgray'" class=" nav-link "><i class="fa-solid fa-users"></i>
                             Sobre Nosotros</a>
                         <div class="nav-item dropdown">
