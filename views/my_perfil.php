@@ -100,6 +100,8 @@
                     </button>
 
                     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item text-dark" onclick="env_c('usuarios')">Cargar Usuarios</a>
+
                         <a class="dropdown-item text-dark" onclick="env_c('noticias')">Cargar Noticias</a>
                         <a class="dropdown-item text-dark" href="in_progress.php">Cargar Productos</a>
                     </div>
