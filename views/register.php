@@ -36,7 +36,7 @@
             </div>
             <button class="btn-register" type="submit"> Registrarse. </button><br><br>
             <p> Al registrarte aceptas nuestras condiciones de uso y politica de privacidad. </p>
-            <p algin="center"> Cuestión aceptas darnos tus datos personales y hubicación en tiempo real. </p>
+            <p algin="center"> Cuestión aceptas darnos tus datos personales y ubicación en tiempo real. </p>
             <a href="login.php" class="btn-secondary"> ¿Ya tienes una cuenta? </a>
             </div>
         </form>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-05-2023 a las 19:08:49
+-- Tiempo de generación: 19-05-2023 a las 19:13:53
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.2.0
 
@@ -159,7 +159,8 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `user_name`, `contra`, `email`, `rol`, `fecha_alta`, `fecha_baja`, `descrip`) VALUES
 (6, 'Anitaxx', '276b6c4692e78d4799c12ada515bc3e4', 'peluka1709@gmail.com', 1, '0000-00-00 00:00:00', NULL, 'Amo romper mis limites, y estoy a un gran paso de superarme'),
 (7, 'MikeNoble2905', 'e8494a1c9c7197508e5990872e417a0a', 'Mikemoble2905@gmail.com', 2, '0000-00-00 00:00:00', NULL, 'Esto es tan solo un demostracion de las cosas que se pueden hacer si uno lo propone'),
-(9, 'laydo', '76d80224611fc919a5d54f0ff9fba446', 'parditop404@gmail.com', 2, '0000-00-00 00:00:00', NULL, 'Amo el deporte.');
+(9, 'laydo', '76d80224611fc919a5d54f0ff9fba446', 'parditop404@gmail.com', 2, '0000-00-00 00:00:00', NULL, 'Amo el deporte.'),
+(39, '', 'd41d8cd98f00b204e9800998ecf8427e', '', 1, '2023-05-19 07:13:26', NULL, 'Sin Descripcion');
 
 --
 -- Índices para tablas volcadas
@@ -229,7 +230,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

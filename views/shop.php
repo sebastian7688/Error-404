@@ -106,13 +106,14 @@
                         <span class="fa fa-filter" aria-hidden="true"></span> Filtrar.
                     </button>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="misproductos" style="margin-left:100px margin-above=100px" class="btn btn-info"></i><i
-                            class="fa-solid fa-basket-shopping"></i> Mis productos </a>&nbsp;&nbsp;
+                    &nbsp;&nbsp;
                     <a href="micarrito" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> <i
                             class="fa-solid fa-cart-shopping"></i> Mi carrito </a>&nbsp;&nbsp;
                     <?php
                     if (isset($_SESSION['usuario'])) {
                         ?>
+                        <a href="misproductos" style="margin-left:100px margin-above=100px" class="btn btn-info"></i><i
+                            class="fa-solid fa-basket-shopping"></i> Mis productos </a>&nbsp;&nbsp;
                         <a href="add_product_shop.php" style="margin-left:100px margin-above=100px"
                             class="btn btn-info"></i> Añadir Producto <i class="fa-solid fa-plus"></i></a>
                     <?php } ?>
