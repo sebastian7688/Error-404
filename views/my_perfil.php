@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="css/my_perfil.css">
 <link href="css/style.css" rel="stylesheet">
 
+
 <script src="js/cargar.js"></script>
 <div class="container">
     <?php foreach ($usser as $usu) { ?>
@@ -41,13 +42,13 @@
 
             <!-- FORMULARIO NOMBRE -->
             <div id="formu">
-                <form class="register" method="post">
+                <form class="register-perfil" method="post">
 
                     <div class="input-contenedor">
-                        <input type="text" name="name" class="input" placeholder="Cambiar Nombre">
+                        <input type="text" name="name" class="input" placeholder="Cambiar Nombre" >
                     </div>
 
-                    <button name="subir" class="btn-register" type="submit">Enviar</button><br><br>
+                    <button name="subir" class="btn-register" type="submit">Enviar</button>
                     <a onclick="desaparecerN();" style="color:white; text-decoration:none;">Cancelar</a>
                 </form>
             </div>
@@ -58,13 +59,13 @@
             </ul>
             <!-- FORMULARIO DESCRIPCION -->
             <div id="formulario">
-                <form class="register" method="post">
+                <form class="register-perfil" method="post">
 
                     <div class="input-contenedor">
                         <input type="text" name="descrip" class="input" placeholder="Cambiar descripcion">
                     </div>
 
-                    <button name="submit" class="btn-register" type="submit">Enviar</button><br><br>
+                    <button name="submit" class="btn-register" type="submit">Enviar</button>
                     <a onclick="desaparecer();" style="color:white; text-decoration:none;">Cancelar</a>
                 </form>
             </div>
@@ -82,13 +83,13 @@
 
                 <!-- FORMULARIO EMAIL -->
                 <div id="form">
-                    <form class="register" method="post">
+                    <form class="register-perfil" method="post">
 
                         <div class="input-contenedor">
-                            <input type="email" name="email" class="input" placeholder="Cambiar correo">
+                            <input type="email" name="email" class="input" placeholder="Cambiar correo"> 
                         </div>
 
-                        <button name="subir" class="btn-register" type="submit">Enviar</button><br><br>
+                        <button name="subir" class="btn-register" type="submit">Enviar</button>
                         <a onclick="desaparecerE();" style="color:white; text-decoration:none;">Cancelar</a>
                     </form>
                 </div>
@@ -158,6 +159,7 @@
         width: 100%;
         padding: 10px;
         border: none;
+        border-radius: 5px;
     }
 
     .input-contenedor {
@@ -187,6 +189,7 @@
         padding: 15px 20px;
         border-radius: 5px;
         cursor: pointer;
+        margin-bottom: 10px;
     }
 
 
