@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-05-2023 a las 19:13:53
--- Versión del servidor: 10.4.27-MariaDB
--- Versión de PHP: 8.2.0
+-- Tiempo de generación: 25-05-2023 a las 22:42:57
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -98,22 +98,23 @@ CREATE TABLE `productos` (
   `precio` int(100) NOT NULL,
   `fecha_alta` datetime NOT NULL,
   `id_usuario` int(100) NOT NULL,
-  `imagen` mediumblob NOT NULL
+  `imagen` mediumblob NOT NULL,
+  `descuento` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `productos` (`id`, `nombre_prod`, `descripcion`, `texto`, `id_deporte`, `precio`, `fecha_alta`, `id_usuario`, `imagen`) VALUES
-(11, 'Guantes de Boxeo', 'Guantes EverLast muy duraderos, nuevos y perfectos para hacer sparring', 'Guantes color blanco y negro, de la marca Everlast, son de 16 onzas perfectos para hacer sparring e incluye un bucal adicional', 1, 14000, '2023-05-05 01:50:56', 7, 0x4172726179),
-(12, 'Pelota de Voley', 'Pelota de voley', 'no hay mucho para decir', 2, 9000, '2023-05-05 01:52:23', 7, 0x4172726179),
-(13, 'Pelota de Spider Mar PRO', 'adawdwa', 'adwawdwad', 3, 4000, '2023-05-05 02:35:14', 7, 0x4172726179),
-(14, 'red de voley', 'waddawd', 'addwaadw', 2, 1200, '2023-05-05 02:36:20', 7, 0x4172726179),
-(15, 'Vendas Everlast', 'adwadawd', 'awdadwada', 1, 1200, '2023-05-05 02:37:15', 7, 0x4172726179),
-(16, 'Guantes Sporting', 'awddwa', 'awdadw', 3, 15000, '2023-05-05 02:38:53', 7, 0x4172726179),
-(17, 'Gafas de natacion PREMIUM ULTIMATUM', 'adwdad', 'adadwawd', 4, 16200, '2023-05-05 02:40:35', 7, 0x4172726179),
-(18, 'Botines de Hombre Araña muy PROS', 'adwadaw', 'awdawdwd', 3, 25600, '2023-05-05 02:42:27', 7, 0x4172726179);
+INSERT INTO `productos` (`id`, `nombre_prod`, `descripcion`, `texto`, `id_deporte`, `precio`, `fecha_alta`, `id_usuario`, `imagen`, `descuento`) VALUES
+(11, 'Guantes de Boxeo', 'Guantes EverLast muy duraderos, nuevos y perfectos para hacer sparring', 'Guantes color blanco y negro, de la marca Everlast, son de 16 onzas perfectos para hacer sparring e incluye un bucal adicional', 1, 14000, '2023-05-05 01:50:56', 7, 0x4172726179, NULL),
+(12, 'Pelota de Voley', 'Pelota de voley', 'no hay mucho para decir', 2, 9000, '2023-05-05 01:52:23', 7, 0x4172726179, NULL),
+(13, 'Pelota de Spider Mar PRO', 'adawdwa', 'adwawdwad', 3, 4000, '2023-05-05 02:35:14', 7, 0x4172726179, NULL),
+(14, 'red de voley', 'waddawd', 'addwaadw', 2, 1200, '2023-05-05 02:36:20', 7, 0x4172726179, NULL),
+(15, 'Vendas Everlast', 'adwadawd', 'awdadwada', 1, 1200, '2023-05-05 02:37:15', 7, 0x4172726179, NULL),
+(16, 'Guantes Sporting', 'awddwa', 'awdadw', 3, 15000, '2023-05-05 02:38:53', 7, 0x4172726179, NULL),
+(17, 'Gafas de natacion PREMIUM ULTIMATUM', 'adwdad', 'adadwawd', 4, 16200, '2023-05-05 02:40:35', 7, 0x4172726179, NULL),
+(18, 'Botines de Hombre Araña muy PROS', 'adwadaw', 'awdawdwd', 3, 25600, '2023-05-05 02:42:27', 7, 0x4172726179, NULL);
 
 -- --------------------------------------------------------
 
