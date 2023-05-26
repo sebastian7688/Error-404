@@ -1,30 +1,21 @@
 -- phpMyAdmin SQL Dump
-<<<<<<< HEAD
--- version 4.2.11
--- http://www.phpmyadmin.net
---
--- Servidor: 127.0.0.1
--- Tiempo de generación: 26-05-2023 a las 06:16:16
--- Versión del servidor: 5.5.40
--- Versión de PHP: 5.5.19
-=======
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-05-2023 a las 22:42:57
+-- Tiempo de generación: 26-05-2023 a las 19:52:18
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
->>>>>>> 47d5b32a02406c643e6f2216ee8a7b757cf3fa39
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Base de datos: `sports`
@@ -36,11 +27,11 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `categorías`
 --
 
-CREATE TABLE IF NOT EXISTS `categorías` (
+CREATE TABLE `categorías` (
   `id_categoria` int(255) NOT NULL,
   `categoria` varchar(255) NOT NULL,
   `deporte` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -48,10 +39,10 @@ CREATE TABLE IF NOT EXISTS `categorías` (
 -- Estructura de tabla para la tabla `deportes`
 --
 
-CREATE TABLE IF NOT EXISTS `deportes` (
-`id_deporte` int(255) NOT NULL,
+CREATE TABLE `deportes` (
+  `id_deporte` int(255) NOT NULL,
   `deporte` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `deportes`
@@ -80,14 +71,14 @@ INSERT INTO `deportes` (`id_deporte`, `deporte`) VALUES
 -- Estructura de tabla para la tabla `noticias`
 --
 
-CREATE TABLE IF NOT EXISTS `noticias` (
-`id` int(15) unsigned NOT NULL,
+CREATE TABLE `noticias` (
+  `id` int(15) UNSIGNED NOT NULL,
   `titulo` varchar(250) NOT NULL,
   `descripcion` varchar(500) NOT NULL,
   `texto` text NOT NULL,
   `fecha_alta` datetime NOT NULL,
   `imagen` mediumblob NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `noticias`
@@ -109,8 +100,8 @@ INSERT INTO `noticias` (`id`, `titulo`, `descripcion`, `texto`, `fecha_alta`, `i
 -- Estructura de tabla para la tabla `productos`
 --
 
-CREATE TABLE IF NOT EXISTS `productos` (
-`id` int(100) unsigned NOT NULL,
+CREATE TABLE `productos` (
+  `id` int(100) UNSIGNED NOT NULL,
   `nombre_prod` varchar(150) NOT NULL,
   `descripcion` varchar(250) NOT NULL,
   `texto` text NOT NULL,
@@ -118,14 +109,9 @@ CREATE TABLE IF NOT EXISTS `productos` (
   `precio` int(100) NOT NULL,
   `fecha_alta` datetime NOT NULL,
   `id_usuario` int(100) NOT NULL,
-<<<<<<< HEAD
-  `imagen` mediumblob NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4;
-=======
   `imagen` mediumblob NOT NULL,
   `descuento` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
->>>>>>> 47d5b32a02406c643e6f2216ee8a7b757cf3fa39
 
 --
 -- Volcado de datos para la tabla `productos`
@@ -147,10 +133,10 @@ INSERT INTO `productos` (`id`, `nombre_prod`, `descripcion`, `texto`, `id_deport
 -- Estructura de tabla para la tabla `roles`
 --
 
-CREATE TABLE IF NOT EXISTS `roles` (
-`id_rol` int(11) unsigned NOT NULL,
+CREATE TABLE `roles` (
+  `id_rol` int(11) UNSIGNED NOT NULL,
   `rol` varchar(50) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `roles`
@@ -167,8 +153,8 @@ INSERT INTO `roles` (`id_rol`, `rol`) VALUES
 -- Estructura de tabla para la tabla `usuarios`
 --
 
-CREATE TABLE IF NOT EXISTS `usuarios` (
-`id` int(11) unsigned NOT NULL,
+CREATE TABLE `usuarios` (
+  `id` int(11) UNSIGNED NOT NULL,
   `user_name` varchar(50) NOT NULL,
   `contra` varchar(100) NOT NULL,
   `email` varchar(50) NOT NULL,
@@ -176,7 +162,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `fecha_alta` datetime NOT NULL,
   `fecha_baja` datetime DEFAULT NULL,
   `descrip` varchar(500) NOT NULL DEFAULT 'Sin Descripcion'
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `usuarios`
@@ -196,31 +182,33 @@ INSERT INTO `usuarios` (`id`, `user_name`, `contra`, `email`, `rol`, `fecha_alta
 -- Indices de la tabla `deportes`
 --
 ALTER TABLE `deportes`
- ADD PRIMARY KEY (`id_deporte`);
+  ADD PRIMARY KEY (`id_deporte`);
 
 --
 -- Indices de la tabla `noticias`
 --
 ALTER TABLE `noticias`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `productos`
 --
 ALTER TABLE `productos`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `roles`
 --
 ALTER TABLE `roles`
- ADD PRIMARY KEY (`id_rol`);
+  ADD PRIMARY KEY (`id_rol`);
 
 --
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
- ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `email` (`email`), ADD UNIQUE KEY `user_name` (`user_name`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`),
+  ADD UNIQUE KEY `user_name` (`user_name`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -230,27 +218,33 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `deportes`
 --
 ALTER TABLE `deportes`
-MODIFY `id_deporte` int(255) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=27;
+  MODIFY `id_deporte` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+
 --
 -- AUTO_INCREMENT de la tabla `noticias`
 --
 ALTER TABLE `noticias`
-MODIFY `id` int(15) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+  MODIFY `id` int(15) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
 --
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-MODIFY `id` int(100) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
+  MODIFY `id` int(100) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
 --
 -- AUTO_INCREMENT de la tabla `roles`
 --
 ALTER TABLE `roles`
-MODIFY `id_rol` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `id_rol` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
