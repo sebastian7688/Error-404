@@ -38,6 +38,7 @@
                                 <b class="caret"></b>
                             </button>
                             <ul class="multiselect-container genres-select dropdown-menu">
+<<<<<<< HEAD
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" style="color:rgb(255 255 255);"
                                                 value="atletismo">&nbsp;Atletismo</label></a></li>
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
@@ -49,9 +50,30 @@
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
                                                 value="boxeo">&nbsp;Boxeo</label></a></li>
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
+=======
+                                <li> &nbsp;<a tabindex="0"><label class="checkbox "
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
+                                                style="color:rgb(255 255 255);" value="voley">
+                                            &nbsp;Voley</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="artes-marciales"> &nbsp;Artes Marciales</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="tenis">&nbsp;Tenis</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
+>>>>>>> 47d5b32a02406c643e6f2216ee8a7b757cf3fa39
                                                 value="ciclismo">&nbsp;Ciclismo</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
                                                 value="futbol">&nbsp;Futbol</label></a></li>
+<<<<<<< HEAD
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
                                                 value="golf">&nbsp;Golf</label></a></li>
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
@@ -68,6 +90,41 @@
                                                 value="tenis">&nbsp;Tenis</label></a></li>
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" 
                                                 value="voley">&nbsp;Voley</label></a></li>
+=======
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="basket">&nbsp;Basket</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="rugby">&nbsp;Rugby</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="boxeo">&nbsp;Boxeo</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="golf">&nbsp;Golf</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="natacion">&nbsp;Natacion</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="surf">&nbsp;Surf</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="pink ponk">&nbsp;Pink Ponk</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="handbal">&nbsp;Handbal</label></a></li>
+
+>>>>>>> 47d5b32a02406c643e6f2216ee8a7b757cf3fa39
                             </ul>
                         </div>
                     </span>
@@ -81,9 +138,13 @@
                                 <b class="caret"></b>
                             </button>
                             <ul class="multiselect-container year-select dropdown-menu">
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" name="xd"
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox" name="xd"
                                                 value="mas nuevo"> Nuevo a viejo </label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" name="xd"
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox" name="xd"
                                                 value="mas viejo"> Viejo a nuevo </label></a></li>
                             </ul>
                         </div>
@@ -96,10 +157,14 @@
                                     class="caret"></b>
                             </button>
                             <ul class="multiselect-container dropdown-menu">
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
                                                 value="mayor precio"> Mayor a menor </label></a>
                                 </li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
+                                            onMouseover="this.style.color='Deepskyblue'"
+                                            onMouseout="this.style.color='black'"><input type="checkbox"
                                                 value="menor precio"> Menor a mayor </label></a>
                                 </li>
                             </ul>
@@ -116,7 +181,7 @@
                     if (isset($_SESSION['usuario'])) {
                         ?>
                         <a href="misproductos" style="margin-left:100px margin-above=100px" class="btn btn-info"></i><i
-                            class="fa-solid fa-basket-shopping"></i> Mis productos </a>&nbsp;&nbsp;
+                                class="fa-solid fa-basket-shopping"></i> Mis productos </a>&nbsp;&nbsp;
                         <a href="add_product_shop.php" style="margin-left:100px margin-above=100px"
                             class="btn btn-info"></i> Añadir Producto <i class="fa-solid fa-plus"></i></a>
                     <?php } ?>
@@ -210,13 +275,16 @@
                         } ?>
 
                         <div class="product-action">
-                            <a class="btn btn-outline-dark btn-square" href="products_read_more.php?id=<?php echo $nuevos['id']?>" style="background-color:rgb(3 158 207);"
-                                style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
+                            <a class="btn btn-outline-dark btn-square"
+                                href="products_read_more.php?id=<?php echo $nuevos['id'] ?>"
+                                style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i
+                                    class="fa fa-search"></i></a>
                         </div>
                     </div>
 
                     <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="products_read_more.php?id=<?php echo $nuevos['id']?>">
+                        <a class="h6 text-decoration-none text-truncate"
+                            href="products_read_more.php?id=<?php echo $nuevos['id'] ?>">
                             <?php echo $nuevos['nombre_prod'] ?>
 
                             <div align="center" &nbsp;&nbsp;>
@@ -259,6 +327,7 @@
             </div>
         <?php } ?>
     </div>
+</div>
 </div>
 <!-- Products End -->
 

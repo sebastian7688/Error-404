@@ -120,6 +120,16 @@
     cursor: pointer;
 }
 
+.register-perfil {
+    text-align: center;
+    background: #0382aa;
+    margin-bottom: 25px;
+    padding: 5px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 10px;
+}
+
 @media(max-width: 400px){
 
     .perfil-user .user-desc h3{
@@ -136,8 +146,41 @@
         font-size: 15px;
         padding: 15px 20px;
     } 
-
 }
+
+@media(max-width: 1320px){
+
+    .register-perfil{
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+}
+
+@media(max-width: 1100px){
+
+    .register-perfil{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+@media(max-width: 650px){
+
+    .register-perfil{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media(max-width: 420px){
+
+    .register-perfil{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+
 
   
 
