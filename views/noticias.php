@@ -292,7 +292,7 @@ if (isset($_SESSION['usuario'])) {
 
             </div>
         </div>
-        <aside class="sidebar" id="sidebar-1" style="background-color: lightgray; padding: 20px;"
+        <aside class="sidebar" id="sidebar-1" style="background-color: lightgray; padding: 15px;"
             title="Información adicional">
             <h3>Artículos relacionados</h3>
             <ul>
