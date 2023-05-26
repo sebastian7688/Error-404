@@ -17,17 +17,13 @@
     <div class="rov">
         <div align="baseline">
             <h1 align="left">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TIENDA
+TIENDA
             </h1>
         </div>
         <main class="Main" style=" margin: 50px">
             <form action="/browse" method="get" style=" margin: 60px">
                 <div class="filters" style="margin-bottom: 20px;">
                     <span class="multiselect-native-select">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                         <div class="btn-group">
                             <button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default"
@@ -38,59 +34,6 @@
                                 <b class="caret"></b>
                             </button>
                             <ul class="multiselect-container genres-select dropdown-menu">
-<<<<<<< HEAD
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" style="color:rgb(255 255 255);"
-                                                value="atletismo">&nbsp;Atletismo</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="artes-marciales"> &nbsp;Artes Marciales</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="badminton">&nbsp;Badminton</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="basket">&nbsp;Basket</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="boxeo">&nbsp;Boxeo</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-=======
-                                <li> &nbsp;<a tabindex="0"><label class="checkbox "
-                                            onMouseover="this.style.color='Deepskyblue'"
-                                            onMouseout="this.style.color='black'"><input type="checkbox"
-                                                style="color:rgb(255 255 255);" value="voley">
-                                            &nbsp;Voley</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                            onMouseover="this.style.color='Deepskyblue'"
-                                            onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="artes-marciales"> &nbsp;Artes Marciales</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                            onMouseover="this.style.color='Deepskyblue'"
-                                            onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="tenis">&nbsp;Tenis</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                            onMouseover="this.style.color='Deepskyblue'"
-                                            onMouseout="this.style.color='black'"><input type="checkbox"
->>>>>>> 47d5b32a02406c643e6f2216ee8a7b757cf3fa39
-                                                value="ciclismo">&nbsp;Ciclismo</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                            onMouseover="this.style.color='Deepskyblue'"
-                                            onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="futbol">&nbsp;Futbol</label></a></li>
-<<<<<<< HEAD
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="golf">&nbsp;Golf</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="handbal">&nbsp;Handbal</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="natacion">&nbsp;Natacion</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="pink ponk">&nbsp;Pink Ponk</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="rugby">&nbsp;Rugby</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="surf">&nbsp;Surf</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="tenis">&nbsp;Tenis</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" 
-                                                value="voley">&nbsp;Voley</label></a></li>
-=======
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"
                                             onMouseover="this.style.color='Deepskyblue'"
                                             onMouseout="this.style.color='black'"><input type="checkbox"
@@ -124,7 +67,6 @@
                                             onMouseout="this.style.color='black'"><input type="checkbox"
                                                 value="handbal">&nbsp;Handbal</label></a></li>
 
->>>>>>> 47d5b32a02406c643e6f2216ee8a7b757cf3fa39
                             </ul>
                         </div>
                     </span>
@@ -227,7 +169,7 @@
                 bottom: -20px;
                 padding: 0 10px;
                 /*height: 100;*/
-                width: 450px;
+                width: 200px;
                 caret-color: Deepskyblue;
                 transition: width 0.4s linear;
             }
