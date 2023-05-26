@@ -1,7 +1,7 @@
 <?php
 require_once "includes/config.php";
 
-$sql = "SELECT * FROM `productos` ORDER BY fecha_alta DESC LIMIT 3;";
+$sql = "SELECT * FROM `productos` ORDER BY fecha_alta DESC LIMIT 8;";
 $res = mysqli_query($conn , $sql);
 if(!$res){
     'Fallo de Consulta: '. mysqli_error($conn);

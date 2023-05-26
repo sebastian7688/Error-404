@@ -1,6 +1,6 @@
 <!-- Carousel Start -->
 <link href="css/style.css" rel="stylesheet">
-
+<div style="margin-right: 0px">
 <div class="container-fluid p-0 mb-1 pb-5">
     <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -317,64 +317,65 @@
     </div>
 </div>
 <!-- Offer End -->
+</div>
+<div style="margin-right:  100px">
+    <div class="container-fluid pt-5 pb-3">
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">
+                Productos
+                en racha. </span></h2>
+        <div class="row px-xl-5">
+            <?php foreach ($productos_nuevos as $nuevos) {
+                $i = $i + 1;
+                ?>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
 
 
-<div class="container-fluid pt-5 pb-3">
-    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3"> Productos
-            en racha. </span></h2>
-    <div class="row px-xl-5">
-        <?php foreach ($productos_nuevos as $nuevos) {
-            $i = $i + 1;
-            ?>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
 
-
-                <div class="product-item bg-light mb-4">
-                    <div class="product-img position-relative overflow-hidden">
-
-                        <?php
-                        if (file_exists('img/productos/' . $nuevos['id'] . '/principal.jpg')) { ?>
-                            <img class="card-img-top" width="900" height="200"
-                                src="img/productos/<?php echo $nuevos['id']; ?>/principal.jpg">
                             <?php
-                        } ?>
+                            if (file_exists('img/productos/' . $nuevos['id'] . '/principal.jpg')) { ?>
+                                <img class="card-img-top" width="900" height="200"
+                                    src="img/productos/<?php echo $nuevos['id']; ?>/principal.jpg">
+                                <?php
+                            } ?>
 
-                        <div class="product-action">
-                            <a class="btn btn-outline-dark btn-square"
-                                href="products_read_more.php?id=<?php echo $nuevos['id'] ?>"
-                                style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i
-                                    class="fa fa-search"></i></a>
+                            <div class="product-action">
+                                <a class="btn btn-outline-dark btn-square"
+                                    href="products_read_more.php?id=<?php echo $nuevos['id'] ?>"
+                                    style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i
+                                        class="fa fa-search"></i></a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate"
-                            href="products_read_more.php?id=<?php echo $nuevos['id'] ?>">
-                            <?php echo $nuevos['nombre_prod'] ?>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate"
+                                href="products_read_more.php?id=<?php echo $nuevos['id'] ?>">
+                                <?php echo $nuevos['nombre_prod'] ?>
 
-                            <div align="center" &nbsp;&nbsp;>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>
-                                    <i class="fa-solid fa-heart" style="color:red;"></i> </a></div>
-                        </a>
+                                <div align="center" &nbsp;&nbsp;>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>
+                                        <i class="fa-solid fa-heart" style="color:red;"></i> </a></div>
+                            </a>
 
-                        <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h5>$
-                                <?php echo $nuevos['precio'] ?>
-                            </h5>
-                            </h6>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <h5>$
+                                    <?php echo $nuevos['precio'] ?>
+                                </h5>
+                                </h6>
+                            </div>
+                            <div align="center">
+                                <FONT COLOR="#15b83b">20% Descuento</FONT>
+                            </div>
                         </div>
                         <div align="center">
-                            <FONT COLOR="#15b83b">20% Descuento</FONT>
-                        </div>
-                    </div>
-                    <div align="center">
-                        <form>
-                            <p class="clasificacion">
-                                <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                            <form>
+                                <p class="clasificacion">
+                                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
     --><label for="radio1">★</label><!--
     --><input id="radio2" type="radio" name="estrellas" value="4"><!--
     --><label for="radio2">★</label><!--
@@ -384,14 +385,14 @@
     --><label for="radio4">★</label><!--
     --><input id="radio5" type="radio" name="estrellas" value="1"><!--
     --><label for="radio5">★</label>
-                            </p>
-                        </form>
+                                </p>
+                            </form>
+                        </div>
+                        <br>
+
                     </div>
-                    <br>
-                    
                 </div>
-            </div>
-        <?php } ?>
+            <?php } ?>
+        </div>
     </div>
-</div>
 </div>
