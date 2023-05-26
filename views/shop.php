@@ -38,33 +38,36 @@
                                 <b class="caret"></b>
                             </button>
                             <ul class="multiselect-container genres-select dropdown-menu">
-                                <li> &nbsp;<a tabindex="0"><label class="checkbox "onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" style="color:rgb(255 255 255);" value="voley">
-                                            &nbsp;Voley</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" style="color:rgb(255 255 255);"
+                                                value="atletismo">&nbsp;Atletismo</label></a></li>
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
                                                 value="artes-marciales"> &nbsp;Artes Marciales</label></a></li>
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="tenis">&nbsp;Tenis</label></a></li>
+                                                value="badminton">&nbsp;Badminton</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="basket">&nbsp;Basket</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="boxeo">&nbsp;Boxeo</label></a></li>
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
                                                 value="ciclismo">&nbsp;Ciclismo</label></a></li>
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
                                                 value="futbol">&nbsp;Futbol</label></a></li>
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="basket">&nbsp;Basket</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="rugby">&nbsp;Rugby</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="boxeo">&nbsp;Boxeo</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
                                                 value="golf">&nbsp;Golf</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="handbal">&nbsp;Handbal</label></a></li>
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
                                                 value="natacion">&nbsp;Natacion</label></a></li>
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="surf">&nbsp;Surf</label></a></li>
-                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
                                                 value="pink ponk">&nbsp;Pink Ponk</label></a></li>
                                 <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
-                                                value="handbal">&nbsp;Handbal</label></a></li>
-
+                                                value="rugby">&nbsp;Rugby</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="surf">&nbsp;Surf</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox"
+                                                value="tenis">&nbsp;Tenis</label></a></li>
+                                <li>&nbsp;<a tabindex="0"><label class="checkbox"onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" 
+                                                value="voley">&nbsp;Voley</label></a></li>
                             </ul>
                         </div>
                     </span>

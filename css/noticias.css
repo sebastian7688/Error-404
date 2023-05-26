@@ -1,4 +1,4 @@
-body {
+/*body {
     align-items: center;
     background: #E3E3E3;
     height: 100vh;
@@ -9,9 +9,6 @@ body {
     background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-@animationSpeed: 40s;
-
-/*Animation
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -22,6 +19,9 @@ body {
     }
 }
 
+.animationSpeed
+*/
+/*Animation
 
 /* Styling
 .slider {
@@ -33,10 +33,9 @@ body {
     position: relative;
     width: 960px;
 
-    ::before{} 
+} 
 
     ::after {
-        @include white-gradient;
         content: "";
         height: 100px;
         position: absolute;
@@ -65,6 +64,57 @@ body {
         height: 100px;
         width: 250px;
     }
-}
+*/
 
-/*
+
+
+#carrusel {
+    float:left;
+    width:600px;
+    overflow:hidden;
+    height:203px;
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+ 
+#carrusel .left-arrow {
+    background:url(../img/home.jpg); 
+    position:absolute;
+    left:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+ 
+#carrusel .right-arrow {
+    background:url(../img/home.jpg); 
+    position:absolute;
+    right:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+ 
+.carrusel {
+    width:4000px;
+    left:0px;
+    position:absolute;
+    z-index:0;
+}
+ 
+.carrusel>div {
+    float: left;
+    height: 403px;
+    margin-right: 5px;
+    width: 195px;
+    text-align:center;
+}
+ 
+.carrusel img {
+    cursor:pointer;
+}
+ 
+.product {
+    border:#CCCCCC 1px solid;
+}

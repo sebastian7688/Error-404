@@ -1,30 +1,31 @@
-<link href="css/style.css" rel="stylesheet">
+<link href="css/noticias.css" rel="stylesheet">
+
 
 <div class="container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page"><a class="link-dark" style="text-decoration: none;">Noticias</a>
+            <li class="breadcrumb-item active" aria-current="page"><a style="text-decoration: none;">Noticias</a>
             </li>
         </ol>
     </nav>
 </div>
 <br>
-
 <h1 align="center">Noticias </h1>
 <br>
 <?php
-                if (isset($_SESSION['usuario'])) {
-                    if ($_SESSION['usuario']['rol'] > 1) {
-                ?>
-<div align="center">
-    <button class="btn btn-primary me-md-2" type="button"><a href="add_notices.php" a>Agrega tus noticas</button>
-    <button class="btn btn-primary" type="button"><a href="noticias.php" a>Mira tus noticias</button>
-</div>
-<br>
-<br>
-<?php }}?>
+if (isset($_SESSION['usuario'])) {
+    if ($_SESSION['usuario']['rol'] > 1) {
+?>
+        <div align="center">
+            <button class="btn btn-primary me-md-2" type="button"><a href="add_notices.php" a>Agrega tus noticas</button>
+            <button class="btn btn-primary" type="button"><a href="noticias.php" a>Mira tus noticias</button>
+        </div>
+        <br>
+        <br>
+<?php }
+} ?>
 <!-- Carousel Start -->
 
 <div class="container-fluid p-0 mb-1 pb-5">
@@ -76,187 +77,400 @@
 <br>
 
 <!---start cards1-->
-<div class="container-fluid pt-5 pb-3">
-    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-        <span class="bg-secondary pr-3">Noticias destacadas</span></h2>
-    <div class="row px-xl-5">
-        <div class="col-lg-8 col-md-6 col-sm-6 pb-36">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">
-                        <h5>Nombre de la noticia</h5>
-                    </a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<div class="row g-5">
+    <div class="col-md-9">
+        <div class="container-fluid pt-5 pb-3">
+            <h2 style="margin-left: 50px;">Noticias destacadas
+            </h2>
+            <div class="row px-xl-5">
+                <div class="col-lg-12 col-md-6 col-sm-6 pb-36">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">
+                                <h5>NOTICIA</h5>
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <br>
+                            <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                        </div>
                     </div>
-                    <br>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-9 pb-8">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">
-                        <h5>Nombre de la noticia</h5>
-                    </a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.<br>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy<br>vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv<br>fffffffffffffffffffffffffffffffffff<br>ccccccccccccccccccccccccccccccc<br>cccccccccccccccccccccccccccccccccc<br>cccccccccccccccccccccccccccccccccccccccccccv<br>fffffffffffffffffffffffffffff<br>dddddddddddddddefreertyhtghtddddddddddddddddd<br></p>
+        <br>
+        <br>
+        <!-----End card1---->
+
+        <!---Start cards2-->
+        <div class="container-fluid pt-5 pb-3">
+            <h2 style="margin-left: 50px;">Noticias :333</h2>
+            <br>
+            <div style="margin-left: 60px;" class="row px-xl-5">
+                <div class="col-lg-5 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">
+                                <h5>NOTICIA</h5>
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <br>
+                            <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                        </div>
                     </div>
-                    <br>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">
+                                <h5>NOTICIA</h5>
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <br>
+                            <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: 60px;" class="row px-xl-5">
+                <div class="col-lg-5 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">
+                                <h5>NOTICIA</h5>
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <br>
+                            <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">
+                                <h5>NoOTICIA</h5>
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <br>
+                            <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---End cards2-->
+        <br>
+        <br>
+        <br>
+        <!---Start cards3-->
+        <div class="container-fluid pt-5 pb-3">
+            <h2 style="margin-left: 50px;">Noticias :3</h2>
+            <div class="row px-xl-5">
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">
+                                <h5>NOTICIA</h5>
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <br>
+                            <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">
+                                <h5>NOTICIA</h5>
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <br>
+                            <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">
+                                <h5>NOTICIA</h5>
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <br>
+                            <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">
+                                <h5>NOTICIA</h5>
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <br>
+                            <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---End cards3-->
+                <br>
+                <br>
+            <!--Start carousel--->
+            <h2 style="margin-left: 50px;">Voley</h2>
+            <div align="center" style="margin-left: 130px;">
+                <div id="carrusel" style="width:800px; height:203px;">
+                    <a class="left-arrow">
+                        <img src="images/left-arrow.png" width="14" height="14" />
+                    </a>
+                    <a class="right-arrow">
+                        <img src="images/right-arrow.png" width="14" height="14" />
+                    </a>
+                    <div class="carrusel">
+                        <div class="product" id="product_0">
+                            <img src="img/home/noti-8.jpg" width="195" height="140" />
+                            <br>
+                            <h5>Noticia 1</h5>
+                            <p>info deporte</p>
+                        </div>
+                        <div class="product" id="product_1">
+                            <img src="img/home/noti-1.jpg" width="195" height="140" />
+                            <br>
+                            <h5>Noticia 2</h5>
+                            <p>info deporte</p>
+                        </div>
+                        <div class="product" id="product_2">
+                            <img src="img/home/noti-3.jpg" width="195" height="140" />
+                            <br>
+                            <h5>Noticia 3</h5>
+                            <p>info deporte</p>
+                        </div>
+                        <div class="product" id="product_3">
+                            <img src="img/home/noti-8.jpg" width="195" height="140" />
+                            <br>
+                            <h5>Noticia 4</h5>
+                            <p>info deporte</p>
+                        </div>
+                        <div class="product" id="product_4">
+                            <img src="img/home/noti-8.jpg" width="195" height="140" />
+                            <br>
+                            <h5>Noticia 5</h5>
+                            <p>info deporte</p>
+                        </div>
+                        <div class="product" id="product_5">
+                            <img src="img/home/noti-8.jpg" width="195" height="140" />
+                            <br>
+                            <h5>Noticia 6</h5>
+                            <p>info deporte</p>
+                        </div>
+                        <div class="product" id="product_6">
+                            <img src="img/home/noti-8.jpg" width="195" height="140" />
+                            <br>
+                            <h5>Noticia 7</h5>
+                            <p>info deporte</p>
+                        </div>
+                        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+                        <script>
+                            var current = 0;
+                            var imagenes = new Array();
+
+                            $(document).ready(function() {
+                                var numImages = 6;
+                                if (numImages <= 3) {
+                                    $('.right-arrow').css('display', 'none');
+                                    $('.left-arrow').css('display', 'none');
+                                }
+
+                                $('.left-arrow').on('click', function() {
+                                    if (current > 0) {
+                                        current = current - 1;
+                                    } else {
+                                        current = numImages - 3;
+                                    }
+
+                                    $(".carrusel").animate({
+                                        "left": -($('#product_' + current).position().left)
+                                    }, 600);
+
+                                    return false;
+                                });
+
+                                $('.left-arrow').on('hover', function() {
+                                    $(this).css('opacity', '0.5');
+                                }, function() {
+                                    $(this).css('opacity', '1');
+                                });
+
+                                $('.right-arrow').on('hover', function() {
+                                    $(this).css('opacity', '0.5');
+                                }, function() {
+                                    $(this).css('opacity', '1');
+                                });
+
+                                $('.right-arrow').on('click', function() {
+                                    if (numImages > current + 3) {
+                                        current = current + 1;
+                                    } else {
+                                        current = 0;
+                                    }
+
+                                    $(".carrusel").animate({
+                                        "left": -($('#product_' + current).position().left)
+                                    }, 600);
+
+                                    return false;
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <!---End carousel---->
+        </div>
+    </div>
+
+
+    <aside class="sidebar" id="sidebar-1" style="background-color: lightgray; padding: 20px;" title="Información adicional">
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="#">Artículo 1</a></li>
+            <li><a href="#">Artículo 2</a></li>
+            <li><a href="#">Artículo 3</a></li>
+        </ul>
+        <img  style="height: 190px;" src="img/home/noti-8.jpg" alt="">
+        <br><br>
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="#">Artículo 1</a></li>
+            <li><a href="#">Artículo 2</a></li>
+            <li><a href="#">Artículo 3</a></li>
+        </ul>
+        <img  style="height: 190px;" src="img/home/noti-1.jpg" alt="">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="#">Artículo 1</a></li>
+            <li><a href="#">Artículo 2</a></li>
+            <li><a href="#">Artículo 3</a></li>
+        </ul>
+        <img  style="height: 190px;" src="img/home/noti-1.jpg" alt="">
+        <br><br><br><br><br>
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="#">Artículo 1</a></li>
+            <li><a href="#">Artículo 2</a></li>
+            <li><a href="#">Artículo 3</a></li>
+        </ul>
+        <img  style="height: 190px;" src="img/home/noti-8.jpg" alt="">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="#">Artículo 1</a></li>
+            <li><a href="#">Artículo 2</a></li>
+            <li><a href="#">Artículo 3</a></li>
+        </ul>
+        <img  style="height: 190px;" src="img/home/noti-8.jpg" alt="">
+        <br><br><br><br><br><br><br>
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="#">Artículo 1</a></li>
+            <li><a href="#">Artículo 2</a></li>
+            <li><a href="#">Artículo 3</a></li>
+        </ul>
+        <img  style="height: 190px;" src="img/home/noti-8.jpg" alt="">
+    </aside>
+
+</div>
+
+
+
+<!-- Startsilde
+    <br>
+    <div class="col-md-3">
+        <div class="container">
+            <div class="col-md-4">
+            <div class="col-lg-2 col-md-2 col-sm-9 pb-8">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/home/noti-1.jpg" alt="">
+                        </div>
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/home/noti-1.jpg" alt="">
+                        </div>
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/home/noti-1.jpg" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">
+                                <h5>NOTICIA</h5>
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.<br>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy<br>vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv<br>fffffffffffffffffffffffffffffffffff<br>ccccccccccccccccccccccccccccccc<br>cccccccccccccccccccccccccccccccccc<br>cccccccccccccccccccccccccccccccccccccccccccv<br>fffffffffffffffffffffffffffff<br>dddddddddddddddefreertyhtghtddddddddddddddddd<br></p>
+                            </div>
+                            <br>
+                            <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<br>
-<br>
-<!-----End card1---->
 
-<!---Start cards2-->
-<div class="container-fluid pt-5 pb-3">
-    <div class="container">
-
-            <div class="card" style="width: 28rem;">
-                <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-            <br>
-            <div align="center">
-            <div class="card" style="width: 28rem;">
-                <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-</div>
-            <br>
-            <div align="right">
-            <div class="card" style="width: 35rem;">
-                <img src=""class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-</div>
-        </div>
-    
-</div>
-<!---End cards2-->
-<br>
-<br>
-<br>
-<!---Start cards3-->
-<div class="container-fluid pt-5 pb-3">
-    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Noticias :3</span></h2>
-    <div class="row px-xl-5">
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
-                    <div class="product-action">
-                        <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">
-                        <h5>Nombre de producto</h5>
-                    </a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <br>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
-                    <div class="product-action">
-                        <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">
-                        <h5>Nombre de producto</h5>
-                    </a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <br>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
-                    <div class="product-action">
-                        <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">
-                        <h5>Nombre de producto</h5>
-                    </a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <br>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
-                    <div class="product-action">
-                        <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <a class="h6 text-decoration-none text-truncate" href="">
-                        <h5>Nombre de producto</h5>
-                    </a>
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <br>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!---End cards3-->
+ --slider End--->
 
 
-
-<br>
 
 <!-- Carousel infinito start 
-<div class="slider">
+  <div class="slider">
     <link rel="stylesheet" href="css/noticias.css">
     <div class="slide-track">
         <div class="slide">
@@ -302,9 +516,9 @@
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
         </div>
     </div>
-</div>
--carusel infinito fin-->
-
+ </div>
+ -carusel infinito fin-->
+<br>
 <!-- PAGINADOR -->
 <div class="container">
     <nav aria-label="Page navigation example">
