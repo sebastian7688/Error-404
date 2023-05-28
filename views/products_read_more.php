@@ -9,12 +9,14 @@
 </a></b>
 <link href="css/style.css" rel="stylesheet">
 <script src="//assets.jumpseller.com/public/jquery-3.3.1.min.js"></script>
+
 <?php foreach ($productos as $producto) { ?>
     <div class="container border-top">
 
         <!-- Page Heading -->
         <div class="row">
             <div class="col-12">
+            <br><br>
                 <h3 class="page-header"><?php echo $producto['nombre_prod'] ?></h3>
             </div>
         </div>
