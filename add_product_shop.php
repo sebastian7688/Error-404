@@ -4,7 +4,7 @@ $id = $_SESSION['usuario']['id'];
 if ($_POST) {
     $sql = "INSERT INTO productos VALUES(null , '" . $_POST['name_prod'] . "' , '" . $_POST['desc'] . "'
     , '" . $_POST['info'] . "' , '" . $_POST['sport'] . "', '". $_POST['precio'] ."' 
-    , '" . date("Y-m-d h:i:s", time()) . "' , '" . $id . "' , '" . $_FILES['principal_img'] . "')";
+    , '" . date("Y-m-d h:i:s", time()) . "' , '" . $id . "' , '" . $_FILES['principal_img'] . "', NULL)";
    
     $res = mysqli_query($conn, $sql);
     header('Location: shop.php');
