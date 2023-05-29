@@ -123,7 +123,7 @@
                         <?php
                         if (isset($_SESSION['usuario'])) {
                             ?>
-                            <a href="misproductos" style="margin-left:100px margin-above=100px" class="btn btn-info"></i><i
+                            <a href="myproducts.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i><i
                                     class="fa-solid fa-basket-shopping"></i> Mis productos </a>&nbsp;&nbsp;
                             <a href="add_product_shop.php" style="margin-left:100px margin-above=100px"
                                 class="btn btn-info"></i> Añadir Producto <i class="fa-solid fa-plus"></i></a>

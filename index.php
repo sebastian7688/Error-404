@@ -32,7 +32,7 @@ $categories = mysqli_fetch_all($res2, MYSQLI_ASSOC);
 
 //categories function
 if ($_GET) {
-    if($_GET['id_cat'] == 0){
+    if($_GET['id_cat'] < 1){
         header("Location: index.php");
     }
     $sql = "SELECT * FROM `productos` WHERE id_deporte = '" . $_GET['id_cat'] . "' ORDER BY fecha_alta DESC LIMIT 8";

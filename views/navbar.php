@@ -38,7 +38,7 @@
                                 }
                             </style>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-futbol"></i> Futbol </a>
+                                <a href="index.php?id_cat=4" id=miBoton class="dropdown-item"><i class="fa-solid fa-futbol"></i> Futbol </a>
                                 <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-volleyball"></i> Voley
                                 </a>
                                 <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-basketball"></i> Basquet
