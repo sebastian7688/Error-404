@@ -1,14 +1,17 @@
-<rb>
-    <a href="">
-        <rb>
-            <a href="">
-                <rbr></rbr>
-            </a>
-    </a>
-    </a></b>
-    <link href="css/style.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
     <script src="//assets.jumpseller.com/public/jquery-3.3.1.min.js"></script>
-
+    <div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a>
+            </li>
+            <li class="breadcrumb-item"><a href="shop.php" class="link-info" style="text-decoration: none;">Tienda</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page"><a style="text-decoration: none;">Producto</a>
+            </li>
+        </ol>
+    </nav>
+</div>
     <?php foreach ($productos as $producto) { ?>
         <div class="container border-top">
 
@@ -112,7 +115,7 @@
                                 <input type="submit" class="btn text-dark" style="background-color:rgb(3 158 207);" value="Añadir al carro de la compra" />
                             </div>
                         </div>
-                        <a class="btn btn-info text-light">Editar</a>
+                        <a class="btn btn-info text-light" href="editar_producto.php">Editar</a>
                         <a class="btn btn-success text-light">Descuento</a>
                         <a class="btn btn-danger text-light">Eliminar producto</a>
                     </form>

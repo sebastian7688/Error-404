@@ -17,7 +17,7 @@
     <div class="Body">
         <div class="rov">
             <div align="baseline">
-                <h1 align="left">
+                <h1 style="margin-left:600px">
                     TIENDA
                 </h1>
             </div>
@@ -200,11 +200,11 @@
             </div>
         </div>
     </form>
+
     <!-- Products Start -->
     <div class="container-fluid pt-5 pb-3">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">
-                Productos
-                en racha. </span></h2>
+                Productos en racha. </span></h2>
         <div class="row px-xl-5">
             <?php foreach ($productos_nuevos as $nuevos) { ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-5">
@@ -213,7 +213,7 @@
 
                             <?php
                             if (file_exists('img/productos/' . $nuevos['id'] . '/principal.jpg')) { ?>
-                                <img class="card-img-top" style="width:90%; height:60%;"
+                                <img class="card-img-top" 
                                     src="img/productos/<?php echo $nuevos['id']; ?>/principal.jpg">
                                 <?php
                             } ?>
@@ -231,13 +231,8 @@
                                 href="products_read_more.php?id=<?php echo $nuevos['id'] ?>">
                                 <?php echo $nuevos['nombre_prod'] ?>
 
-                                <div align="center" &nbsp;&nbsp;>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>
-                                        <i class="fa-solid fa-heart" style="color:red;"></i> </a></div>
+                                <div style="margin-left:200px">
+                                 <i class="fa-solid fa-heart" style="color:red;"></i> </a></div>
                             </a>
 
                             <div class="d-flex align-items-center justify-content-center mt-2">
@@ -276,6 +271,101 @@
     <!-- Products End -->
 
 
+   
+    
+    <!---title>Tarjetas de productos con CSS y Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"--->
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+       
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        /*
+        .card-title {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+      
+        .card-text {
+            color: #777;
+        }
+       
+        .btn {
+            margin-top: 10px;
+        }
+       
+        .btn-favorite {
+            color: #ff4136; /* Rojo */
+       /* }
+       
+        .btn-buy {
+            color: #007bff;  Azul claro */
+       /*  }
+       
+        .btn-description {
+            color: #28a745; Verde */
+        /*}*/
+    </style>
+ <!-----
+    <div class="container">
+        <div class="row">
+                        <//?php foreach ($productos_nuevos as $nuevos) { ?>
+
+            <div class="col-md-4">
+                <div class="card">
+                <//?php
+                            if (file_exists('img/productos/' . $nuevos['id'] . '/principal.jpg')) { ?>
+                                <img class="card-img-top"
+                                    src="img/productos/<//?php echo $nuevos['id']; ?>/principal.jpg">
+                                <//?php
+                            } ?>
+
+                    <div class="card-body">
+                        <h5 clas="btn btn-blue"class="card-title" href="products_read_more.php?id=<//?php echo $nuevos['id'] ?>"></h5>
+                                <//?php echo $nuevos['nombre_prod'] ?>
+
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <h5>$
+                                    <//?php echo $nuevos['precio'] ?>
+                                </h5>
+                                
+                                
+                            </div>
+                            <div align="center">
+                                    <FONT COLOR="#15b83b">20% Descuento</FONT>
+                                </div>
+                            
+                        <button class="btn btn-favorite">Agregar a favoritos</button>
+                        <button class="btn btn-buy">Comprar</button>
+                        <button class="btn btn-description">Ver descripción</button>
+                    </div>
+                    <form align="center">
+                                <p class="clasificacion">
+                                    <input id="radio1" type="radio" name="estrellas" value="5">
+                                    <label for="radio1">★</label>
+                                    <input id="radio2" type="radio" name="estrellas" value="4">
+                                    <label for="radio2">★</label>
+                                    <input id="radio3" type="radio" name="estrellas" value="3">
+                                    <label for="radio3">★</label>
+                                    <input id="radio4" type="radio" name="estrellas" value="2">
+                                    <label for="radio4">★</label>
+                                    <input id="radio5" type="radio" name="estrellas" value="1">
+                                    <label for="radio5">★</label>
+                                </p>
+                            </form>
+                </div>
+            </div>
+            
+            <//?php } ?>
+        </div>
+    </div>
+
+
+--->
 
     <!-- Offer Start -->
     <div class="container-fluid pt-3 pb-3">
