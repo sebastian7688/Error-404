@@ -17,7 +17,7 @@
     <div class="Body">
         <div class="rov">
             <div align="baseline">
-                <h1 style="margin-left:600px">
+                <h1 style="margin-left:120px">
                     TIENDA
                 </h1>
             </div>
