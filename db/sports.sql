@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-05-2023 a las 02:18:42
--- Versión del servidor: 10.4.22-MariaDB
--- Versión de PHP: 8.0.13
+-- Tiempo de generación: 08-06-2023 a las 18:38:32
+-- Versión del servidor: 10.4.27-MariaDB
+-- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,7 +31,7 @@ CREATE TABLE `categorías` (
   `id_categoria` int(255) NOT NULL,
   `categoria` varchar(255) NOT NULL,
   `deporte` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -42,13 +42,14 @@ CREATE TABLE `categorías` (
 CREATE TABLE `deportes` (
   `id_deporte` int(255) NOT NULL,
   `deporte` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `deportes`
 --
 
 INSERT INTO `deportes` (`id_deporte`, `deporte`) VALUES
+(0, 'otro'),
 (1, 'Atletismo'),
 (2, 'voley'),
 (3, 'Bádminton'),
@@ -78,7 +79,7 @@ CREATE TABLE `noticias` (
   `texto` text NOT NULL,
   `fecha_alta` datetime NOT NULL,
   `imagen` mediumblob NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `noticias`
@@ -111,7 +112,7 @@ CREATE TABLE `productos` (
   `id_usuario` int(100) NOT NULL,
   `imagen` mediumblob NOT NULL,
   `descuento` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `productos`
@@ -127,7 +128,9 @@ INSERT INTO `productos` (`id`, `nombre_prod`, `descripcion`, `texto`, `id_deport
 (17, 'Gafas de natacion PREMIUM ULTIMATUM', 'adwdad', 'adadwawd', 4, 16200, '2023-05-05 02:40:35', 7, 0x4172726179, NULL),
 (18, 'Botines de Hombre Araña muy PROS', 'adwadaw', 'awdawdwd', 3, 25600, '2023-05-05 02:42:27', 7, 0x4172726179, NULL),
 (19, 'Prueba de error 2', 'awdwdwad', 'adwd', 2, 12412, '2023-05-29 01:20:38', 7, 0x4172726179, NULL),
-(20, 'Prueba de Correcion de Error', 'Se supone que esto debe aparecer', 'awdawadawd', 7, 9900, '2023-05-29 01:22:02', 7, 0x4172726179, NULL);
+(20, 'Prueba de Correcion de Error', 'Se supone que esto debe aparecer', 'awdawadawd', 7, 9900, '2023-05-29 01:22:02', 7, 0x4172726179, NULL),
+(21, 'ewer', 'rwerwrw', 'rwrw', 0, 12, '2023-06-07 01:23:32', 9, 0x4172726179, NULL),
+(22, '', '', '', 0, 0, '2023-06-07 01:23:57', 9, 0x4172726179, NULL);
 
 -- --------------------------------------------------------
 
@@ -138,7 +141,7 @@ INSERT INTO `productos` (`id`, `nombre_prod`, `descripcion`, `texto`, `id_deport
 CREATE TABLE `roles` (
   `id_rol` int(11) UNSIGNED NOT NULL,
   `rol` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `roles`
@@ -164,7 +167,7 @@ CREATE TABLE `usuarios` (
   `fecha_alta` datetime NOT NULL,
   `fecha_baja` datetime DEFAULT NULL,
   `descrip` varchar(500) NOT NULL DEFAULT 'Sin Descripcion'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `usuarios`
@@ -173,7 +176,8 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `user_name`, `contra`, `email`, `rol`, `fecha_alta`, `fecha_baja`, `descrip`) VALUES
 (6, 'Anitaxx', '276b6c4692e78d4799c12ada515bc3e4', 'peluka1709@gmail.com', 1, '0000-00-00 00:00:00', NULL, 'Amo romper mis limites, y estoy a un gran paso de superarme'),
 (7, 'MikeNoble2905', 'e8494a1c9c7197508e5990872e417a0a', 'Mikemoble2905@gmail.com', 2, '0000-00-00 00:00:00', NULL, 'Esto es tan solo un demostracion de las cosas que se pueden hacer si uno lo propone'),
-(9, 'laydo', '76d80224611fc919a5d54f0ff9fba446', 'parditop404@gmail.com', 2, '0000-00-00 00:00:00', NULL, 'Amo el deporte.');
+(9, 'laydo', '76d80224611fc919a5d54f0ff9fba446', 'parditop404@gmail.com', 2, '0000-00-00 00:00:00', NULL, 'Amo el deporte.'),
+(40, '', 'd41d8cd98f00b204e9800998ecf8427e', '', 1, '2023-06-07 01:21:51', NULL, 'Sin Descripcion');
 
 --
 -- Índices para tablas volcadas
@@ -219,7 +223,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `deportes`
 --
 ALTER TABLE `deportes`
-  MODIFY `id_deporte` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id_deporte` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de la tabla `noticias`
@@ -231,7 +235,7 @@ ALTER TABLE `noticias`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(100) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(100) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`
@@ -243,7 +247,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
