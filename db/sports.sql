@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-06-2023 a las 18:38:32
+-- Tiempo de generación: 08-06-2023 a las 18:42:38
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.2.0
 
@@ -49,7 +49,7 @@ CREATE TABLE `deportes` (
 --
 
 INSERT INTO `deportes` (`id_deporte`, `deporte`) VALUES
-(0, 'otro'),
+(0, 'Otros'),
 (1, 'Atletismo'),
 (2, 'voley'),
 (3, 'Bádminton'),
