@@ -4,6 +4,7 @@
 <form class="register" method="post">
     <div class="contenedor">
         <h1> Inicia sesión </h1>
+        <br>
         <?php if ($stats == 1) { ?>
             <br>
             <div class='alert alert-danger alert-dismissible fade show' role='alert' style='margin:0;'>

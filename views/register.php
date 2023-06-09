@@ -5,9 +5,7 @@
 <form class="register" method="post">
     <div class="contenedor">
             <h1>Registrate</h1>
-            
             <br>
-
             <?php if ($status == 1) { ?>
             <br>
             <div class='alert alert-danger alert-dismissible fade show' role='alert' style='margin:0;'>
@@ -36,7 +34,7 @@
             </div>
             <button class="btn-register" type="submit"> Registrarse. </button><br><br>
             <p> Al registrarte aceptas nuestras condiciones de uso y politica de privacidad. </p>
-            <p algin="center"> Cuestión aceptas darnos tus datos personales y ubicación en tiempo real. </p>
+            <!-- <p algin="center"> Cuestión aceptas darnos tus datos personales y ubicación en tiempo real. </p> -->
             <a href="login.php" class="btn-secondary"> ¿Ya tienes una cuenta? </a>
             </div>
         </form>
