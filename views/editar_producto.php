@@ -28,7 +28,7 @@
 
         <div class="form-group">
             <label for="descripccion">Descripccion del producto:</label>
-            <textarea class="form-control" id="descripccion" name="descripccion" required></textarea>
+            <textarea class="form-control" id="descripccion" name="descripccion" maxlength="250" required></textarea>
         </div>
 
         <div class="form-group">
@@ -37,8 +37,8 @@
         </div>
 
         <div class="btn-group">
-            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Categoria del producto
+           <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              <font color="#f8f8f8">Categoria del producto</font>
             </button>
 
             <div class="dropdown-menu">
@@ -64,6 +64,6 @@
         <label for="inputEmail4" class="titulo_2">Añadir la foto del producto</label>
         <input type="file" class="form-control border-dark" id="inputGroupFile01" name="principal_img" id="principal_img">
         <br>
-        <input type="submit" class="btn btn-primary" value="Enviar">
+        <button type="button" class="btn btn-primary"><font color="#f8f8f8">Enviar</font></button>
     </form>
 </div>
