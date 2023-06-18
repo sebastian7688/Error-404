@@ -10,7 +10,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item position-relative active" style="min-height: 80vh;">
-                    <img class="position-absolute w-100 h-100" src="img/home/caru-1.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="img/progress.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Spa & Beauty Center</h6>
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="min-height: 80vh;">
-                    <img class="position-absolute w-100 h-100" src="img/home/caru-2.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="img/progress.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Spa & Beauty Center</h6>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="min-height: 80vh;">
-                    <img class="position-absolute w-100 h-100" src="img/home/caru-3.png" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="img/progress.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Spa & Beauty Center</h6>
@@ -53,7 +53,7 @@
         <div class="row px-xl-5">
             <div class="col-md-6">
                 <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="img/home/sopo-1.jpg" alt="">
+                    <img class="img-fluid" src="img/principal.png" alt="">
                     <div class="offer-text">
                         <h6 class="text-white text-uppercase">Save 20%</h6>
                         <h3 class="text-white mb-3">Special Offer</h3>
@@ -63,7 +63,7 @@
             </div>
             <div class="col-md-6">
                 <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="img/home/sopo-2.jpg" alt="">
+                    <img class="img-fluid" src="img/principal.png" alt="">
                     <div class="offer-text">
                         <h6 class="text-white text-uppercase">Save 20%</h6>
                         <h3 class="text-white mb-3">Special Offer</h3>
@@ -149,7 +149,7 @@
         <div class="row px-xl-5">
             <div class="col-md-6">
                 <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="img/home/sopo-1.jpg" alt="">
+                    <img class="img-fluid" src="img/principal.png" alt="">
                     <div class="offer-text">
                         <h6 class="text-white text-uppercase">Save 20%</h6>
                         <h3 class="text-white mb-3">Special Offer</h3>
@@ -159,7 +159,7 @@
             </div>
             <div class="col-md-6">
                 <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="img/home/sopo-2.jpg" alt="">
+                    <img class="img-fluid" src="img/principal.png" alt="">
                     <div class="offer-text">
                         <h6 class="text-white text-uppercase">Save 20%</h6>
                         <h3 class="text-white mb-3">Special Offer</h3>

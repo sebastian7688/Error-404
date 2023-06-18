@@ -12,17 +12,20 @@
         </ol>
     </nav>
 </div>
-<?php foreach ($productos as $producto) { ?>
+<?php foreach ($productos as $producto) {
+    ?>
     <div class="container border-top">
 
         <!-- Page Heading -->
         <div class="row">
             <div class="col-12">
                 <br><br>
-                <h3 class="page-header"><?php echo $producto['nombre_prod'] ?></h3>
+                <h3 class="page-header">
+                    <?php echo $producto['nombre_prod'] ?>
+                </h3>
             </div>
         </div>
-        
+
         <!-- /.row -->
 
         <div class="row">
@@ -36,8 +39,9 @@
                                     <br>
                                     <?php
                                     if (file_exists('img/productos/' . $producto['id'] . '/principal.jpg')) { ?>
-                                        <img id="first-image" alt="" class="img-fluid" style="width:90%; height:60%;" src="img/productos/<?php echo $producto['id']; ?>/principal.jpg">
-                                    <?php
+                                        <img id="first-image" alt="" class="img-fluid" style="width:90%; height:60%;"
+                                            src="img/productos/<?php echo $producto['id']; ?>/principal.jpg">
+                                        <?php
                                     } ?>
                                 </div>
                             </div>
@@ -66,13 +70,16 @@
             </div>
 
             <div class="col-lg-6">
-                <form class="form-horizontal" action="/cart/add/224300" method="post" enctype="multipart/form-data" name="buy">
+                <form class="form-horizontal" action="/cart/add/224300" method="post" enctype="multipart/form-data"
+                    name="buy">
 
                     <!-- Product Price  -->
                     <div class="form-group price_elem row">
                         <label class="col-sm-3 col-md-3 form-control-label nopaddingtop">Precio:</label>
                         <div class="col-sm-8 col-md-9">
-                            <span class="product-form-price" id="product-form-price">$<?php echo $producto['precio'] ?></span>
+                            <span class="product-form-price" id="product-form-price">$
+                                <?php echo $producto['precio'] ?>
+                            </span>
 
 
                         </div>
@@ -84,20 +91,16 @@
 
 
 
-                    <div class="form-group row">
-                        <label for="Quantity" class="col-sm-3 col-md-3 form-control-label">Cantidad:</label>
-                        <div class="col-sm-8 col-md-9">
 
-                            <input type="number" class="qty form-control" id="input-qty" name="qty" maxlength="5" value="1">
-                        </div>
-                    </div>
 
 
 
                     <div class="form-group row ">
                         <label class="col-sm-3 col-md-3 form-control-label">Description:</label>
                         <div class="col-sm-8 col-md-9 description">
-                            <p><?php echo $producto['texto'] ?></p>
+                            <p>
+                                <?php echo $producto['texto'] ?>
+                            </p>
                         </div>
                     </div>
 
@@ -106,19 +109,36 @@
                         <label class="col-sm-3 col-md-3 form-control-label">Detalles:</label>
                         <div class="col-sm-9 col-md-9">
 
-                            <p><?php echo $producto['descripcion'] ?></p>
+                            <p>
+                                <?php echo $producto['descripcion'] ?>
+                            </p>
 
                         </div>
                     </div>
-                    <div class="form-group product-stock product-available row visible">
+                    <form action="shopping_cart.php" method="get">
                         <label class="col-sm-3 col-md-3 form-control-label"></label>
                         <div class="col-sm-8 col-sm-offset-3 col-md-9 col-md-offset-3">
-                            <input type="submit" class="btn text-dark" style="background-color:rgb(3 158 207);" value="Añadir al carro de la compra" />
+
                         </div>
-                        <div class="col-sm-8 col-sm-offset-3 col-md-9 col-md-offset-3">
-                            <input type="submit" class="btn text-dark" style="background-color:rgb(3 158 207);" value="Compra Ahora" />
+                    </form>
+                    <?php $name = $_GET['id'] ?>
+                    <form action="shopping_cart.php" method="post">
+                        <div class="form-group row">
+                            <label for="Quantity" class="col-sm-3 col-md-3 form-control-label">Cantidad:</label>
+                            <div class="col-sm-8 col-md-9">
+
+                                <input type="number" class="qty form-control" name="cant" id="input-qty" name="qty"
+                                    max="<?php echo $producto['cantidad'] ?>" min="1">
+                            </div>
                         </div>
-                    </div>
+                        <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
+                        <input type="submit" value="Agregar al carito">
+
+                    </form>
+                    <!--<div class="col-sm-8 col-sm-offset-3 col-md-9 col-md-offset-3">
+                            <input type="submit" class="btn text-dark" style="background-color:rgb(3 158 207);"
+                                value="Compra Ahora" />
+                        </div>-->
                     <a class="btn btn-info text-light" href="editar_producto.php">Editar</a>
                     <a class="btn btn-success text-light">Descuento</a>
                     <a class="btn btn-danger text-light">Eliminar producto</a>
@@ -127,15 +147,15 @@
         </div>
     </div>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#product-carousel').carousel({
                 interval: false
             });
-            $('.thumbs').click(function(e) {
+            $('.thumbs').click(function (e) {
                 e.preventDefault();
                 $("#product-carousel").carousel(parseInt($(this).attr('data-image')) - 1);
             });
-            $("#product-link").click(function() {
+            $("#product-link").click(function () {
                 $(this).select();
             });
         });

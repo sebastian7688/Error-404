@@ -13,7 +13,7 @@ if ($_POST) {
     $reg = mysqli_num_rows($res2);
     if ($reg == 0) {
         $pass = md5($_POST['pass']);
-        $sql = "INSERT INTO usuarios (id,user_name,contra,email,rol,fecha_alta)VALUES(null ,  '" . $_POST['usu'] . "' , '" . $pass . "' , '" . $_POST['correo'] . "','1' , '". date("Y-m-d h:i:s", time()) ."')";
+        $sql = "INSERT INTO usuarios (id,user_name,contra,email,rol,fecha_alta,foto)VALUES(null ,  '" . $_POST['usu'] . "' , '" . $pass . "' , '" . $_POST['correo'] . "','1' , '". date("Y-m-d h:i:s", time()) ."','perfil.png')";
         $res = mysqli_query($conn, $sql);
         if (!$res) {
             $status = 1;

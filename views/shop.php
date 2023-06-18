@@ -13,6 +13,7 @@
 </div>
 <br>
 <br>
+
 <div style="margin-right:  40px">
     <div class="Body">
         <div class="rov">
@@ -21,6 +22,7 @@
                     TIENDA
                 </h1>
             </div>
+        
             <main class="Main" style=" margin: 50px">
                 <form action="/browse" method="get" style=" margin: 60px">
                     <div class="filters" style="margin-bottom: 20px;">
@@ -118,7 +120,7 @@
                         </button>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         &nbsp;&nbsp;
-                        <a href="micarrito" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> <i
+                        <a href="carito.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> <i
                                 class="fa-solid fa-cart-shopping"></i> Mi carrito </a>&nbsp;&nbsp;
                         <?php
                         if (isset($_SESSION['usuario'])) {
@@ -377,7 +379,7 @@
         <div class="row px-xl-5">
             <div class="col-md-6">
                 <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="img/home/sopo-1.jpg" alt="">
+                    <img class="img-fluid" src="img/principal.png" alt="">
                     <div class="offer-text">
                         <h6 class="text-white text-uppercase">Save 20%</h6>
                         <h3 class="text-white mb-3">Special Offer</h3>
@@ -387,7 +389,7 @@
             </div>
             <div class="col-md-6">
                 <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="img/home/sopo-2.jpg" alt="">
+                    <img class="img-fluid" src="img/principal.png" alt="">
                     <div class="offer-text">
                         <h6 class="text-white text-uppercase">Save 20%</h6>
                         <h3 class="text-white mb-3">Special Offer</h3>

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-06-2023 a las 18:42:38
--- Versión del servidor: 10.4.27-MariaDB
--- Versión de PHP: 8.2.0
+-- Tiempo de generación: 19-06-2023 a las 01:42:51
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,26 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `sports`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `carito`
+--
+
+CREATE TABLE `carito` (
+  `id_producto` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `carito`
+--
+
+INSERT INTO `carito` (`id_producto`, `id_usuario`) VALUES
+(20, 40),
+(20, 40),
+(18, 40);
 
 -- --------------------------------------------------------
 
@@ -110,27 +130,26 @@ CREATE TABLE `productos` (
   `precio` int(100) NOT NULL,
   `fecha_alta` datetime NOT NULL,
   `id_usuario` int(100) NOT NULL,
-  `imagen` mediumblob NOT NULL,
-  `descuento` int(11) DEFAULT NULL
+  `imagen` mediumblob NOT NULL DEFAULT 'pred.png',
+  `descuento` int(11) DEFAULT NULL,
+  `cantidad` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `productos` (`id`, `nombre_prod`, `descripcion`, `texto`, `id_deporte`, `precio`, `fecha_alta`, `id_usuario`, `imagen`, `descuento`) VALUES
-(11, 'Guantes de Boxeo', 'Guantes EverLast muy duraderos, nuevos y perfectos para hacer sparring', 'Guantes color blanco y negro, de la marca Everlast, son de 16 onzas perfectos para hacer sparring e incluye un bucal adicional', 1, 14000, '2023-05-05 01:50:56', 7, 0x4172726179, NULL),
-(12, 'Pelota de Voley', 'Pelota de voley', 'no hay mucho para decir', 2, 9000, '2023-05-05 01:52:23', 7, 0x4172726179, NULL),
-(13, 'Pelota de Spider Mar PRO', 'adawdwa', 'adwawdwad', 3, 4000, '2023-05-05 02:35:14', 7, 0x4172726179, NULL),
-(14, 'red de voley', 'waddawd', 'addwaadw', 2, 1200, '2023-05-05 02:36:20', 7, 0x4172726179, NULL),
-(15, 'Vendas Everlast', 'adwadawd', 'awdadwada', 1, 1200, '2023-05-05 02:37:15', 7, 0x4172726179, NULL),
-(16, 'Guantes Sporting', 'awddwa', 'awdadw', 3, 15000, '2023-05-05 02:38:53', 7, 0x4172726179, NULL),
-(17, 'Gafas de natacion PREMIUM ULTIMATUM', 'adwdad', 'adadwawd', 4, 16200, '2023-05-05 02:40:35', 7, 0x4172726179, NULL),
-(18, 'Botines de Hombre Araña muy PROS', 'adwadaw', 'awdawdwd', 3, 25600, '2023-05-05 02:42:27', 7, 0x4172726179, NULL),
-(19, 'Prueba de error 2', 'awdwdwad', 'adwd', 2, 12412, '2023-05-29 01:20:38', 7, 0x4172726179, NULL),
-(20, 'Prueba de Correcion de Error', 'Se supone que esto debe aparecer', 'awdawadawd', 7, 9900, '2023-05-29 01:22:02', 7, 0x4172726179, NULL),
-(21, 'ewer', 'rwerwrw', 'rwrw', 0, 12, '2023-06-07 01:23:32', 9, 0x4172726179, NULL),
-(22, '', '', '', 0, 0, '2023-06-07 01:23:57', 9, 0x4172726179, NULL);
+INSERT INTO `productos` (`id`, `nombre_prod`, `descripcion`, `texto`, `id_deporte`, `precio`, `fecha_alta`, `id_usuario`, `imagen`, `descuento`, `cantidad`) VALUES
+(11, 'Guantes de Boxeo', 'Guantes EverLast muy duraderos, nuevos y perfectos para hacer sparring', 'Guantes color blanco y negro, de la marca Everlast, son de 16 onzas perfectos para hacer sparring e incluye un bucal adicional', 1, 14000, '2023-05-05 01:50:56', 7, 0x4172726179, NULL, 5),
+(12, 'Pelota de Voley', 'Pelota de voley', 'no hay mucho para decir', 2, 9000, '2023-05-05 01:52:23', 7, 0x4172726179, NULL, 5),
+(13, 'Pelota de Spider Mar PRO', 'adawdwa', 'adwawdwad', 3, 4000, '2023-05-05 02:35:14', 7, 0x4172726179, NULL, 5),
+(14, 'red de voley', 'waddawd', 'addwaadw', 2, 1200, '2023-05-05 02:36:20', 7, 0x4172726179, NULL, 5),
+(15, 'Vendas Everlast', 'adwadawd', 'awdadwada', 1, 1200, '2023-05-05 02:37:15', 7, 0x4172726179, NULL, 5),
+(16, 'Guantes Sporting', 'awddwa', 'awdadw', 3, 15000, '2023-05-05 02:38:53', 7, 0x4172726179, NULL, 5),
+(17, 'Gafas de natacion PREMIUM ULTIMATUM', 'adwdad', 'adadwawd', 4, 16200, '2023-05-05 02:40:35', 7, 0x4172726179, NULL, 5),
+(18, 'Botines de Hombre Araña muy PROS', 'adwadaw', 'awdawdwd', 3, 25600, '2023-05-05 02:42:27', 7, 0x4172726179, NULL, 0),
+(19, 'Prueba de error 2', 'awdwdwad', 'adwd', 2, 12412, '2023-05-29 01:20:38', 7, 0x4172726179, NULL, 2),
+(20, 'Prueba de Correcion de Error', 'Se supone que esto debe aparecer', 'awdawadawd', 7, 9900, '2023-05-29 01:22:02', 7, 0x4172726179, NULL, 3);
 
 -- --------------------------------------------------------
 
@@ -166,18 +185,36 @@ CREATE TABLE `usuarios` (
   `rol` int(11) NOT NULL,
   `fecha_alta` datetime NOT NULL,
   `fecha_baja` datetime DEFAULT NULL,
-  `descrip` varchar(500) NOT NULL DEFAULT 'Sin Descripcion'
+  `descrip` varchar(500) NOT NULL DEFAULT 'Sin Descripcion',
+  `foto` varchar(2000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `user_name`, `contra`, `email`, `rol`, `fecha_alta`, `fecha_baja`, `descrip`) VALUES
-(6, 'Anitaxx', '276b6c4692e78d4799c12ada515bc3e4', 'peluka1709@gmail.com', 1, '0000-00-00 00:00:00', NULL, 'Amo romper mis limites, y estoy a un gran paso de superarme'),
-(7, 'MikeNoble2905', 'e8494a1c9c7197508e5990872e417a0a', 'Mikemoble2905@gmail.com', 2, '0000-00-00 00:00:00', NULL, 'Esto es tan solo un demostracion de las cosas que se pueden hacer si uno lo propone'),
-(9, 'laydo', '76d80224611fc919a5d54f0ff9fba446', 'parditop404@gmail.com', 2, '0000-00-00 00:00:00', NULL, 'Amo el deporte.'),
-(40, '', 'd41d8cd98f00b204e9800998ecf8427e', '', 1, '2023-06-07 01:21:51', NULL, 'Sin Descripcion');
+INSERT INTO `usuarios` (`id`, `user_name`, `contra`, `email`, `rol`, `fecha_alta`, `fecha_baja`, `descrip`, `foto`) VALUES
+(6, '[value-2]', '276b6c4692e78d4799c12ada515bc3e4', 'peluka1709@gmail.com', 1, '0000-00-00 00:00:00', NULL, 'Amo romper mis limites, y estoy a un gran paso de superarme', 'perfil-1.png'),
+(7, 'MikeNoble2905', 'e8494a1c9c7197508e5990872e417a0a', 'Mikemoble2905@gmail.com', 2, '0000-00-00 00:00:00', NULL, 'Esto es tan solo un demostracion de las cosas que se pueden hacer si uno lo propone', 'perfil-1.png'),
+(9, 'laydo', '76d80224611fc919a5d54f0ff9fba446', 'parditop@gmail.com', 2, '0000-00-00 00:00:00', NULL, 'Amo el deporte.', 'perfil-1.png'),
+(40, '', 'd41d8cd98f00b204e9800998ecf8427e', '', 1, '2023-06-07 01:21:51', NULL, 'Sin Descripcion', 'perfil-1.png'),
+(41, 'asd', '76d80224611fc919a5d54f0ff9fba446', 'qwe@gmail.com', 1, '2023-06-17 05:10:17', NULL, 'Sin Descripcion', 'perfil.png');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `ventas`
+--
+
+CREATE TABLE `ventas` (
+  `id_ventas` int(11) NOT NULL,
+  `id_producto` int(11) NOT NULL,
+  `id_carrito` datetime NOT NULL,
+  `precio_total` int(11) NOT NULL,
+  `cantidad vendida` int(11) NOT NULL,
+  `fecha_ventas` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Índices para tablas volcadas
@@ -229,13 +266,13 @@ ALTER TABLE `deportes`
 -- AUTO_INCREMENT de la tabla `noticias`
 --
 ALTER TABLE `noticias`
-  MODIFY `id` int(15) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(15) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(100) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(100) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`
@@ -247,7 +284,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
