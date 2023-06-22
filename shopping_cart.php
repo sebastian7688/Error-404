@@ -2,7 +2,7 @@
 require_once "includes/config.php";
 echo $_POST['id'];
 $mes=0;
-$sql="INSERT INTO `carito`(`id_producto`, `id_usuario`) VALUES ('".$_POST['id']."','".$_SESSION['usuario']['id']."'); ";
+$sql="INSERT INTO `carito`(`id_producto`, `id_usuario`,`fecha_alta`) VALUES ('".$_POST['id']."','".$_SESSION['usuario']['id']."',NOW()); ";
 $res=mysqli_query($conn,$sql);
 $mes=0;
 if(!$res){

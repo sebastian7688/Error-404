@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-06-2023 a las 01:42:51
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 22-06-2023 a las 21:17:42
+-- Versión del servidor: 10.4.27-MariaDB
+-- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,18 +28,28 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `carito` (
+  `id` int(255) NOT NULL,
   `id_producto` int(11) NOT NULL,
-  `id_usuario` int(11) NOT NULL
+  `id_usuario` int(11) NOT NULL,
+  `fecha_alta` datetime NOT NULL,
+  `fecha_baja` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `carito`
 --
 
-INSERT INTO `carito` (`id_producto`, `id_usuario`) VALUES
-(20, 40),
-(20, 40),
-(18, 40);
+INSERT INTO `carito` (`id`, `id_producto`, `id_usuario`, `fecha_alta`, `fecha_baja`) VALUES
+(0, 20, 40, '0000-00-00 00:00:00', NULL),
+(0, 20, 40, '0000-00-00 00:00:00', NULL),
+(0, 18, 40, '0000-00-00 00:00:00', NULL),
+(0, 19, 0, '0000-00-00 00:00:00', NULL),
+(0, 17, 9, '0000-00-00 00:00:00', NULL),
+(0, 13, 0, '2023-06-22 06:55:53', NULL),
+(0, 15, 40, '2023-06-22 06:57:15', NULL),
+(0, 16, 40, '2023-06-22 06:58:21', NULL),
+(0, 14, 40, '2023-06-22 07:04:23', NULL),
+(0, 20, 40, '2023-06-22 14:06:41', NULL);
 
 -- --------------------------------------------------------
 
@@ -140,16 +150,16 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id`, `nombre_prod`, `descripcion`, `texto`, `id_deporte`, `precio`, `fecha_alta`, `id_usuario`, `imagen`, `descuento`, `cantidad`) VALUES
-(11, 'Guantes de Boxeo', 'Guantes EverLast muy duraderos, nuevos y perfectos para hacer sparring', 'Guantes color blanco y negro, de la marca Everlast, son de 16 onzas perfectos para hacer sparring e incluye un bucal adicional', 1, 14000, '2023-05-05 01:50:56', 7, 0x4172726179, NULL, 5),
-(12, 'Pelota de Voley', 'Pelota de voley', 'no hay mucho para decir', 2, 9000, '2023-05-05 01:52:23', 7, 0x4172726179, NULL, 5),
-(13, 'Pelota de Spider Mar PRO', 'adawdwa', 'adwawdwad', 3, 4000, '2023-05-05 02:35:14', 7, 0x4172726179, NULL, 5),
-(14, 'red de voley', 'waddawd', 'addwaadw', 2, 1200, '2023-05-05 02:36:20', 7, 0x4172726179, NULL, 5),
-(15, 'Vendas Everlast', 'adwadawd', 'awdadwada', 1, 1200, '2023-05-05 02:37:15', 7, 0x4172726179, NULL, 5),
-(16, 'Guantes Sporting', 'awddwa', 'awdadw', 3, 15000, '2023-05-05 02:38:53', 7, 0x4172726179, NULL, 5),
-(17, 'Gafas de natacion PREMIUM ULTIMATUM', 'adwdad', 'adadwawd', 4, 16200, '2023-05-05 02:40:35', 7, 0x4172726179, NULL, 5),
-(18, 'Botines de Hombre Araña muy PROS', 'adwadaw', 'awdawdwd', 3, 25600, '2023-05-05 02:42:27', 7, 0x4172726179, NULL, 0),
-(19, 'Prueba de error 2', 'awdwdwad', 'adwd', 2, 12412, '2023-05-29 01:20:38', 7, 0x4172726179, NULL, 2),
-(20, 'Prueba de Correcion de Error', 'Se supone que esto debe aparecer', 'awdawadawd', 7, 9900, '2023-05-29 01:22:02', 7, 0x4172726179, NULL, 3);
+(11, 'Guantes de Boxeo', 'Guantes EverLast muy duraderos, nuevos y perfectos para hacer sparring', 'Guantes color blanco y negro, de la marca Everlast, son de 16 onzas perfectos para hacer sparring e incluye un bucal adicional', 1, 14000, '2023-05-05 01:50:56', 7, 0x4172726179, NULL, 100),
+(12, 'Pelota de Voley', 'Pelota de voley', 'no hay mucho para decir', 2, 9000, '2023-05-05 01:52:23', 7, 0x4172726179, NULL, 100),
+(13, 'Pelota de Spider Mar PRO', 'adawdwa', 'adwawdwad', 3, 4000, '2023-05-05 02:35:14', 7, 0x4172726179, NULL, 100),
+(14, 'red de voley', 'waddawd', 'addwaadw', 2, 1200, '2023-05-05 02:36:20', 7, 0x4172726179, NULL, 100),
+(15, 'Vendas Everlast', 'adwadawd', 'awdadwada', 1, 1200, '2023-05-05 02:37:15', 7, 0x4172726179, NULL, 100),
+(16, 'Guantes Sporting', 'awddwa', 'awdadw', 3, 15000, '2023-05-05 02:38:53', 7, 0x4172726179, NULL, 100),
+(17, 'Gafas de natacion PREMIUM ULTIMATUM', 'adwdad', 'adadwawd', 4, 16200, '2023-05-05 02:40:35', 7, 0x4172726179, NULL, 100),
+(18, 'Botines de Hombre Araña muy PROS', 'adwadaw', 'awdawdwd', 3, 25600, '2023-05-05 02:42:27', 7, 0x4172726179, NULL, 100),
+(19, 'Prueba de error 2', 'awdwdwad', 'adwd', 2, 12412, '2023-05-29 01:20:38', 7, 0x4172726179, NULL, 100),
+(20, 'Prueba de Correcion de Error', 'Se supone que esto debe aparecer', 'awdawadawd', 7, 9900, '2023-05-29 01:22:02', 7, 0x4172726179, NULL, 95);
 
 -- --------------------------------------------------------
 
