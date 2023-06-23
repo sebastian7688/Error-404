@@ -51,10 +51,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                    <p class="m-0 text-white">&copy; <a href="#">Only Sport</a>. Drechos Reservados.</p>
+                    <p class="m-0 text-white">&copy; <a href="#">Arbanet</a>. Drechos Reservados.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-right">
-                    <p class="m-0 text-white">Diseñado por <a href="https://htmlcodex.com"> "Los diseñadores" XD</a></p>
+                    <p class="m-0 text-white">Diseñado por <a href="https://htmlcodex.com">Arbanet</a></p>
                 </div>
             </div>
         </div>
