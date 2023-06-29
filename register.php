@@ -26,5 +26,5 @@ if ($_POST) {
     }
 }
 
-$section = "views/register";
-require_once "views/layout.php";
+require_once "views/register.php";
+

@@ -20,5 +20,4 @@ if (isset($_POST['usu']) && isset($_POST['pass'])) {
         }
         
     }
-$section= "views/login";
-require_once "views/layout.php";
+require_once "views/login.php";
