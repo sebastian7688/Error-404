@@ -35,13 +35,6 @@
             <div class="input-contenedor">
             <input type="password" name="pass" class="input"  placeholder="Contraseña">
             </div>
-
-
-            <div class="checkbox" style="color:#3D464D;">
-                <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                </label>
-            </div>
             <button class="btn-register" type="submit"> Registrarse. </button><br><br>
             <p> Al registrarte aceptas nuestras condiciones de uso y politica de privacidad. </p>
             <!-- <p algin="center"> Cuestión aceptas darnos tus datos personales y ubicación en tiempo real. </p> -->

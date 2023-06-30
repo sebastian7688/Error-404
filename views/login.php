@@ -25,16 +25,16 @@
 
 
         <div class="input-contenedor">
-        <input type="text" name="usu" class="input" placeholder="Nombre de usuario">
+        <input type="text" name="usu" class="input" placeholder="Nombre de usuario" value= "<?php echo (isset($_COOKIE['nombre'])) ? $_COOKIE['nombre'] : '' ?>">
         </div>
        
         <div class="input-contenedor">
-        <input type="password" name="pass" class="input" placeholder="Constraseña">
+        <input type="password" name="pass" class="input" placeholder="Constraseña" value= "<?php echo (isset($_COOKIE['pass'])) ? $_COOKIE['pass'] : '' ?>">
         </div>
        
         <div class="checkbox">
             <label style="color:#3D464D;">
-                <input type="checkbox" value="remember-me"> Recordarme
+                <input type="checkbox" value="true" name="cookies" <?php echo (isset($_COOKIE['cookie']))? 'checked' : '' ?>> Recuerdame
             </label>
         </div>
         <button href="index.php" class="btn-register" type="submit" > Iniciar sesión </button><br><br>
