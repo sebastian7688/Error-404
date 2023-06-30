@@ -7,8 +7,8 @@
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3 border-bottom border-info">
                 Mis Productos
             </span></h2>
-        <div class="row px-xl-5">
-            <?php foreach ($productos as $misprods) { ?>
+        <!---div class="row px-xl-5">
+            <?php /* foreach ($productos as $misprods) { ?>
                 <div class="col-md-4">
                     <div class="card product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
@@ -43,7 +43,43 @@
                             <a class="btn btn-danger text-light">Eliminar producto</a>
                     </div>
                 </div>
-            <?php } ?>
+            <?php } */?>
         </div>
     </div>
-</div>
+</div
+<div class="container">
+        <article class="card card--aqua">
+     <img class="card__img" src="https://jamesprogramming.github.io/images/pyrenees-351266_1280.jpg" alt="mountains view on a sunny day" />
+     <div class="card__img-filter"></div>
+    <div class="card__text">
+      <h2 class="card__header">
+        Aute occaecat labore velit
+      </h2>
+      <p class="card__details">
+        Ad adipiscing qui nisi Duis sint fugiat anim veniam,  
+        consequat Duis amet, non ad tempor laborum id labore 
+        laborum ullamco non mollit.
+      </p>
+      <div class="card__price">
+        <div>
+          <span class="material-symbols-rounded">
+            sell
+          </span>
+        </div>
+        <h3>
+          $255<span class>.99</span>
+        </h3>
+      </div>
+      <a href="#" class="card__button"> 
+          <span>
+            View <span class="material-symbols-rounded">
+              </span>
+          </span>
+        <div></div>
+      </a>
+    </div>
+    <div class="card__background-1"></div>
+    <div class="card__background-2"></div>
+    <div class="card__background-3"></div>
+  </article>
+</div>    ----->
