@@ -229,8 +229,8 @@
                 <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>#titulo">Anterior</a></li>
 
                 <?php for ($i = 0; $i < $paginas; $i++) { ?>
-                    <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>#titulo"><?php echo $i + 1 ?></a></li>
-                <?php } ?>
+                    <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>#titulo"><?php echo $_GET['pagina']?></a></li>
+                <?php break; } ?>
 
                 <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>#titulo">Siguiente</a></li>
             </ul>
