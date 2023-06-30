@@ -1,5 +1,5 @@
    <!-- Navbar Start -->
-   <div class="container-fluid p-0">
+   <div class="container-fluid p-0" style="font-size:20px">
         <nav class="navbar navbar-expand-lg bg-dark navbar-light py-3 py-lg-0 px-lg-5">
             <a href="index.php" class="navbar-brand ml-lg-3">
                 <h1 class="m-0 " color="Deepskyblue"><span class="text-white">Always</span>
