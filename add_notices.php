@@ -1,5 +1,7 @@
 <?php
 require_once "includes/config.php";
+require_once "views/navbar.php";
+require_once "views/add_notice.php";
 
 if ($_POST) {
     $sql = "INSERT INTO noticias VALUES(null , '" . $_POST['title'] . "' , '" . $_POST['desc'] . "'
@@ -22,5 +24,4 @@ if ($_POST) {
 }
 
 
-$section = "views/add_notice";
-require_once "views/layout.php";
+require_once "views/footer.php";

@@ -1,4 +1,7 @@
 body {
-    background-image: url("https://carontestudio.com/img/caronte-web-estudio-logo.png");
-    
+    background-image: url("http://localhost/error-404/img/productos/28/principal.jpg");
+     height:1320px; 
+    background-size:cover;
+    background-repeat: no-repeat;
   }
+
