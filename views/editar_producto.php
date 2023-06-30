@@ -19,44 +19,43 @@
 
 
 <body>
-  <form action="" class="formulario">
-    <h1 class="formulario_titulo">Edita tu producto</h1>
-    <input type="text" class="formulario_input">
-    <label for ="" class="formulario_label">Nombre del producto:</label>
-    <textarea class="formulario_input" maxlength="250" required></textarea>
-    <label for ="" class="formulario_label">Descripción del producto:</label>
-    <textarea class="formulario_input" maxlength="250" required></textarea>
-    <label for ="" class="formulario_label">Informacion del producto:</label>
-    <div class="btn-group">
-           <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-              <font color="#f8f8f8">Categoria del producto</font>
+    <form action="" class="formulario">
+        <h1 class="formulario_titulo">Edita tu producto</h1>
+        <input type="text" class="formulario_input">
+        <label for="" class="formulario_label">Nombre del producto:</label>
+        <textarea class="formulario_input" maxlength="250" required></textarea>
+        <label for="" class="formulario_label">Descripción del producto:</label>
+        <textarea class="formulario_input" maxlength="250" required></textarea>
+        <label for="" class="formulario_label">Informacion del producto:</label>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <font color="#f8f8f8">Categoria del producto</font>
             </button>
 
             <div class="dropdown-menu">
-            <a  id=miBoton class="dropdown-item"><i class="fa-solid fa-futbol" alt=""></i> Futbol </a>
-            <a  id=miBoton class="dropdown-item"><i class="fa-solid fa-volleyball" alt=""></i> Voley</a>
-            <a  id=miBoton class="dropdown-item"><i class="fa-solid fa-basketball" alt=""></i> Basquet</a>
-            <a  id=miBoton class="dropdown-item"><i class="fa-solid fa-football" alt=""></i> Rugby </a>
-            <a  id=miBoton class="dropdown-item"><img src="img/home/boxing-glove.png" alt="">Boxeo </a>
-            <a  id=miBoton class="dropdown-item"><i class="fa-solid fa-golf-ball-tee" alt=""></i> Golf</a>
-            <a  id=miBoton class="dropdown-item"><i class="fa-solid fa-person-swimming" alt=""></i>Natacion</a>
-            <a  id=miBoton class="dropdown-item"><img src="img/home/tennis-ball.png" alt="">Tenis </a>
-            <a  id=miBoton class="dropdown-item"><img src="img/home/surf-board.png" alt=""> Surf</a>
+                <a id=miBoton class="dropdown-item"><i class="fa-solid fa-futbol" alt=""></i> Futbol </a>
+                <a id=miBoton class="dropdown-item"><i class="fa-solid fa-volleyball" alt=""></i> Voley</a>
+                <a id=miBoton class="dropdown-item"><i class="fa-solid fa-basketball" alt=""></i> Basquet</a>
+                <a id=miBoton class="dropdown-item"><i class="fa-solid fa-football" alt=""></i> Rugby </a>
+                <a id=miBoton class="dropdown-item"><img src="img/home/boxing-glove.png" alt="">Boxeo </a>
+                <a id=miBoton class="dropdown-item"><i class="fa-solid fa-golf-ball-tee" alt=""></i> Golf</a>
+                <a id=miBoton class="dropdown-item"><i class="fa-solid fa-person-swimming" alt=""></i>Natacion</a>
+                <a id=miBoton class="dropdown-item"><img src="img/home/tennis-ball.png" alt="">Tenis </a>
+                <a id=miBoton class="dropdown-item"><img src="img/home/surf-board.png" alt=""> Surf</a>
             </div>
         </div>
         <br><br><br>
         <div class="input-group mb-3">
-        <label for="" class="formulario_g" >Añadir el precio del producto:</label>
+            <label for="" class="formulario_g">Añadir el precio del producto:</label>
             <span class="input-group-text">$</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-            <span class="input-group-text">.00</span>
+            <input type="text" class="form-control" >
         </div><br>
         <label for="" class="formulario_f">Añadir la foto del producto:</label>
         <input type="file" class="form-control border-dark" id="inputGroupFile01" name="principal_img" id="principal_img">
         <br>
-    <input type="submit" class="formulario_submit">
-     </form>
-  
+        <input type="submit" class="formulario_submit">
+    </form>
+
 </body>
 
 

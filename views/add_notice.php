@@ -26,7 +26,7 @@
 </div>
 <div class="container">  
     <form class="add" action="" method="post" enctype="multipart/form-data">
-        <h1 class="titulo_1"><img src="img/icon.ico" alt="" >Agregar noticia</h1>
+        <h1 class="titulo_1" style="text-align:center"><img src="img/icon.ico" alt="" >Agregar noticia</h1>
         <div class="input-container">
             <label for="inputEmail4" class="titulo_2">Añadir titulo de la noticia</label>
             <input type="text" class="input" name="title">
@@ -45,9 +45,11 @@
             </div>
         </div>
         <br>
+        <div align="center" >
         <button type="submit" class="btn btn-success" style="background:#00bfff; border-color:#00bfff; border-radius:3px; box-shadow: 1px 1px 3px #000;">
             Enviar
         </button>
         <a href="index.php" class="btn btn-danger" style="Background:#343a40; border-color:#343a40; border-radius:3px; box-shadow: 1px 1px 3px #000;">Cancelar</a>
+</div>
     </form>
 </div></div></div></div></div></div></div></div></div></body>
