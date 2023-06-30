@@ -4,8 +4,7 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page"><a class="link-dark"
-                    style="text-decoration: none;">Tienda</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a class="link-dark" style="text-decoration: none;">Tienda</a></li>
         </ol>
     </nav>
     <link rel="stylesheet" href="css/shop.css">
@@ -22,95 +21,54 @@
                     TIENDA
                 </h1>
             </div>
-        
+
             <main class="Main" style=" margin: 50px">
                 <form action="/browse" method="get" style=" margin: 60px">
                     <div class="filters" style="margin-bottom: 20px;">
                         <span class="multiselect-native-select">
 
                             <div class="btn-group">
-                                <button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default"
-                                    data-toggle="dropdown" title="None selected">
+                                <button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default" data-toggle="dropdown" title="None selected">
                                     <span class="multiselect-selected-text">
                                         <b>Deportes:</b> Todos
                                     </span>
                                     <b class="caret"></b>
                                 </button>
                                 <ul class="multiselect-container genres-select dropdown-menu">
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                                onMouseover="this.style.color='Deepskyblue'"
-                                                onMouseout="this.style.color='black'"><input type="checkbox"
-                                                    value="basket">&nbsp;Basket</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                                onMouseover="this.style.color='Deepskyblue'"
-                                                onMouseout="this.style.color='black'"><input type="checkbox"
-                                                    value="rugby">&nbsp;Rugby</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                                onMouseover="this.style.color='Deepskyblue'"
-                                                onMouseout="this.style.color='black'"><input type="checkbox"
-                                                    value="boxeo">&nbsp;Boxeo</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                                onMouseover="this.style.color='Deepskyblue'"
-                                                onMouseout="this.style.color='black'"><input type="checkbox"
-                                                    value="golf">&nbsp;Golf</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                                onMouseover="this.style.color='Deepskyblue'"
-                                                onMouseout="this.style.color='black'"><input type="checkbox"
-                                                    value="natacion">&nbsp;Natacion</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                                onMouseover="this.style.color='Deepskyblue'"
-                                                onMouseout="this.style.color='black'"><input type="checkbox"
-                                                    value="surf">&nbsp;Surf</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                                onMouseover="this.style.color='Deepskyblue'"
-                                                onMouseout="this.style.color='black'"><input type="checkbox"
-                                                    value="pink ponk">&nbsp;Pink Ponk</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                                onMouseover="this.style.color='Deepskyblue'"
-                                                onMouseout="this.style.color='black'"><input type="checkbox"
-                                                    value="handbal">&nbsp;Handbal</label></a></li>
+                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="basket">&nbsp;Basket</label></a></li>
+                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="rugby">&nbsp;Rugby</label></a></li>
+                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="boxeo">&nbsp;Boxeo</label></a></li>
+                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="golf">&nbsp;Golf</label></a></li>
+                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="natacion">&nbsp;Natacion</label></a></li>
+                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="surf">&nbsp;Surf</label></a></li>
+                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="pink ponk">&nbsp;Pink Ponk</label></a></li>
+                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="handbal">&nbsp;Handbal</label></a></li>
 
                                 </ul>
                             </div>
                         </span>
                         <span class="multiselect-native-select">
                             <div class="btn-group">
-                                <button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default"
-                                    data-toggle="dropdown" title="None selected">
+                                <button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default" data-toggle="dropdown" title="None selected">
                                     <span class="multiselect-selected-text">
                                         <b>Año:</b> Todos
                                     </span>
                                     <b class="caret"></b>
                                 </button>
                                 <ul class="multiselect-container year-select dropdown-menu">
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                                onMouseover="this.style.color='Deepskyblue'"
-                                                onMouseout="this.style.color='black'"><input type="checkbox" name="xd"
-                                                    value="mas nuevo"> Nuevo a viejo </label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                                onMouseover="this.style.color='Deepskyblue'"
-                                                onMouseout="this.style.color='black'"><input type="checkbox" name="xd"
-                                                    value="mas viejo"> Viejo a nuevo </label></a></li>
+                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" name="xd" value="mas nuevo"> Nuevo a viejo </label></a></li>
+                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" name="xd" value="mas viejo"> Viejo a nuevo </label></a></li>
                                 </ul>
                             </div>
                         </span>
                         <span class="multiselect-native-select">
-                            <div class="btn-group"><button type="button"
-                                    class="multiselect dropdown-toggle btn btn-sm btn-default" data-toggle="dropdown"
-                                    title="None selected">
-                                    <span class="multiselect-selected-text"><b>Precio:</b> Todos</span> <b
-                                        class="caret"></b>
+                            <div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default" data-toggle="dropdown" title="None selected">
+                                    <span class="multiselect-selected-text"><b>Precio:</b> Todos</span> <b class="caret"></b>
                                 </button>
                                 <ul class="multiselect-container dropdown-menu">
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                                onMouseover="this.style.color='Deepskyblue'"
-                                                onMouseout="this.style.color='black'"><input type="checkbox"
-                                                    value="mayor precio"> Mayor a menor </label></a>
+                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="mayor precio"> Mayor a menor </label></a>
                                     </li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox"
-                                                onMouseover="this.style.color='Deepskyblue'"
-                                                onMouseout="this.style.color='black'"><input type="checkbox"
-                                                    value="menor precio"> Menor a mayor </label></a>
+                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="menor precio"> Menor a mayor </label></a>
                                     </li>
                                 </ul>
                             </div>
@@ -120,15 +78,12 @@
                         </button>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         &nbsp;&nbsp;
-                        <a href="carito.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> <i
-                                class="fa-solid fa-cart-shopping"></i> Mi carrito </a>&nbsp;&nbsp;
+                        <a href="carito.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> <i class="fa-solid fa-cart-shopping"></i> Mi carrito </a>&nbsp;&nbsp;
                         <?php
                         if (isset($_SESSION['usuario'])) {
-                            ?>
-                            <a href="myproducts.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i><i
-                                    class="fa-solid fa-basket-shopping"></i> Mis productos </a>&nbsp;&nbsp;
-                            <a href="add_product_shop.php" style="margin-left:100px margin-above=100px"
-                                class="btn btn-info"></i> Añadir Producto <i class="fa-solid fa-plus"></i></a>
+                        ?>
+                            <a href="myproducts.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i><i class="fa-solid fa-basket-shopping"></i> Mis productos </a>&nbsp;&nbsp;
+                            <a href="add_product_shop.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> Añadir Producto <i class="fa-solid fa-plus"></i></a>
                         <?php } ?>
 
                     </div>
@@ -205,8 +160,10 @@
 
     <!-- Products Start -->
     <div class="container-fluid pt-5 pb-3">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">
-                Productos en racha. </span></h2>
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4" id="titulo">
+            <span class="bg-secondary pr-3">
+                Productos en racha. </span>
+        </h2>
         <div class="row px-xl-5">
             <?php foreach ($productos_nuevos as $nuevos) { ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-5">
@@ -215,42 +172,39 @@
 
                             <?php
                             if (file_exists('img/productos/' . $nuevos['id'] . '/principal.jpg')) { ?>
-                                <img class="card-img-top" 
-                                    src="img/productos/<?php echo $nuevos['id']; ?>/principal.jpg">
-                                <?php
+                                <img class="card-img-top" src="img/productos/<?php echo $nuevos['id']; ?>/principal.jpg">
+                            <?php
                             } ?>
 
                             <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square"
-                                    href="products_read_more.php?id=<?php echo $nuevos['id'] ?>"
-                                    style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i
-                                        class="fa fa-search"></i></a>
+                                <a class="btn btn-outline-dark btn-square" href="products_read_more.php?id=<?php echo $nuevos['id'] ?>" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
                             </div>
                         </div>
 
                         <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate"
-                                href="products_read_more.php?id=<?php echo $nuevos['id'] ?>">
+                            <a class="h6 text-decoration-none text-truncate" href="products_read_more.php?id=<?php echo $nuevos['id'] ?>">
                                 <?php echo $nuevos['nombre_prod'] ?>
 
                                 <div style="margin-left:200px">
-                                 <i class="fa-solid fa-heart" style="color:red;"></i> </a></div>
+                                    <i class="fa-solid fa-heart" style="color:red;"></i>
                             </a>
+                        </div>
+                        </a>
 
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h5>$
-                                    <?php echo $nuevos['precio'] ?>
-                                </h5>
-                                </h6>
-                            </div>
-                            <div align="center">
-                                <FONT COLOR="#15b83b">20% Descuento</FONT>
-                            </div>
+                        <div class="d-flex align-items-center justify-content-center mt-2">
+                            <h5>$
+                                <?php echo $nuevos['precio'] ?>
+                            </h5>
+                            </h6>
                         </div>
                         <div align="center">
-                            <form>
-                                <p class="clasificacion">
-                                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                            <FONT COLOR="#15b83b">20% Descuento</FONT>
+                        </div>
+                    </div>
+                    <div align="center">
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5"><!--
     --><label for="radio1">★</label><!--
     --><input id="radio2" type="radio" name="estrellas" value="4"><!--
     --><label for="radio2">★</label><!--
@@ -260,167 +214,60 @@
     --><label for="radio4">★</label><!--
     --><input id="radio5" type="radio" name="estrellas" value="1"><!--
     --><label for="radio5">★</label>
-                                </p>
-                            </form>
-                        </div>
-
+                            </p>
+                        </form>
                     </div>
+
                 </div>
-            <?php } ?>
         </div>
+    <?php } ?>
     </div>
-
-    <!-- Products End -->
-
-
-   
-    
-    <!---title>Tarjetas de productos con CSS y Bootstrap</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"--->
-    <style>
-        .card {
-            margin-bottom: 20px;
-        }
-       
-        .card-img-top {
-            height: 200px;
-            object-fit: cover;
-        }
-        /*
-        .card-title {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-      
-        .card-text {
-            color: #777;
-        }
-       
-        .btn {
-            margin-top: 10px;
-        }
-       
-        .btn-favorite {
-            color: #ff4136; /* Rojo */
-       /* }
-       
-        .btn-buy {
-            color: #007bff;  Azul claro */
-       /*  }
-       
-        .btn-description {
-            color: #28a745; Verde */
-        /*}*/
-    </style>
- <!-----
+    <!-- PAGINADOR -->
     <div class="container">
-        <div class="row">
-                        <//?php foreach ($productos_nuevos as $nuevos) { ?>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>#titulo">Anterior</a></li>
 
-            <div class="col-md-4">
-                <div class="card">
-                <//?php
-                            if (file_exists('img/productos/' . $nuevos['id'] . '/principal.jpg')) { ?>
-                                <img class="card-img-top"
-                                    src="img/productos/<//?php echo $nuevos['id']; ?>/principal.jpg">
-                                <//?php
-                            } ?>
+                <?php for ($i = 0; $i < $paginas; $i++) { ?>
+                    <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>#titulo"><?php echo $i + 1 ?></a></li>
+                <?php } ?>
 
-                    <div class="card-body">
-                        <h5 clas="btn btn-blue"class="card-title" href="products_read_more.php?id=<//?php echo $nuevos['id'] ?>"></h5>
-                                <//?php echo $nuevos['nombre_prod'] ?>
-
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h5>$
-                                    <//?php echo $nuevos['precio'] ?>
-                                </h5>
-                                
-                                
-                            </div>
-                            <div align="center">
-                                    <FONT COLOR="#15b83b">20% Descuento</FONT>
-                                </div>
-                            
-                        <button class="btn btn-favorite">Agregar a favoritos</button>
-                        <button class="btn btn-buy">Comprar</button>
-                        <button class="btn btn-description">Ver descripción</button>
-                    </div>
-                    <form align="center">
-                                <p class="clasificacion">
-                                    <input id="radio1" type="radio" name="estrellas" value="5">
-                                    <label for="radio1">★</label>
-                                    <input id="radio2" type="radio" name="estrellas" value="4">
-                                    <label for="radio2">★</label>
-                                    <input id="radio3" type="radio" name="estrellas" value="3">
-                                    <label for="radio3">★</label>
-                                    <input id="radio4" type="radio" name="estrellas" value="2">
-                                    <label for="radio4">★</label>
-                                    <input id="radio5" type="radio" name="estrellas" value="1">
-                                    <label for="radio5">★</label>
-                                </p>
-                            </form>
-                </div>
-            </div>
-            
-            <//?php } ?>
-        </div>
+                <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>#titulo">Siguiente</a></li>
+            </ul>
+        </nav>
     </div>
+</div>
 
 
---->
 
-    <!-- Offer Start -->
-    <div class="container-fluid pt-3 pb-3">
-        <div align="center">
-            <h1>OFERTAS</h1>
-        </div>
-        <br>
-        <br>
-        <div class="row px-xl-5">
-            <div class="col-md-6">
-                <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="img/principal.png" alt="">
-                    <div class="offer-text">
-                        <h6 class="text-white text-uppercase">Save 20%</h6>
-                        <h3 class="text-white mb-3">Special Offer</h3>
-                        <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
-                    </div>
+<!-- Offer Start -->
+<div class="container-fluid pt-3 pb-3">
+    <div align="center">
+        <h1>OFERTAS</h1>
+    </div>
+    <br>
+    <br>
+    <div class="row px-xl-5">
+        <div class="col-md-6">
+            <div class="product-offer mb-30" style="height: 200px;">
+                <img class="img-fluid" src="img/principal.png" alt="">
+                <div class="offer-text">
+                    <h6 class="text-white text-uppercase">Save 20%</h6>
+                    <h3 class="text-white mb-3">Special Offer</h3>
+                    <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="img/principal.png" alt="">
-                    <div class="offer-text">
-                        <h6 class="text-white text-uppercase">Save 20%</h6>
-                        <h3 class="text-white mb-3">Special Offer</h3>
-                        <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
-                    </div>
+        </div>
+        <div class="col-md-6">
+            <div class="product-offer mb-30" style="height: 200px;">
+                <img class="img-fluid" src="img/principal.png" alt="">
+                <div class="offer-text">
+                    <h6 class="text-white text-uppercase">Save 20%</h6>
+                    <h3 class="text-white mb-3">Special Offer</h3>
+                    <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Offer End -->
-
-<!-- PAGINADOR -->
-<div class="container">
-    <nav aria-label="Page navigation example">
-        <ul class="pagination">
-            <li class="page-item">
-
-                <a class="page-link" href="">
-                    <FONT color="#17a2b8">Anterior</FONT>
-                </a>
-            </li>
-            <li class="page-item "><a class="page-link" href="">
-                    <FONT color="#17a2b8">1</FONT>
-                </a></li>
-
-
-            <li class="page-item"><a class="page-link" href=" ">
-                    <FONT color="#17a2b8">Siguiente</FONT>
-                </a></li>
-        </ul>
-    </nav>
 </div>
-</div>
-<!-- TERMINA EL PAGINADOR -->
+<!-- Offer End -->

@@ -18,6 +18,7 @@ if (isset($_POST['usu']) && isset($_POST['pass'])) {
     } else {
         $stats = 1;
     }
+
     if (isset($_POST['cookies']) && $_POST['cookies'] == "true") {
         setcookie('nombre', $_POST['usu']);
         setcookie('pass', $_POST['pass']);
