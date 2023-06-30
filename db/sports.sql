@@ -140,12 +140,8 @@ CREATE TABLE `productos` (
   `precio` int(100) NOT NULL,
   `fecha_alta` datetime NOT NULL,
   `id_usuario` int(100) NOT NULL,
-<<<<<<< HEAD
-  `imagen` mediumblob NOT NULL ,
-=======
-  `imagen` mediumblob NOT NULL,
->>>>>>> 56ccfb744aaea28e66320721970ba2949946fb01
-  `descuento` int(11) DEFAULT NULL,
+
+  `imagen` mediumblob NOT NULL,  `descuento` int(11) DEFAULT NULL,
   `cantidad` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
