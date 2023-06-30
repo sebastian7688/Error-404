@@ -12,13 +12,23 @@ if (isset($_POST['usu']) && isset($_POST['pass'])) {
     }
     $filas = mysqli_num_rows($res);
     if ($filas == 1) {
-        
+
         $_SESSION['usuario'] = mysqli_fetch_assoc($res);
         header('location: index.php');
-        }else{
-            $stats= 1;
-        }
-        
+    } else {
+        $stats = 1;
     }
-$section= "views/login";
-require_once "views/layout.php";
+
+    if (isset($_POST['cookies']) && $_POST['cookies'] == "true") {
+        setcookie('nombre', $_POST['usu']);
+        setcookie('pass', $_POST['pass']);
+        setcookie('cookie', $_POST['cookies']);
+        $_COOKIE = $_POST;
+    } else if (isset($_POST['usu']) && $_POST['cookies'] != "true") {
+        setcookie('nombre', '');
+        setcookie('pass', '');
+        setcookie('cookie', '');
+        unset($_COOKIE);
+    }
+}
+require_once "views/login.php";

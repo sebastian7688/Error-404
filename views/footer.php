@@ -1,4 +1,6 @@
    <!-- Footer Start -->
+   <link href="css/style.css" rel="stylesheet">
+
    <div class="footer container-fluid position-relative bg-dark py-5" style="margin-top: 90px;">
         <div class="container pt-5">
             <div class="row">
