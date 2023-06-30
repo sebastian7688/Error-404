@@ -1,7 +1,7 @@
-<title>Formulario con CSS y Bootstrap</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link href="css/editar_producto.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
+
 <div class="container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -18,25 +18,16 @@
 </div>
 
 
-<div class="container" style="margin-top: 50px" style="background-color: white" style="border-radius: 10px" style="padding: 30px" style="box-shadow: 0px 0px 10px rgba(0,0,0,0.1)">
-    <h2>Edita tu producto</h2>
-    <form action="editar_producto.php" method="POST">
-        <div class="form-group">
-            <label for="nombre">Nombre del producto:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-        </div>
-
-        <div class="form-group">
-            <label for="descripccion">Descripccion del producto:</label>
-            <textarea class="form-control" id="descripccion" name="descripccion" maxlength="250" required></textarea>
-        </div>
-
-        <div class="form-group">
-            <label for="mensaje ">Informacion del producto:</label>
-            <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
-        </div>
-
-        <div class="btn-group">
+<body>
+  <form action="" class="formulario">
+    <h1 class="formulario_titulo">Edita tu producto</h1>
+    <input type="text" class="formulario_input">
+    <label for ="" class="formulario_label">Nombre del producto:</label>
+    <textarea class="formulario_input" maxlength="250" required></textarea>
+    <label for ="" class="formulario_label">Descripción del producto:</label>
+    <textarea class="formulario_input" maxlength="250" required></textarea>
+    <label for ="" class="formulario_label">Informacion del producto:</label>
+    <div class="btn-group">
            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
               <font color="#f8f8f8">Categoria del producto</font>
             </button>
@@ -53,17 +44,47 @@
             <a  id=miBoton class="dropdown-item"><img src="img/home/surf-board.png" alt=""> Surf</a>
             </div>
         </div>
-        <br><br>
-
+        <br><br><br>
         <div class="input-group mb-3">
+        <label for="" class="formulario_g" >Añadir el precio del producto:</label>
             <span class="input-group-text">$</span>
             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
             <span class="input-group-text">.00</span>
-        </div>
-
-        <label for="inputEmail4" class="titulo_2">Añadir la foto del producto</label>
+        </div><br>
+        <label for="" class="formulario_f">Añadir la foto del producto:</label>
         <input type="file" class="form-control border-dark" id="inputGroupFile01" name="principal_img" id="principal_img">
         <br>
+    <input type="submit" class="formulario_submit">
+     </form>
+  
+</body>
+
+
+<!-----
+<div class="container"  >
+    <h2></h2>
+    <form action="editar_producto.php" method="POST">
+        <div class="form-group">
+            <label for="nombre"></label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="descripccion"></label>
+            <textarea class="form-control" id="descripccion" name="descripccion" maxlength="250" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje "></label>
+            <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+        </div>
+
+        
+
+      
+
+        
         <button type="button" class="btn btn-primary"><font color="#f8f8f8">Enviar</font></button>
     </form>
 </div>
+--->
