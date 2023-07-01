@@ -16,8 +16,6 @@
         </ol>
     </nav>
 </div>
-
-
 <body>
     <form action="" class="formulario">
         <h1 class="formulario_titulo">Edita tu producto</h1>
@@ -27,33 +25,30 @@
         <label for="" class="formulario_label">Descripción del producto:</label>
         <textarea class="formulario_input" maxlength="250" required></textarea>
         <label for="" class="formulario_label">Informacion del producto:</label>
-        <div class="btn-group">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <font color="#f8f8f8">Categoria del producto</font>
-            </button>
-
-            <div class="dropdown-menu">
-                <a id=miBoton class="dropdown-item"><i class="fa-solid fa-futbol" alt=""></i> Futbol </a>
-                <a id=miBoton class="dropdown-item"><i class="fa-solid fa-volleyball" alt=""></i> Voley</a>
-                <a id=miBoton class="dropdown-item"><i class="fa-solid fa-basketball" alt=""></i> Basquet</a>
-                <a id=miBoton class="dropdown-item"><i class="fa-solid fa-football" alt=""></i> Rugby </a>
-                <a id=miBoton class="dropdown-item"><img src="img/home/boxing-glove.png" alt="">Boxeo </a>
-                <a id=miBoton class="dropdown-item"><i class="fa-solid fa-golf-ball-tee" alt=""></i> Golf</a>
-                <a id=miBoton class="dropdown-item"><i class="fa-solid fa-person-swimming" alt=""></i>Natacion</a>
-                <a id=miBoton class="dropdown-item"><img src="img/home/tennis-ball.png" alt="">Tenis </a>
-                <a id=miBoton class="dropdown-item"><img src="img/home/surf-board.png" alt=""> Surf</a>
-            </div>
-        </div>
+            <select class="form-select" aria-label="Default select example" style="height:40px; width:960px">
+                <option selected>Categoria del producto</option>
+                <option value="1"><i class="fa-solid fa-futbol" alt=""></i> Futbol </option>
+                <option value="2"><i class="fa-solid fa-volleyball" alt=""></i> Voley</option>
+                <option value="3"><i class="fa-solid fa-basketball" alt=""></i> Basquet</option>
+                <option value="4"><i class="fa-solid fa-football" alt=""></i> Rugby</option>
+                <option value="5"><img src="img/home/boxing-glove.png" alt="">Boxeo</option>
+                <option value="6"><i class="fa-solid fa-golf-ball-tee" alt=""></i> Golf</option>
+                <option value="7"><i class="fa-solid fa-person-swimming" alt=""></i>Natacion</option>
+                <option value="8"><img src="img/home/tennis-ball.png" alt="">Tenis</option>
+                <option value="9"><img src="img/home/surf-board.png" alt=""> Surf</option>
+            </select>
         <br><br><br>
         <div class="input-group mb-3">
             <label for="" class="formulario_g">Añadir el precio del producto:</label>
             <span class="input-group-text">$</span>
-            <input type="text" class="form-control" >
+            <input type="text" class="form-control">
         </div><br>
         <label for="" class="formulario_f">Añadir la foto del producto:</label>
         <input type="file" class="form-control border-dark" id="inputGroupFile01" name="principal_img" id="principal_img">
         <br>
-        <input type="submit" class="formulario_submit">
+        <button  type="button" class="btn btn-outline-primary" style="height:70px; width:200px">Enviar</button>
+
+        <!---input type="submit" class="formulario_submit"--->
     </form>
 
 </body>
