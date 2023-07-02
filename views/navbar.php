@@ -21,7 +21,7 @@
                         <a href="about_us.php" style="color: white;" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='white'" class=" nav-link "><i class="fa-solid fa-users"></i>
                             Sobre Nosotros</a>
                         <div class="nav-item dropdown">
-                            <a href="#" style="color: white;" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='white'" class="nav-link  dropdown-toggle" data-toggle="dropdown"><i class="fa-solid fa-list-ul"></i> Categorias <i class="fa fa-angle-down text-dark"></i>
+                            <a href="#" style="color: white;" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='white'" class="nav-link  dropdown-toggle" data-toggle="dropdown"><i class="fa-solid fa-list-ul"></i> Categorías <i class="fa fa-angle-down text-dark"></i>
                             </a>
                             <style>
                                 #miBoton {
@@ -42,21 +42,21 @@
                                 }
                             </style>
                             <div class="dropdown-menu rounded-0 m-0" style="background: #3D464D;">
-                                <a href="index.php?id_cat=4" id=miBoton class="dropdown-item"><i class="fa-solid fa-futbol"></i> Futbol </a>
+                                <a href="index.php?id_cat=4" id=miBoton class="dropdown-item"><i class="fa-solid fa-futbol"></i> Fútbol </a>
                                 <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-volleyball"></i> Voley
                                 </a>
                                 <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-basketball"></i> Basquet
                                 </a>
                                 <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-football"></i> Rugby </a>
-                                <a href="" id=miBoton class="dropdown-item"><img src="img/home/boxing-glove.png" alt="">
+                                <a href="" id=miBoton class="dropdown-item"><img src="img/home/boxing.png" alt="">
                                     Boxeo </a>
                                 <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-golf-ball-tee"></i> Golf
                                 </a>
                                 <a href="" id=miBoton class="dropdown-item"><i class="fa-solid fa-person-swimming"></i>
-                                    Natacion</a>
-                                <a href="" id=miBoton class="dropdown-item"><img src="img/home/tennis-ball.png" alt="">
+                                    Natación</a>
+                                <a href="" id=miBoton class="dropdown-item"><img src="img/home/tennis.png" alt="">
                                     Tenis </a>
-                                <a href="" id=miBoton class="dropdown-item"><img src="img/home/surf-board.png" alt=""> Surf
+                                <a href="" id=miBoton class="dropdown-item"><img src="img/home/surf.png" alt=""> Surf
                                 </a>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
                             <?php if ($_SESSION['usuario']['rol'] > 1) { ?>
                                 <a id=miBoton href="lista_usu.php" class="dropdown-item">Listado de Usuarios</a>
                             <?php } ?>
-                            <a id=miBoton href="logout.php" class="dropdown-item">Cerrar Sesion</a>
+                            <a id=miBoton href="logout.php" class="dropdown-item">Cerrar Sesión</a>
                         </div>
                     </div>
                 <?php } else { ?>

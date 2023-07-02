@@ -41,7 +41,7 @@
                         <h3 class="titulo">
                             <?php if ($status == 1) { ?>
                                 <br>
-                                
+
                                 <br>
                             <?php } ?>
                             <ul class="list-inline">
@@ -66,7 +66,7 @@
                                     <?php echo $usu['email'] ?>
                                 </p>
                             </ul>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -82,12 +82,12 @@
 
 
 
-       
-        <section class="perfil-user">
+
+    <section class="perfil-user">
             <form method="POST">
 
                 <div class="user-body">
-                    <div class="user-desc">
+                    <div class="user-desc" >
                         <?php if ($status == 1) { ?>
                             <br>
                             <div class='alert alert-danger alert-dismissible fade show' role='alert' style='margin:50px;'>
@@ -96,40 +96,41 @@
                             </div>
                             <br>
                         <?php } ?>
-                        <h1>Editar perfil</h1><br>
+                        <h1>Editar perfil</h1>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                         <?php foreach ($usser as $usu) { ?>
 
-                        <ul class="list-inline">
-                            <label for="5">Editar Nombre</label><br>
-                            <input type="text" name="name"value="<?php echo $usu['user_name']?>">
-                        </ul>
+                            <div class="input-group mb-3" style="border-bottom:1px solid #aaa; padding-bottom:2%;">
+                                <label class="input-group mb-3" style="color:#5f5f5f; font-weight:700;">Nombre de usuario:</label>
+                                <input type="text" name="name" value="<?php echo $usu['user_name']?>" class="form-control" style="border-radius:5px; background:#ebebeb;" id="input">
+                            </div>
 
-                        <ul class="list-inline">
-                            <label for="5">Editar Descripcion</label><br>
-                            <input type="text" name="des"value="<?php echo $usu['descrip']?>">
-                        </ul>
-                    </div>
-                    <div class="user-info">
-                        <div class="user-datos">
-                            <ul class="list-inline">
-                                <label for="5">Editar Email</label><br>
-                                <input type="text" name="email"value="<?php echo $usu['email']?>">
-                            </ul>
-                            <ul class="list-inline">
-                                <label for="5">Editar contraseña</label><br>
-                                <input type="password" name="contra"value="<?php echo $usu['contra']?>">
-                            </ul>
-                            <ul class="list-inline">
-                                <label for="5">Editar Imagen de perfil</label><br>
-                                <input type="file" name="foto">
-                            </ul>
-                            <ul class="list-inline">
-                                <input type="submit" href="my_perfil.php" value="Guardar Cambios"><br>
+                            <div class="input-group mb-3" style="border-bottom:1px solid #aaa; padding-bottom:2%;">
+                                <label class="input-group mb-3" class="input-group mb-3" style="color:#5f5f5f; font-weight:700;">Descripción:</label>
+                                <input type="text" name="des" value="<?php echo $usu['descrip']?>" class="form-control" style="border-radius:5px; background:#ebebeb;" id="input">
+                            </div>
 
-                            </ul>
-                        </div>
+                            <div class="input-group mb-3" style="border-bottom:1px solid #aaa; padding-bottom:2%;">
+                                <label class="input-group mb-3" style="color:#5f5f5f; font-weight:700;">Mail:</label>
+                                <input type="text" name="email"value="<?php echo $usu['email']?>" class="form-control" style="border-radius:5px; background:#ebebeb;" id="input">
+                            </div>
+
+                            <div class="input-group mb-3" style="border-bottom:1px solid #aaa; padding-bottom:2%;">
+                                <label class="input-group mb-3" style="color:#5f5f5f; font-weight:700;">Contraseña:</label>
+                                <input type="password" name="contra"value="<?php echo $usu['contra']?>" class="form-control" style="border-radius:5px; background:#ebebeb;" id="input">
+                            </div>
+
+                            <div class="div-avatar" style="color:#00bfff; background:#ffff; border:3px solid #00bfff; padding:1%;" onMouseover="this.style.background='#e3e3e3'" onMouseout="this.style.background='#ffff'">
+                                <p style="margin-bottom:0%;">Cambiar avatar</p>
+                                <input type="file" name="foto" class="btn-editar">
+                            </div>
+
+                            <div class="div-avatar" style="color:#ffffff; padding:1%; margin-left:auto; margin-right:auto; margin-top:5%;" onMouseover="this.style.background='#00a9e1'" onMouseout="this.style.background='#00bfff'">
+                                <p style="margin-bottom:0%;">Aplicar cambios</p>
+                                <input type="submit" href="my_perfil.php" value="Guardar Cambios" class="btn-editar">
+                            </div>
+
                     </div>
                     <?php }
         ?>

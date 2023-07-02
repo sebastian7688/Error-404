@@ -16,6 +16,9 @@
     ?>
     <div class="container border-top">
 
+
+
+
         <!-- Page Heading -->
         <div class="row">
             <div class="col-12">
@@ -25,28 +28,25 @@
                 </h3>
             </div>
         </div>
-
         <!-- /.row -->
-
         <div class="row">
-            <div class="col-lg-6 mb-4">
-
-                <div class="">
-                    <div class="main-product-image space">
+            <div class="col-lg-6 mb-4" >
+                <div class="" >
                         <div id="product-carousel" class="carousel slide">
-                            <div class="carousel-inner" role="listbox">
+                    <div class="main-product-image space" onMouseover="this.style.box-shadow='1px 1px 1px black'" onMouseout="this.style.box-shadow='1px 1px 1px black'">
+                            <div class="carousel-inner" role="listbox" >
                                 <div class="carousel-item active">
                                     <br>
                                     <?php
                                     if (file_exists('img/productos/' . $producto['id'] . '/principal.jpg')) { ?>
-                                        <img id="first-image" alt="" class="img-fluid" style="width:90%; height:60%;"
+                                        <img id="first-image" alt="" class="img-fluid" style="width:90%; height:60%;" 
                                             src="img/productos/<?php echo $producto['id']; ?>/principal.jpg">
                                         <?php
                                     } ?>
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev" style="color:;">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
@@ -69,34 +69,20 @@
 
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="border:1px solid #aaa; border-radius:5px; padding:3%;">
                 <form class="form-horizontal" action="/cart/add/224300" method="post" enctype="multipart/form-data"
-                    name="buy">
+                    name="buy" style="border-bottom:1px solid #aaa; margin-bottom:15px;">
 
                     <!-- Product Price  -->
                     <div class="form-group price_elem row">
-                        <label class="col-sm-3 col-md-3 form-control-label nopaddingtop">Precio:</label>
                         <div class="col-sm-8 col-md-9">
-                            <span class="product-form-price" id="product-form-price">$
+                            <span class="product-form-price" id="product-form-price" style="font-size:250%; color: #000;;">$
                                 <?php echo $producto['precio'] ?>
                             </span>
-
-
                         </div>
                     </div>
 
-
-
-
-
-
-
-
-
-
-
                     <div class="form-group row ">
-                        <label class="col-sm-3 col-md-3 form-control-label">Description:</label>
                         <div class="col-sm-8 col-md-9 description">
                             <p>
                                 <?php echo $producto['texto'] ?>
@@ -104,19 +90,7 @@
                         </div>
                     </div>
 
-
-                    <div class="form-group row ">
-                        <label class="col-sm-3 col-md-3 form-control-label">Detalles:</label>
-                        <div class="col-sm-9 col-md-9">
-
-                            <p>
-                                <?php echo $producto['descripcion'] ?>
-                            </p>
-
-                        </div>
-                    </div>
                     <form action="shopping_cart.php" method="get">
-                        <label class="col-sm-3 col-md-3 form-control-label"></label>
                         <div class="col-sm-8 col-sm-offset-3 col-md-9 col-md-offset-3">
 
                         </div>
@@ -124,24 +98,34 @@
                     <?php $name = $_GET['id'] ?>
                     <form action="shopping_cart.php" method="post">
                         <div class="form-group row">
-                            <label for="Quantity" class="col-sm-3 col-md-3 form-control-label">Cantidad:</label>
                             <div class="col-sm-8 col-md-9">
-
                                 <input type="number" class="qty form-control" name="cant" id="input-qty" name="qty"
-                                    max="<?php echo $producto['cantidad'] ?>" min="1">
+                                    max="<?php echo $producto['cantidad'] ?>" min="1" placeholder="Cantidades">
                             </div>
                         </div>
                         <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
-                        <input type="submit" value="Agregar al carito">
+                        <div style="display:flex;">
+                            <input type="submit" class="btn" style="width:100%; background: #00BFFF; border: 1px solid #00BFFF; color:#3D464D;" value="Compra Ahora" onMouseover="this.style.background='rgb(0 172 229)'" onMouseout="this.style.background='#00BFFF'">
+                            <input type="submit" Class="btn" style="width:100%; background: #e1e1e1; border: 1px solid #e1e1e1; color:#3D464D;" value="Agregar al carito" onMouseover="this.style.background='#cdcccc'" onMouseout="this.style.background='#e1e1e1'">
+                        </div>
 
                     </form>
-                    <!--<div class="col-sm-8 col-sm-offset-3 col-md-9 col-md-offset-3">
-                            <input type="submit" class="btn text-dark" style="background-color:rgb(3 158 207);"
-                                value="Compra Ahora" />
-                        </div>-->
-                    <a class="btn btn-info text-light" href="editar_producto.php">Editar</a>
-                    <a class="btn btn-success text-light">Descuento</a>
-                    <a class="btn btn-danger text-light">Eliminar producto</a>
+                        <form class="form-horizontal" action="/cart/add/224300" method="post" enctype="multipart/form-data"
+                    name="buy" style="border-top:1px solid #aaa; margin-top:15px; padding-top:3%;">
+                    <a class="btn btn-info text-light" href="editar_producto.php"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a class="btn btn-success text-light"><i class="fa-solid fa-percent"></i></a>
+                    <a class="btn btn-danger text-light"><i class="fa-solid fa-trash"></i></a>
+
+
+                        <div class="form-group row " style="margin-top:3%;">
+                            <!-- <label class="col-sm-3 col-md-3 form-control-label"></label> -->
+                            <div class="col-sm-9 col-md-9">
+                                <p>
+                                    <?php echo $producto['descripcion'] ?>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
                 </form>
             </div>
         </div>
@@ -160,5 +144,8 @@
             });
         });
     </script>
+
+
+
 
 <?php } ?>
