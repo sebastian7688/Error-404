@@ -1,4 +1,5 @@
 <head>
+<link rel="stylesheet" href="css/register.css">
 <link rel="stylesheet" href="css/add.css">
 <link rel="stylesheet" href="css/qwe.css">
 <link href="css/style.css" rel="stylesheet">
@@ -15,8 +16,8 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"></head>
 <body>
     <div class="container">
-<nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
+<nav aria-label="breadcrumb"style="background-color: black">
+        <ol class="breadcrumb" >
             <li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a></li>
             <li class="breadcrumb-item"><a href="noticias.php" class="link-info" style="text-decoration: none;">Noticias</a></li>
             <li class="breadcrumb-item active" aria-current="page"><a class="link-dark" style="text-decoration: none;">Tus Noticias</a></li>
@@ -27,23 +28,21 @@
 <div class="container">  
     <form class="add" action="" method="post" enctype="multipart/form-data">
         <h1 class="titulo_1" style="text-align:center"><img src="img/icon.ico" alt="" >Agregar noticia</h1>
-        <div class="input-container">
-            <label for="inputEmail4" class="titulo_2">Añadir titulo de la noticia</label>
-            <input type="text" class="input" name="title">
-            <br>
-            <label for="inputEmail4" class="titulo_2">Añadir una descripcion</label>
-           <textarea type="text" class="input" maxlength="500" name="desc"></textarea>
-            <br>
-            <label for="inputEmail4" class="titulo_2">Desarolla la Noticia</label>
-            <textarea  class="input"  name="info"></textarea>
-            <br>
-            <label for="inputEmail4" class="titulo_2">Añadir la foto de portada</label>
+
+        <div class="input-container"><br>
+            <input type="text" class="input" name="title"placeholder="A&ntilde;adir titulo de la noticia">
+            <br><br>
+           <textarea type="text" class="input" maxlength="500" name="desc"placeholder="A&ntilde;adir una descripcion"></textarea>
+            <br><br>
+            <textarea  class="input"  name="info" placeholder="Desarolla la Noticia"></textarea>
+            <br><br>
             <!-- <label class="input-group-text" for="inputGroupFile01">Upload</label> -->
             <div id="div_file">
-                <p id="texto">Add file</p>
+                <p id="texto">A&ntilde;adir la foto de portada</p>
                 <input type="file" class="form-control border-dark" id="btn_file" name="principal_img" id="principal_img">
             </div>
         </div>
+        
         <br>
         <div align="center" >
         <button type="submit" class="btn btn-success" style="background:#00bfff; border-color:#00bfff; border-radius:3px; box-shadow: 1px 1px 3px #000;">
@@ -52,4 +51,4 @@
         <a href="index.php" class="btn btn-danger" style="Background:#343a40; border-color:#343a40; border-radius:3px; box-shadow: 1px 1px 3px #000;">Cancelar</a>
 </div>
     </form>
-</div></div></div></div></div></div></div></div></div></body>
+</div></body>
