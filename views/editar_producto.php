@@ -1,7 +1,15 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link href="css/editar_producto.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
-
+<link href="lib/animates/SuperTux.min.css" rel="stylesheet">
+  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+  <link href="css/naruto.css" rel="stylesheet">
+  <link href="img/favicon.ico" rel="icon">
+  <link href="css/styles.min.css" rel="stylesheet">
+  <link href="img/favicon.ico" rel="icon">
+  <link rel="icon" href="img/icon.ico">
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9817c2b4db.js" crossorigin="anonymous"></script>
 <div class="container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -18,9 +26,10 @@
 </div>
 <body>
     <form action="" class="formulario">
-        <h1 class="formulario_titulo">Edita tu producto</h1>
-        <input type="text" class="formulario_input">
-        <label for="" class="formulario_label">Nombre del producto:</label>
+        <h1 class="formulario_titulo">Edita tu producto</h1><br>
+       <div> <link href="css/editar_productoy.css" rel="stylesheet"> 
+        <input type="text" class="formulario_inputi">
+        <label for="" class="formulario_labeli">Nombre del producto:</label></div>
         <textarea class="formulario_input" maxlength="250" required></textarea>
         <label for="" class="formulario_label">Descripción del producto:</label>
         <textarea class="formulario_input" maxlength="250" required></textarea>
@@ -37,20 +46,21 @@
                 <option value="8"><img src="img/home/tennis-ball.png" alt="">Tenis</option>
                 <option value="9"><img src="img/home/surf-board.png" alt=""> Surf</option>
             </select>
-        <br><br><br>
+        <br><br>
         <div class="input-group mb-3">
-            <label for="" class="formulario_g">Añadir el precio del producto:</label>
+            <label for="" class="formulario_g"></label>
             <span class="input-group-text">$</span>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" placeholder="A&ntilde;adir el precio del producto">
         </div><br>
-        <label for="" class="formulario_f">Añadir la foto del producto:</label>
-        <input type="file" class="form-control border-dark" id="inputGroupFile01" name="principal_img" id="principal_img">
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button  type="button" class="btn btn-outline-primary" style="height:70px; width:200px">Enviar</button>
-
+         <div id="div_file">
+                <p id="texto">A&ntilde;adir la foto de portada</p>
+                <input type="file" class="form-control border-dark" id="btn_file" name="principal_img" id="principal_img">
+            </div><br>
+        <div align="center" >
+        <button type="submit" class="btn btn-success " style="background:#00bfff; border-color:#00bfff; border-radius:3px; box-shadow: 1px 1px 3px #000;">
+            Enviar
+        </button>&nbsp;
+        <a href="index.php" class="btn btn-danger" style="Background:#343a40; border-color:#343a40; border-radius:3px; box-shadow: 1px 1px 3px #000;">Cancelar</a></div>
         <!---input type="submit" class="formulario_submit"--->
     </form>
 

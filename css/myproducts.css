@@ -174,10 +174,9 @@
     transform: translate(2rem, 0);
   }
   .card__background-1, .card__background-2, .card__background-3 {
-    border-radius: 100%;
     transform: translate(-16%, 28%);
     position: absolute;
-    height: 56.8rem;
+    height: 65rem;
     width: 56.8rem;
   }
   .card__background-1 {

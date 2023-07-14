@@ -49,7 +49,7 @@
 
     <div class="container">
       <article class="card card--aqua">
-        <img class="card__img"   style="-color-light: rgba(0, 234, 255)" src="https://jamesprogramming.github.io/images/pyrenees-351266_1280.jpg" alt="mountains view on a sunny day" />
+        <img class="card__img"   style="-color-light: rgba(0, 234, 255)" src="http://localhost/Error-404/img/productos/27/principal.jpg" alt="mountains view on a sunny day" />
         <div class="card__img-filter"></div>
         <div class="card__text">
           <h2 class="card__header">

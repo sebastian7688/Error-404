@@ -1,0 +1,57 @@
+/*Formulario con CSS y Bootstrap*/
+   /* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">*/
+   
+   * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: rgb(4, 149, 181);
+    color: black;
+  }
+  .formulario {
+    width: 1000px;
+    margin: auto;
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px  rgb(4, 149, 181);
+    position: relative;
+  }
+  .formulario_inputi, .formulario_labeli, .formulario_submiti {
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.785);
+    font-family: sans-serif;
+  }
+  .formulario_inputi {
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+    background: rgba(245, 245, 245, 0.895);
+  }
+  .formulario_labeli {
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -93px;
+    z-index: -20px;
+    transition: all 0.3s;
+    color: rgba(4, 149, 181, 0.73);
+    animation: shake 0.3s;
+  }
+  .formulario_submiti {
+    background: transparent;
+    color: rgba(4, 149, 181, 0.73);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .formulario_inputi:focus + .formulario_labeli {
+    margin-top: -145px;
+  }
+  .fijar {
+    margin-top: -135px;
+  }
