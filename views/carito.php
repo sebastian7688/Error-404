@@ -8,23 +8,24 @@
                 Mi Carrito
             </span></h2>
         <div class="row px-xl-5">
-            <?php foreach ($caritos as $micar) { ?>
+            <?php foreach ($caritos as $micar) { 
+                ?>
                 <div class="col-md-4">
                     <div class="card product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
                             <?php
-                            if (file_exists('img/productos/' . $micar['id'] . '/principal.jpg')) { ?>
-                                <img class="card-img-top" width="100%" height="250rem" src="img/productos/<?php echo $micar['id']; ?>/principal.jpg">
+                            if (file_exists('img/productos/' . $micar['id_producto'] . '/principal.jpg')) { ?>
+                                <img class="card-img-top" width="100%" height="250rem" src="img/productos/<?php echo $micar['id_producto']; ?>/principal.jpg">
                             <?php
                             } ?>
 
                             <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href="products_read_more.php?id=<?php echo $micar['id'] ?>" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
+                                <a class="btn btn-outline-dark btn-square" href="products_read_more.php?id=<?php echo $micar['id_producto'] ?>" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
                             </div>
                         </div>
 
                         <div class="text-center py-4">
-                            <a class="card-title text-decoration-none text-truncate" href="products_read_more.php?id=<?php echo $micar['id'] ?>">
+                            <a class="card-title text-decoration-none text-truncate" href="products_read_more.php?id=<?php echo $micar['id_producto'] ?>">
                                 <?php echo $micar['nombre_prod'] ?>
                             </a>
 
