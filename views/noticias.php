@@ -97,7 +97,7 @@ if (isset($_SESSION['usuario'])) {
                                 <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
                             </div>
                             <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
                                     <h5>NOTICIA</h5>
                                 </a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
@@ -106,7 +106,7 @@ if (isset($_SESSION['usuario'])) {
                                         bulk of the card's content.</p>
                                 </div>
                                 <br>
-                                <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ if (isset($_SESSION['usuario'])) {
                                 <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
                             </div>
                             <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
                                     <h5>NOTICIA</h5>
                                 </a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
@@ -136,7 +136,7 @@ if (isset($_SESSION['usuario'])) {
                                         bulk of the card's content.</p>
                                 </div>
                                 <br>
-                                <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@ if (isset($_SESSION['usuario'])) {
                                 <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
                             </div>
                             <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
                                     <h5>NOTICIA</h5>
                                 </a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
@@ -155,7 +155,7 @@ if (isset($_SESSION['usuario'])) {
                                         bulk of the card's content.</p>
                                 </div>
                                 <br>
-                                <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
                             </div>
                         </div>
                     </div>
@@ -167,7 +167,7 @@ if (isset($_SESSION['usuario'])) {
                                 <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
                             </div>
                             <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
                                     <h5>NOTICIA</h5>
                                 </a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
@@ -176,7 +176,7 @@ if (isset($_SESSION['usuario'])) {
                                         bulk of the card's content.</p>
                                 </div>
                                 <br>
-                                <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
                             </div>
                         </div>
                     </div>
@@ -186,7 +186,7 @@ if (isset($_SESSION['usuario'])) {
                                 <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
                             </div>
                             <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
                                     <h5>NoOTICIA</h5>
                                 </a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
@@ -195,7 +195,7 @@ if (isset($_SESSION['usuario'])) {
                                         bulk of the card's content.</p>
                                 </div>
                                 <br>
-                                <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
                             </div>
                         </div>
                     </div>
@@ -215,7 +215,7 @@ if (isset($_SESSION['usuario'])) {
                                 <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
                             </div>
                             <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
                                     <h5>NOTICIA</h5>
                                 </a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
@@ -224,7 +224,7 @@ if (isset($_SESSION['usuario'])) {
                                         bulk of the card's content.</p>
                                 </div>
                                 <br>
-                                <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
                             </div>
                         </div>
                     </div>
@@ -234,7 +234,7 @@ if (isset($_SESSION['usuario'])) {
                                 <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
                             </div>
                             <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
                                     <h5>NOTICIA</h5>
                                 </a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
@@ -243,7 +243,7 @@ if (isset($_SESSION['usuario'])) {
                                         bulk of the card's content.</p>
                                 </div>
                                 <br>
-                                <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
                             </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@ if (isset($_SESSION['usuario'])) {
                                 <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
                             </div>
                             <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
                                     <h5>NOTICIA</h5>
                                 </a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
@@ -262,7 +262,7 @@ if (isset($_SESSION['usuario'])) {
                                         bulk of the card's content.</p>
                                 </div>
                                 <br>
-                                <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
                             </div>
                         </div>
                     </div>
@@ -272,7 +272,7 @@ if (isset($_SESSION['usuario'])) {
                                 <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
                             </div>
                             <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
                                     <h5>NOTICIA</h5>
                                 </a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
@@ -281,7 +281,7 @@ if (isset($_SESSION['usuario'])) {
                                         bulk of the card's content.</p>
                                 </div>
                                 <br>
-                                <a href="#" class="btn btn-info" style="color: white">Leer mas ></a>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
                             </div>
                         </div>
                     </div>

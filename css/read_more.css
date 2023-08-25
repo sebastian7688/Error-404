@@ -81,3 +81,21 @@
 .imagen img:hover {
     transform: scale(1.1);
 }
+
+.containerImagen{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgFluid {
+    height: auto;
+    width: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
