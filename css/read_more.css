@@ -99,3 +99,9 @@
     min-height: 100%;
     min-width: 100%;
 }
+
+.text::first-letter {
+    font-size: 50px;
+    color: #00bfff;
+    font-weight: 700;
+}
