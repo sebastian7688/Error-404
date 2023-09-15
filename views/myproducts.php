@@ -179,7 +179,7 @@
       #e5e5e5 100%
     );
   }</style>*/
-  <!----div class="container-fluid pt-5 pb-3">
+  -div class="container-fluid pt-5 pb-3">
     <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3 border-bottom border-info">
         Mis Productos
       </span></h2>
@@ -225,6 +225,15 @@
         Mis Productos
       </span></h2><br><br>
 <style>
+
+body {
+    background-image: url("http://localhost/Error-404/img/fondos/misproductos.jpg");
+     height:1320px; 
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+
+
   input[type="radio"] {
   position: absolute;
   left: -9999px;
@@ -308,44 +317,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-  </style>
-      <input type="radio" id="All" name="categories" value="All" checked>
-<input type="radio" id="CSS" name="categories" value="CSS">
-<input type="radio" id="JavaScript" name="categories" value="JavaScript">
-<input type="radio" id="jQuery" name="categories" value="jQuery">
-<input type="radio" id="WordPress" name="categories" value="WordPress">
-<input type="radio" id="Slider" name="categories" value="Slider">
-<input type="radio" id="fullPage.js" name="categories" value="fullPage.js">
-<ol class="filters">
-  <li>
-    <label for="All">All</label>
-  </li>
-  <li>
-    <label for="CSS">CSS</label>
-  </li>
-  <li>
-    <label for="JavaScript">JavaScript</label>
-  </li>
-  <li>
-    <label for="jQuery">jQuery</label>
-  </li>
-  <li>
-    <label for="WordPress">WordPress</label>
-  </li>
-  <li>
-    <label for="Slider">Slider</label>
-  </li>
-  <li>
-    <label for="fullPage.js">fullPage.js</label>
-  </li>
-</ol>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
- <!-- 10 more list items here -->
-</ol>
-
-<html>
-<head>
-<style>
 ul.pagination {
     display: inline-block;
     padding: 0;
@@ -391,10 +362,43 @@ ul.pagination li a {
 }ul.pagination li a {
     margin: 0 4px; /* 0 is for top and bottom. Feel free to change it */
 }
+  </style>
+      <input type="radio" id="All" name="categories" value="All" checked>
+<input type="radio" id="CSS" name="categories" value="CSS">
+<input type="radio" id="JavaScript" name="categories" value="JavaScript">
+<input type="radio" id="jQuery" name="categories" value="jQuery">
+<input type="radio" id="WordPress" name="categories" value="WordPress">
+<input type="radio" id="Slider" name="categories" value="Slider">
+<input type="radio" id="fullPage.js" name="categories" value="fullPage.js">
+<ol class="filters">
+  <li>
+    <label for="All">All</label>
+  </li>
+  <li>
+    <label for="CSS">CSS</label>
+  </li>
+  <li>
+    <label for="JavaScript">JavaScript</label>
+  </li>
+  <li>
+    <label for="jQuery">jQuery</label>
+  </li>
+  <li>
+    <label for="WordPress">WordPress</label>
+  </li>
+  <li>
+    <label for="Slider">Slider</label>
+  </li>
+  <li>
+    <label for="fullPage.js">fullPage.js</label>
+  </li>
+</ol>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ <!-- 10 more list items here -->
+</ol>
 
-</style>
-</head>
-<body>
+<html>
+<body >
 
 <ul class="pagination" style="margin-left:850px">
   <li><a href="#">«</a></li>
