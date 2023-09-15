@@ -52,7 +52,6 @@ h1 {
     outline: none;
     transition: all 0.3s ease;
 }
-
 .input:focus{
     transform: translateY(-8%);
     box-shadow: -1px 3px 5px #3D464D;
