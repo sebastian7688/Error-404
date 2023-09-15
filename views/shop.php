@@ -35,15 +35,15 @@
                                     <b class="caret"></b>
                                 </button>
                                 <ul class="multiselect-container genres-select dropdown-menu">
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="basket">&nbsp;Basket</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="rugby">&nbsp;Rugby</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="boxeo">&nbsp;Boxeo</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="golf">&nbsp;Golf</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="natacion">&nbsp;Natacion</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="surf">&nbsp;Surf</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="pink ponk">&nbsp;Pink Ponk</label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="handbal">&nbsp;Handbal</label></a></li>
-
+                                    <?php foreach ($deportes as $deporte) { ?>
+                                        <li>&nbsp;
+                                            <a href="shop.php?pagina=1&&sport_id=<?php echo $deporte['id_deporte'] ?>">
+                                                <label onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'">
+                                                    <?php echo $deporte['deporte'] ?>
+                                                </label>
+                                            </a>
+                                        </li>
+                                    <?php } ?>
                                 </ul>
                             </div>
                         </span>
@@ -166,6 +166,7 @@
         </h2>
         <div class="row px-xl-5">
             <?php foreach ($productos_nuevos as $nuevos) { ?>
+
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-5">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
@@ -201,26 +202,45 @@
                             <FONT COLOR="#15b83b">20% Descuento</FONT>
                         </div>
                     </div>
-                    
+
 
                 </div>
         </div>
     <?php } ?>
     </div>
     <!-- PAGINADOR -->
-    <div class="container">
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
-                <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>#titulo">Anterior</a></li>
 
-                <?php for ($i = 0; $i < $paginas; $i++) { ?>
-                    <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>#titulo"><?php echo $_GET['pagina']?></a></li>
-                <?php break; } ?>
+    <?php if (isset($_GET['sport_id'])) { ?>
+        <div class="container">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>&&sport_id=<?php echo $id ?>#titulo">Anterior</a></li>
 
-                <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>#titulo">Siguiente</a></li>
-            </ul>
-        </nav>
-    </div>
+                    <?php for ($i = 0; $i < $paginas; $i++) { ?>
+                        <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>&&sport_id=<?php echo $id ?>#titulo"><?php echo $_GET['pagina'] ?></a></li>
+                    <?php break;
+                    } ?>
+
+                    <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>&&sport_id=<?php echo $id ?>#titulo">Siguiente</a></li>
+                </ul>
+            </nav>
+        </div>
+    <?php } else { ?>
+        <div class="container">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>#titulo">Anterior</a></li>
+
+                    <?php for ($i = 0; $i < $paginas; $i++) { ?>
+                        <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>#titulo"><?php echo $_GET['pagina'] ?></a></li>
+                    <?php break;
+                    } ?>
+
+                    <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>#titulo">Siguiente</a></li>
+                </ul>
+            </nav>
+        </div>
+    <?php } ?>
 </div>
 
 

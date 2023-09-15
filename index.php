@@ -22,7 +22,7 @@ if (!$_GET) {
 }
 
 //view categories
-$sql2 = "SELECT * FROM deportes";
+$sql2 = "SELECT * FROM deportes WHERE id_deporte != 28";
 $res2 = mysqli_query($conn, $sql2);
 if (!$res2) {
     'Fallo de Consulta' . mysqli_error($conn);
