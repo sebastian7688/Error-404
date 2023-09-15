@@ -14,7 +14,6 @@
 .add {
     width: 88%;
     text-align: left;
-    background: -webkit-linear-gradient(bottom right, rgba(22, 157, 225, 0.972) 40%, rgba(255, 255, 255, 0.75)60%);  
     margin-top: 7.5%;
     padding: 10px;
     margin-left: 10%;
@@ -22,6 +21,7 @@
     border-radius: 10px;
     border: 2px solid rgb(0, 0, 0);
     box-shadow: 1px 1px 5px #000;  
+    background: ( rgba(255, 255, 255, 0.75)60%);  
 
 }
 
