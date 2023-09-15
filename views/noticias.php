@@ -14,15 +14,15 @@
 </div>
 <br>
 
-<h1 align="center">Noticias </h1>
+<h1 align="center">Noticias</h1>
 <br>
 <?php
 if (isset($_SESSION['usuario'])) {
     if ($_SESSION['usuario']['rol'] > 1) {
         ?>
         <div align="center">
-            <button class="btn btn-primary me-md-2" type="button"><a href="add_notices.php" a>Agrega tus noticas</button>
-            <button class="btn btn-primary" type="button"><a href="noticias.php" a>Mira tus noticias</button>
+            <button class="btn btn-primary me-md-2 btn-shadow" type="button" ><a href="add_notices.php" style="color: white" a>Agrega tus noticas</button>
+            <button class="btn btn-primary btn-shadow" type="button" ><a href="noticias.php" style="color: white" a>Mira tus noticias</button>
         </div>
         <br>
         <br>
@@ -88,7 +88,7 @@ if (isset($_SESSION['usuario'])) {
     <div class="row g-1">
         <div class="col-md-9">
             <div class="container-fluid pt-5 pb-3">
-                <h2 style="margin-left: 50px; margin-top: -38px">Noticias destacadas
+                <h2 style="margin-left:50px; margin-top:-38px; border-left:5px solid #00BFFF; padding-left: 5px;">Noticias destacadas
                 </h2>
                 <div class="row px-xl-5">
                     <div class="col-lg-12 col-md-6 col-sm-6 pb-36">
@@ -118,7 +118,7 @@ if (isset($_SESSION['usuario'])) {
 
             <!---Start cards2-->
             <div class="container-fluid pt-1 pb-9" style="margin-left: -50px;">
-                <h2 style="margin-left: 50px;">Noticias :333</h2>
+                <h2 style="margin-left: 120px; border-left:5px solid #00BFFF; padding-left: 5px;">Noticias</h2>
                 <br>
                 <div style="margin-left: 60px;" class="row px-xl-5">
                     <div class="col-lg-5 col-md-4 col-sm-6 pb-1">
@@ -207,7 +207,7 @@ if (isset($_SESSION['usuario'])) {
             <br>
             <!---Start cards3-->
             <div class="container-fluid pt-5 pb-3">
-                <h2 style="margin-left: 50px;">Noticias :3</h2>
+                <h2 style="margin-left: 50px; border-left:5px solid #00BFFF; padding-left: 5px;">Noticias</h2>
                 <div class="row px-xl-5">
                     <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">

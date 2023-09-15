@@ -108,6 +108,7 @@
                     <form class="form-horizontal" action="/cart/add/224300" method="post" enctype="multipart/form-data" name="buy" style="border-top:1px solid #aaa; margin-top:15px; padding-top:3%;">
                         <a class="btn btn-info text-light" href="editar_producto.php" style="border-radius:5px;" title="Editar"><i class="fa-solid fa-pen-to-square"></i></a>
                         <a class="btn btn-success text-light" style="border-radius:5px;" title="Descuento" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa-solid fa-percent"></i></a>
+                        <a class="btn btn-danger text-light" style="border-radius:5px;" title="Borrar"><i class="fa-solid fa-trash"></i></a>
                         <form action="" method="post">
                             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -161,12 +162,12 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" style="width:30%; background: #00BFFF; border: 1px solid #00BFFF; border-radius:5px 0px 0px 5px; color:#3D464D; color: #fff;" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                            <button type="button" style="width:100%; background: #e1e1e1; border: 1px solid #e1e1e1; border-radius:0px 5px 5px 0px; color:#3D464D; color: #000;" class="btn btn-secundary" onMouseover="this.style.background='#cdcccc'" onMouseout="this.style.background='#e1e1e1'">Subir descuetos</button>
+                                            <button type="button" style="width:100%; background: #e1e1e1; border: 1px solid #e1e1e1; border-radius:0px 5px 5px 0px; color:#3D464D; color: #000;" class="btn btn-secundary" onMouseover="this.style.background='#cdcccc'" onMouseout="this.style.background='#e1e1e1'">Subir descuentos</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </form><a class="btn btn-danger text-light" style="border-radius:5px;" title="Borrar"><i class="fa-solid fa-trash"></i></a>
+                        </form>
                     </form>
                 </form>
             </div>

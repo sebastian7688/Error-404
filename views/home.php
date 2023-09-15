@@ -76,7 +76,7 @@
     <!-- Categories Start -->
 
     <div class="container-fluid pt-5">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Categorias</span></h2>
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="pr-3" style="border-left:5px solid #00BFFF; padding-left:5px;">Categorias</span></h2>
             <div class="row px-xl-5 pb-3">
             <?php foreach ($categories as $categorie) { ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
@@ -102,9 +102,8 @@
 
     <!-- Noticias Start -->
     <div class="container-fluid pt-5 pb-3">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Noticias
-                :3</span></h2>
-        <div class="row px-xl-5">
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="pr-3" style="border-left:5px solid #00BFFF; padding-left:5px;">Noticias</span></h2>
+    <div class="row px-xl-5">
             <?php
 
             foreach ($noticias as $noticia) { ?>
@@ -153,7 +152,7 @@
                     <div class="offer-text">
                         <h6 class="text-white text-uppercase">Save 20%</h6>
                         <h3 class="text-white mb-3">Special Offer</h3>
-                        <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
+                        <a href="" class="btn text-dark" style="background-color:rgb(3 158 207); ">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -173,11 +172,8 @@
 </div>
 <div style="margin-right:  100px">
     <div class="container-fluid pt-5 pb-3">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">
-                Productos
-                en racha. </span></h2>
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="pr-3" style="border-left:5px solid #00BFFF; padding-left:5px;"> Productos en racha </span></h2>
                 <a href="qwe.php"></a>
-
         <div class="row px-xl-5">
             <?php foreach ($productos_nuevos as $nuevos) {
                 $i = $i + 1;

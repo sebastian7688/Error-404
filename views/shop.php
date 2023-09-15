@@ -160,9 +160,8 @@
 
     <!-- Products Start -->
     <div class="container-fluid pt-5 pb-3">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4" id="titulo">
-            <span class="bg-secondary pr-3">
-                Productos en racha. </span>
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4" id="titulo" >
+            <span class=" pr-3" style="border-left:5px solid #00BFFF; padding-left:5px;">Productos en racha</span>
         </h2>
         <div class="row px-xl-5">
             <?php foreach ($productos_nuevos as $nuevos) { ?>
