@@ -20,7 +20,7 @@
         <div class="containerImagen">
             <img class="imgFluid"  src="img/noticias/libertadores.png">
         </div>
-        <h2 style="margin-top:15px; border-left:5px solid #00BFFF; padding-left:5px; color:#1e1e1e;">Así se jugarán los octavos de la Copa Libertadores</h2>
+        <h2 style="margin-top:15px; margin-bottom:20px; border-left:5px solid #00BFFF; padding-left:5px; color:#1e1e1e;">Así se jugarán los octavos de la Copa Libertadores</h2>
     </div>
     
     <div class="col-12" style="">
@@ -34,7 +34,7 @@
     </div>                              
 
      <div class="col-12">
-        <div class="container" style="padding-top:1%; padding-bottom:1%;">
+        <div class="container" style="padding-top:1%; padding-bottom:1%; border-bottom:1px solid #bfbfbf;">
             <div class="form-group row">
                 <div class="col-sm-8 col-md-12">              
                     <p class="text" style="font-size:25px; letter-spacing:0; ">
@@ -67,4 +67,63 @@
             </div>                            
         </div>
     </div>
+    <div class="container" >
+            <div class="row comentarios justify-content-center" >
+                <div class="col-12">
+                    <form action="" class="form_comentarios d-flex justify-content-end flex-wrap">
+                        <textarea name="" id="" placeholder="Comentario"></textarea>
+                        <button class="btn" type="button" onMouseover="this.style.color='white'">Comentar</button>
+                    </form>
+                    <div class="media">
+                        <img src="img/group/mike.jpg" width="64" height="64" alt="">
+                        <div class="media-body">
+                            <p class="nombre">Nombre</p>
+                            <p class="comentario">Comentario</p>
+                            <div class="botones text-right">
+                                <a href="">Responder</a>
+                                <a href="">Editar</a>
+                                <a href="">Borrar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="media">
+                        <img src="img/group/seba.jpg" width="64" height="64" alt="">
+                        <div class="media-body">
+                            <p class="nombre">Nombre</p>
+                            <p class="comentario">Comentario</p>
+                            <div class="botones text-right">
+                                <a href="">Responder</a>
+                                <a href="">Editar</a>
+                                <a href="">Borrar</a>
+                            </div>
+                            <div class="media">
+                                <img src="img/group/eve.jpg" width="64" height="64" alt="">
+                                <div class="media-body">
+                                    <p class="nombre">Nombre</p>
+                                    <p class="comentario">Comentario</p>
+                                    <div class="botones text-right">
+                                        <a href="">Responder</a>
+                                        <a href="">Editar</a>
+                                        <a href="">Borrar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <img src="img/group/eve.jpg" width="64" height="64" alt="">
+                        <div class="media-body">
+                            <p class="nombre">Nombre</p>
+                            <p class="comentario">Comentario</p>
+                            <div class="botones text-right">
+                                <a href="">Responder</a>
+                                <a href="">Editar</a>
+                                <a href="">Borrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
