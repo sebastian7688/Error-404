@@ -38,19 +38,33 @@ if (isset($_GET['sport_id'])) {
     $productos_nuevos = mysqli_fetch_all($res2, MYSQLI_ASSOC);
     $total_registros =  mysqli_num_rows($res);
 } else {
-    $sql2 = "SELECT * FROM productos ORDER BY fecha_alta DESC LIMIT $iniciar,$registros";
-
+    if (isset($_GET['pagina']) && isset($_GET['get'])) {
+        $sql2 = "SELECT * FROM productos ORDER BY fecha_alta ASC LIMIT $iniciar,$registros";
+    } else {
+        if (isset($_GET['pagina']) && isset($_GET['radi'])) {
+            if ($_GET['radi'] == 1) {
+                $sql2 = "SELECT * FROM productos ORDER BY precio DESC LIMIT $iniciar,$registros";
+            }
+            if ($_GET['radi'] == 2) {
+                $sql2 = "SELECT * FROM productos ORDER BY precio ASC LIMIT $iniciar,$registros";
+            }
+        } else {
+            $sql2 = "SELECT * FROM productos ORDER BY fecha_alta DESC LIMIT $iniciar,$registros";
+        }
+    }
     $res2 = mysqli_query($conn, $sql2);
     $productos_nuevos = mysqli_fetch_all($res2, MYSQLI_ASSOC);
     $total_registros =  mysqli_num_rows($res);
 }
+
 //adding sports for filters
 
 $instance = "SELECT*FROM deportes";
 $query = mysqli_query($conn, $instance);
 $deportes = mysqli_fetch_all($query, MYSQLI_ASSOC);
-if(isset($_GET['sport_id'])){
+if (isset($_GET['sport_id'])) {
     $id = $_GET['sport_id'];
 }
+
 $section = "views/shop";
 require_once "views/layout.php";
