@@ -1,4 +1,6 @@
 <link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/add.css">
+<link rel="stylesheet" href="css/qwe.css">
 <!----div class="border-top bg-light"--->
 <!---style>
  /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
