@@ -98,7 +98,7 @@
 
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         &nbsp;&nbsp;
-                        <a href="carito.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> <i class="fa-solid fa-cart-shopping"></i> Mi carrito </a>&nbsp;&nbsp;
+                        <a href="carrito.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> <i class="fa-solid fa-cart-shopping"></i> Mi carrito </a>&nbsp;&nbsp;
                         <?php
                         if (isset($_SESSION['usuario'])) {
                         ?>

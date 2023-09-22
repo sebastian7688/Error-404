@@ -59,12 +59,12 @@
             </div>
 
             <div class="col-lg-6" style="padding:3%;">
-                <form class="form-horizontal" action="/cart/add/224300" method="post" enctype="multipart/form-data" name="buy" style="border-bottom:1px solid #aaa; margin-bottom:15px;">
+                <form class="form-horizontal" action="carrito.php" method="post" enctype="multipart/form-data" name="buy" style="border-bottom:1px solid #aaa; margin-bottom:15px;">
 
                     <!-- Product Price  -->
                     <div class="row">
                         <div class="col-12">
-                            <h3 class="page-header">
+                            <h3 class="page-header" name="nombre" value="<?php echo $producto['nombre_prod'] ?>">
                                 <?php echo $producto['nombre_prod'] ?>
                             </h3>
                         </div>
@@ -72,7 +72,7 @@
 
                     <div class="form-group price_elem row">
                         <div class="col-sm-8 col-md-9">
-                            <span class="product-form-price" id="product-form-price" style="font-size:250%; color: #000;;">$
+                            <span class="product-form-price" id="product-form-price" style="font-size:250%; color: #000;;" name="precio">
                                 <?php echo $producto['precio'] ?>
                             </span>
                         </div>
@@ -90,18 +90,16 @@
                         <div class="col-sm-8 col-sm-offset-3 col-md-9 col-md-offset-3">
 
                         </div>
-                    </form>
-                    <?php $name = $_GET['id'] ?>
-                    <form action="shopping_cart.php" method="post">
+                    
                         <div class="form-group row">
                             <div class="col-sm-8 col-md-9">
-                                <input type="number" class="qty form-control" name="cant" id="input-qty" name="qty" max="<?php echo $producto['cantidad'] ?>" min="1" placeholder="Cantidades" style="border-radius:5px;">
+                                <input type="number" class="qty form-control" name="cant" id="input-qty" max="<?php echo $producto['cantidad'] ?>" min="1" placeholder="Cantidades" style="border-radius:5px;">
                             </div>
                         </div>
                         <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
                         <div style="display:flex;">
                             <input type="submit" class="btn" style="width:100%; background: #00BFFF; border: 1px solid #00BFFF; border-radius:5px 0px 0px 5px; color:#3D464D; color: #fff;" value="Compra Ahora" onMouseover="this.style.background='rgb(0 172 229)'" onMouseout="this.style.background='#00BFFF'">
-                            <input type="submit" Class="btn" style="width:100%; background: #e1e1e1; border: 1px solid #e1e1e1; border-radius:0px 5px 5px 0px; color:#3D464D; color: #000;" value="Agregar al carito" onMouseover="this.style.background='#cdcccc'" onMouseout="this.style.background='#e1e1e1'">
+                            <input type="submit" Class="btn" style="width:100%; background: #e1e1e1; border: 1px solid #e1e1e1; border-radius:0px 5px 5px 0px; color:#3D464D; color: #000;" value="Agregar al carito" onMouseover="this.style.background='#cdcccc'" onMouseout="this.style.background='#e1e1e1'" name="agregar">
                         </div>
 
                     </form>
