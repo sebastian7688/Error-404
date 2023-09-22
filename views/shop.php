@@ -56,8 +56,20 @@
                                     <b class="caret"></b>
                                 </button>
                                 <ul class="multiselect-container year-select dropdown-menu">
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" name="xd" value="mas nuevo"> Nuevo a viejo </label></a></li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" name="xd" value="mas viejo"> Viejo a nuevo </label></a></li>
+                                    <li>&nbsp;
+                                        <a href="shop.php?pagina=1">
+                                            <label onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'">
+                                                Nuevo a viejo
+                                            </label>
+                                        </a>
+                                    </li>
+                                    <li>&nbsp;
+                                        <a href="shop.php?pagina=1&&get=1">
+                                            <label onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'">
+                                                Viejo a nuevo
+                                            </label>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </span>
@@ -66,16 +78,24 @@
                                     <span class="multiselect-selected-text"><b>Precio:</b> Todos</span> <b class="caret"></b>
                                 </button>
                                 <ul class="multiselect-container dropdown-menu">
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="mayor precio"> Mayor a menor </label></a>
+                                    <li>&nbsp;
+                                        <a href="shop.php?pagina=1&&radi=1">
+                                            <label onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'">
+                                                Mayor a menor
+                                            </label>
+                                        </a>
                                     </li>
-                                    <li>&nbsp;<a tabindex="0"><label class="checkbox" onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'"><input type="checkbox" value="menor precio"> Menor a mayor </label></a>
+                                    <li>&nbsp;
+                                        <a href="shop.php?pagina=1&&radi=2">
+                                            <label onMouseover="this.style.color='Deepskyblue'" onMouseout="this.style.color='black'">
+                                                Menor a mayor
+                                            </label>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
                         </span>
-                        <button type="submit" class="btn btn-sm btn-info">
-                            <span class="fa fa-filter" aria-hidden="true"></span> Filtrar.
-                        </button>
+
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         &nbsp;&nbsp;
                         <a href="carito.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> <i class="fa-solid fa-cart-shopping"></i> Mi carrito </a>&nbsp;&nbsp;
@@ -160,7 +180,7 @@
 
     <!-- Products Start -->
     <div class="container-fluid pt-5 pb-3">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4" id="titulo" >
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4" id="titulo">
             <span class=" pr-3" style="border-left:5px solid #00BFFF; padding-left:5px;">Productos en racha</span>
         </h2>
         <div class="row px-xl-5">
@@ -224,22 +244,78 @@
                 </ul>
             </nav>
         </div>
-    <?php } else { ?>
-        <div class="container">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>#titulo">Anterior</a></li>
+        <?php } else {
+        if (isset($_GET['pagina']) && isset($_GET['get'])) {
+        ?>
+            <div class="container">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>&&get=1#titulo">Anterior</a></li>
 
-                    <?php for ($i = 0; $i < $paginas; $i++) { ?>
-                        <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>#titulo"><?php echo $_GET['pagina'] ?></a></li>
-                    <?php break;
-                    } ?>
+                        <?php for ($i = 0; $i < $paginas; $i++) { ?>
+                            <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>&&get=1#titulo"><?php echo $_GET['pagina'] ?></a></li>
+                        <?php break;
+                        } ?>
 
-                    <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>#titulo">Siguiente</a></li>
-                </ul>
-            </nav>
-        </div>
-    <?php } ?>
+                        <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>&&get=1#titulo">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <?php } else { 
+            if (isset($_GET['pagina']) && isset($_GET['radi'])) {
+                if($_GET['radi'] == 1){
+            ?>
+            <div class="container">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>&&radi=1#titulo">Anterior</a></li>
+
+                        <?php for ($i = 0; $i < $paginas; $i++) { ?>
+                            <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>&&radi=1#titulo"><?php echo $_GET['pagina'] ?></a></li>
+                        <?php break;
+                        } ?>
+
+                        <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>&&radi=1#titulo">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <?php }
+    if($_GET['radi'] == 2){
+?>
+<div class="container">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>&&radi=2#titulo">Anterior</a></li>
+
+                        <?php for ($i = 0; $i < $paginas; $i++) { ?>
+                            <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>&&radi=2#titulo"><?php echo $_GET['pagina'] ?></a></li>
+                        <?php break;
+                        } ?>
+
+                        <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>&&radi=2#titulo">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <?php
+    }}else{?>
+<div class="container">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>#titulo">Anterior</a></li>
+
+                        <?php for ($i = 0; $i < $paginas; $i++) { ?>
+                            <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>#titulo"><?php echo $_GET['pagina'] ?></a></li>
+                        <?php break;
+                        } ?>
+
+                        <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>#titulo">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <?php }
+            
+        }
+    } ?>
 </div>
 
 
