@@ -229,7 +229,7 @@
 <style>
 
 body {
-    background-image: url("http://localhost/Error-404/img/fondos/misproductos.jpg");
+    background-color:linear-gradient( rgba(42, 154, 240, 0.541), rgb(255, 255, 255,0.541));
      height:1320px; 
     background-size:cover;
     background-repeat: no-repeat;

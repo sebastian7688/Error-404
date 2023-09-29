@@ -21,7 +21,7 @@
     border-radius: 10px;
     border: 2px solid rgb(0, 0, 0);
     box-shadow: 1px 1px 5px #000;  
-    background: -webkit-linear-gradient( rgba(255, 255, 255, 0.75)60%);
+    background: linear-gradient( rgba(42, 154, 240, 0.541), rgb(255, 255, 255,0.541));
 }
 
 
