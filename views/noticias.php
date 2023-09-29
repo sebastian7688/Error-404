@@ -4,7 +4,7 @@
 
 <div class="container">
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb" style="margin-bottom:0px;">
             <li class="breadcrumb-item"><a href="index.php" class="link-info" style="text-decoration: none;">Inicio</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page"><a style="text-decoration: none;">Noticias</a>
@@ -12,22 +12,10 @@
         </ol>
     </nav>
 </div>
-<br>
 
-<h1 align="center">Noticias</h1>
-<br>
-<?php
-if (isset($_SESSION['usuario'])) {
-    if ($_SESSION['usuario']['rol'] > 1) {
-        ?>
-        <div align="center">
-            <button class="btn btn-primary me-md-2 btn-shadow" type="button" ><a href="add_notices.php" style="color: white" a>Agrega tus noticas</button>
-            <button class="btn btn-primary btn-shadow" type="button" ><a href="noticias.php" style="color: white" a>Mira tus noticias</button>
-        </div>
-        <br>
-        <br>
-    <?php }
-} ?>
+<!-- <h1 align="center">Noticias</h1>
+<br> -->
+
 <!-- Carousel Start -->
 
     <div class="container-fluid p-0 mb-1 pb-5">
@@ -82,13 +70,30 @@ if (isset($_SESSION['usuario'])) {
     </div>
     <!-- Carousel End -->
     <br>
+        <div>
+            <div style="margin-left: 50px; margin-top:30px;">
+                <?php
+                if (isset($_SESSION['usuario'])) {
+                    if ($_SESSION['usuario']['rol'] > 1) {
+                        ?>
+                        <h2 style="border-left:5px solid #00BFFF; padding-left: 5px;">Opciones</h2>
+                        <div align="left">
+                            <button class="btn btn-primary me-md-2 btn-shadow" type="button" ><a href="add_notices.php" style="color: white" a>Agrega tus noticas</button>
+                            <button class="btn btn-primary btn-shadow" type="button" ><a href="noticias.php" style="color: white" a>Mira tus noticias</button>
+                        </div>
+                        <br>
+                        <br>
+                    <?php }
+                } ?>
+            </div>
+        </div>
     <br>
     <div style="margin-right: 20px">
     <!---start cards1-->
     <div class="row g-1">
         <div class="col-md-9">
             <div class="container-fluid pt-5 pb-3">
-                <h2 style="margin-left:50px; margin-top:-38px; border-left:5px solid #00BFFF; padding-left: 5px;">Noticias destacadas
+                <h2 style="margin-left:50px; margin-top:-38px; border-left:5px solid #00BFFF; padding-left: 5px;">La noticia destacada de la semana
                 </h2>
                 <div class="row px-xl-5">
                     <div class="col-lg-12 col-md-6 col-sm-6 pb-36">
@@ -113,12 +118,12 @@ if (isset($_SESSION['usuario'])) {
                 </div>
             </div>
             <br>
-            <br>
+
             <!-----End card1---->
 
             <!---Start cards2-->
-            <div class="container-fluid pt-1 pb-9" style="margin-left: -50px;">
-                <h2 style="margin-left: 120px; border-left:5px solid #00BFFF; padding-left: 5px;">Noticias</h2>
+            <div class="container-fluid pt-1 pb-9" style="margin-left: 65px;">
+                <!-- <h2 style="margin-left: 120px; border-left:5px solid #00BFFF; padding-left: 5px;">Noticias destacadas</h2> -->
                 <br>
                 <div style="margin-left: 60px;" class="row px-xl-5">
                     <div class="col-lg-5 col-md-4 col-sm-6 pb-1">
@@ -199,15 +204,173 @@ if (isset($_SESSION['usuario'])) {
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-5 col-md-4 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
+                                    <h5>NoOTICIA</h5>
+                                </a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                </div>
+                                <br>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-4 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
+                                    <h5>NoOTICIA</h5>
+                                </a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                </div>
+                                <br>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="container-fluid pt-5 pb-3" style="width:75%;">
+                        <div class="row px-xl-1" style="margin-left:30px;">
+                            <div class="col-lg-12 col-md-6 col-sm-6 pb-36">
+                                <div class="product-item bg-light mb-4">
+                                    <div class="product-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
+                                            <h5>NOTICIA</h5>
+                                        </a>
+                                        <div class="d-flex align-items-center justify-content-center mt-2">
+                                            <p class="card-text">Some quick example text to build on the card title and make up
+                                                the
+                                                bulk of the card's content.</p>
+                                        </div>
+                                        <br>
+                                        <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid pt-5 pb-3" style="width:75%;">
+                        <div class="row px-xl-1" style="margin-left:30px;">
+                            <div class="col-lg-12 col-md-6 col-sm-6 pb-36">
+                                <div class="product-item bg-light mb-4">
+                                    <div class="product-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
+                                            <h5>NOTICIA</h5>
+                                        </a>
+                                        <div class="d-flex align-items-center justify-content-center mt-2">
+                                            <p class="card-text">Some quick example text to build on the card title and make up
+                                                the
+                                                bulk of the card's content.</p>
+                                        </div>
+                                        <br>
+                                        <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid pt-5 pb-3" style="width:75%;">
+                        <div class="row px-xl-1" style="margin-left:30px;">
+                            <div class="col-lg-12 col-md-6 col-sm-6 pb-36">
+                                <div class="product-item bg-light mb-4">
+                                    <div class="product-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
+                                            <h5>NOTICIA</h5>
+                                        </a>
+                                        <div class="d-flex align-items-center justify-content-center mt-2">
+                                            <p class="card-text">Some quick example text to build on the card title and make up
+                                                the
+                                                bulk of the card's content.</p>
+                                        </div>
+                                        <br>
+                                        <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+            
             <!---End cards2-->
-            <br>
-            <br>
-            <br>
-            <!---Start cards3-->
-            <div class="container-fluid pt-5 pb-3">
-                <h2 style="margin-left: 50px; border-left:5px solid #00BFFF; padding-left: 5px;">Noticias</h2>
+
+
+            </div>
+            <aside class="sidebar" id="sidebar-1" style="background-color: lightgray; padding: 15px; margin-top:55px;" title="Información adicional">
+            <h3 style="color: black; margin-bottom:25px;">Artículos relacionados</h3>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+            <div style="margin-bottom:15%;">
+                <a href="#"><img style="height: 190px;" src="img/home/noti-8.jpg" alt=""><h4>Titulo de la noticia</h4><p>Descripción de la noticia</p></a>
+            </div>
+
+        </aside>
+        
+       
+        <div class="container-fluid pt-5 pb-3" style="margin-top:25px;">
+                <h2 style="margin-left: 50px; border-left:5px solid #00BFFF; padding-left: 5px;">Más noticias</h2>
                 <div class="row px-xl-5">
                     <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
@@ -286,65 +449,87 @@ if (isset($_SESSION['usuario'])) {
                         </div>
                     </div>
                 </div>
-
-                <!---End cards3-->
-                <br>
-
-            </div>
         </div>
-        <aside class="sidebar" id="sidebar-1" style="background-color: lightgray; padding: 15px;"
-            title="Información adicional">
-            <h3>Artículos relacionados</h3>
-            <ul>
-                <li><a href="#">Artículo 1</a></li>
-                <li><a href="#">Artículo 2</a></li>
-                <li><a href="#">Artículo 3</a></li>
-            </ul>
-            <img style="height: 190px;" src="img/home/noti-8.jpg" alt="">
-            <br><br>
-            <h3>Artículos relacionados</h3>
-            <ul>
-                <li><a href="#">Artículo 1</a></li>
-                <li><a href="#">Artículo 2</a></li>
-                <li><a href="#">Artículo 3</a></li>
-            </ul>
-            <img style="height: 190px;" src="img/home/noti-1.jpg" alt="">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <h3>Artículos relacionados</h3>
-            <ul>
-                <li><a href="#">Artículo 1</a></li>
-                <li><a href="#">Artículo 2</a></li>
-                <li><a href="#">Artículo 3</a></li>
-            </ul>
-            <img style="height: 190px;" src="img/home/noti-1.jpg" alt="">
-            <br><br><br><br><br>
-            <h3>Artículos relacionados</h3>
-            <ul>
-                <li><a href="#">Artículo 1</a></li>
-                <li><a href="#">Artículo 2</a></li>
-                <li><a href="#">Artículo 3</a></li>
-            </ul>
-            <img style="height: 190px;" src="img/home/noti-8.jpg" alt="">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <h3>Artículos relacionados</h3>
-            <ul>
-                <li><a href="#">Artículo 1</a></li>
-                <li><a href="#">Artículo 2</a></li>
-                <li><a href="#">Artículo 3</a></li>
-            </ul>
-            <img style="height: 190px;" src="img/home/noti-8.jpg" alt="">
-            <br><br><br><br><br><br><br>
-            <h3>Artículos relacionados</h3>
-            <ul>
-                <li><a href="#">Artículo 1</a></li>
-                <li><a href="#">Artículo 2</a></li>
-                <li><a href="#">Artículo 3</a></li>
-            </ul>
-            <img style="height: 190px;" src="img/home/noti-8.jpg" alt="">
-        </aside>
-
-    </div>
-
+        <div class="container-fluid pt-5 pb-3">
+                <div class="row px-xl-5">
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
+                                    <h5>NOTICIA</h5>
+                                </a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                </div>
+                                <br>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
+                                    <h5>NOTICIA</h5>
+                                </a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                </div>
+                                <br>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
+                                    <h5>NOTICIA</h5>
+                                </a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                </div>
+                                <br>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
+                                    <h5>NOTICIA</h5>
+                                </a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                </div>
+                                <br>
+                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
 </div>
 
 <!-- Startsilde
@@ -381,9 +566,7 @@ if (isset($_SESSION['usuario'])) {
 
  --slider End--->
 
-
-
-<!-- Carousel infinito start 
+<!-- Carousel infinito start
   <div class="slider">
     <link rel="stylesheet" href="css/noticias.css">
     <div class="slide-track">
@@ -436,21 +619,10 @@ if (isset($_SESSION['usuario'])) {
 <!-- PAGINADOR -->
 <div class="container">
     <nav aria-label="Page navigation example">
-        <ul class="pagination">
-            <li class="page-item">
-
-                <a class="page-link" href="">
-                    <FONT color="#17a2b8">Anterior</FONT>
-                </a>
-            </li>
-            <li class="page-item "><a class="page-link" href="">
-                    <FONT color="#17a2b8">1</FONT>
-                </a></li>
-
-
-            <li class="page-item"><a class="page-link" href=" ">
-                    <FONT color="#17a2b8">Siguiente</FONT>
-                </a></li>
+        <ul class="pagination" style="margin-left:40%;">
+            <li class="page-item"><a class="page-link" href=""><FONT color="#17a2b8">Anterior</FONT></a></li>
+            <li class="page-item "><a class="page-link" href=""><FONT color="#17a2b8">1</FONT></a></li>
+            <li class="page-item"><a class="page-link" href=" "><FONT color="#17a2b8">Siguiente</FONT></a></li>
         </ul>
     </nav>
 </div>
