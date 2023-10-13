@@ -1,3 +1,5 @@
+<link href="img/favicon.ico" rel="icon">
+<link rel="icon" href="img/icon.ico">
 <?php
 require_once "includes/config.php";
 require_once "views/navbar.php";
@@ -22,6 +24,5 @@ if ($_POST) {
     }
     header("Location: index.php");
 }
-
 
 require_once "views/footer.php";

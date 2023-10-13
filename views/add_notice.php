@@ -26,29 +26,40 @@
     </nav>
 </div>
 <div class="container">  
-    <form class="add" action="" method="post" enctype="multipart/form-data">
-        <h1 class="titulo_1" style="text-align:center"><img src="img/icon.ico" alt="" >Agregar noticia</h1>
+<form class="add" action="" method="post" enctype="multipart/form-data">
 
+
+        <div>
+            <h1 class="titulo_1" style="text-align:center; padding-right:13%;"><img src="img/icon.ico" alt="" style="width:150px; ">Agregar noticia</h1>
+        </div>
         <div class="input-container"><br>
-            <input type="text" class="input" name="title"placeholder="A&ntilde;adir titulo de la noticia">
+            <h3>A&ntilde;adir título de la noticia</h3>
+            <input type="text" class="input" name="title" placeholder="Aqui pondras el título principal de la noticia">
             <br><br>
-           <textarea type="text" class="input" maxlength="500" name="desc"placeholder="A&ntilde;adir una descripcion"></textarea>
-            <br><br>
-            <textarea  class="input"  name="info" placeholder="Desarolla la Noticia"></textarea>
-            <br><br>
-            <!-- <label class="input-group-text" for="inputGroupFile01">Upload</label> -->
-            <div id="div_file">
+            <div>
+               
+            </div>
+            <div id="div_file" onMouseover="this.style.background='#00b6f3'" onMouseout="this.style.background='#00BFFF'">
                 <p id="texto">A&ntilde;adir la foto de portada</p>
                 <input type="file" class="form-control border-dark" id="btn_file" name="principal_img" id="principal_img">
             </div>
+            <br>
+            <h3 >A&ntilde;adir una descripción</h3>
+            <textarea type="text" class="input" maxlength="500" name="desc" placeholder="Aquí se verá sobre qué se trata la noticia"></textarea>
+            <br><br>
+            <h3>Desarrolla la Noticia</h3>
+            <textarea  class="input"  name="info" placeholder="Aquí escribirás todo lo que quieras contar sobre tu noticia"></textarea>
+            <br>
         </div>
-        
+       
         <br>
         <div align="center" >
-        <button type="submit" class="btn btn-success" style="background:#00bfff; border-color:#00bfff; border-radius:3px; box-shadow: 1px 1px 3px #000;">
+        <button type="submit" class="btn btn-success" style="background:#00bfff; border-color:#00bfff; border-radius:3px; box-shadow: 1px 1px 3px #000;" onMouseover="this.style.background='#009ed3'" onMouseout="this.style.background='#00BFFF'">
             Enviar
         </button>
-        <a href="index.php" class="btn btn-danger" style="Background:#343a40; border-color:#343a40; border-radius:3px; box-shadow: 1px 1px 3px #000;">Cancelar</a>
+        <a href="index.php" class="btn btn-danger" style="Background:#343a40; border-color:#343a40; border-radius:3px; box-shadow: 1px 1px 3px #000;" onMouseover="this.style.background='#3f3f3f'" onMouseout="this.style.background='#343a40'">Cancelar</a>
 </div>
     </form>
+
+
 </div></body>
