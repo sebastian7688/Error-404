@@ -26,8 +26,8 @@
         <tbody>
             <?php foreach ($_SESSION['carrito'] as $producto_id => $producto) : ?>
                 <tr class="table-info">
-                    <th><?php echo $producto['nombre_prod']; ?> - $</th>
-                    <th><?php echo $producto['precio']; ?></th>
+                    <th><?php echo $producto['nombre_prod']; ?> </th>
+                    <th>$<?php echo $producto['precio']; ?></th>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <th><button type="button" class="btn btn-info" style="background: #0382aa"><i class="fa-solid fa-minus"></i></button>&nbsp;&nbsp;<button type="buton" class="btn btn-info" style="background: #0382aa"><i class="fa-solid fa-plus"></i></button></th>
                     <th>
