@@ -1,4 +1,6 @@
 <link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/layout.css">
+
 <div class="container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -201,26 +203,23 @@
                             </div>
                         </div>
 
-                        <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="products_read_more.php?id=<?php echo $nuevos['id'] ?>">
-                                <?php echo $nuevos['nombre_prod'] ?>
+                        <div class="py-4 carta" style="text-decoration:none;">
 
-                                <div style="margin-left:200px">
-                                    <i class="fa-solid fa-heart" style="color:red;"></i>
+                            <a class="text-decoration-none" href="products_read_more.php?id=<?php echo $nuevos['id'] ?>">
+                                <p class="p1"><?php echo $nuevos['nombre_prod'] ?></p>
                             </a>
-                        </div>
-                        </a>
 
-                        <div class="d-flex align-items-center justify-content-center mt-2">
+                            <i class="fa-solid fa-heart"></i>
+
                             <h5>$
                                 <?php echo $nuevos['precio'] ?>
                             </h5>
-                            </h6>
+
+                            <div style="padding-left: 15px;">
+                                <FONT COLOR="#15b83b">20% Descuento</FONT>
+                            </div>
+                            
                         </div>
-                        <div align="center">
-                            <FONT COLOR="#15b83b">20% Descuento</FONT>
-                        </div>
-                    </div>
 
 
                 </div>
