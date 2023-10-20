@@ -29,7 +29,7 @@
             <div class="carousel-item position-relative active" style="min-height: 80vh;">
                 <img class="position-absolute w-100 h-100" src="img/home/caru-1.jpg" style="object-fit: cover;">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <div class="p-3" style="max-width: 900px;">
+                    <div class="p-3" style="max-width: 700px;">
                         <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Spa & Beauty Center</h6>
                         <h3 class="display-3 text-capitalize text-white mb-3">Noticias del dia</h3>
                         <p class="mx-md-5 px-5">La mejor forma de empezar tu dia es con un buen cafecito :3</p>
