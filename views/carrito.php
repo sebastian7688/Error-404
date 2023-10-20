@@ -33,13 +33,17 @@
                         <th>$<?php echo $producto['precio'] ?></th>
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         <th>
-                            <?php echo $producto['cantidad'] ?>
-                            <button type="button" class="btn btn-info" style="background: #0382aa"><i class="fa-solid fa-minus"></i></button>&nbsp;&nbsp;<button type="buton" class="btn btn-info" style="background: #0382aa"><i class="fa-solid fa-plus"></i></button>
+                            <form action="carrito.php" method="POST">
+                                <?php echo $producto['cantidad'] ?>
+                                <input type="hidden" name="producto_id" value="<?php echo $producto_id; ?>">
+                                <button type="submit" class="btn btn-info" style="background: #0382aa" name="restar"><i class="fa-solid fa-minus"></i></button>&nbsp;&nbsp;
+                                <button type="submit" class="btn btn-info" style="background: #0382aa" name="sumar"><i class="fa-solid fa-plus"></i></button>
+                            </form>
                         </th>
                         <th>
                             <form action="carrito.php" method="POST">
                                 <input type="hidden" name="producto_id" value="<?php echo $producto_id; ?>">
-                                <button type="button" class="btn btn-danger" style="background: #b60903" name="eliminar_del_carrito" value="Eliminar del carrito"><i class="fa-regular fa-trash-can"></i></button>&nbsp;&nbsp;
+                                <button type="submit" class="btn btn-danger" style="background: #b60903" name="eliminar"><i class="fa-regular fa-trash-can"></i></button>&nbsp;&nbsp;
                             </form>
                         </th>
                     </tr>
@@ -53,8 +57,12 @@
                 <th scope="col">Precio Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                 <th></th>
                 <th></th>
-                <th>$$$</th>
+                <th>$$$ <?php echo $total ?></th>
             </tr>
         </thead>
     </table>
+
+    <form action="carrito.php" method="post">
+            <button type="submit" class="btn btn-danger" style="background: #b60903" name="vaciar">Vaciar Carrito</button>
+    </form>
 </div>
