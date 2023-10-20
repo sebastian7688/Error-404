@@ -8,7 +8,7 @@ if (isset($_POST['agregar'])) {
    
     $producto_id = $_POST['id'];
     $producto_nombre = $m['nombre_prod'];
-    $producto_precio = $m['precio'];
+    $producto_precio = $m['precio'] * $_POST['cant'];
     $cant = $_POST['cant'];
     $_SESSION['carrito'][$producto_id] = [
         'nombre_prod' => $producto_nombre,

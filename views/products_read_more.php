@@ -93,7 +93,7 @@
                     
                         <div class="form-group row">
                             <div class="col-sm-8 col-md-9">
-                                <input type="number" class="qty form-control" name="cant" id="input-qty" max="<?php echo $producto['cantidad'] ?>" min="1" placeholder="Cantidades" style="border-radius:5px;">
+                                <input type="number" class="qty form-control" name="cant" id="input-qty" max="<?php echo $producto['cantidad'] ?>" min="1" value="1" placeholder="Cantidades" style="border-radius:5px;">
                             </div>
                         </div>
                         <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />

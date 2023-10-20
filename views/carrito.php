@@ -24,20 +24,27 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($_SESSION['carrito'] as $producto_id => $producto) : ?>
-                <tr class="table-info">
-                    <th><?php echo $producto['nombre_prod']; ?> </th>
-                    <th>$<?php echo $producto['precio']; ?></th>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <th><button type="button" class="btn btn-info" style="background: #0382aa"><i class="fa-solid fa-minus"></i></button>&nbsp;&nbsp;<button type="buton" class="btn btn-info" style="background: #0382aa"><i class="fa-solid fa-plus"></i></button></th>
-                    <th>
-                        <form action="carrito.php" method="POST">
-                            <input type="hidden" name="producto_id" value="<?php echo $producto_id; ?>">
-                            <button type="button" class="btn btn-danger" style="background: #b60903" name="eliminar_del_carrito" value="Eliminar del carrito"><i class="fa-regular fa-trash-can"></i></button>&nbsp;&nbsp;
-                        </form>
-                    </th>
-                </tr>
-            <?php endforeach; ?>
+            <?php
+            if (isset($_SESSION['carrito'])) {
+                foreach ($_SESSION['carrito'] as $producto_id => $producto) :
+            ?>
+                    <tr class="table-info">
+                        <th><?php echo $producto['nombre_prod']; ?> </th>
+                        <th>$<?php echo $producto['precio'] ?></th>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <th>
+                            <?php echo $producto['cantidad'] ?>
+                            <button type="button" class="btn btn-info" style="background: #0382aa"><i class="fa-solid fa-minus"></i></button>&nbsp;&nbsp;<button type="buton" class="btn btn-info" style="background: #0382aa"><i class="fa-solid fa-plus"></i></button>
+                        </th>
+                        <th>
+                            <form action="carrito.php" method="POST">
+                                <input type="hidden" name="producto_id" value="<?php echo $producto_id; ?>">
+                                <button type="button" class="btn btn-danger" style="background: #b60903" name="eliminar_del_carrito" value="Eliminar del carrito"><i class="fa-regular fa-trash-can"></i></button>&nbsp;&nbsp;
+                            </form>
+                        </th>
+                    </tr>
+            <?php endforeach;
+            } ?>
         </tbody>
     </table>
     <table class="table table-active">
@@ -46,7 +53,7 @@
                 <th scope="col">Precio Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                 <th></th>
                 <th></th>
-                <th>$$$<!--------aca iria la suma de todos los productos---------></th>
+                <th>$$$</th>
             </tr>
         </thead>
     </table>
