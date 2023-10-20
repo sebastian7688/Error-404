@@ -10,7 +10,7 @@
 </div>
 
 <br>
-<h2 style="border-left:5px solid #00BFFF; margin-left:95px;">Carrito</h2>
+<h2 style="border-left:5px solid #00BFFF; margin-left:400px;">Carrito</h2>
 
 <br>
 <div class="container">
