@@ -1,4 +1,3 @@
-<link href="css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="css/about_us.css">
 
 <div class="container">
@@ -22,29 +21,33 @@
             <p class="paragrahp-text" style="color:rgb(255 255 255);"> Somos un grupo de jóvenes con una meta, lograr una buena página web sobre deportes
                 y lo que esta incluye, con algunas cosas extra que nosotros creemos que les va a gustar.</p>
         </div>
-        <div class="us-paragrahp_2">
-            <h2 class="h2_about_2">¿Que hacemos?</h2>
-            <p class="paragrahp-text">En esta página web de deportes los servicios que ofrecemos son:<br>
-            <ol>- Sitios/Puntos que tengan que ver con los deportes, ¿A que nos referimos con esto? pues a que ofrecemos
-                un mapa de las zonas <br>más importantes o mas buscadas sobre deportes, esta contiene:</ol>
-            <li>Canchas/polideportivos.<br></li>
-            <li>Casa/hogares de donde vivieron personajes famosos del deporte argentino.<br></li>
-            <li>Lugares más concurridos por los fans.<br></li>
-            <li>Estadios.<br></li>
-            <li>Tiendas de deporte y ropa.<br></li>
-            <li>Parques.<br><br></li>
-            - Noticias: <br>
-            <li> Sobre partidos<br></li>
-            <li>Hora y fecha de juego<br></li>
-            <li>Quienes jugaran<br></li>
-            <li>Resultado del partido/juego.<br><br></li>
-            - Categorías: Es el lugar donde podrás encontrar información de varios tipos de deportes, sus
-            características, <br>partidos, equipos, jugadores,etc. <br><br>
-            - Compra y venta de productos deportivos; este sector será similar a un mercado libre, en donde podrás
-            encontrar<br> los productos que necesites y variedades tanto de los productos como de los precios y de la
-            calidad de estos, y por supuesto <br> ofertas imperdibles.<br></p>
-            </ol>
+        <div class="us-paragrahp_1" style="background:rgb(255 255 255);border:2px solid rgb(101, 102, 102)">
+            <h2 class="h2_about_1" style="color:rgb(3 158 207);">¿Que hacemos?</h2>
+            <p class="paragrahp-text" style="color:rgb(3 158 207);"> En esta página web de deportes los servicios que ofrecemos son:
+            <ol class="paragrahp-text" style="color:rgb(3 158 207);">- Sitios/Puntos que tengan que ver con los deportes, ¿A que nos referimos con esto? pues a que ofrecemos
+                un mapa de las zonas 
+                <br>más importantes o mas buscadas sobre deportes, esta contiene:</ol>
+            <li class="paragrahp-text" style="color:rgb(3 158 207);">Canchas/polideportivos.<br></li>
+            <li class="paragrahp-text" style="color:rgb(3 158 207);">Casa/hogares de donde vivieron personajes famosos del deporte argentino.<br></li>
+            <li class="paragrahp-text" style="color:rgb(3 158 207);">Lugares más concurridos por los fans.<br></li>
+            <li class="paragrahp-text" style="color:rgb(3 158 207);">Estadios.<br></li>
+            <li class="paragrahp-text" style="color:rgb(3 158 207);">Tiendas de deporte y ropa.<br></li>
+            <li class="paragrahp-text" style="color:rgb(3 158 207);">Parques.<br><br></li>
+            <ol class="paragrahp-text" style="color:rgb(3 158 207);">- Noticias: <br></ol>
+            <li class="paragrahp-text" style="color:rgb(3 158 207);"> Sobre partidos<br></li>
+            <li class="paragrahp-text" style="color:rgb(3 158 207);">Hora y fecha de juego<br></li>
+            <li class="paragrahp-text" style="color:rgb(3 158 207);">Quienes jugaran<br></li>
+            <li class="paragrahp-text" style="color:rgb(3 158 207);">Resultado del partido/juego.<br><br></li>
+            <ol class="paragrahp-text" style="color:rgb(3 158 207);">- Categorías: </ol>
+            <ol class="paragrahp-text" style="color:rgb(3 158 207);">Es el lugar donde podrás encontrar información de varios tipos de deportes,
+            <br class="paragrahp-text" style="color:rgb(3 158 207);">sus características,partidos, equipos, jugadores,etc. <br>
+            <br class="paragrahp-text" style="color:rgb(3 158 207);">- Compra y venta de productos deportivos:<br>
+            <ol class="paragrahp-text" style="color:rgb(3 158 207);"> este sector será similar a un mercado libre, en donde podrás encontrar los productos </ol> 
+            <ol class="paragrahp-text" style="color:rgb(3 158 207);">que necesites y variedades tanto de los productos como de los precios y de la</ol>
+            <ol class="paragrahp-text" style="color:rgb(3 158 207);">calidad de estos, y por supuesto ofertas imperdibles.</ol></p>
+            
         </div>
+       
         <div class="us-paragrahp_1">
             <h2 class="h2_about_1" style="color:rgb(255 255 255);">¿Por qué lo hacemos?</h2>
             <p class="paragrahp-text" style="color:rgb(255 255 255);">Lo hacemos para aumentar el conocimiento sobre los deportes. Nos parece una linda

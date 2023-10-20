@@ -190,7 +190,7 @@
                     <div class="media">
                         <img src="img/group/mike.jpg" width="64" height="64" alt="">
                         <div class="media-body">
-                            <p class="nombre">Nombre</p>
+                            <a class="nombre">Nombre</a>
                             <p class="comentario">Comentario</p>
                             <div class="botones text-right">
                                 <a href="">Responder</a>
@@ -203,7 +203,7 @@
                     <div class="media">
                         <img src="img/group/seba.jpg" width="64" height="64" alt="">
                         <div class="media-body">
-                            <p class="nombre">Nombre</p>
+                            <a class="nombre">Nombre</a>
                             <p class="comentario">Comentario</p>
                             <div class="botones text-right">
                                 <a href="">Responder</a>
@@ -213,7 +213,7 @@
                             <div class="media">
                                 <img src="img/group/eve.jpg" width="64" height="64" alt="">
                                 <div class="media-body">
-                                    <p class="nombre">Nombre</p>
+                                    <a class="nombre">Nombre</a>
                                     <p class="comentario">Comentario</p>
                                     <div class="botones text-right">
                                         <a href="">Responder</a>
@@ -227,7 +227,7 @@
                     <div class="media">
                         <img src="img/group/eve.jpg" width="64" height="64" alt="">
                         <div class="media-body">
-                            <p class="nombre">Nombre</p>
+                            <a class="nombre">Nombre</a>
                             <p class="comentario">Comentario</p>
                             <div class="botones text-right">
                                 <a href="">Responder</a>
