@@ -76,7 +76,7 @@
     <!-- Categories Start -->
     <div class="container-fluid pt-5">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="pr-3" style="border-left:5px solid #00BFFF; padding-left:5px;">Categorias</span></h2>
-        <div class="row px-xl-5 pb-3">
+        <div class="row px-xl-5 pb-3"  style="margin-right:400px; ">
             <?php foreach ($categories as $categorie) { ?>
                 <div class="ag-format-container">
                     <div class="ag-courses_box">
@@ -103,25 +103,21 @@
     <!----inicio css categorias------->
     <style>
         .ag-format-container {
-            width: 1000px;
-            height: 180px;
-            margin: 0 auto;
+            width: 250px;
+            margin-left:100px;
         }
-
-        body {
-            background-color: #000;
-        }
+        
 
         .ag-courses_box {
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
+            justify-content: center;
             -webkit-box-align: start;
             -ms-flex-align: start;
             align-items: flex-start;
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-
+            width:1000px;
+            height: 180;
             padding: 30px 0;
         }
 
@@ -129,7 +125,7 @@
             -ms-flex-preferred-size: calc(33.33333% - 30px);
             flex-basis: calc(33.33333% - 30px);
 
-            margin: 0 15px 30px;
+            
 
             overflow: hidden;
 
@@ -139,7 +135,7 @@
         .ag-courses-item_link {
             display: block;
             padding: 30px 20px;
-            background-color: #121212;
+            background-color: #3d464d;
 
             overflow: hidden;
 
