@@ -10,8 +10,8 @@
         </ol>
     </nav>
     <link rel="stylesheet" href="css/shop.css">
-
 </div>
+
 <br>
 <br>
 
@@ -23,7 +23,6 @@
                     TIENDA
                 </h1>
             </div>
-
             <main class="Main" style=" margin: 50px">
                 <form action="/browse" method="get" style=" margin: 60px">
                     <div class="filters" style="margin-bottom: 20px;">
@@ -106,6 +105,7 @@
                         ?>
                             <a href="myproducts.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i><i class="fa-solid fa-basket-shopping"></i> Mis productos </a>&nbsp;&nbsp;
                             <a href="add_product_shop.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> Añadir Producto <i class="fa-solid fa-plus"></i></a>
+                            <a href="favoritos.php" style="margin-left:100px margin-above=100px" class="btn btn-info"></i> Mis favoritos <i class="fa-solid fa-heart"></i></i></a>
                         <?php } ?>
 
                     </div>
@@ -209,7 +209,10 @@
                                 <p class="p1"><?php echo $nuevos['nombre_prod'] ?></p>
                             </a>
 
-                            <i class="fa-solid fa-heart"></i>
+                            <form>
+                                <input type="hidden" name="id_producto" value="<?php echo $nuevos['id'] ?>">
+                                <i class="fa-solid fa-heart"></i>
+                            </form>
 
                             <h5>$
                                 <?php echo $nuevos['precio'] ?>
@@ -218,135 +221,135 @@
                             <div style="padding-left: 15px;">
                                 <FONT COLOR="#15b83b">20% Descuento</FONT>
                             </div>
-                            
+
                         </div>
 
 
+                    </div>
                 </div>
+            <?php } ?>
         </div>
-    <?php } ?>
-    </div>
-    <!-- PAGINADOR -->
+        <!-- PAGINADOR -->
 
-    <?php if (isset($_GET['sport_id'])) { ?>
-        <div class="container">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>&&sport_id=<?php echo $id ?>#titulo">Anterior</a></li>
-
-                    <?php for ($i = 0; $i < $paginas; $i++) { ?>
-                        <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>&&sport_id=<?php echo $id ?>#titulo"><?php echo $_GET['pagina'] ?></a></li>
-                    <?php break;
-                    } ?>
-
-                    <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>&&sport_id=<?php echo $id ?>#titulo">Siguiente</a></li>
-                </ul>
-            </nav>
-        </div>
-        <?php } else {
-        if (isset($_GET['pagina']) && isset($_GET['get'])) {
-        ?>
+        <?php if (isset($_GET['sport_id'])) { ?>
             <div class="container">
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
-                        <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>&&get=1#titulo">Anterior</a></li>
+                        <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>&&sport_id=<?php echo $id ?>#titulo">Anterior</a></li>
 
                         <?php for ($i = 0; $i < $paginas; $i++) { ?>
-                            <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>&&get=1#titulo"><?php echo $_GET['pagina'] ?></a></li>
+                            <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>&&sport_id=<?php echo $id ?>#titulo"><?php echo $_GET['pagina'] ?></a></li>
                         <?php break;
                         } ?>
 
-                        <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>&&get=1#titulo">Siguiente</a></li>
+                        <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>&&sport_id=<?php echo $id ?>#titulo">Siguiente</a></li>
                     </ul>
                 </nav>
             </div>
-        <?php } else { 
-            if (isset($_GET['pagina']) && isset($_GET['radi'])) {
-                if($_GET['radi'] == 1){
+            <?php } else {
+            if (isset($_GET['pagina']) && isset($_GET['get'])) {
             ?>
-            <div class="container">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>&&radi=1#titulo">Anterior</a></li>
+                <div class="container">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>&&get=1#titulo">Anterior</a></li>
 
-                        <?php for ($i = 0; $i < $paginas; $i++) { ?>
-                            <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>&&radi=1#titulo"><?php echo $_GET['pagina'] ?></a></li>
-                        <?php break;
-                        } ?>
+                            <?php for ($i = 0; $i < $paginas; $i++) { ?>
+                                <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>&&get=1#titulo"><?php echo $_GET['pagina'] ?></a></li>
+                            <?php break;
+                            } ?>
 
-                        <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>&&radi=1#titulo">Siguiente</a></li>
-                    </ul>
-                </nav>
-            </div>
-    <?php }
-    if($_GET['radi'] == 2){
-?>
-<div class="container">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>&&radi=2#titulo">Anterior</a></li>
+                            <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>&&get=1#titulo">Siguiente</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <?php } else {
+                if (isset($_GET['pagina']) && isset($_GET['radi'])) {
+                    if ($_GET['radi'] == 1) {
+                ?>
+                        <div class="container">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>&&radi=1#titulo">Anterior</a></li>
 
-                        <?php for ($i = 0; $i < $paginas; $i++) { ?>
-                            <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>&&radi=2#titulo"><?php echo $_GET['pagina'] ?></a></li>
-                        <?php break;
-                        } ?>
+                                    <?php for ($i = 0; $i < $paginas; $i++) { ?>
+                                        <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>&&radi=1#titulo"><?php echo $_GET['pagina'] ?></a></li>
+                                    <?php break;
+                                    } ?>
 
-                        <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>&&radi=2#titulo">Siguiente</a></li>
-                    </ul>
-                </nav>
-            </div>
-        <?php
-    }}else{?>
-<div class="container">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>#titulo">Anterior</a></li>
+                                    <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>&&radi=1#titulo">Siguiente</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    <?php }
+                    if ($_GET['radi'] == 2) {
+                    ?>
+                        <div class="container">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>&&radi=2#titulo">Anterior</a></li>
 
-                        <?php for ($i = 0; $i < $paginas; $i++) { ?>
-                            <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>#titulo"><?php echo $_GET['pagina'] ?></a></li>
-                        <?php break;
-                        } ?>
+                                    <?php for ($i = 0; $i < $paginas; $i++) { ?>
+                                        <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>&&radi=2#titulo"><?php echo $_GET['pagina'] ?></a></li>
+                                    <?php break;
+                                    } ?>
 
-                        <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>#titulo">Siguiente</a></li>
-                    </ul>
-                </nav>
-            </div>
-    <?php }
-            
-        }
-    } ?>
-</div>
+                                    <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>&&radi=2#titulo">Siguiente</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    <?php
+                    }
+                } else { ?>
+                    <div class="container">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item <?php echo $_GET['pagina'] <= 1 ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] - 1; ?>#titulo">Anterior</a></li>
 
+                                <?php for ($i = 0; $i < $paginas; $i++) { ?>
+                                    <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $i + 1 ?>#titulo"><?php echo $_GET['pagina'] ?></a></li>
+                                <?php break;
+                                } ?>
 
-
-<!-- Offer Start -->
-<div class="container-fluid pt-3 pb-3">
-    <div align="center">
-        <h1>OFERTAS</h1>
+                                <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>"><a class="page-link" href="shop.php?pagina=<?php echo $_GET['pagina'] + 1; ?>#titulo">Siguiente</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+        <?php }
+            }
+        } ?>
     </div>
-    <br>
-    <br>
-    <div class="row px-xl-5">
-        <div class="col-md-6">
-            <div class="product-offer mb-30" style="height: 200px;">
-                <img class="img-fluid" src="img/principal.png" alt="">
-                <div class="offer-text">
-                    <h6 class="text-white text-uppercase">Save 20%</h6>
-                    <h3 class="text-white mb-3">Special Offer</h3>
-                    <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
+
+
+
+    <!-- Offer Start -->
+    <div class="container-fluid pt-3 pb-3">
+        <div align="center">
+            <h1>OFERTAS</h1>
+        </div>
+        <br>
+        <br>
+        <div class="row px-xl-5">
+            <div class="col-md-6">
+                <div class="product-offer mb-30" style="height: 200px;">
+                    <img class="img-fluid" src="img/principal.png" alt="">
+                    <div class="offer-text">
+                        <h6 class="text-white text-uppercase">Save 20%</h6>
+                        <h3 class="text-white mb-3">Special Offer</h3>
+                        <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product-offer mb-30" style="height: 200px;">
+                    <img class="img-fluid" src="img/principal.png" alt="">
+                    <div class="offer-text">
+                        <h6 class="text-white text-uppercase">Save 20%</h6>
+                        <h3 class="text-white mb-3">Special Offer</h3>
+                        <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="product-offer mb-30" style="height: 200px;">
-                <img class="img-fluid" src="img/principal.png" alt="">
-                <div class="offer-text">
-                    <h6 class="text-white text-uppercase">Save 20%</h6>
-                    <h3 class="text-white mb-3">Special Offer</h3>
-                    <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
-                </div>
-            </div>
-        </div>
     </div>
-</div>
-<!-- Offer End -->
+    <!-- Offer End -->

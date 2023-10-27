@@ -239,7 +239,6 @@
                 </div>
             </div>
             <div class="container-fluid pt-5 pb-3" style="width:75%;">
-<<<<<<< HEAD
                 <div class="row px-xl-1" style="margin-left:30px;">
                     <div class="col-lg-12 col-md-6 col-sm-6 pb-36">
                         <div class="product-item bg-light mb-4">
@@ -254,33 +253,12 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the
                                         bulk of the card's content.</p>
-=======
-                        <div class="row px-xl-1" style="margin-left:30px;">
-                            <div class="col-lg-12 col-md-6 col-sm-6 pb-36">
-                                <div class="product-item bg-light mb-4">
-                                    <div class="product-img position-relative overflow-hidden">
-                                        <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
-                                    </div>
-                                    <div class="text-center py-4 carta">
-                                        <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                            <h5>NOTICIA</h5>
-                                        </a>
-                                        <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <p class="card-text">Some quick example text to build on the card title and make up
-                                                the
-                                                bulk of the card's content.</p>
-                                        </div>
-                                        <br>
-                                        <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas</a>
-                                    </div>
->>>>>>> 6bef3ed37195c06170df304effe08c686fa1d4ab
                                 </div>
                                 <br>
                                 <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
                             </div>
                         </div>
                     </div>
-<<<<<<< HEAD
                 </div>
             </div>
             <div class="container-fluid pt-5 pb-3" style="width:75%;">
@@ -298,34 +276,12 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the
                                         bulk of the card's content.</p>
-=======
-                    <div class="container-fluid pt-5 pb-3" style="width:75%;">
-                        <div class="row px-xl-1" style="margin-left:30px;">
-                            <div class="col-lg-12 col-md-6 col-sm-6 pb-36">
-                                <div class="product-item bg-light mb-4">
-                                    <div class="product-img position-relative overflow-hidden">
-                                        <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
-                                    </div>
-                                    <div class="text-center py-4 carta">
-                                        <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                            <h5>NOTICIA</h5>
-                                        </a>
-                                        <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <p class="card-text">Some quick example text to build on the card title and make up
-                                                the
-                                                bulk of the card's content.</p>
-                                        </div>
-                                        <br>
-                                        <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas</a>
-                                    </div>
->>>>>>> 6bef3ed37195c06170df304effe08c686fa1d4ab
                                 </div>
                                 <br>
                                 <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
                             </div>
                         </div>
                     </div>
-<<<<<<< HEAD
                 </div>
             </div>
             <div class="container-fluid pt-5 pb-3" style="width:75%;">
@@ -343,27 +299,6 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the
                                         bulk of the card's content.</p>
-=======
-                    <div class="container-fluid pt-5 pb-3" style="width:75%;">
-                        <div class="row px-xl-1" style="margin-left:30px;">
-                            <div class="col-lg-12 col-md-6 col-sm-6 pb-36">
-                                <div class="product-item bg-light mb-4">
-                                    <div class="product-img position-relative overflow-hidden">
-                                        <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
-                                    </div>
-                                    <div class="text-center py-4 carta">
-                                        <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                            <h5>NOTICIA</h5>
-                                        </a>
-                                        <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <p class="card-text">Some quick example text to build on the card title and make up
-                                                the
-                                                bulk of the card's content.</p>
-                                        </div>
-                                        <br>
-                                        <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas</a>
-                                    </div>
->>>>>>> 6bef3ed37195c06170df304effe08c686fa1d4ab
                                 </div>
                                 <br>
                                 <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
@@ -503,328 +438,28 @@
                             </div>
                         </div>
                     </div>
-<<<<<<< HEAD
                 <?php } ?>
             </div>
         </div>
-        <div class="container-fluid pt-5 pb-3">
-            <div class="row px-xl-5">
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                    <div class="product-item bg-light mb-4">
-                        <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
-                        </div>
-                        <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                <h5>NOTICIA</h5>
-                            </a>
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <p class="card-text">Some quick example text to build on the card title and make up
-                                    the
-                                    bulk of the card's content.</p>
-=======
-                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
-                            </div>
-                            <div class="text-center py-4 carta">
-                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                    <h5>NOTICIA</h5>
-                                </a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
-                                <br>
-                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
-                            </div>
-                            <div class="text-center py-4 carta">
-                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                    <h5>NOTICIA</h5>
-                                </a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
-                                <br>
-                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
-                            </div>
-                            <div class="text-center py-4 carta">
-                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                    <h5>NOTICIA</h5>
-                                </a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
-                                <br>
-                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <div class="container-fluid pt-5 pb-3">
-                <div class="row px-xl-5">
-                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
-                            </div>
-                            <div class="text-center py-4 carta">
-                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                    <h5>NOTICIA</h5>
-                                </a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
-                                <br>
-                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
-                            </div>
-                            <div class="text-center py-4 carta">
-                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                    <h5>NOTICIA</h5>
-                                </a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
-                                <br>
-                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
-                            </div>
-                            <div class="text-center py-4 carta">
-                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                    <h5>NOTICIA</h5>
-                                </a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
-                                <br>
-                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
-                            </div>
-                            <div class="text-center py-4 carta">
-                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                    <h5>NOTICIA</h5>
-                                </a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
-                                <br>
-                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas</a>
->>>>>>> 6bef3ed37195c06170df304effe08c686fa1d4ab
-                            </div>
-                            <br>
-                            <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                    <div class="product-item bg-light mb-4">
-                        <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
-                        </div>
-                        <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                <h5>NOTICIA</h5>
-                            </a>
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <p class="card-text">Some quick example text to build on the card title and make up
-                                    the
-                                    bulk of the card's content.</p>
-                            </div>
-                            <br>
-                            <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                    <div class="product-item bg-light mb-4">
-                        <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/home/noti-6.jpg" alt="">
-                        </div>
-                        <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                <h5>NOTICIA</h5>
-                            </a>
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <p class="card-text">Some quick example text to build on the card title and make up
-                                    the
-                                    bulk of the card's content.</p>
-                            </div>
-                            <br>
-                            <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                    <div class="product-item bg-light mb-4">
-                        <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/home/noti-8.jpg" alt="">
-                        </div>
-                        <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
-                                <h5>NOTICIA</h5>
-                            </a>
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <p class="card-text">Some quick example text to build on the card title and make up
-                                    the
-                                    bulk of the card's content.</p>
-                            </div>
-                            <br>
-                            <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas ></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    </div>
-    <!-- Startsilde
-    <br>
-    <div class="col-md-3">
-        <div class="container">
-            <div class="col-md-4">
-            <div class="col-lg-2 col-md-2 col-sm-9 pb-8">
-                    <div class="product-item bg-light mb-4">
-                        <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/home/noti-1.jpg" alt="">
-                        </div>
-                        <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/home/noti-1.jpg" alt="">
-                        </div>
-                        <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/home/noti-1.jpg" alt="">
-                        </div>
-                        <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="">
-                                <h5>NOTICIA</h5>
-                            </a>
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.<br>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy<br>vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv<br>fffffffffffffffffffffffffffffffffff<br>ccccccccccccccccccccccccccccccc<br>cccccccccccccccccccccccccccccccccc<br>cccccccccccccccccccccccccccccccccccccccccccv<br>fffffffffffffffffffffffffffff<br>dddddddddddddddefreertyhtghtddddddddddddddddd<br></p>
-                            </div>
-                            <br>
-                            <a href="#" class="btn btn-info" style="color: white">Leer mas</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 
- --slider End--->
+<br>
+<!-- PAGINADOR -->
+<div class="container">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination" style="margin-left:40%;">
+            <li class="page-item"><a class="page-link" href="">
+                    <FONT color="#17a2b8">Anterior</FONT>
+                </a></li>
+            <li class="page-item "><a class="page-link" href="">
+                    <FONT color="#17a2b8">1</FONT>
+                </a></li>
+            <li class="page-item"><a class="page-link" href=" ">
+                    <FONT color="#17a2b8">Siguiente</FONT>
+                </a></li>
+        </ul>
+    </nav>
+</div>
 
-    <!-- Carousel infinito start
-  <div class="slider">
-    <link rel="stylesheet" href="css/noticias.css">
-    <div class="slide-track">
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-        </div>
-    </div>
- </div>
- -carusel infinito fin-->
-                     
-    <br>
-    <!-- PAGINADOR -->
-    <div class="container">
-        <nav aria-label="Page navigation example">
-            <ul class="pagination" style="margin-left:40%;">
-                <li class="page-item"><a class="page-link" href="">
-                        <FONT color="#17a2b8">Anterior</FONT>
-                    </a></li>
-                <li class="page-item "><a class="page-link" href="">
-                        <FONT color="#17a2b8">1</FONT>
-                    </a></li>
-                <li class="page-item"><a class="page-link" href=" ">
-                        <FONT color="#17a2b8">Siguiente</FONT>
-                    </a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- TERMINA EL PAGINADOR -->
+<!-- TERMINA EL PAGINADOR -->
