@@ -205,7 +205,7 @@
 
                         <div class="py-4 carta" style="text-decoration:none;">
 
-                            <a class="text-decoration-none" href="products_read_more.php?id=<?php echo $nuevos['id'] ?>">
+                            <a class="text-decoration-none" href="products_read_more.php?id=<?php echo $nuevos['id']?>">
                                 <p class="p1"><?php echo $nuevos['nombre_prod'] ?></p>
                             </a>
 

@@ -429,7 +429,9 @@
 
                                     <h5 align="center">
                                         <?php echo limitar_cadena($noticia['titulo'], 25, " ..."); ?>
+                                        
                                     </h5>
+                                    
                                 </a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
                                     <p class="card-text">
@@ -438,7 +440,8 @@
                                     </p>
                                 </div>
                                 <br>
-                                <a href="news_read_more.php?id=<? echo $noticia['id']?>" class="btn btn-info" style="color: white">Leer mas</a>
+                                <a href="news_read_more.php?id=<?php echo $noticia['id']?>" class="btn btn-info" style="color: white">Leer mas</a>
+
                             </div>
                         </div>
                     </div>
