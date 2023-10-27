@@ -12,20 +12,23 @@
     color: black;
     background-image: url(http://localhost/Error-404/img/productos/27/principal.jpg);
   }
+
   .formulario {
     width: 1000px;
     margin: auto;
     max-width: 100%;
     margin-top: 30px;
     padding: 20px;
-    box-shadow: 0 0 20px 1px  rgb(4, 149, 181);
+    box-shadow: 0px 0px 15px #252525;
     position: relative;
   }
+
   .formulario_titulo {
     text-align: center;
     margin-top: 0;
-    color:  rgba(4, 149, 181);
+    color:  rgb(0 196 239);
   }
+
   .formulario_input, .formulario_label, .formulario_submit {
     display: block;
     width: 100%;
@@ -33,12 +36,55 @@
     color: rgba(0, 0, 0, 0.785);
     font-family: sans-serif;
   }
+  
   .formulario_input {
-    padding: 20px;
-    border: 1px solid rgba(0,0,0,0.3);
+    padding: 5px;
+    border: 1px solid #aaa;
+    color: #aaa;
     margin-bottom: 40px;
-    background: rgba(245, 245, 245, 0.895);
+    background: #3D464D;
+    outline:none;
   }
+  
+  .formulario_input:focus{
+    border: 1px solid #fff;
+    color: #fff;
+  }
+
+  .form-select {
+    height:40px; 
+    width:960px; 
+    background:#3D464D; 
+    color:#aaa; 
+    border:1px solid #aaa;
+    outline: none;
+  }
+  
+  .formulario_option {
+    background:#3D464D; 
+    color:#fff;
+  }
+  
+  .formulario_precio{
+    background: #3D464D;
+    color: #aaa;
+    border:1px solid #aaa;
+    display: block;
+    width: 96%;
+    outline: none;
+    border: 1px solid #aaa;
+    padding: 5px;
+  }
+  
+  .formulario_precio:focus{
+    border: 1px solid #fff;
+    color: #fff;
+  }
+
+  .form-select::backdrop{
+    border-radius: 1px solid #00bfff;
+  }
+
   .formulario_label {
     padding-left: 15px;
     position: absolute;
@@ -48,6 +94,7 @@
     color: rgba(4, 149, 181, 0.73);
     animation: shake 0.3s;
   }
+
   .formulario_submit {
     background: transparent;
     color: rgba(4, 149, 181, 0.73);
@@ -55,12 +102,15 @@
     cursor: pointer;
     border-radius: 20px;
   }
+
   .formulario_input:focus + .formulario_label {
     margin-top: -175px;
   }
+
   .fijar {
     margin-top: -135px;
   }
+
   .formulario_f {
     padding-left: 15px;
     position: absolute;
@@ -88,9 +138,6 @@ p#texto{
   padding:10px;
 }
 
-
-
-
 div#div_file{
   position: relative;
   margin-top: 2px;
@@ -112,6 +159,7 @@ input#btn_file{
   cursor: pointer;
   border-radius: 3px;
 }
+
 @media(max-width: 767px){
   img{
       vertical-align: middle;
@@ -121,7 +169,6 @@ input#btn_file{
       width: 100px;
   }
 }
-
 
 @media(max-width: 553px){
   img{
@@ -215,6 +262,7 @@ input#btn_file{
   .titulo_1 {
       font-size: 40px;
   }
+
 }
        /* body {
             background:url(../img/fondos/fondoarmas.jpg); 

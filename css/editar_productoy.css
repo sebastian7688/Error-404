@@ -17,21 +17,23 @@
     max-width: 100%;
     margin-top: 30px;
     padding: 20px;
-    box-shadow: 0 0 20px 1px  rgb(4, 149, 181);
+    box-shadow: 0px 0px 15px #fff;
     position: relative;
+    background: #3D464D;
   }
   .formulario_inputi, .formulario_labeli, .formulario_submiti {
     display: block;
     width: 100%;
     font-size: 1.3em;
-    color: rgba(0, 0, 0, 0.785);
+    color: #fff;
     font-family: sans-serif;
   }
   .formulario_inputi {
-    padding: 20px;
-    border: 1px solid rgba(0,0,0,0.3);
+    padding: 5px;
+    border: 1px solid #aaa;
     margin-bottom: 40px;
-    background: rgba(245, 245, 245, 0.895);
+    background: #3D464D;
+    outline: none;
   }
   .formulario_labeli {
     padding-left: 15px;

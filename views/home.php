@@ -74,36 +74,192 @@
         </div>
     </div>
     <!-- Categories Start -->
-
     <div class="container-fluid pt-5">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="pr-3" style="border-left:5px solid #00BFFF; padding-left:5px;">Categorias</span></h2>
-            <div class="row px-xl-5 pb-3">
+        <div class="row px-xl-5 pb-3"  style="margin-right:400px; ">
             <?php foreach ($categories as $categorie) { ?>
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                    <a class="text-decoration-none" href="index.php?id_cat=<?php echo $categorie['id_deporte']?>">
-                        <div class="cat-item d-flex align-items-center mb-4">
-                            <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                             <?php if (file_exists('img/categorias/' . $categorie['id_deporte'] . '.png')) { ?>
-                                <img class="img-fluid" src="img/categorias/<?php echo $categorie['id_deporte']; ?>.png">
-                            <?php }?>
-                            </div>
-                            <div class="flex-fill pl-3">
-                                <h6><?php echo $categorie['deporte'] ?></h6>
-                                <small class="text-body"> Más de 100 productos. </small>
-                            </div>
+                <div class="ag-format-container">
+                    <div class="ag-courses_box">
+                        <div class="ag-courses_item">
+                            <a class="ag-courses-item_link" href="index.php?id_cat=<?php echo $categorie['id_deporte'] ?>">
+                                <div class="ag-courses-item_bg"></div>
+                                <div>
+                                    <h6 class="ag-courses-item_title"><?php echo $categorie['deporte'] ?></h6>
+                                </div>
+                                <div class="ag-courses-item_date-box">
+                                    Productos disponibles:
+                                    <span class="ag-courses-item_date">
+                                        04.11.2022
+                                    </span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </div>
             <?php } ?>
-            </div>
+        </div>
     </div>
     <!-- Categories End -->
+    <!----inicio css categorias------->
+    <style>
+        .ag-format-container {
+            width: 250px;
+            margin-left:100px;
+        }
+        
 
+        .ag-courses_box {
+            display: flex;
+            justify-content: center;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            width:1000px;
+            height: 180;
+            padding: 30px 0;
+        }
+
+        .ag-courses_item {
+            -ms-flex-preferred-size: calc(33.33333% - 30px);
+            flex-basis: calc(33.33333% - 30px);
+
+            
+
+            overflow: hidden;
+
+            border-radius: 28px;
+        }
+
+        .ag-courses-item_link {
+            display: block;
+            padding: 30px 20px;
+            background-color: #3d464d;
+
+            overflow: hidden;
+
+            position: relative;
+        }
+
+        .ag-courses-item_link:hover,
+        .ag-courses-item_link:hover .ag-courses-item_date {
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .ag-courses-item_link:hover .ag-courses-item_bg {
+            -webkit-transform: scale(10);
+            -ms-transform: scale(10);
+            transform: scale(10);
+        }
+
+        .ag-courses-item_title {
+            font-weight: bold;
+            font-size: 20px;
+            color: #FFF;
+
+            z-index: 2;
+            position: relative;
+        }
+
+        .ag-courses-item_date-box {
+            font-size: 15px;
+            color: #FFF;
+
+            z-index: 2;
+            position: relative;
+        }
+
+        .ag-courses-item_date {
+            font-weight: bold;
+            color: #00BFFF;
+
+            -webkit-transition: color .5s ease;
+            -o-transition: color .5s ease;
+            transition: color .5s ease
+        }
+
+        .ag-courses-item_bg {
+            height: 128px;
+            width: 128px;
+            background-color: #00BFFF;
+
+            z-index: 1;
+            position: absolute;
+            top: -75px;
+            right: -75px;
+
+            border-radius: 50%;
+
+            -webkit-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            transition: all .5s ease;
+        }
+
+        .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+            background-color: #00BFFF;
+        }
+
+        /*.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}*/
+
+        @media only screen and (max-width: 979px) {
+            .ag-courses_item {
+                -ms-flex-preferred-size: calc(50% - 30px);
+                flex-basis: calc(50% - 30px);
+            }
+
+            .ag-courses-item_title {
+                font-size: 24px;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .ag-format-container {
+                width: 96%;
+            }
+
+        }
+
+        @media only screen and (max-width: 639px) {
+            .ag-courses_item {
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+            }
+
+            .ag-courses-item_title {
+                min-height: 72px;
+                line-height: 1;
+
+                font-size: 50px;
+            }
+
+            .ag-courses-item_link {
+                padding: 22px 40px;
+            }
+
+            .ag-courses-item_date-box {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <!----categories css fin----->
 
     <!-- Noticias Start -->
     <div class="container-fluid pt-5 pb-3">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="pr-3" style="border-left:5px solid #00BFFF; padding-left:5px;">Noticias</span></h2>
-    <div class="row px-xl-5">
+        <div class="row px-xl-5">
             <?php
 
             foreach ($noticias as $noticia) { ?>
@@ -115,11 +271,10 @@
                             <?php
                             } ?>
                             <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="">
+                            <a class="h6 text-decoration-none text-truncate">
 
                                 <h5 align="center">
                                     <?php echo limitar_cadena($noticia['titulo'], 25, " ..."); ?>
@@ -132,7 +287,7 @@
                                 </p>
                             </div>
                             <br>
-                            <a href="#" class="btn btn-primary">Leer mas</a>
+                            <a href="news_read_more.php?id=<? echo $noticia['id']?>"class="btn btn-primary">Leer mas</a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +328,7 @@
 <div style="margin-right:  100px">
     <div class="container-fluid pt-5 pb-3">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="pr-3" style="border-left:5px solid #00BFFF; padding-left:5px;"> Productos en racha </span></h2>
-                <a href="qwe.php"></a>
+        <a href="qwe.php"></a>
         <div class="row px-xl-5">
             <?php foreach ($productos_nuevos as $nuevos) {
                 $i = $i + 1;
@@ -190,7 +345,7 @@
                             } ?>
 
                             <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href="products_read_more.php?id=<?php echo $nuevos['id'] ?>" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
+                                <a class="btn btn-outline-primary btn-square" style="border-radius:50px;"href="products_read_more.php?id=<?php echo $nuevos['id'] ?>" style="background-color:#ffffff"><i class="fa fa-search"></i></a>
                             </div>
                         </div>
 
@@ -217,7 +372,7 @@
                                 <FONT COLOR="#15b83b">20% Descuento</FONT>
                             </div>
                         </div>
-                        
+
 
                     </div>
                 </div>

@@ -118,7 +118,7 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <span class="input-group-text">$&nbsp;&nbsp;&nbsp;<input type="text" class="form-control" placeholder="A&ntilde;adir el descuento del producto"></span> <br>
+                                            <span class="input-group-text">&nbsp;&nbsp;&nbsp;<input type="text" class="form-control" placeholder="A&ntilde;adir el descuento del producto"></span> <br>
                                             <!-- Default dropright button -->
                                             <div class="input-group">
                                                 <style>
