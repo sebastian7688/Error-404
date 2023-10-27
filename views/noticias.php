@@ -425,7 +425,7 @@
                                 } ?>
                             </div>
                             <div class="text-center py-4 carta">
-                                <a class="h6 text-decoration-none text-truncate" href="news_read_more.php">
+                                <a class="h6 text-decoration-none text-truncate" >
 
                                     <h5 align="center">
                                         <?php echo limitar_cadena($noticia['titulo'], 25, " ..."); ?>
@@ -438,7 +438,7 @@
                                     </p>
                                 </div>
                                 <br>
-                                <a href="news_read_more.php" class="btn btn-info" style="color: white">Leer mas</a>
+                                <a href="news_read_more.php?id=<? echo $noticia['id']?>" class="btn btn-info" style="color: white">Leer mas</a>
                             </div>
                         </div>
                     </div>

@@ -254,7 +254,7 @@
             }
         }
     </style>
-    <!----css fin----->
+    <!----categories css fin----->
 
     <!-- Noticias Start -->
     <div class="container-fluid pt-5 pb-3">
@@ -271,11 +271,10 @@
                             <?php
                             } ?>
                             <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href="" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="">
+                            <a class="h6 text-decoration-none text-truncate">
 
                                 <h5 align="center">
                                     <?php echo limitar_cadena($noticia['titulo'], 25, " ..."); ?>
@@ -288,7 +287,7 @@
                                 </p>
                             </div>
                             <br>
-                            <a href="#" class="btn btn-primary">Leer mas</a>
+                            <a href="news_read_more.php?id=<? echo $noticia['id']?>"class="btn btn-primary">Leer mas</a>
                         </div>
                     </div>
                 </div>
@@ -346,7 +345,7 @@
                             } ?>
 
                             <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href="products_read_more.php?id=<?php echo $nuevos['id'] ?>" style="background-color:rgb(3 158 207);" style="color:rgb(3 158 207);"><i class="fa fa-search"></i></a>
+                                <a class="btn btn-outline-primary btn-square" style="border-radius:50px;"href="products_read_more.php?id=<?php echo $nuevos['id'] ?>" style="background-color:#ffffff"><i class="fa fa-search"></i></a>
                             </div>
                         </div>
 
