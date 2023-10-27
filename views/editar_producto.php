@@ -26,45 +26,54 @@
 </div>
 
 <body>
-    <form action="" class="formulario">
+    <form action="" class="formulario" style="background: #3D464D;">
+
         <h1 class="formulario_titulo">Edita tu producto</h1><br>
+
         <div>
-            <link href="css/editar_productoy.css" rel="stylesheet">
-            <input type="text" class="formulario_inputi">
-            <label for="" class="formulario_labeli">Nombre del producto:</label>
+            <input type="text" class="formulario_input" placeholder="Nombre del producto:" style="color: #fff;">
         </div>
-        <textarea class="formulario_input" maxlength="250" required></textarea>
-        <label for="" class="formulario_label">Descripción del producto:</label>
-        <textarea class="formulario_input" maxlength="250" required></textarea>
-        <label for="" class="formulario_label">Informacion del producto:</label>
-        <select class="form-select" aria-label="Default select example" style="height:40px; width:960px">
-            <option selected>Categoria del producto</option>
-            <option value="1"><i class="fa-solid fa-futbol" alt=""></i> Futbol </option>
-            <option value="2"><i class="fa-solid fa-volleyball" alt=""></i> Voley</option>
-            <option value="3"><i class="fa-solid fa-basketball" alt=""></i> Basquet</option>
-            <option value="4"><i class="fa-solid fa-football" alt=""></i> Rugby</option>
-            <option value="5"><img src="img/home/boxing-glove.png" alt="">Boxeo</option>
-            <option value="6"><i class="fa-solid fa-golf-ball-tee" alt=""></i> Golf</option>
-            <option value="7"><i class="fa-solid fa-person-swimming" alt=""></i>Natacion</option>
-            <option value="8"><img src="img/home/tennis-ball.png" alt="">Tenis</option>
-            <option value="9"><img src="img/home/surf-board.png" alt=""> Surf</option>
+
+        <textarea class="formulario_input" maxlength="25" placeholder="Descripción del producto:" style=""></textarea>
+
+        <textarea class="formulario_input" maxlength="250" placeholder="Informacion del producto:" style="" ></textarea>
+
+        <select class="form-select" aria-label="Default select example" style="padding:5px; width:100%;">
+            <option selected >Categoría del producto</option>
+            <option value="1" class="formulario_option"><i class="fa-solid fa-futbol" alt=""></i> Futbol </option>
+            <option value="2" class="formulario_option"><i class="fa-solid fa-volleyball" alt=""></i> Voley</option>
+            <option value="3" class="formulario_option"><i class="fa-solid fa-basketball" alt=""></i> Basquet</option>
+            <option value="4" class="formulario_option"><i class="fa-solid fa-football" alt=""></i> Rugby</option>
+            <option value="5" class="formulario_option"><img src="img/home/boxing-glove.png" alt="">Boxeo</option>
+            <option value="6" class="formulario_option"><i class="fa-solid fa-golf-ball-tee" alt=""></i> Golf</option>
+            <option value="7" class="formulario_option"><i class="fa-solid fa-person-swimming" alt=""></i>Natacion</option>
+            <option value="8" class="formulario_option"><img src="img/home/tennis-ball.png" alt="">Tenis</option>
+            <option value="9" class="formulario_option"><img src="img/home/surf-board.png" alt=""> Surf</option>
         </select>
+
         <br><br>
+
         <div class="input-group mb-3">
-            <label for="" class="formulario_g"></label>
-            <span class="input-group-text">$</span>
-            <input type="text" class="form-control" placeholder="A&ntilde;adir el precio del producto">
-        </div><br>
+            <span class="input-group-text" style="background:#3D464D; color:#fff; border-radius:0px;">$</span>
+            <input type="text" class="formulario_precio" placeholder="A&ntilde;adir el precio del producto" style="">
+        </div>
+
+        <br>
+
         <div id="div_file">
             <p id="texto">A&ntilde;adir la foto de portada</p>
             <input type="file" class="form-control border-dark" id="btn_file" name="principal_img" id="principal_img">
-        </div><br>
+        </div>
+       
+        <br>
+
         <div align="center">
             <button type="submit" class="btn btn-success " style="background:#00bfff; border-color:#00bfff; border-radius:3px; box-shadow: 1px 1px 3px #000;">
                 Enviar
             </button>&nbsp;
             <a href="index.php" class="btn btn-danger" style="Background:#343a40; border-color:#343a40; border-radius:3px; box-shadow: 1px 1px 3px #000;">Cancelar</a>
         </div>
+
         <!---input type="submit" class="formulario_submit"--->
     </form>
 
