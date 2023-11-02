@@ -24,15 +24,6 @@
         <div class="us-paragrahp_1" style="background:rgb(255 255 255);border:2px solid rgb(101, 102, 102)">
             <h2 class="h2_about_1" style="color:rgb(3 158 207);">¿Que hacemos?</h2>
             <p class="paragrahp-text" style="color:rgb(3 158 207);"> En esta página web de deportes los servicios que ofrecemos son:
-            <ol class="paragrahp-text" style="color:rgb(3 158 207);">- Sitios/Puntos que tengan que ver con los deportes, ¿A que nos referimos con esto? pues a que ofrecemos
-                un mapa de las zonas 
-                <br>más importantes o mas buscadas sobre deportes, esta contiene:</ol>
-            <li class="paragrahp-text" style="color:rgb(3 158 207);">Canchas/polideportivos.<br></li>
-            <li class="paragrahp-text" style="color:rgb(3 158 207);">Casa/hogares de donde vivieron personajes famosos del deporte argentino.<br></li>
-            <li class="paragrahp-text" style="color:rgb(3 158 207);">Lugares más concurridos por los fans.<br></li>
-            <li class="paragrahp-text" style="color:rgb(3 158 207);">Estadios.<br></li>
-            <li class="paragrahp-text" style="color:rgb(3 158 207);">Tiendas de deporte y ropa.<br></li>
-            <li class="paragrahp-text" style="color:rgb(3 158 207);">Parques.<br><br></li>
             <ol class="paragrahp-text" style="color:rgb(3 158 207);">- Noticias: <br></ol>
             <li class="paragrahp-text" style="color:rgb(3 158 207);"> Sobre partidos<br></li>
             <li class="paragrahp-text" style="color:rgb(3 158 207);">Hora y fecha de juego<br></li>
@@ -56,8 +47,6 @@
                 que puedan realizar salidas recreativas con amigos o familiares.
                 Para esto también brindamos la sección Compra y venta de productos deportivos para que nunca les falte
                 el equipo necesario al momento de realizar lo que más les apasiona; los deportes.
-                Al igual que la sección Mapa donde podrán encontrar lugares en los que podrán realizar sus prácticas
-                deportivas.
             </p>
         </div>
     </div>

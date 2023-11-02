@@ -19,9 +19,7 @@
     <div class="Body">
         <div class="rov">
             <div align="baseline">
-                <h1 style="margin-left:120px">
-                    TIENDA
-                </h1>
+                <h1 style="margin-left:120px; border-left:5px solid #00BFFF;">&nbsp;TIENDA</h1>
             </div>
             <main class="Main" style=" margin: 50px">
                 <form action="/browse" method="get" style=" margin: 60px">
