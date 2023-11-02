@@ -85,9 +85,7 @@
                             </p>
                         </div>
                     </div>
-                    <?php 
-                    
-                    if ($_SESSION['usuario']['id'] != $producto['id_usuario']) { ?>
+
                     <form action="shopping_cart.php" method="get">
                         <div class="col-sm-8 col-sm-offset-3 col-md-9 col-md-offset-3">
 
@@ -103,13 +101,8 @@
                             <input type="submit" class="btn" style="width:100%; background: #00BFFF; border: 1px solid #00BFFF; border-radius:5px 0px 0px 5px; color:#3D464D; color: #fff;" value="Compra Ahora" onMouseover="this.style.background='rgb(0 172 229)'" onMouseout="this.style.background='#00BFFF'">
                             <input type="submit" Class="btn" style="width:100%; background: #e1e1e1; border: 1px solid #e1e1e1; border-radius:0px 5px 5px 0px; color:#3D464D; color: #000;" value="Agregar al carito" onMouseover="this.style.background='#cdcccc'" onMouseout="this.style.background='#e1e1e1'" name="agregar">
                         </div>
-                        <?php } ?>
-                    </form>
-               
-                    <?php 
-                    
-                    if ($_SESSION['usuario']['id'] == $producto['id_usuario']) { ?>
 
+                    </form>
                     <form class="form-horizontal" action="/cart/add/224300" method="post" enctype="multipart/form-data" name="buy" style="border-top:1px solid #aaa; margin-top:15px; padding-top:3%;">
                         <a class="btn btn-info text-light" href="editar_producto.php" style="border-radius:5px;" title="Editar"><i class="fa-solid fa-pen-to-square"></i></a>
                         <a class="btn btn-success text-light" style="border-radius:5px;" title="Descuento" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa-solid fa-percent"></i></a>
@@ -175,7 +168,6 @@
                         </form>
                     </form>
                 </form>
-                <?php } ?>
             </div>
         </div>
         <div class="container" style="border-top:1px solid #aaa; border-bottom:1px solid #aaa; padding-top:2%;">
