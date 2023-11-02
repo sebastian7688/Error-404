@@ -34,21 +34,21 @@
         </div>
         <div class="input-container"><br>
             <h3>A&ntilde;adir título de la noticia</h3>
-            <input type="text" class="input" name="title" placeholder="Aqui pondras el título principal de la noticia">
+            <input type="text" class="input" name="title" placeholder="Aqui pondras el título principal de la noticia" required>
             <br><br>
             <div>
                
             </div>
             <div id="div_file" onMouseover="this.style.background='#00b6f3'" onMouseout="this.style.background='#00BFFF'">
                 <p id="texto">A&ntilde;adir la foto de portada</p>
-                <input type="file" class="form-control border-dark" id="btn_file" name="principal_img" id="principal_img">
+                <input type="file" class="form-control border-dark" id="btn_file" name="principal_img" id="principal_img" required> 
             </div>
             <br>
             <h3 >A&ntilde;adir una descripción</h3>
-            <textarea type="text" class="input" maxlength="500" name="desc" placeholder="Aquí se verá sobre qué se trata la noticia"></textarea>
+            <textarea type="text" class="input" maxlength="500" name="desc" placeholder="Aquí se verá sobre qué se trata la noticia" required></textarea>
             <br><br>
             <h3>Desarrolla la Noticia</h3>
-            <textarea  class="input"  name="info" placeholder="Aquí escribirás todo lo que quieras contar sobre tu noticia"></textarea>
+            <textarea  class="input"  name="info" placeholder="Aquí escribirás todo lo que quieras contar sobre tu noticia" required></textarea>
             <br>
         </div>
        
