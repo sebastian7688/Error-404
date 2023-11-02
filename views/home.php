@@ -13,36 +13,33 @@
                     <img class="position-absolute w-100 h-100" src="img/progress.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Spa & Beauty Center</h6>
-                            <h3 class="display-3 text-capitalize text-white mb-3">Massage Treatment</h3>
-                            <p class="mx-md-5 px-5">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips
-                                duo stet amet amet ndiam elitr ipsum labore diam</p>
-                            <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Make Appointment</a>
-                        </div>
+                        <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Arba.Net Inc</h6>
+                        <h3 class="display-3 text-capitalize text-white mb-3">Noticias del dia</h3>
+                        <p class="mx-md-5 px-5">La mejor forma de empezar tu dia es con un buen cafecito :3</p>
+                        <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Noticias positivas</a>
+                    </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="min-height: 80vh;">
                     <img class="position-absolute w-100 h-100" src="img/progress.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Spa & Beauty Center</h6>
-                            <h3 class="display-3 text-capitalize text-white mb-3">Facial Treatment</h3>
-                            <p class="mx-md-5 px-5">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips
-                                duo stet amet amet ndiam elitr ipsum labore diam</p>
-                            <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Make Appointment</a>
-                        </div>
+                        <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Arba.Net Inc</h6>
+                        <h3 class="display-3 text-capitalize text-white mb-3">Noticias noticiosas</h3>
+                        <p class="mx-md-5 px-5">¿Ques mejor el helado de chocolate o el de chocolate marroc?</p>
+                        <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="#">clikea para averiguarlo</a>
+                   </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="min-height: 80vh;">
                     <img class="position-absolute w-100 h-100" src="img/progress.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Spa & Beauty Center</h6>
-                            <h3 class="display-3 text-capitalize text-white mb-3">Cellulite Treatment</h3>
-                            <p class="mx-md-5 px-5">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips
-                                duo stet amet amet ndiam elitr ipsum labore diam</p>
-                            <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Make Appointment</a>
-                        </div>
+                        <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Arba.Net Inc</h6>
+                        <h3 class="display-3 text-capitalize text-white mb-3">Noticas debatientes</h3>
+                        <p class="mx-md-5 px-5">¿Quien es mejor Maradora o Messi?</p>
+                        <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="#">clikea para averiguarlo</a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -298,32 +295,7 @@
     <!-- Noticias End -->
 
 
-    <!-- Offer Start -->
-    <div class="container-fluid pt-5 pb-3">
-        <div class="row px-xl-5">
-            <div class="col-md-6">
-                <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="img/principal.png" alt="">
-                    <div class="offer-text">
-                        <h6 class="text-white text-uppercase">Save 20%</h6>
-                        <h3 class="text-white mb-3">Special Offer</h3>
-                        <a href="" class="btn text-dark" style="background-color:rgb(3 158 207); ">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="img/principal.png" alt="">
-                    <div class="offer-text">
-                        <h6 class="text-white text-uppercase">Save 20%</h6>
-                        <h3 class="text-white mb-3">Special Offer</h3>
-                        <a href="" class="btn text-dark" style="background-color:rgb(3 158 207);">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Offer End -->
+   
 </div>
 <div style="margin-right:  100px">
     <div class="container-fluid pt-5 pb-3">
