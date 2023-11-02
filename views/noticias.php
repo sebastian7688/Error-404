@@ -87,7 +87,7 @@
     <div class="row g-1">
         <div class="col-md-9">
             <div class="container-fluid pt-5 pb-3">
-                <h2 style="margin-left:50px; margin-top:-38px; border-left:5px solid #00BFFF; padding-left: 5px;">La noticia destacada de la semana
+                <h2 style="margin-left:50px; margin-top:-38px; border-left:5px solid #00BFFF; padding-left: 5px;">La noticia mas reciente
                 </h2>
                 <div class="row px-xl-5">
                     <div class="col-lg-12 col-md-6 col-sm-6 pb-36">

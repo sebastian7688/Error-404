@@ -19,7 +19,10 @@
     <div class="col-12">
         <h1 style="text-align:center; margin-bottom:25px; padding-top:25px; font-size:350%; color:rgb(21, 30, 36);"><?php echo $noticia['titulo']; ?></h1>
         <div class="containerImagen">
-            <img class="imgFluid"  src="img/noticias/libertadores.png">
+        <?php
+        if (file_exists('img/noticias/' . $noticia['id'] . '/principal.jpg')) { ?>
+       <img  class="imgfluid" src="img/noticias/<?php echo $noticia['id']; ?>/principal.jpg">
+                                    <?php } ?>
         </div>
         <h2 style="margin-top:15px; margin-bottom:20px; border-left:5px solid #00BFFF; padding-left:5px; color:#1e1e1e;"><?php echo $noticia['descripcion']; ?></h2>
     </div>
