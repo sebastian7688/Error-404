@@ -73,7 +73,7 @@
                 <h2 style="border-left:5px solid #00BFFF; padding-left: 5px;">Opciones</h2>
                 <div align="left">
                     <button class="btn btn-primary me-md-2 btn-shadow" type="button"><a href="add_notices.php" style="color: white" a>Agrega tus noticas</button>
-                    <button class="btn btn-primary btn-shadow" type="button"><a href="noticias.php" style="color: white" a>Mira tus noticias</button>
+                    <button class="btn btn-primary btn-shadow" type="button"><a href="mynews.php" style="color: white" a>Mira tus noticias</button>
                 </div>
                 <br>
                 <br>
